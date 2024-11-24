@@ -1,0 +1,5 @@
+
+[description for function: sum_of_tree]
+This function calculates the sum of all values in a binary tree represented as a nested list, where the first element is the root value, the second element is the left subtree, and the third element is the right subtree. It first checks if the tree is empty, returning 0 if so. Then, it retrieves the current node's value and recursively computes the sums of the left and right subtrees. Finally, it returns the total sum by adding the current value to the sums of the left and right subtrees. The function effectively traverses the tree in a depth-first manner to accumulate the total sum.
+
+[end of description]

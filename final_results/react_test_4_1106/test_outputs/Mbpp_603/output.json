@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_ludic(10) == [1, 2, 3, 5, 7]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_ludic(n):\n    numbers = list(range(1, (n + 1)))\n    ludic_numbers = [1]\n    i = 1\n    while (i < len(numbers)):\n        ludic_number = numbers[i]\n        if (ludic_number > n):\n            break\n        ludic_numbers.append(ludic_number)\n        numbers = [num for (idx, num) in enumerate(numbers) if ((((idx - i) % ludic_number) != 0) or (idx <= i))]\n        i += 1\n    return ludic_numbers\n",
+    "full_code": "\n\ndef get_ludic(n):\n    numbers = list(range(1, (n + 1)))\n    ludic_numbers = [1]\n    i = 1\n    while (i < len(numbers)):\n        ludic_number = numbers[i]\n        if (ludic_number > n):\n            break\n        ludic_numbers.append(ludic_number)\n        numbers = [num for (idx, num) in enumerate(numbers) if ((((idx - i) % ludic_number) != 0) or (idx <= i))]\n        i += 1\n    return ludic_numbers\n",
+    "task_id": "Mbpp/603",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

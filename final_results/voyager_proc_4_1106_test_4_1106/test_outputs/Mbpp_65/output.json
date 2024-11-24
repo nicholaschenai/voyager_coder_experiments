@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert recursive_list_sum(([1, 2, [3,4],[5,6]]))==21\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef recursive_list_sum(lst):\n    total_sum = 0\n    for element in lst:\n        if isinstance(element, list):\n            total_sum += recursive_list_sum(element)\n        else:\n            total_sum += element\n    return total_sum\n",
+    "full_code": "\n\ndef recursive_list_sum(lst):\n    total_sum = 0\n    for element in lst:\n        if isinstance(element, list):\n            total_sum += recursive_list_sum(element)\n        else:\n            total_sum += element\n    return total_sum\n",
+    "task_id": "Mbpp/65",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert swap_List([12, 35, 9, 56, 24]) == [24, 35, 9, 56, 12]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef swap_List(lst):\n    if (len(lst) >= 2):\n        (lst[0], lst[(- 1)]) = (lst[(- 1)], lst[0])\n    return lst\n",
+    "full_code": "\n\ndef swap_List(lst):\n    if (len(lst) >= 2):\n        (lst[0], lst[(- 1)]) = (lst[(- 1)], lst[0])\n    return lst\n",
+    "task_id": "Mbpp/591",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

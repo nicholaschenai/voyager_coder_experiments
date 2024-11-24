@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert merge_dictionaries_three({ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\": \"White\" },{ \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })=={'B': 'Black', 'R': 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White', 'O': 'Orange'}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef merge_dictionaries_three(dict1, dict2, dict3):\n    merged_dict = {**dict1, **dict2, **dict3}\n    return merged_dict\n",
+    "full_code": "\n\ndef merge_dictionaries_three(dict1, dict2, dict3):\n    merged_dict = {**dict1, **dict2, **dict3}\n    return merged_dict\n",
+    "task_id": "Mbpp/87",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

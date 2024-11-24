@@ -1,0 +1,5 @@
+
+[description for function: find_max_index]
+This function takes a list of numbers as input and returns the index of the maximum value in the list. If the list is empty, it returns -1. It initializes the maximum value and its index with the first element of the list. It then iterates through the list, updating the maximum value and its index whenever a larger value is found. Finally, it returns the index of the maximum value. The function effectively identifies the position of the highest number in the provided list.
+
+[end of description]

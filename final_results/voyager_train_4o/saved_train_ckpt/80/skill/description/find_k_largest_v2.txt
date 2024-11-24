@@ -1,0 +1,5 @@
+
+[description for function: find_k_largest]
+This function takes a list of numbers and an integer k as input, and it finds the k largest elements from the list. It first creates a max heap by negating the numbers, allowing the use of Python's min-heap implementation to simulate a max-heap. The function then extracts the largest elements from the heap, ensuring that it does not exceed the number of available elements. The extracted elements are collected in a list, which is then sorted in descending order before being returned. This approach efficiently retrieves the largest elements while maintaining the order. The final output is a sorted list of the k largest numbers from the input list.
+
+[end of description]

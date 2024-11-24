@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_Of_product(3) == 15\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from math import comb\n\ndef sum_Of_product(n: int) -> int:\n    total_sum = 0\n    for k in range(n):\n        total_sum += (comb(n, k) * comb(n, (k + 1)))\n    return total_sum\n",
+    "full_code": "from math import comb\n\ndef sum_Of_product(n: int) -> int:\n    total_sum = 0\n    for k in range(n):\n        total_sum += (comb(n, k) * comb(n, (k + 1)))\n    return total_sum\n",
+    "task_id": "Mbpp/592",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

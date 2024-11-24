@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_pairs_with_sum([1, 2, 3, 4, 5], 5) == [(1, 4), (2, 3)]\nassert find_pairs_with_sum([1, 1, 2, 3, 4], 4) == [(1, 3)]\nassert find_pairs_with_sum([0, -1, 2, -3, 1], -2) == [(-3, 1)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import Counter\n\ndef find_pairs_with_sum(nums, target):\n    from collections import Counter\n    num_count = Counter(nums)\n    unique_pairs = set()\n    for num in nums:\n        complement = (target - num)\n        if (complement in num_count):\n            if ((num == complement) and (num_count[num] < 2)):\n                continue\n            pair = (min(num, complement), max(num, complement))\n            unique_pairs.add(pair)\n    return sorted(list(unique_pairs))\n",
+    "full_code": "from collections import Counter\n\ndef find_pairs_with_sum(nums, target):\n    from collections import Counter\n    num_count = Counter(nums)\n    unique_pairs = set()\n    for num in nums:\n        complement = (target - num)\n        if (complement in num_count):\n            if ((num == complement) and (num_count[num] < 2)):\n                continue\n            pair = (min(num, complement), max(num, complement))\n            unique_pairs.add(pair)\n    return sorted(list(unique_pairs))\n",
+    "task_id": "4",
+    "reasoning": "The function implementation correctly identifies unique pairs of integers from the list that sum up to the given target. It uses a set to store pairs, ensuring uniqueness, and checks for the complement of each number in the list. The use of Counter allows handling cases where the same number needs to be used twice (e.g., when the number is half of the target). The function also sorts each pair and the final list of pairs, meeting the task requirements. All provided test cases pass, indicating the function works as expected.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. It efficiently finds and returns unique pairs that sum to the target, with each pair and the list of pairs sorted. No changes are necessary."
+}

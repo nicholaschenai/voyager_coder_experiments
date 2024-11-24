@@ -1,0 +1,5 @@
+
+[description for function: sort_strings_by_vowel_count]
+This function takes a list of strings and sorts them based on the number of vowels they contain, prioritizing strings with more vowels. In case of a tie in vowel counts, it sorts the strings alphabetically. The sorting is done in descending order of vowel count, meaning strings with the highest number of vowels appear first. The function converts each string to lowercase to ensure that the vowel count is case-insensitive. Finally, it returns the sorted list of strings.
+
+[end of description]

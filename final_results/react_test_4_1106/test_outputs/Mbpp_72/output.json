@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert dif_Square(5) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef dif_Square(n):\n    return ((n % 4) != 2)\n",
+    "full_code": "\n\ndef dif_Square(n):\n    return ((n % 4) != 2)\n",
+    "task_id": "Mbpp/72",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

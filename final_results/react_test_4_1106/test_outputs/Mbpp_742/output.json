@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert area_tetrahedron(3)==15.588457268119894\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef area_tetrahedron(a):\n    return (math.sqrt(3) * (a ** 2))\n",
+    "full_code": "import math\n\ndef area_tetrahedron(a):\n    return (math.sqrt(3) * (a ** 2))\n",
+    "task_id": "Mbpp/742",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

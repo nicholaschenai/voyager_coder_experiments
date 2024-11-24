@@ -1,0 +1,5 @@
+
+[description for function: find_k_largest]
+This function identifies the k largest elements from a given list of numbers. It first checks if k exceeds the length of the list, in which case it returns the entire list sorted in descending order. A min-heap is utilized to efficiently track the largest k elements as the function iterates through the list. If the heap contains fewer than k elements, it adds the current number; otherwise, it replaces the smallest element in the heap if the current number is larger. Finally, it returns the k largest elements sorted in descending order. This approach ensures optimal performance even with large datasets.
+
+[end of description]

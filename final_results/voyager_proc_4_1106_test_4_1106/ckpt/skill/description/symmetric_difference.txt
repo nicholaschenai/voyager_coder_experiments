@@ -1,0 +1,5 @@
+
+[description for function: symmetric_difference]
+This function takes two lists as input and converts them into sets to eliminate any duplicate values. It then calculates the symmetric difference between the two sets, which includes elements that are in either of the sets but not in both. Finally, the function returns the result as a list, containing the unique elements from both input lists.
+
+[end of description]

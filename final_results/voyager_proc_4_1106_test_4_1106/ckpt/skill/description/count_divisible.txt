@@ -1,0 +1,5 @@
+
+[description for function: count_divisible]
+This function counts how many numbers in a given list are divisible by a specified divisor. It first checks if the divisor is zero, raising an error if so, as division by zero is not allowed. It then iterates through each number in the list, checking if the number is either non-zero or if the divisor is positive, and whether the number is divisible by the divisor. For each number that meets these criteria, it increments a count. Finally, the function returns the total count of divisible numbers.
+
+[end of description]

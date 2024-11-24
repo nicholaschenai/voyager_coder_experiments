@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_Occurrence(('a', 'a', 'c', 'b', 'd'),['a', 'b'] ) == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_Occurrence(tup, lst):\n    count = 0\n    for item in lst:\n        count += tup.count(item)\n    return count\n",
+    "full_code": "\n\ndef count_Occurrence(tup, lst):\n    count = 0\n    for item in lst:\n        count += tup.count(item)\n    return count\n",
+    "task_id": "Mbpp/446",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

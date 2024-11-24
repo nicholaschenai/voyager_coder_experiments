@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert replace_with_greatest_on_right([16, 17, 4, 3, 5, 2]) == [17, 5, 5, 5, 2, -1]\nassert replace_with_greatest_on_right([4, 3, 2, 1]) == [3, 2, 1, -1]\nassert replace_with_greatest_on_right([1, 2, 3, 4]) == [4, 4, 4, -1]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef replace_with_greatest_on_right(nums):\n    result = ([0] * len(nums))\n    max_so_far = (- 1)\n    for i in range((len(nums) - 1), (- 1), (- 1)):\n        (result[i], max_so_far) = (max_so_far, max(max_so_far, nums[i]))\n    return result\n",
+    "full_code": "\n\ndef replace_with_greatest_on_right(nums):\n    result = ([0] * len(nums))\n    max_so_far = (- 1)\n    for i in range((len(nums) - 1), (- 1), (- 1)):\n        (result[i], max_so_far) = (max_so_far, max(max_so_far, nums[i]))\n    return result\n",
+    "task_id": "41",
+    "reasoning": "The implementation passed all the provided unit tests and correctly follows the task requirements by replacing each integer with the greatest integer to its right in the list, and the last element with -1.",
+    "success": true,
+    "critique": "The function implementation is correct as per the provided unit tests. However, it is important to consider edge cases such as an empty list or a list with all identical elements to ensure the function handles all scenarios correctly."
+}

@@ -1,0 +1,5 @@
+
+[description for function: find_common_elements]
+This function takes two lists as input and converts them into sets to eliminate duplicates. It then finds the intersection of these two sets, which contains the elements that are common to both lists. The common elements are converted back into a list format. Finally, the function returns this list of common elements. This approach efficiently identifies shared items between the two input lists. The result is a list containing only the elements that appear in both original lists.
+
+[end of description]

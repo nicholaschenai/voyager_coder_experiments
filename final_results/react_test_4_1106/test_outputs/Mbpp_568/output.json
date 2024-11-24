@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert empty_list(5)==[{},{},{},{},{}]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef empty_list(N):\n    return [{} for _ in range(N)]\n",
+    "full_code": "\n\ndef empty_list(N):\n    return [{} for _ in range(N)]\n",
+    "task_id": "Mbpp/568",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

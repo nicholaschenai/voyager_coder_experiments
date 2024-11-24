@@ -1,0 +1,5 @@
+
+[description for function: recursive_factorial]
+This function calculates the factorial of a non-negative integer using recursion. If the input is zero, it returns 1, as the factorial of zero is defined to be 1. For any positive integer, it multiplies the integer by the factorial of the integer minus one, effectively reducing the problem size with each recursive call. The process continues until it reaches the base case of zero. The final result is the product of all integers from the input down to one. This approach elegantly demonstrates the concept of recursion in programming.
+
+[end of description]

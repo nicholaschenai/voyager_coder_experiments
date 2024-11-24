@@ -1,0 +1,5 @@
+
+[description for function: linear_search]
+This function takes a list of integers and a target integer as inputs, and it searches for the target within the list. It iterates through the list, checking each element to see if it matches the target. If a match is found, it returns the index of the target element. If the target is not found after checking all elements, it returns -1. The function effectively implements a linear search algorithm. It is straightforward and operates with a time complexity of O(n).
+
+[end of description]

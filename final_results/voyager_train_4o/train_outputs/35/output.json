@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert sum_of_tree(tree1) == 15\nassert sum_of_tree(tree2) == 58\nassert sum_of_tree(tree3) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_of_tree(tree):\n    if (not tree):\n        return 0\n    current_value = tree[0]\n    left_sum = (sum_of_tree(tree[1]) if (len(tree) > 1) else 0)\n    right_sum = (sum_of_tree(tree[2]) if (len(tree) > 2) else 0)\n    return ((current_value + left_sum) + right_sum)\n",
+    "full_code": "\n\ndef sum_of_tree(tree):\n    if (not tree):\n        return 0\n    current_value = tree[0]\n    left_sum = (sum_of_tree(tree[1]) if (len(tree) > 1) else 0)\n    right_sum = (sum_of_tree(tree[2]) if (len(tree) > 2) else 0)\n    return ((current_value + left_sum) + right_sum)\n",
+    "task_id": "35",
+    "reasoning": "The function implementation correctly follows the task requirements by recursively summing the values of the nodes in the binary tree. It handles the base case of an empty tree and correctly accesses the left and right subtrees only if they exist. The unit tests confirm that the function works as expected for the given test cases, as all tests pass without any errors.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. No changes are necessary. Ensure to test with a variety of tree structures to confirm robustness."
+}

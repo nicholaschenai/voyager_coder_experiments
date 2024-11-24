@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert hexagonal_num(10) == 190\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef hexagonal_num(n):\n    return (n * ((2 * n) - 1))\n",
+    "full_code": "\n\ndef hexagonal_num(n):\n    return (n * ((2 * n) - 1))\n",
+    "task_id": "Mbpp/135",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

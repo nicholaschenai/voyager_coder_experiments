@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert first_repeated_integer([1, 2, 3, 4, 5, 6, 7, 8, 9, 1]) == 1\nassert first_repeated_integer([1, 2, 3, 4, 5]) == None\nassert first_repeated_integer([5, 5, 5, 5, 5]) == 5\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef first_repeated_integer(int_list):\n    seen = {}\n    for num in int_list:\n        if (num in seen):\n            return num\n        seen[num] = True\n    return None\n",
+    "full_code": "\n\ndef first_repeated_integer(int_list):\n    seen = {}\n    for num in int_list:\n        if (num in seen):\n            return num\n        seen[num] = True\n    return None\n",
+    "task_id": "92",
+    "reasoning": "The function implementation correctly uses a hash map to track integers as it iterates through the list. It returns the first integer that appears more than once, as required by the task. The unit tests confirm that the function behaves as expected, returning the first duplicate when one exists and None when there are no duplicates.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. It meets the task requirements and passes all provided unit tests. No changes are necessary."
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert ascii_value('A')==65\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef ascii_value(char: str) -> int:\n    return ord(char)\n",
+    "full_code": "\n\ndef ascii_value(char: str) -> int:\n    return ord(char)\n",
+    "task_id": "Mbpp/269",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

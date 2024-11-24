@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_k_largest([3, 1, 5, 12, 2, 11], 3) == [12, 11, 5]\nassert find_k_largest([5, 12, 11, -1, 12], 2) == [12, 12]\nassert find_k_largest([1, 23, 12, 9, 30, 2, 50], 4) == [50, 30, 23, 12]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import heapq\n\ndef find_k_largest(nums, k):\n    max_heap = [(- num) for num in nums]\n    heapq.heapify(max_heap)\n    largest_elements = []\n    for _ in range(min(k, len(nums))):\n        largest_elements.append((- heapq.heappop(max_heap)))\n    return sorted(largest_elements, reverse=True)\n",
+    "full_code": "import heapq\n\ndef find_k_largest(nums, k):\n    max_heap = [(- num) for num in nums]\n    heapq.heapify(max_heap)\n    largest_elements = []\n    for _ in range(min(k, len(nums))):\n        largest_elements.append((- heapq.heappop(max_heap)))\n    return sorted(largest_elements, reverse=True)\n",
+    "task_id": "63",
+    "reasoning": "The function implementation correctly uses a max-heap to find the k largest elements in a list of integers. It negates the numbers to simulate a max-heap using Python's min-heap implementation. The function then extracts the k largest elements, negates them back to their original values, and sorts them in descending order before returning. The unit tests confirm that the function behaves as expected for the given test cases.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. It efficiently finds the k largest elements using a max-heap and returns them in descending order. No changes are necessary."
+}

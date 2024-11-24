@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert Extract([[1, 2], [3, 4, 5], [6, 7, 8, 9]]) == [1, 3, 6]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef Extract(list_of_lists):\n    first_elements = []\n    for sublist in list_of_lists:\n        first_elements.append(sublist[0])\n    return first_elements\n",
+    "full_code": "\n\ndef Extract(list_of_lists):\n    first_elements = []\n    for sublist in list_of_lists:\n        first_elements.append(sublist[0])\n    return first_elements\n",
+    "task_id": "Mbpp/460",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_of_digits([10,2,56])==14\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_of_digits(numbers):\n    total_sum = 0\n    for number in numbers:\n        for digit in str(number):\n            total_sum += int(digit)\n    return total_sum\n",
+    "full_code": "\n\ndef sum_of_digits(numbers):\n    total_sum = 0\n    for number in numbers:\n        for digit in str(number):\n            total_sum += int(digit)\n    return total_sum\n",
+    "task_id": "Mbpp/398",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

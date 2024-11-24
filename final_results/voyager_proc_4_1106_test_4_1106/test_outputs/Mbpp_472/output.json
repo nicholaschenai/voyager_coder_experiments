@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_Consecutive([1,2,3,4,5]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef has_unique_chars(lst):\n    seen = set()\n    for item in lst:\n        if (item in seen):\n            return False\n        seen.add(item)\n    return True\n\n\n\n\ndef check_Consecutive(nums):\n    if (not nums):\n        return False\n    min_num = min(nums)\n    max_num = max(nums)\n    return ((((max_num - min_num) + 1) == len(nums)) and has_unique_chars(nums))\n",
+    "full_code": "\n\ndef has_unique_chars(lst):\n    seen = set()\n    for item in lst:\n        if (item in seen):\n            return False\n        seen.add(item)\n    return True\n\n\n\n\ndef check_Consecutive(nums):\n    if (not nums):\n        return False\n    min_num = min(nums)\n    max_num = max(nums)\n    return ((((max_num - min_num) + 1) == len(nums)) and has_unique_chars(nums))\n",
+    "task_id": "Mbpp/472",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert multiply_int(10,20)==200\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef multiply_int(a, b):\n    return (a * b)\n",
+    "full_code": "\n\ndef multiply_int(a, b):\n    return (a * b)\n",
+    "task_id": "Mbpp/127",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,5 @@
+
+[description for function: depth_first_search]
+This function performs a depth-first search (DFS) on a given graph starting from a specified node. It initializes a set to keep track of visited nodes and a list to store the traversal order. The search explores as far as possible along each branch before backtracking. For each unvisited node, it marks it as visited and adds it to the result list. The function ultimately returns the list of nodes in the order they were visited. This approach is useful for exploring all reachable nodes in a graph.
+
+[end of description]

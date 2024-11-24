@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_lowercase(\"PYTHon\")==('PYTH')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_lowercase(s: str) -> str:\n    return ''.join([char for char in s if char.isupper()])\n",
+    "full_code": "\n\ndef remove_lowercase(s: str) -> str:\n    return ''.join([char for char in s if char.isupper()])\n",
+    "task_id": "Mbpp/478",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

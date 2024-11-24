@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert cube_nums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])==[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef cube_nums(numbers):\n    return [(x ** 3) for x in numbers]\n",
+    "full_code": "\n\ndef cube_nums(numbers):\n    return [(x ** 3) for x in numbers]\n",
+    "task_id": "Mbpp/447",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

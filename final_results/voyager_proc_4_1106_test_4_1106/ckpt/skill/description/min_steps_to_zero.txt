@@ -1,0 +1,5 @@
+
+[description for function: min_steps_to_zero]
+This function calculates the minimum number of steps required to reduce a given positive integer to zero, where in each step, the integer can either be decremented by one or divided by two if it is even. It uses dynamic programming to build an array that stores the minimum steps for each integer from 0 to n. The function initializes a list to keep track of the steps and iteratively fills it by considering both possible operations for each integer. For each integer, it updates the minimum steps based on the previous values in the list. Finally, it returns the minimum steps needed for the input integer n. The approach ensures that the solution is efficient and avoids redundant calculations.
+
+[end of description]

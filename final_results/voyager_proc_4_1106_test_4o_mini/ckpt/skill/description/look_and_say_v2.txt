@@ -1,0 +1,5 @@
+
+[description for function: look_and_say]
+This function generates the nth term of the "look-and-say" sequence, which is a series of numbers where each term is derived from describing the digits of the previous term. It starts with the initial term '1' and iteratively constructs each subsequent term by counting consecutive digits and expressing that count followed by the digit itself. If the input is less than or equal to zero, it raises a ValueError. The function uses a loop to build the next term based on the current term until it reaches the desired term number. Finally, it returns the nth term as a string. The sequence begins with '1', followed by '11', '21', '1211', and so on.
+
+[end of description]

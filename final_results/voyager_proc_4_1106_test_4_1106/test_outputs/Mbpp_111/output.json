@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(common_in_nested_lists([[12, 18, 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]]))==set([18, 12])\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef common_in_nested_lists(nested_lists):\n    if (not nested_lists):\n        return set()\n    elif (len(nested_lists) == 1):\n        return set(nested_lists[0])\n    common_elements = set(nested_lists[0])\n    for inner_list in nested_lists[1:]:\n        common_elements.intersection_update(inner_list)\n    return common_elements\n",
+    "full_code": "\n\ndef common_in_nested_lists(nested_lists):\n    if (not nested_lists):\n        return set()\n    elif (len(nested_lists) == 1):\n        return set(nested_lists[0])\n    common_elements = set(nested_lists[0])\n    for inner_list in nested_lists[1:]:\n        common_elements.intersection_update(inner_list)\n    return common_elements\n",
+    "task_id": "Mbpp/111",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

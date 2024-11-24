@@ -1,0 +1,5 @@
+
+[description for function: min_path_sum]
+This function calculates the minimum path sum from the top-left corner to the bottom-right corner of a grid, where each cell contains a non-negative integer. It initializes a dynamic programming table to store the minimum sums at each cell, starting with the value of the top-left cell. The function iteratively fills in the first row and first column by accumulating sums from the previous cells. For the rest of the grid, it computes the minimum path sum for each cell by considering the minimum of the sums from the cell above and the cell to the left. Finally, it returns the minimum path sum found at the bottom-right corner of the grid. If the grid is empty or has no columns, it returns 0.
+
+[end of description]

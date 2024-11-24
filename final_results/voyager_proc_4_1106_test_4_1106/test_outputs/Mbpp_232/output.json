@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(larg_nnum([10, 20, 50, 70, 90, 20, 50, 40, 60, 80, 100],2))==set([100,90])\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import heapq\n\ndef larg_nnum(input_list, n):\n    min_heap = input_list[:n]\n    heapq.heapify(min_heap)\n    for num in input_list[n:]:\n        if (num > min_heap[0]):\n            heapq.heappop(min_heap)\n            heapq.heappush(min_heap, num)\n    return list(min_heap)\n",
+    "full_code": "import heapq\n\ndef larg_nnum(input_list, n):\n    min_heap = input_list[:n]\n    heapq.heapify(min_heap)\n    for num in input_list[n:]:\n        if (num > min_heap[0]):\n            heapq.heappop(min_heap)\n            heapq.heappush(min_heap, num)\n    return list(min_heap)\n",
+    "task_id": "Mbpp/232",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

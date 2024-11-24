@@ -1,0 +1,5 @@
+
+[description for function: calculate_factorial]
+This function computes the factorial of a non-negative integer n. It raises a ValueError if n is negative, as factorials are not defined for such values. For n equal to zero, it returns 1, since 0! is defined as 1. For positive integers, it initializes a result variable to 1 and iteratively multiplies it by each integer from 1 to n. Finally, it returns the computed factorial value. The function effectively handles edge cases and performs the calculation using a simple loop.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert noprofit_noloss(1500,1200)==False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef noprofit_noloss(selling_price, cost_price):\n    return (selling_price == cost_price)\n",
+    "full_code": "\n\ndef noprofit_noloss(selling_price, cost_price):\n    return (selling_price == cost_price)\n",
+    "task_id": "Mbpp/637",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert newman_prime(3) == 7\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_prime(num):\n    if (num <= 1):\n        return False\n    if (num <= 3):\n        return True\n    if (((num % 2) == 0) or ((num % 3) == 0)):\n        return False\n    i = 5\n    while ((i * i) <= num):\n        if (((num % i) == 0) or ((num % (i + 2)) == 0)):\n            return False\n        i += 6\n    return True\n\n\n\n\ndef newman_prime(n):\n    if (n == 1):\n        return 2\n    count = 1\n    i = 2\n    (nsw_prev, nsw_curr) = (1, 1)\n    while True:\n        nsw_next = ((2 * nsw_curr) + nsw_prev)\n        (nsw_prev, nsw_curr) = (nsw_curr, nsw_next)\n        if is_prime(nsw_next):\n            count += 1\n            if (count == n):\n                return nsw_next\n        i += 1\n",
+    "full_code": "\n\ndef is_prime(num):\n    if (num <= 1):\n        return False\n    if (num <= 3):\n        return True\n    if (((num % 2) == 0) or ((num % 3) == 0)):\n        return False\n    i = 5\n    while ((i * i) <= num):\n        if (((num % i) == 0) or ((num % (i + 2)) == 0)):\n            return False\n        i += 6\n    return True\n\n\n\n\ndef newman_prime(n):\n    if (n == 1):\n        return 2\n    count = 1\n    i = 2\n    (nsw_prev, nsw_curr) = (1, 1)\n    while True:\n        nsw_next = ((2 * nsw_curr) + nsw_prev)\n        (nsw_prev, nsw_curr) = (nsw_curr, nsw_next)\n        if is_prime(nsw_next):\n            count += 1\n            if (count == n):\n                return nsw_next\n        i += 1\n",
+    "task_id": "Mbpp/260",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

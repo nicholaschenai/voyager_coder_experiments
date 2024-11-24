@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tuple_modulo((10, 4, 5, 6), (5, 6, 7, 5)) == (0, 4, 5, 1)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef tuple_modulo(tuple1, tuple2):\n    if (len(tuple1) != len(tuple2)):\n        raise ValueError('Tuples must be of the same length')\n    result = tuple(((a % b) for (a, b) in zip(tuple1, tuple2)))\n    return result\n",
+    "full_code": "\n\ndef tuple_modulo(tuple1, tuple2):\n    if (len(tuple1) != len(tuple2)):\n        raise ValueError('Tuples must be of the same length')\n    result = tuple(((a % b) for (a, b) in zip(tuple1, tuple2)))\n    return result\n",
+    "task_id": "Mbpp/616",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

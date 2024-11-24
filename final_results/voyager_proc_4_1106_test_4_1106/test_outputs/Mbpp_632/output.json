@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert move_zero([1,0,2,0,3,4]) == [1,2,3,4,0,0]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef move_zero(lst):\n    non_zero_elements = []\n    zero_count = 0\n    for num in lst:\n        if (num != 0):\n            non_zero_elements.append(num)\n        else:\n            zero_count += 1\n    non_zero_elements.extend(([0] * zero_count))\n    return non_zero_elements\n",
+    "full_code": "\n\ndef move_zero(lst):\n    non_zero_elements = []\n    zero_count = 0\n    for num in lst:\n        if (num != 0):\n            non_zero_elements.append(num)\n        else:\n            zero_count += 1\n    non_zero_elements.extend(([0] * zero_count))\n    return non_zero_elements\n",
+    "task_id": "Mbpp/632",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

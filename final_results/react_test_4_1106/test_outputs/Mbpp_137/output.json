@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert math.isclose(zero_count([0, 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 0.181818, rel_tol=0.001)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef zero_count(arr):\n    zero_counter = 0\n    non_zero_counter = 0\n    for num in arr:\n        if (num == 0):\n            zero_counter += 1\n        else:\n            non_zero_counter += 1\n    if (non_zero_counter > 0):\n        return (zero_counter / non_zero_counter)\n    else:\n        return 0\n",
+    "full_code": "import math\n\ndef zero_count(arr):\n    zero_counter = 0\n    non_zero_counter = 0\n    for num in arr:\n        if (num == 0):\n            zero_counter += 1\n        else:\n            non_zero_counter += 1\n    if (non_zero_counter > 0):\n        return (zero_counter / non_zero_counter)\n    else:\n        return 0\n",
+    "task_id": "Mbpp/137",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

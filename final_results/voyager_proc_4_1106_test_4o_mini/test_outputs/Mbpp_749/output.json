@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sort_numeric_strings( ['4','12','45','7','0','100','200','-12','-500'])==[-500, -12, 0, 4, 7, 12, 45, 100, 200]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sort_numeric_strings(string_list):\n    int_list = [int(num) for num in string_list]\n    sorted_list = sorted(int_list)\n    return sorted_list\n",
+    "full_code": "\n\ndef sort_numeric_strings(string_list):\n    int_list = [int(num) for num in string_list]\n    sorted_list = sorted(int_list)\n    return sorted_list\n",
+    "task_id": "Mbpp/749",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

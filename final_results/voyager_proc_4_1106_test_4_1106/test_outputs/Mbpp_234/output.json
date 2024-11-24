@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert volume_cube(3)==27\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef volume_cube(side_length):\n    return (side_length ** 3)\n",
+    "full_code": "\n\ndef volume_cube(side_length):\n    return (side_length ** 3)\n",
+    "task_id": "Mbpp/234",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

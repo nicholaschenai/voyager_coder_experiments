@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert cumulative_sum([1, 2, 3, 4]) == [1, 3, 6, 10]\nassert cumulative_sum([0, 0, 0, 0]) == [0, 0, 0, 0]\nassert cumulative_sum([-1, 1, -1, 1]) == [-1, 0, -1, 0]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef cumulative_sum(input_list):\n    cumulative_sum = 0\n    cumulative_list = []\n    for number in input_list:\n        cumulative_sum += number\n        cumulative_list.append(cumulative_sum)\n    return cumulative_list\n",
+    "full_code": "\n\ndef cumulative_sum(input_list):\n    cumulative_sum = 0\n    cumulative_list = []\n    for number in input_list:\n        cumulative_sum += number\n        cumulative_list.append(cumulative_sum)\n    return cumulative_list\n",
+    "task_id": "57",
+    "reasoning": "The implementation passed all provided unit tests and correctly computes the cumulative sum for each element in the list.",
+    "success": true,
+    "critique": "The function implementation meets the task requirements. No changes are necessary as the provided unit tests cover various scenarios including positive numbers, zeros, and alternating positive and negative numbers. The function correctly returns a new list with each element being the sum of itself and all previous elements in the original list."
+}

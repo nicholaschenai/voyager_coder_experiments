@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert convert_list_dictionary([\"S001\", \"S002\", \"S003\", \"S004\"],[\"Adina Park\", \"Leyton Marsh\", \"Duncan Boyle\", \"Saim Richards\"] ,[85, 98, 89, 92])==[{'S001': {'Adina Park': 85}}, {'S002': {'Leyton Marsh': 98}}, {'S003': {'Duncan Boyle': 89}}, {'S004': {'Saim Richards': 92}}]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef convert_list_dictionary(ids, names, scores):\n    if ((len(ids) != len(names)) or (len(ids) != len(scores))):\n        raise ValueError('All input lists must have the same length.')\n    result = []\n    for i in range(len(ids)):\n        nested_dict = {ids[i]: {names[i]: scores[i]}}\n        result.append(nested_dict)\n    return result\n",
+    "full_code": "\n\ndef convert_list_dictionary(ids, names, scores):\n    if ((len(ids) != len(names)) or (len(ids) != len(scores))):\n        raise ValueError('All input lists must have the same length.')\n    result = []\n    for i in range(len(ids)):\n        nested_dict = {ids[i]: {names[i]: scores[i]}}\n        result.append(nested_dict)\n    return result\n",
+    "task_id": "Mbpp/391",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

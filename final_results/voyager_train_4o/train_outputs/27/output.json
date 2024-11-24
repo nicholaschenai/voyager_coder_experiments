@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_duplicates([1, 2, 2, 3, 3, 3]) == [2, 3]\nassert find_duplicates([4, 4, 4, 4]) == [4]\nassert find_duplicates([1, 2, 3, 4]) == []\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import Counter\n\ndef find_duplicates(input_list):\n    counts = Counter(input_list)\n    duplicates = {num for (num, count) in counts.items() if (count > 1)}\n    return sorted(duplicates)\n",
+    "full_code": "from collections import Counter\n\ndef find_duplicates(input_list):\n    counts = Counter(input_list)\n    duplicates = {num for (num, count) in counts.items() if (count > 1)}\n    return sorted(duplicates)\n",
+    "task_id": "27",
+    "reasoning": "The function implementation correctly follows the task requirements. It uses the Counter class to count occurrences of each integer in the list, filters out those that appear more than once, and returns a sorted list of these integers without duplicates. The unit tests confirm that the function behaves as expected for the given test cases.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. No changes are necessary. Continue to use this approach for similar tasks, ensuring that you handle edge cases and test thoroughly."
+}

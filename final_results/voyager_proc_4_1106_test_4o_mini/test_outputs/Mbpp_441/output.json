@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert surfacearea_cube(5)==150\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef surfacearea_cube(size: int) -> int:\n    surface_area = (6 * (size ** 2))\n    return surface_area\n",
+    "full_code": "\n\ndef surfacearea_cube(size: int) -> int:\n    surface_area = (6 * (size ** 2))\n    return surface_area\n",
+    "task_id": "Mbpp/441",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

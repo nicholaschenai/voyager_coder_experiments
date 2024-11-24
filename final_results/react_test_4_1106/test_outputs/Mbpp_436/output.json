@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert neg_nos([-1,4,5,-6]) == [-1,-6]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef neg_nos(lst):\n    return [num for num in lst if (num < 0)]\n",
+    "full_code": "\n\ndef neg_nos(lst):\n    return [num for num in lst if (num < 0)]\n",
+    "task_id": "Mbpp/436",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

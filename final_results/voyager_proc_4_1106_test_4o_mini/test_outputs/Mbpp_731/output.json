@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert lateralsurface_cone(5,12)==204.20352248333654\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef lateralsurface_cone(r, h):\n    l = math.sqrt(((r ** 2) + (h ** 2)))\n    lateral_surface_area = ((math.pi * r) * l)\n    return lateral_surface_area\n",
+    "full_code": "import math\n\ndef lateralsurface_cone(r, h):\n    l = math.sqrt(((r ** 2) + (h ** 2)))\n    lateral_surface_area = ((math.pi * r) * l)\n    return lateral_surface_area\n",
+    "task_id": "Mbpp/731",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

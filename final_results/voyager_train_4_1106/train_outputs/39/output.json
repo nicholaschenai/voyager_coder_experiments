@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert insertion_sort([4, 3, 2, 10, 12, 1, 5, 6]) == [1, 2, 3, 4, 5, 6, 10, 12]\nassert insertion_sort([]) == []\nassert insertion_sort([1]) == [1]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef insertion_sort(original_list):\n    sorted_list = []\n    for number in original_list:\n        index = 0\n        while ((index < len(sorted_list)) and (sorted_list[index] < number)):\n            index += 1\n        sorted_list.insert(index, number)\n    return sorted_list\n",
+    "full_code": "\n\ndef insertion_sort(original_list):\n    sorted_list = []\n    for number in original_list:\n        index = 0\n        while ((index < len(sorted_list)) and (sorted_list[index] < number)):\n            index += 1\n        sorted_list.insert(index, number)\n    return sorted_list\n",
+    "task_id": "39",
+    "reasoning": "The function implementation correctly sorts the list of integers using the insertion sort algorithm and returns a new sorted list without modifying the original list. All provided unit tests pass, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The implementation is correct and efficient for the insertion sort algorithm. However, for larger lists, insertion sort can be inefficient compared to other sorting algorithms like quicksort or mergesort. No changes are needed for the current task, but for sorting large datasets, consider using more efficient sorting algorithms."
+}

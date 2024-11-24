@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_nonagonal(10) == 325\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_nonagonal(n: int) -> int:\n    return ((n * ((7 * n) - 5)) // 2)\n",
+    "full_code": "\n\ndef is_nonagonal(n: int) -> int:\n    return ((n * ((7 * n) - 5)) // 2)\n",
+    "task_id": "Mbpp/641",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

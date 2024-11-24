@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_length(\"11000010001\") == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_length(binary_string: str) -> int:\n    max_diff = 0\n    current_sum = 0\n    for char in binary_string:\n        if (char == '0'):\n            current_sum += 1\n        else:\n            current_sum -= 1\n        max_diff = max(max_diff, current_sum)\n        if (current_sum < 0):\n            current_sum = 0\n    return max_diff\n",
+    "full_code": "\n\ndef find_length(binary_string: str) -> int:\n    max_diff = 0\n    current_sum = 0\n    for char in binary_string:\n        if (char == '0'):\n            current_sum += 1\n        else:\n            current_sum -= 1\n        max_diff = max(max_diff, current_sum)\n        if (current_sum < 0):\n            current_sum = 0\n    return max_diff\n",
+    "task_id": "Mbpp/125",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

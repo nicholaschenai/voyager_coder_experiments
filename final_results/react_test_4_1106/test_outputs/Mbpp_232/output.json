@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(larg_nnum([10, 20, 50, 70, 90, 20, 50, 40, 60, 80, 100],2))==set([100,90])\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef larg_nnum(input_list, n):\n    sorted_list = sorted(input_list, reverse=True)\n    largest_items = sorted_list[:n]\n    return largest_items\n",
+    "full_code": "\n\ndef larg_nnum(input_list, n):\n    sorted_list = sorted(input_list, reverse=True)\n    largest_items = sorted_list[:n]\n    return largest_items\n",
+    "task_id": "Mbpp/232",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

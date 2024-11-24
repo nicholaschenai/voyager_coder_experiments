@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert math.isclose(count_binary_seq(1), 2.0, rel_tol=0.001)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef count_binary_seq(n: int) -> float:\n    total_count = 0\n    for k in range((n + 1)):\n        count_k = math.comb(n, k)\n        total_count += (count_k * count_k)\n    return float(total_count)\n",
+    "full_code": "import math\n\ndef count_binary_seq(n: int) -> float:\n    total_count = 0\n    for k in range((n + 1)):\n        count_k = math.comb(n, k)\n        total_count += (count_k * count_k)\n    return float(total_count)\n",
+    "task_id": "Mbpp/300",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

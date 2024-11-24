@@ -1,0 +1,5 @@
+
+[description for function: find_duplicates]
+This function takes a list of numbers as input and identifies any duplicate values within that list. It utilizes a set to keep track of numbers that have already been encountered and another set to store duplicates. As it iterates through the input list, it checks if each number has been seen before; if so, it adds it to the duplicates set. Finally, the function returns a sorted list of the duplicate numbers found. The use of sets ensures that each duplicate is only recorded once, regardless of how many times it appears in the input list. Overall, it efficiently identifies and returns the duplicates in a sorted order.
+
+[end of description]

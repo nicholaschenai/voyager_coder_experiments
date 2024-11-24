@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert count_vowel_occurrences('Hello World') == {'e': 1, 'o': 2}\nassert count_vowel_occurrences('AEIOUaeiou') == {'a': 2, 'e': 2, 'i': 2, 'o': 2, 'u': 2}\n\nTests failed:\nassert count_vowel_occurrences('Python Programming') == {'o': 1} # output: {'o': 2, 'a': 1, 'i': 1}",
+    "state": null,
+    "code": "\n\ndef count_vowel_occurrences(input_string):\n    vowels = 'aeiou'\n    vowel_count = {}\n    input_string = input_string.lower()\n    for char in input_string:\n        if (char in vowels):\n            if (char in vowel_count):\n                vowel_count[char] += 1\n            else:\n                vowel_count[char] = 1\n    return vowel_count\n",
+    "full_code": "\n\ndef count_vowel_occurrences(input_string):\n    vowels = 'aeiou'\n    vowel_count = {}\n    input_string = input_string.lower()\n    for char in input_string:\n        if (char in vowels):\n            if (char in vowel_count):\n                vowel_count[char] += 1\n            else:\n                vowel_count[char] = 1\n    return vowel_count\n",
+    "task_id": "62",
+    "reasoning": "The implementation failed the test case where the input string contains multiple vowels, resulting in incorrect counts for 'o', 'a', and 'i'.",
+    "success": false,
+    "critique": "The issue arises from the fact that the function does not account for the presence of multiple vowels in the string. In the test case 'Python Programming', the function incorrectly counts 'o' as 2 instead of 1, and fails to count 'a' and 'i' correctly. To fix this, ensure that the function correctly counts each vowel by iterating through the string and updating the counts in the dictionary as intended."
+}

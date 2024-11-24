@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert count_occurrences([1, 2, 2, 3, 3, 3]) == {1: 1, 2: 2, 3: 3}\nassert count_occurrences([4, 5, 6, 4, 5, 4]) == {4: 3, 5: 2, 6: 1}\nassert count_occurrences([]) == {}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n",
+    "full_code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n",
+    "task_id": "25",
+    "reasoning": "The implementation successfully meets the task requirements as it correctly counts the occurrences of each integer in the provided list and returns a dictionary with the expected format.",
+    "success": true,
+    "critique": ""
+}

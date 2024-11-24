@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(find_char_long('Please move back to stream')) == set(['Please', 'move', 'back', 'stream'])\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_char_long(input_string: str) -> list:\n    return [word for word in input_string.split() if (len(word) >= 4)]\n",
+    "full_code": "\n\ndef find_char_long(input_string: str) -> list:\n    return [word for word in input_string.split() if (len(word) >= 4)]\n",
+    "task_id": "Mbpp/7",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

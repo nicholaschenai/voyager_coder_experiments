@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_type((5, 6, 7, 3, 5, 6) ) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_type(tup: tuple) -> bool:\n    if (not tup):\n        return True\n    first_type = type(tup[0])\n    for element in tup:\n        if (type(element) != first_type):\n            return False\n    return True\n",
+    "full_code": "\n\ndef check_type(tup: tuple) -> bool:\n    if (not tup):\n        return True\n    first_type = type(tup[0])\n    for element in tup:\n        if (type(element) != first_type):\n            return False\n    return True\n",
+    "task_id": "Mbpp/222",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

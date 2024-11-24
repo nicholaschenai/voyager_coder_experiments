@@ -1,0 +1,5 @@
+
+[description for function: bubble_sort]
+This function implements the bubble sort algorithm to sort a given list in ascending order by repeatedly comparing adjacent elements and swapping them if they are in the wrong order, effectively "bubbling" larger elements to the end of the list. It iterates through the list multiple times, reducing the number of comparisons in each subsequent pass as the largest elements settle at the end. The process continues until the entire list is sorted. The function returns the sorted list after completing the sorting process. It operates with a time complexity of O(n^2) in the worst case, making it less efficient for large datasets. Overall, it provides a straightforward method for sorting a list using a simple comparison-based approach.
+
+[end of description]

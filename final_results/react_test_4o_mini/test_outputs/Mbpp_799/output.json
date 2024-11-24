@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert left_rotate(16,2) == 64\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef left_rotate(n: int, d: int) -> int:\n    d = (d % 32)\n    return (((n << d) | (n >> (32 - d))) & 4294967295)\n",
+    "full_code": "\n\ndef left_rotate(n: int, d: int) -> int:\n    d = (d % 32)\n    return (((n << d) | (n >> (32 - d))) & 4294967295)\n",
+    "task_id": "Mbpp/799",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

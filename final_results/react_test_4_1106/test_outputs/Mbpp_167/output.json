@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert next_power_of_2(0) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef next_power_of_2(n):\n    if (n <= 0):\n        return 1\n    n -= 1\n    n |= (n >> 1)\n    n |= (n >> 2)\n    n |= (n >> 4)\n    n |= (n >> 8)\n    n |= (n >> 16)\n    n |= (n >> 32)\n    return (n + 1)\n",
+    "full_code": "\n\ndef next_power_of_2(n):\n    if (n <= 0):\n        return 1\n    n -= 1\n    n |= (n >> 1)\n    n |= (n >> 2)\n    n |= (n >> 4)\n    n |= (n >> 8)\n    n |= (n >> 16)\n    n |= (n >> 32)\n    return (n + 1)\n",
+    "task_id": "Mbpp/167",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

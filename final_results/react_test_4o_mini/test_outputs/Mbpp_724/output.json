@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert power_base_sum(2,100)==115\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef power_base_sum(base: int, power: int) -> int:\n    result = (base ** power)\n    result_str = str(result)\n    digit_sum = 0\n    for digit in result_str:\n        digit_sum += int(digit)\n    return digit_sum\n",
+    "full_code": "\n\ndef power_base_sum(base: int, power: int) -> int:\n    result = (base ** power)\n    result_str = str(result)\n    digit_sum = 0\n    for digit in result_str:\n        digit_sum += int(digit)\n    return digit_sum\n",
+    "task_id": "Mbpp/724",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

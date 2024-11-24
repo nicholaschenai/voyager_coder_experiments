@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_polite(7) == 11\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_power_of_two(n):\n    return ((n > 0) and ((n & (n - 1)) == 0))\n\n\n\n\ndef is_polite(n):\n    polite_count = 0\n    current_number = 1\n    while True:\n        if (not is_power_of_two(current_number)):\n            polite_count += 1\n            if (polite_count == n):\n                return current_number\n        current_number += 1\n",
+    "full_code": "\n\ndef is_power_of_two(n):\n    return ((n > 0) and ((n & (n - 1)) == 0))\n\n\n\n\ndef is_polite(n):\n    polite_count = 0\n    current_number = 1\n    while True:\n        if (not is_power_of_two(current_number)):\n            polite_count += 1\n            if (polite_count == n):\n                return current_number\n        current_number += 1\n",
+    "task_id": "Mbpp/765",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

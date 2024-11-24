@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert validate(1234) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import Counter\n\ndef validate(n):\n    str_n = str(n)\n    digit_count = Counter(str_n)\n    for (digit, count) in digit_count.items():\n        if (count > int(digit)):\n            return False\n    return True\n",
+    "full_code": "from collections import Counter\n\ndef validate(n):\n    str_n = str(n)\n    digit_count = Counter(str_n)\n    for (digit, count) in digit_count.items():\n        if (count > int(digit)):\n            return False\n    return True\n",
+    "task_id": "Mbpp/283",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

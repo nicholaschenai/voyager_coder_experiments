@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_undulating(1212121) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_undulating(number: int) -> bool:\n    num_str = str(number)\n    for i in range((len(num_str) - 1)):\n        if (num_str[i] == num_str[(i + 1)]):\n            return False\n    return True\n",
+    "full_code": "\n\ndef is_undulating(number: int) -> bool:\n    num_str = str(number)\n    for i in range((len(num_str) - 1)):\n        if (num_str[i] == num_str[(i + 1)]):\n            return False\n    return True\n",
+    "task_id": "Mbpp/92",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

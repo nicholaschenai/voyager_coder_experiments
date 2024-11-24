@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert extract_even((4, 5, (7, 6, (2, 4)), 6, 8)) == (4, (6, (2, 4)), 6, 8)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef extract_even(nested_tuple):\n    result = []\n    for element in nested_tuple:\n        if (isinstance(element, int) and ((element % 2) == 0)):\n            result.append(element)\n        elif isinstance(element, tuple):\n            even_tuple = extract_even(element)\n            if even_tuple:\n                result.append(even_tuple)\n    return tuple(result)\n",
+    "full_code": "\n\ndef extract_even(nested_tuple):\n    result = []\n    for element in nested_tuple:\n        if (isinstance(element, int) and ((element % 2) == 0)):\n            result.append(element)\n        elif isinstance(element, tuple):\n            even_tuple = extract_even(element)\n            if even_tuple:\n                result.append(even_tuple)\n    return tuple(result)\n",
+    "task_id": "Mbpp/580",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

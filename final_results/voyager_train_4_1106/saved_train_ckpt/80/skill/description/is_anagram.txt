@@ -1,0 +1,5 @@
+
+[description for function: is_anagram]
+This function checks if two input strings are anagrams of each other by first normalizing both strings to remove non-alphabetic characters and convert them to lowercase. It then sorts the characters of each normalized string. Finally, it compares the sorted versions of both strings and returns a boolean value indicating whether they are equal, thus confirming if the original strings are anagrams.
+
+[end of description]

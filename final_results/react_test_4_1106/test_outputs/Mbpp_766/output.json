@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert pair_wise([1,1,2,3,3,4,4,5])==[(1, 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef pair_wise(lst):\n    pairs = []\n    for i in range((len(lst) - 1)):\n        pair = (lst[i], lst[(i + 1)])\n        pairs.append(pair)\n    return pairs\n",
+    "full_code": "\n\ndef pair_wise(lst):\n    pairs = []\n    for i in range((len(lst) - 1)):\n        pair = (lst[i], lst[(i + 1)])\n        pairs.append(pair)\n    return pairs\n",
+    "task_id": "Mbpp/766",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

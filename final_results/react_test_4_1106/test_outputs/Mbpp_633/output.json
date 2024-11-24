@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert pair_xor_Sum([5,9,7,6],4) == 47\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef pair_xor_Sum(arr, n):\n    total_xor_sum = 0\n    for i in range(n):\n        for j in range((i + 1), n):\n            total_xor_sum += (arr[i] ^ arr[j])\n    return total_xor_sum\n",
+    "full_code": "\n\ndef pair_xor_Sum(arr, n):\n    total_xor_sum = 0\n    for i in range(n):\n        for j in range((i + 1), n):\n            total_xor_sum += (arr[i] ^ arr[j])\n    return total_xor_sum\n",
+    "task_id": "Mbpp/633",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

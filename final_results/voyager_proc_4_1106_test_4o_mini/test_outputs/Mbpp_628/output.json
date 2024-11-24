@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert replace_spaces(\"My Name is Dawood\") == 'My%20Name%20is%20Dawood'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef replace_spaces(input_string: str) -> str:\n    modified_string = input_string.replace(' ', '%20')\n    return modified_string\n",
+    "full_code": "\n\ndef replace_spaces(input_string: str) -> str:\n    modified_string = input_string.replace(' ', '%20')\n    return modified_string\n",
+    "task_id": "Mbpp/628",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

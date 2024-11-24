@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert frequency([1,2,3], 4) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef frequency(lst, num):\n    count = 0\n    for element in lst:\n        if (element == num):\n            count += 1\n    return count\n",
+    "full_code": "\n\ndef frequency(lst, num):\n    count = 0\n    for element in lst:\n        if (element == num):\n            count += 1\n    return count\n",
+    "task_id": "Mbpp/168",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

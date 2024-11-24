@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert occurance_substring('python programming, python language','python')==('python', 0, 6)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef occurance_substring(main_string: str, substring: str) -> (tuple or None):\n    start_index = main_string.find(substring)\n    if (start_index != (- 1)):\n        end_index = (start_index + len(substring))\n        return (substring, start_index, end_index)\n    return None\n",
+    "full_code": "\n\ndef occurance_substring(main_string: str, substring: str) -> (tuple or None):\n    start_index = main_string.find(substring)\n    if (start_index != (- 1)):\n        end_index = (start_index + len(substring))\n        return (substring, start_index, end_index)\n    return None\n",
+    "task_id": "Mbpp/773",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

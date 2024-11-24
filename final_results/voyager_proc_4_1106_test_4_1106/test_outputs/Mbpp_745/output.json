@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert divisible_by_digits(1,22)==[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef divisible_by_digits(startnum, endnum):\n    valid_numbers = []\n    for num in range(startnum, (endnum + 1)):\n        str_num = str(num)\n        if ('0' in str_num):\n            continue\n        if all((((num % int(digit)) == 0) for digit in str_num)):\n            valid_numbers.append(num)\n    return valid_numbers\n",
+    "full_code": "\n\ndef divisible_by_digits(startnum, endnum):\n    valid_numbers = []\n    for num in range(startnum, (endnum + 1)):\n        str_num = str(num)\n        if ('0' in str_num):\n            continue\n        if all((((num % int(digit)) == 0) for digit in str_num)):\n            valid_numbers.append(num)\n    return valid_numbers\n",
+    "task_id": "Mbpp/745",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

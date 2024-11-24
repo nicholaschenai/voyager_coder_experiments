@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_Even(1) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_Even(number: int) -> bool:\n    return ((number % 2) == 0)\n",
+    "full_code": "\n\ndef is_Even(number: int) -> bool:\n    return ((number % 2) == 0)\n",
+    "task_id": "Mbpp/600",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

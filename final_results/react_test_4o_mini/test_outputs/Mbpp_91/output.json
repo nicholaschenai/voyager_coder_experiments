@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_substring([\"red\", \"black\", \"white\", \"green\", \"orange\"],\"ack\")==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_substring(string_list: list[str], substring: str) -> bool:\n    for string in string_list:\n        if (substring in string):\n            return True\n    return False\n",
+    "full_code": "\n\ndef find_substring(string_list: list[str], substring: str) -> bool:\n    for string in string_list:\n        if (substring in string):\n            return True\n    return False\n",
+    "task_id": "Mbpp/91",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

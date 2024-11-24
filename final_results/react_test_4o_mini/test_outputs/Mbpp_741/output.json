@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert all_Characters_Same(\"python\") == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef all_Characters_Same(s: str) -> bool:\n    if (len(s) <= 1):\n        return True\n    return (len(set(s)) == 1)\n",
+    "full_code": "\n\ndef all_Characters_Same(s: str) -> bool:\n    if (len(s) <= 1):\n        return True\n    return (len(set(s)) == 1)\n",
+    "task_id": "Mbpp/741",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

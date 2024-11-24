@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_sum_increasing_subseq([1, 101, 2, 3, 100, 4, 5 ], 7, 4, 6) == 11\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_sum_increasing_subseq(arr, n, i, k):\n    max_sum = ([0] * n)\n    for j in range((i + 1)):\n        max_sum[j] = arr[j]\n        for m in range(j):\n            if (arr[m] < arr[j]):\n                max_sum[j] = max(max_sum[j], (max_sum[m] + arr[j]))\n    max_sum_with_k = 0\n    for j in range((i + 1)):\n        if (arr[j] < arr[k]):\n            max_sum_with_k = max(max_sum_with_k, (max_sum[j] + arr[k]))\n    return max_sum_with_k\n",
+    "full_code": "\n\ndef max_sum_increasing_subseq(arr, n, i, k):\n    max_sum = ([0] * n)\n    for j in range((i + 1)):\n        max_sum[j] = arr[j]\n        for m in range(j):\n            if (arr[m] < arr[j]):\n                max_sum[j] = max(max_sum[j], (max_sum[m] + arr[j]))\n    max_sum_with_k = 0\n    for j in range((i + 1)):\n        if (arr[j] < arr[k]):\n            max_sum_with_k = max(max_sum_with_k, (max_sum[j] + arr[k]))\n    return max_sum_with_k\n",
+    "task_id": "Mbpp/306",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

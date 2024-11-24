@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert pancake_sort([15, 79, 25, 38, 69]) == [15, 25, 38, 69, 79]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef pancake_sort(arr):\n\n    def flip(sub_arr, k):\n        return (sub_arr[:k][::(- 1)] + sub_arr[k:])\n    n = len(arr)\n    for i in range(n, 1, (- 1)):\n        max_index = arr.index(max(arr[0:i]))\n        if (max_index != (i - 1)):\n            arr = flip(arr, (max_index + 1))\n            arr = flip(arr, i)\n    return arr\n",
+    "full_code": "\n\ndef pancake_sort(arr):\n\n    def flip(sub_arr, k):\n        return (sub_arr[:k][::(- 1)] + sub_arr[k:])\n    n = len(arr)\n    for i in range(n, 1, (- 1)):\n        max_index = arr.index(max(arr[0:i]))\n        if (max_index != (i - 1)):\n            arr = flip(arr, (max_index + 1))\n            arr = flip(arr, i)\n    return arr\n",
+    "task_id": "Mbpp/141",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert new_tuple([\"WEB\", \"is\"], \"best\") == ('WEB', 'is', 'best')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef new_tuple(lst, string):\n    return (*lst, string)\n",
+    "full_code": "\n\ndef new_tuple(lst, string):\n    return (*lst, string)\n",
+    "task_id": "Mbpp/788",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

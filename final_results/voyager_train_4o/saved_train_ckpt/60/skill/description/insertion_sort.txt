@@ -1,0 +1,5 @@
+
+[description for function: insertion_sort]
+This function sorts a list of elements in ascending order using the insertion sort algorithm. It iterates through each element in the list, comparing it with the elements before it and shifting those elements to the right until the correct position for the current element is found. The current element is then placed in its appropriate position, effectively building a sorted portion of the list incrementally. The process continues until all elements have been processed. Finally, the sorted list is returned. This algorithm has a time complexity of O(n^2) in the average and worst cases.
+
+[end of description]

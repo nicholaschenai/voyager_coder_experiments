@@ -1,0 +1,5 @@
+
+[description for function: fibonacci_memo]
+This function calculates the nth Fibonacci number using memoization to optimize performance by storing previously computed values. It checks if the result for the given n is already in the memo dictionary; if so, it returns that value. For base cases, it returns 0 for n equal to 0 and 1 for n equal to 1. If n is greater than 1, it recursively computes the Fibonacci number by summing the results of the two preceding numbers while storing the result in the memo dictionary. This approach significantly reduces the number of calculations needed for larger values of n. Ultimately, it returns the nth Fibonacci number efficiently.
+
+[end of description]

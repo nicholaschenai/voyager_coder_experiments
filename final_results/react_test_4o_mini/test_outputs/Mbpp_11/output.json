@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_Occ(\"hello\",\"l\") == \"heo\"\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_Occ(s: str, char: str) -> str:\n    first_index = s.find(char)\n    last_index = s.rfind(char)\n    if ((first_index == (- 1)) or (first_index == last_index)):\n        return s.replace(char, '', 1)\n    new_string = ((s[:first_index] + s[(first_index + 1):last_index]) + s[(last_index + 1):])\n    return new_string\n",
+    "full_code": "\n\ndef remove_Occ(s: str, char: str) -> str:\n    first_index = s.find(char)\n    last_index = s.rfind(char)\n    if ((first_index == (- 1)) or (first_index == last_index)):\n        return s.replace(char, '', 1)\n    new_string = ((s[:first_index] + s[(first_index + 1):last_index]) + s[(last_index + 1):])\n    return new_string\n",
+    "task_id": "Mbpp/11",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

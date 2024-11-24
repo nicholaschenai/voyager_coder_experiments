@@ -1,0 +1,5 @@
+
+[description for function: char_frequency_histogram]
+This function takes a string as input and calculates the frequency of each alphabetical character, ignoring case. It initializes an empty dictionary to store character counts. As it iterates through each character in the string, it converts the character to lowercase and checks if it is an alphabetic character. If the character is already in the dictionary, its count is incremented; otherwise, it is added with a count of one. Finally, the function returns the dictionary containing the frequency of each character.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert add_string([1,2,3,4],'temp{0}')==['temp1', 'temp2', 'temp3', 'temp4']\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef add_string(elements, format_string):\n    return [format_string.format(element) for element in elements]\n",
+    "full_code": "\n\ndef add_string(elements, format_string):\n    return [format_string.format(element) for element in elements]\n",
+    "task_id": "Mbpp/390",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

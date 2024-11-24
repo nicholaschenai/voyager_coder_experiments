@@ -1,0 +1,5 @@
+
+[description for function: length_of_longest_substring]
+This function calculates the length of the longest substring without repeating characters in a given string. It uses a sliding window approach, maintaining a set of characters currently in the substring. As it iterates through the string, it expands the end of the window and adjusts the start when a duplicate character is found. The maximum length of valid substrings is updated throughout the process. Finally, it returns the length of the longest substring identified. The function efficiently handles the input string in linear time.
+
+[end of description]

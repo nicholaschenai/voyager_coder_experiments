@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert longest_substring_k_distinct('aabbcc', 1) == 2\nassert longest_substring_k_distinct('aabbcc', 2) == 4\n\nTests failed:\nassert longest_substring_k_distinct('abcadcacacaca', 3) == 9 # output: 11",
+    "state": null,
+    "code": "\n\ndef longest_substring_k_distinct(s: str, k: int) -> int:\n    if ((k == 0) or (not s)):\n        return 0\n    char_count = {}\n    left = 0\n    max_length = 0\n    for right in range(len(s)):\n        char_count[s[right]] = (char_count.get(s[right], 0) + 1)\n        while (len(char_count) > k):\n            char_count[s[left]] -= 1\n            if (char_count[s[left]] == 0):\n                del char_count[s[left]]\n            left += 1\n        if (len(char_count) == k):\n            max_length = max(max_length, ((right - left) + 1))\n    return max_length\n",
+    "full_code": "\n\ndef longest_substring_k_distinct(s: str, k: int) -> int:\n    if ((k == 0) or (not s)):\n        return 0\n    char_count = {}\n    left = 0\n    max_length = 0\n    for right in range(len(s)):\n        char_count[s[right]] = (char_count.get(s[right], 0) + 1)\n        while (len(char_count) > k):\n            char_count[s[left]] -= 1\n            if (char_count[s[left]] == 0):\n                del char_count[s[left]]\n            left += 1\n        if (len(char_count) == k):\n            max_length = max(max_length, ((right - left) + 1))\n    return max_length\n",
+    "task_id": "96",
+    "reasoning": "The implementation failed the test case where the longest substring with exactly k distinct characters is not the one ending at the last occurrence of a character. The function incorrectly includes additional characters beyond the required k distinct characters.",
+    "success": false,
+    "critique": "The function should not update the max_length when the window contains more than k distinct characters. To fix this, the condition to update max_length should be moved inside the while loop, right after shrinking the window and ensuring the number of distinct characters is exactly k. This ensures that max_length is updated only for valid substrings."
+}

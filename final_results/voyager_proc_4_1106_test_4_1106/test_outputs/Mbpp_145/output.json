@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_Abs_Diff((2,1,5,3)) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_Abs_Diff(arr):\n    max_val = max(arr)\n    min_val = min(arr)\n    difference = (max_val - min_val)\n    return difference\n",
+    "full_code": "\n\ndef max_Abs_Diff(arr):\n    max_val = max(arr)\n    min_val = min(arr)\n    difference = (max_val - min_val)\n    return difference\n",
+    "task_id": "Mbpp/145",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

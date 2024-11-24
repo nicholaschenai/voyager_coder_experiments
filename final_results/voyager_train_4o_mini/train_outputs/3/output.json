@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_unique_integers([1, 2, 3, 2, 1, 4]) == [3, 4]\nassert find_unique_integers([1, 1, 1, 1]) == []\nassert find_unique_integers([5, 6, 7, 5, 6, 8]) == [7, 8]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n\n\n\n\ndef find_unique_integers(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    return unique_integers\n",
+    "full_code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n\n\n\n\ndef find_unique_integers(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    return unique_integers\n",
+    "task_id": "3",
+    "reasoning": "The implementation successfully meets the task requirements as all unit tests passed without any failures.",
+    "success": true,
+    "critique": "Great job! Your function correctly identifies unique integers in the list and passes all the provided test cases."
+}

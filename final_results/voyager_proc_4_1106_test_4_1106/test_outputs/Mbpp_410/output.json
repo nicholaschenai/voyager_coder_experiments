@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert min_val(['Python', 3, 2, 4, 5, 'version'])==2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef min_val(heterogeneous_list):\n    numeric_values = [x for x in heterogeneous_list if isinstance(x, (int, float))]\n    return (min(numeric_values) if numeric_values else None)\n",
+    "full_code": "\n\ndef min_val(heterogeneous_list):\n    numeric_values = [x for x in heterogeneous_list if isinstance(x, (int, float))]\n    return (min(numeric_values) if numeric_values else None)\n",
+    "task_id": "Mbpp/410",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

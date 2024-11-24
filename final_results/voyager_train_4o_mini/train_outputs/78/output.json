@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert exclude_integers([1, 2, 3, 4, 5, 6], excluded_set) == [1, 3, 5]\nassert exclude_integers([10, 20, 30, 40], excluded_set) == [10, 20, 30, 40]\nassert exclude_integers([2, 4, 6], excluded_set) == []\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef filter_excluded_numbers(int_list, excluded_set):\n    return [num for num in int_list if (num not in excluded_set)]\n\n\n\n\ndef exclude_integers(int_list, excluded_set):\n    return filter_excluded_numbers(int_list, excluded_set)\n",
+    "full_code": "\n\ndef filter_excluded_numbers(int_list, excluded_set):\n    return [num for num in int_list if (num not in excluded_set)]\n\n\n\n\ndef exclude_integers(int_list, excluded_set):\n    return filter_excluded_numbers(int_list, excluded_set)\n",
+    "task_id": "78",
+    "reasoning": "The implementation successfully meets the task requirements as all unit tests passed without any failures. The function correctly filters out the integers that are present in the excluded set, returning the expected results for all test cases.",
+    "success": true,
+    "critique": "Great job! Your implementation is correct and efficient. You might consider adding type hints to your function parameters for better readability and maintainability."
+}

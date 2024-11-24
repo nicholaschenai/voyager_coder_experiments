@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_digits(345)==12\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_digits(n: int) -> int:\n    return sum((int(digit) for digit in str(n)))\n",
+    "full_code": "\n\ndef sum_digits(n: int) -> int:\n    return sum((int(digit) for digit in str(n)))\n",
+    "task_id": "Mbpp/566",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

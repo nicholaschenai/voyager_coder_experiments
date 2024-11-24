@@ -1,0 +1,5 @@
+
+[description for function: climbing_stairs]
+This function calculates the number of distinct ways to climb a staircase with `n` steps, where one can take 1, 2, or 3 steps at a time. It uses memoization to optimize the computation by storing previously calculated results for specific step counts. The base case returns 1 when there are zero steps to climb, indicating one way to stay at the ground level. If the number of steps is negative, it returns 0, as there are no valid ways to climb. The function recursively sums the ways to reach the current step by considering the last step taken as either 1, 2, or 3 steps back. Finally, it returns the total number of ways to climb the staircase for the given number of steps.
+
+[end of description]

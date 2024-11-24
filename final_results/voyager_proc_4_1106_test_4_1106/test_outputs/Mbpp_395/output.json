@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert first_non_repeating_character(\"abcabc\") == None\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef first_non_repeating_character(s):\n    char_count = {}\n    for char in s:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    for char in s:\n        if (char_count[char] == 1):\n            return char\n    return None\n",
+    "full_code": "\n\ndef first_non_repeating_character(s):\n    char_count = {}\n    for char in s:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    for char in s:\n        if (char_count[char] == 1):\n            return char\n    return None\n",
+    "task_id": "Mbpp/395",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

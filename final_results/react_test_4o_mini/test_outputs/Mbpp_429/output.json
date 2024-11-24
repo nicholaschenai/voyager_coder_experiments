@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert and_tuples((10, 4, 6, 9), (5, 2, 3, 3)) == (0, 0, 2, 1)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef and_tuples(tuple1, tuple2):\n    return tuple(((a & b) for (a, b) in zip(tuple1, tuple2)))\n",
+    "full_code": "\n\ndef and_tuples(tuple1, tuple2):\n    return tuple(((a & b) for (a, b) in zip(tuple1, tuple2)))\n",
+    "task_id": "Mbpp/429",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

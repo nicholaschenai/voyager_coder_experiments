@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert text_lowercase_underscore(\"aab_cbbbc\")==(True)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef text_lowercase_underscore(s):\n    pattern = '^[a-z]+(_[a-z]+)*$'\n    return (re.fullmatch(pattern, s) is not None)\n",
+    "full_code": "import re\n\ndef text_lowercase_underscore(s):\n    pattern = '^[a-z]+(_[a-z]+)*$'\n    return (re.fullmatch(pattern, s) is not None)\n",
+    "task_id": "Mbpp/16",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

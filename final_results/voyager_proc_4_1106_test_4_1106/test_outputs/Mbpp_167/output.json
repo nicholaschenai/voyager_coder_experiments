@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert next_power_of_2(0) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef next_power_of_2(n: int) -> int:\n    if (n <= 0):\n        return 1\n    power = 1\n    while (power < n):\n        power *= 2\n    return power\n",
+    "full_code": "\n\ndef next_power_of_2(n: int) -> int:\n    if (n <= 0):\n        return 1\n    power = 1\n    while (power < n):\n        power *= 2\n    return power\n",
+    "task_id": "Mbpp/167",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert prime_factors(60) == [2, 2, 3, 5]\nassert prime_factors(13) == [13]\nassert prime_factors(100) == [2, 2, 5, 5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef prime_factors(n):\n    factors = []\n    while ((n % 2) == 0):\n        factors.append(2)\n        n //= 2\n    for i in range(3, (int((n ** 0.5)) + 1), 2):\n        while ((n % i) == 0):\n            factors.append(i)\n            n //= i\n    if (n > 2):\n        factors.append(n)\n    return factors\n",
+    "full_code": "\n\ndef prime_factors(n):\n    factors = []\n    while ((n % 2) == 0):\n        factors.append(2)\n        n //= 2\n    for i in range(3, (int((n ** 0.5)) + 1), 2):\n        while ((n % i) == 0):\n            factors.append(i)\n            n //= i\n    if (n > 2):\n        factors.append(n)\n    return factors\n",
+    "task_id": "95",
+    "reasoning": "The function implementation passed all provided unit tests, which cover various scenarios including a composite number with multiple prime factors, a prime number, and a perfect square.",
+    "success": true,
+    "critique": "The function correctly implements the task requirements. However, it is important to consider additional edge cases such as the input of 1 (which has no prime factors) and negative numbers (which are not considered for prime factorization in the standard sense). Adding checks for these cases would make the function more robust."
+}

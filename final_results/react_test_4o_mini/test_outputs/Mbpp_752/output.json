@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert jacobsthal_num(5) == 11\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef jacobsthal_num(n: int) -> int:\n    if (n == 0):\n        return 0\n    elif (n == 1):\n        return 1\n    (j0, j1) = (0, 1)\n    for i in range(2, (n + 1)):\n        j_next = (j1 + (2 * j0))\n        (j0, j1) = (j1, j_next)\n    return j1\n",
+    "full_code": "\n\ndef jacobsthal_num(n: int) -> int:\n    if (n == 0):\n        return 0\n    elif (n == 1):\n        return 1\n    (j0, j1) = (0, 1)\n    for i in range(2, (n + 1)):\n        j_next = (j1 + (2 * j0))\n        (j0, j1) = (j1, j_next)\n    return j1\n",
+    "task_id": "Mbpp/752",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

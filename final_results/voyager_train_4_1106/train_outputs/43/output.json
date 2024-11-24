@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert pairwise_differences([1, 1, 1, 1]) == [0, 0, 0]\n\nTests failed:\nassert pairwise_differences([5, 2, 9, 1]) == [3, 7, 8] # output: [3, -7, 8]\nassert pairwise_differences([10, -10, 10, -10, 10]) == [20, 20, 20, 20] # output: [20, -20, 20, -20]",
+    "state": null,
+    "code": "\n\ndef pairwise_differences(nums):\n    differences = []\n    for i in range((len(nums) - 1)):\n        diff = (nums[i] - nums[(i + 1)])\n        differences.append(diff)\n    return differences\n",
+    "full_code": "\n\ndef pairwise_differences(nums):\n    differences = []\n    for i in range((len(nums) - 1)):\n        diff = (nums[i] - nums[(i + 1)])\n        differences.append(diff)\n    return differences\n",
+    "task_id": "43",
+    "reasoning": "The implementation incorrectly calculates the differences by subtracting the next element from the current element, instead of the other way around.",
+    "success": false,
+    "critique": "The subtraction in the implementation should be reversed to calculate the difference correctly. Change the line diff = (nums[i] - nums[(i + 1)]) to diff = (nums[i + 1] - nums[i]) to get the correct difference between each adjacent pair."
+}

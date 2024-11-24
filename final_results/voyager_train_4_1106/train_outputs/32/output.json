@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert merge_sort([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]) == [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]\nassert merge_sort([]) == []\nassert merge_sort([5, -1, 3, -2, 4, 1]) == [-2, -1, 1, 3, 4, 5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef merge(left, right):\n    sorted_list = []\n    i = j = 0\n    while ((i < len(left)) and (j < len(right))):\n        if (left[i] < right[j]):\n            sorted_list.append(left[i])\n            i += 1\n        else:\n            sorted_list.append(right[j])\n            j += 1\n    sorted_list.extend(left[i:])\n    sorted_list.extend(right[j:])\n    return sorted_list\n\n\n\n\ndef merge_sort(arr):\n    if (len(arr) <= 1):\n        return arr\n    mid = (len(arr) // 2)\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    sorted_left = merge_sort(left_half)\n    sorted_right = merge_sort(right_half)\n    return merge(sorted_left, sorted_right)\n",
+    "full_code": "\n\ndef merge(left, right):\n    sorted_list = []\n    i = j = 0\n    while ((i < len(left)) and (j < len(right))):\n        if (left[i] < right[j]):\n            sorted_list.append(left[i])\n            i += 1\n        else:\n            sorted_list.append(right[j])\n            j += 1\n    sorted_list.extend(left[i:])\n    sorted_list.extend(right[j:])\n    return sorted_list\n\n\n\n\ndef merge_sort(arr):\n    if (len(arr) <= 1):\n        return arr\n    mid = (len(arr) // 2)\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    sorted_left = merge_sort(left_half)\n    sorted_right = merge_sort(right_half)\n    return merge(sorted_left, sorted_right)\n",
+    "task_id": "32",
+    "reasoning": "The function implementation passed all the provided unit tests, which cover a variety of cases including an empty list, a list with negative and positive integers, and a list with repeated elements.",
+    "success": true,
+    "critique": "The implementation correctly follows the merge sort algorithm and does not modify the original list. No changes are suggested as the task requirements are met."
+}

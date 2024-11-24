@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_woodall(383) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_woodall(num: int) -> bool:\n    n = 0\n    while True:\n        woodall_number = ((n * (2 ** n)) - 1)\n        if (woodall_number == num):\n            return True\n        elif (woodall_number > num):\n            return False\n        n += 1\n",
+    "full_code": "\n\ndef is_woodall(num: int) -> bool:\n    n = 0\n    while True:\n        woodall_number = ((n * (2 ** n)) - 1)\n        if (woodall_number == num):\n            return True\n        elif (woodall_number > num):\n            return False\n        n += 1\n",
+    "task_id": "Mbpp/20",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

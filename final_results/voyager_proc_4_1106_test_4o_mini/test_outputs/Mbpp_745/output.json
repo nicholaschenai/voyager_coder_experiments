@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert divisible_by_digits(1,22)==[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22] # output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 20, 22]",
+    "state": null,
+    "code": "\n\ndef divisible_by_digits(startnum: int, endnum: int) -> list:\n    result = []\n    for num in range(startnum, (endnum + 1)):\n        str_num = str(num)\n        if all((((num % int(digit)) == 0) for digit in str_num if (digit != '0'))):\n            result.append(num)\n    return result\n",
+    "full_code": "\n\ndef divisible_by_digits(startnum: int, endnum: int) -> list:\n    result = []\n    for num in range(startnum, (endnum + 1)):\n        str_num = str(num)\n        if all((((num % int(digit)) == 0) for digit in str_num if (digit != '0'))):\n            result.append(num)\n    return result\n",
+    "task_id": "Mbpp/745",
+    "reasoning": "The implementation failed the test case because it incorrectly includes the number 10 and excludes the number 20, which do not meet the criteria of being divisible by all their digits. Specifically, 10 is not divisible by 0, and 20 is not divisible by 2 when considering the digits of the number.",
+    "success": false,
+    "critique": "The issue arises from the way the condition is structured in the `if` statement. The current implementation checks if the number is divisible by each digit, but it does not properly handle the case where a number contains a digit that is not a divisor (like 0). To fix this, ensure that the condition checks for divisibility only for non-zero digits and that the logic correctly excludes numbers that are not divisible by all their digits. You can also simplify the generator expression to ensure clarity."
+}

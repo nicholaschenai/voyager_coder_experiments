@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert replace_blank(\"hello people\",'@')==(\"hello@people\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef replace_blank(input_string, replacement_char):\n    return input_string.replace(' ', replacement_char)\n",
+    "full_code": "\n\ndef replace_blank(input_string, replacement_char):\n    return input_string.replace(' ', replacement_char)\n",
+    "task_id": "Mbpp/230",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

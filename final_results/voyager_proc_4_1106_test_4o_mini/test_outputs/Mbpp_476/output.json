@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert big_sum([1,2,3]) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef big_sum(arr):\n    if (not arr):\n        raise ValueError('List must contain at least one integer.')\n    smallest = min(arr)\n    largest = max(arr)\n    return (smallest + largest)\n",
+    "full_code": "\n\ndef big_sum(arr):\n    if (not arr):\n        raise ValueError('List must contain at least one integer.')\n    smallest = min(arr)\n    largest = max(arr)\n    return (smallest + largest)\n",
+    "task_id": "Mbpp/476",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,5 @@
+
+[description for function: sum_of_digits]
+This function calculates the sum of the digits of a given integer. It converts the integer into a string to iterate over each digit. Each digit is then converted back to an integer and added to a running total. Finally, the function returns the total sum of the digits. It effectively handles any non-negative integer input. The result provides a simple way to analyze the individual components of the number.
+
+[end of description]

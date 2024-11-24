@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_uppercase('cAstyoUrFavoRitETVshoWs') == 'cstyoravoitshos'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_uppercase(s):\n    return ''.join([char for char in s if (not char.isupper())])\n",
+    "full_code": "\n\ndef remove_uppercase(s):\n    return ''.join([char for char in s if (not char.isupper())])\n",
+    "task_id": "Mbpp/459",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(similar_elements((3, 4, 5, 6),(5, 7, 4, 10))) == set((4, 5))\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef similar_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    shared_elements = set1.intersection(set2)\n    return shared_elements\n",
+    "full_code": "\n\ndef similar_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    shared_elements = set1.intersection(set2)\n    return shared_elements\n",
+    "task_id": "Mbpp/2",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

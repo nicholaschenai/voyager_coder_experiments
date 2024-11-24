@@ -1,0 +1,5 @@
+
+[description for function: first_non_repeating_char]
+This function takes a string as input and counts the occurrences of each character in it. It uses a dictionary to store the count of each character. After counting, it iterates through the string again to find the first character that appears only once. If such a character is found, it is returned as the result. If no non-repeating character exists, the function returns None. This effectively identifies the first unique character in the given string.
+
+[end of description]

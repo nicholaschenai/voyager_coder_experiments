@@ -1,0 +1,5 @@
+
+[description for function: replace_with_greatest_on_right]
+This function takes a list of numbers as input and creates a new list where each element is replaced by the greatest number to its right in the original list. It initializes a result list filled with zeros and a variable to keep track of the maximum value encountered so far, starting from -1. The function iterates through the input list in reverse order, updating the result list with the maximum value found to the right of each element. After processing all elements, it returns the result list. The final output will have the same length as the input list, with each position reflecting the greatest value to the right of that index. If there are no elements to the right, the position will contain -1.
+
+[end of description]

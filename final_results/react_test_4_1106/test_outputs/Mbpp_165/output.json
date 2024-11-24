@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_char_position(\"xbcefg\") == 2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_char_position(s):\n    count = 0\n    s = s.lower()\n    for (index, char) in enumerate(s):\n        position = ((ord(char) - ord('a')) + 1)\n        if (position == (index + 1)):\n            count += 1\n    return count\n",
+    "full_code": "\n\ndef count_char_position(s):\n    count = 0\n    s = s.lower()\n    for (index, char) in enumerate(s):\n        position = ((ord(char) - ord('a')) + 1)\n        if (position == (index + 1)):\n            count += 1\n    return count\n",
+    "task_id": "Mbpp/165",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

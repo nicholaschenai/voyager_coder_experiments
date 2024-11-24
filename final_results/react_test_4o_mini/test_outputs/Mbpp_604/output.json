@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert reverse_words(\"python program\")==(\"program python\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef reverse_words(s: str) -> str:\n    words = s.split()\n    words.reverse()\n    return ' '.join(words)\n",
+    "full_code": "\n\ndef reverse_words(s: str) -> str:\n    words = s.split()\n    words.reverse()\n    return ' '.join(words)\n",
+    "task_id": "Mbpp/604",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

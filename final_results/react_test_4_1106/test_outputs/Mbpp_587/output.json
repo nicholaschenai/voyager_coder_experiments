@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert list_tuple([5, 10, 7, 4, 15, 3])==(5, 10, 7, 4, 15, 3)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef list_tuple(input_list):\n    return tuple(input_list)\n",
+    "full_code": "\n\ndef list_tuple(input_list):\n    return tuple(input_list)\n",
+    "task_id": "Mbpp/587",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

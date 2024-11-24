@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert unique_sublists([[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]] )=={(1, 3): 2, (5, 7): 2, (13, 15, 17): 1, (9, 11): 1}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef unique_sublists(lst_of_lsts):\n    count_dict = {}\n    for sublist in lst_of_lsts:\n        tuple_sublist = tuple(sublist)\n        if (tuple_sublist in count_dict):\n            count_dict[tuple_sublist] += 1\n        else:\n            count_dict[tuple_sublist] = 1\n    return count_dict\n",
+    "full_code": "\n\ndef unique_sublists(lst_of_lsts):\n    count_dict = {}\n    for sublist in lst_of_lsts:\n        tuple_sublist = tuple(sublist)\n        if (tuple_sublist in count_dict):\n            count_dict[tuple_sublist] += 1\n        else:\n            count_dict[tuple_sublist] = 1\n    return count_dict\n",
+    "task_id": "Mbpp/758",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

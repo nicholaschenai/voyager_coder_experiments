@@ -1,0 +1,5 @@
+
+[description for function: bfs_adjacency_matrix]
+This function performs a breadth-first search (BFS) on a graph represented by an adjacency matrix, starting from the first node (index 0). It maintains a set of visited nodes to avoid processing the same node multiple times and uses a queue to explore neighboring nodes. As it traverses the graph, it records the order in which nodes are visited. The function iterates through the neighbors of the current node, adding unvisited and connected neighbors to the queue. Finally, it returns a list of nodes in the order they were visited. This approach effectively explores all reachable nodes from the starting point in a systematic manner.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_Index(2) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_Index(n: int) -> int:\n    if (n <= 0):\n        raise ValueError('Input must be a positive integer greater than 0.')\n    index = 1\n    while True:\n        triangular_number = ((index * (index + 1)) // 2)\n        if (len(str(triangular_number)) == n):\n            return index\n        index += 1\n",
+    "full_code": "\n\ndef find_Index(n: int) -> int:\n    if (n <= 0):\n        raise ValueError('Input must be a positive integer greater than 0.')\n    index = 1\n    while True:\n        triangular_number = ((index * (index + 1)) // 2)\n        if (len(str(triangular_number)) == n):\n            return index\n        index += 1\n",
+    "task_id": "Mbpp/739",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

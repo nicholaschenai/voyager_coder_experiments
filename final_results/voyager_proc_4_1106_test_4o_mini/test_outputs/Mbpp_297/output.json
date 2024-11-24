@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert flatten_list([0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]])==[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef flatten_list(nested_list):\n    flattened = []\n    for element in nested_list:\n        if isinstance(element, list):\n            flattened.extend(flatten_list(element))\n        else:\n            flattened.append(element)\n    return flattened\n",
+    "full_code": "\n\ndef flatten_list(nested_list):\n    flattened = []\n    for element in nested_list:\n        if isinstance(element, list):\n            flattened.extend(flatten_list(element))\n        else:\n            flattened.append(element)\n    return flattened\n",
+    "task_id": "Mbpp/297",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_remainder([ 100, 10, 5, 25, 35, 14 ],11) ==9\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_remainder(arr, n):\n    product = 1\n    for num in arr:\n        product = ((product * num) % n)\n    return product\n",
+    "full_code": "\n\ndef find_remainder(arr, n):\n    product = 1\n    for num in arr:\n        product = ((product * num) % n)\n    return product\n",
+    "task_id": "Mbpp/471",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

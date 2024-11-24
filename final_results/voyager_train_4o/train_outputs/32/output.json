@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert index_tracker([1, 2, 3, 2, 1]) == {1: [0, 4], 2: [1, 3], 3: [2]}\nassert index_tracker([4, 4, 4, 4]) == {4: [0, 1, 2, 3]}\nassert index_tracker([10, 20, 10, 30, 20, 10]) == {10: [0, 2, 5], 20: [1, 4], 30: [3]}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef index_tracker(int_list):\n    index_dict = {}\n    for (index, value) in enumerate(int_list):\n        if (value not in index_dict):\n            index_dict[value] = []\n        index_dict[value].append(index)\n    return index_dict\n",
+    "full_code": "\n\ndef index_tracker(int_list):\n    index_dict = {}\n    for (index, value) in enumerate(int_list):\n        if (value not in index_dict):\n            index_dict[value] = []\n        index_dict[value].append(index)\n    return index_dict\n",
+    "task_id": "32",
+    "reasoning": "The function implementation correctly iterates over the list of integers, using a dictionary to map each integer to a list of indices where it appears. The use of enumerate allows for easy tracking of indices, and the logic to check if a value is already a key in the dictionary is correctly implemented. The function passes all provided test cases, indicating it meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. It successfully creates a dictionary with integers as keys and lists of their indices as values. No changes are necessary."
+}

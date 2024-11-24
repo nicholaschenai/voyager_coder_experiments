@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_of_nth([[5, 6, 7], [1, 3, 5], [8, 9, 19]], 2) == 19\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_of_nth(matrix, n):\n    nth_column = [row[n] for row in matrix]\n    max_value = max(nth_column)\n    return max_value\n",
+    "full_code": "\n\ndef max_of_nth(matrix, n):\n    nth_column = [row[n] for row in matrix]\n    max_value = max(nth_column)\n    return max_value\n",
+    "task_id": "Mbpp/611",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,5 @@
+
+[description for function: evaluate_expression]
+This function evaluates a simple mathematical expression consisting of non-negative integers and the operators '+' and '-'. It iterates through each character in the expression, constructing numbers and applying the current operator to a cumulative result. When a non-digit character is encountered, it updates the result based on the last operator and resets the current number. After processing all characters, it ensures the last number is accounted for in the final result. The function returns the computed result as an integer. It handles expressions without parentheses or multiplication/division.
+
+[end of description]

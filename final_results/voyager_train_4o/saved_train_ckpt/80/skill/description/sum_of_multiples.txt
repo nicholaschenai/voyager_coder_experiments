@@ -1,0 +1,5 @@
+
+[description for function: sum_of_multiples]
+This function calculates the sum of all numbers in a given list that are multiples of either 3 or 5. It initializes a total sum to zero and iterates through each number in the list. For each number, it checks if it is divisible by 3 or 5. If the condition is met, the number is added to the total sum. Finally, the function returns the computed total sum. This effectively provides the sum of all qualifying multiples from the input list.
+
+[end of description]

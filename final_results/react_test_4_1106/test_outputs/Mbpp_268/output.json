@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_star_num(3) == 37\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_star_num(n):\n    return (((6 * n) * (n - 1)) + 1)\n",
+    "full_code": "\n\ndef find_star_num(n):\n    return (((6 * n) * (n - 1)) + 1)\n",
+    "task_id": "Mbpp/268",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

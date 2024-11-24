@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_K((10, 4, 5, 6, 8), 6) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_K(tup, k):\n    return (k in tup)\n",
+    "full_code": "\n\ndef check_K(tup, k):\n    return (k in tup)\n",
+    "task_id": "Mbpp/808",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

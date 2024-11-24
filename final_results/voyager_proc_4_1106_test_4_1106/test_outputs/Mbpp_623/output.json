@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert nth_nums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],2)==[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef nth_nums(numbers, n):\n    return [(x ** n) for x in numbers]\n",
+    "full_code": "\n\ndef nth_nums(numbers, n):\n    return [(x ** n) for x in numbers]\n",
+    "task_id": "Mbpp/623",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

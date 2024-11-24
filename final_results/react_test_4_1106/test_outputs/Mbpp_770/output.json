@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert odd_num_sum(2) == 82\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef odd_num_sum(n):\n    total_sum = 0\n    for i in range(n):\n        odd_number = ((2 * i) + 1)\n        total_sum += (odd_number ** 4)\n    return total_sum\n",
+    "full_code": "\n\ndef odd_num_sum(n):\n    total_sum = 0\n    for i in range(n):\n        odd_number = ((2 * i) + 1)\n        total_sum += (odd_number ** 4)\n    return total_sum\n",
+    "task_id": "Mbpp/770",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert odd_length_sum([1,2,4]) == 14\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef odd_length_sum(arr):\n    total_sum = 0\n    n = len(arr)\n    for start in range(n):\n        for end in range(start, n):\n            if ((((end - start) + 1) % 2) == 1):\n                total_sum += sum(arr[start:(end + 1)])\n    return total_sum\n",
+    "full_code": "\n\ndef odd_length_sum(arr):\n    total_sum = 0\n    n = len(arr)\n    for start in range(n):\n        for end in range(start, n):\n            if ((((end - start) + 1) % 2) == 1):\n                total_sum += sum(arr[start:(end + 1)])\n    return total_sum\n",
+    "task_id": "Mbpp/782",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

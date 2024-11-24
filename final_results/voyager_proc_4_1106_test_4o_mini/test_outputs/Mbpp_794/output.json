@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert text_starta_endb(\"aabbbb\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef text_starta_endb(s: str) -> bool:\n    pattern = '^a.*b$'\n    return bool(re.fullmatch(pattern, s))\n",
+    "full_code": "import re\n\ndef text_starta_endb(s: str) -> bool:\n    pattern = '^a.*b$'\n    return bool(re.fullmatch(pattern, s))\n",
+    "task_id": "Mbpp/794",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

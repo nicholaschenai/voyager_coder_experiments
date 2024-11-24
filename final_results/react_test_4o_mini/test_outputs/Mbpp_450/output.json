@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert extract_string(['Python', 'list', 'exercises', 'practice', 'solution'] ,8)==['practice', 'solution']\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef extract_string(string_list, size):\n    result = []\n    for string in string_list:\n        if (len(string) == size):\n            result.append(string)\n    return result\n",
+    "full_code": "\n\ndef extract_string(string_list, size):\n    result = []\n    for string in string_list:\n        if (len(string) == size):\n            result.append(string)\n    return result\n",
+    "task_id": "Mbpp/450",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

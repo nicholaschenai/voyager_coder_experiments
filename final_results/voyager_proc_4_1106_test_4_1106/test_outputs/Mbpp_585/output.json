@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert expensive_items([{'name': 'Item-1', 'price': 101.1},{'name': 'Item-2', 'price': 555.22}],1)==[{'name': 'Item-2', 'price': 555.22}]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef expensive_items(items, n):\n    sorted_items = sorted(items, key=(lambda x: x['price']), reverse=True)\n    return sorted_items[:n]\n",
+    "full_code": "\n\ndef expensive_items(items, n):\n    sorted_items = sorted(items, key=(lambda x: x['price']), reverse=True)\n    return sorted_items[:n]\n",
+    "task_id": "Mbpp/585",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

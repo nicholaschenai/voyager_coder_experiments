@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert not is_perfect_square(10)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef is_perfect_square(num: int) -> bool:\n    if (num < 0):\n        return False\n    root = math.isqrt(num)\n    return ((root * root) == num)\n",
+    "full_code": "import math\n\ndef is_perfect_square(num: int) -> bool:\n    if (num < 0):\n        return False\n    root = math.isqrt(num)\n    return ((root * root) == num)\n",
+    "task_id": "Mbpp/803",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert selection_sort([64, 25, 12, 22, 11]) == [11, 12, 22, 25, 64]\nassert selection_sort([5, 3, 8, 6, 2]) == [2, 3, 5, 6, 8]\nassert selection_sort([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef selection_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        min_index = i\n        for j in range((i + 1), n):\n            if (arr[j] < arr[min_index]):\n                min_index = j\n        (arr[i], arr[min_index]) = (arr[min_index], arr[i])\n    return arr\n",
+    "full_code": "\n\ndef selection_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        min_index = i\n        for j in range((i + 1), n):\n            if (arr[j] < arr[min_index]):\n                min_index = j\n        (arr[i], arr[min_index]) = (arr[min_index], arr[i])\n    return arr\n",
+    "task_id": "44",
+    "reasoning": "The function implementation correctly follows the selection sort algorithm. It iterates through the list, finds the minimum element in the unsorted portion, and swaps it with the first element of the unsorted part. The unit tests provided cover various scenarios, including an already sorted list, and all tests pass successfully, indicating that the function works as intended.",
+    "success": true,
+    "critique": "The implementation is correct and meets the task requirements. No changes are necessary. You have successfully implemented the selection sort algorithm."
+}

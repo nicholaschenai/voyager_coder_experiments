@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_total_number_of_sequences(10, 4) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_total_number_of_sequences(m, n, start=1, memo=None):\n    if (memo is None):\n        memo = {}\n    if (n == 1):\n        return max(0, ((m - start) + 1))\n    if ((m, n, start) in memo):\n        return memo[(m, n, start)]\n    total_sequences = 0\n    for x in range(start, (m + 1)):\n        next_start = (2 * x)\n        if (next_start > m):\n            break\n        total_sequences += get_total_number_of_sequences(m, (n - 1), next_start, memo)\n    memo[(m, n, start)] = total_sequences\n    return total_sequences\n",
+    "full_code": "\n\ndef get_total_number_of_sequences(m, n, start=1, memo=None):\n    if (memo is None):\n        memo = {}\n    if (n == 1):\n        return max(0, ((m - start) + 1))\n    if ((m, n, start) in memo):\n        return memo[(m, n, start)]\n    total_sequences = 0\n    for x in range(start, (m + 1)):\n        next_start = (2 * x)\n        if (next_start > m):\n            break\n        total_sequences += get_total_number_of_sequences(m, (n - 1), next_start, memo)\n    memo[(m, n, start)] = total_sequences\n    return total_sequences\n",
+    "task_id": "Mbpp/239",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

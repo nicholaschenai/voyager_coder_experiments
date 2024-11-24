@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert capital_words_spaces(\"Python\") == 'Python'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef capital_words_spaces(s: str) -> str:\n    result = (s[0] if s else '')\n    for char in s[1:]:\n        if char.isupper():\n            result += ' '\n        result += char\n    return result\n",
+    "full_code": "\n\ndef capital_words_spaces(s: str) -> str:\n    result = (s[0] if s else '')\n    for char in s[1:]:\n        if char.isupper():\n            result += ' '\n        result += char\n    return result\n",
+    "task_id": "Mbpp/748",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

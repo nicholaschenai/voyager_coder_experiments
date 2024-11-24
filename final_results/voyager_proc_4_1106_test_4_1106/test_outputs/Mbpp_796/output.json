@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert return_sum({'a': 100, 'b':200, 'c':300}) == 600\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef return_sum(input_dict):\n    return sum(input_dict.values())\n",
+    "full_code": "\n\ndef return_sum(input_dict):\n    return sum(input_dict.values())\n",
+    "task_id": "Mbpp/796",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

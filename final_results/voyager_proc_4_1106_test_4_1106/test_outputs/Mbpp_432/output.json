@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert median_trapezium(15,25,35)==20\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef median_trapezium(base1, base2, height):\n    return ((base1 + base2) / 2)\n",
+    "full_code": "\n\ndef median_trapezium(base1, base2, height):\n    return ((base1 + base2) / 2)\n",
+    "task_id": "Mbpp/432",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

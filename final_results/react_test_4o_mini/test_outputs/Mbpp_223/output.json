@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_majority([1, 2, 3, 3, 3, 3, 10], 7, 3) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_majority(arr, n, element):\n    if (element not in arr):\n        return False\n    first_index = arr.index(element)\n    last_index = ((first_index + arr[first_index:].count(element)) - 1)\n    count = ((last_index - first_index) + 1)\n    return (count > (n / 2))\n",
+    "full_code": "\n\ndef is_majority(arr, n, element):\n    if (element not in arr):\n        return False\n    first_index = arr.index(element)\n    last_index = ((first_index + arr[first_index:].count(element)) - 1)\n    count = ((last_index - first_index) + 1)\n    return (count > (n / 2))\n",
+    "task_id": "Mbpp/223",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

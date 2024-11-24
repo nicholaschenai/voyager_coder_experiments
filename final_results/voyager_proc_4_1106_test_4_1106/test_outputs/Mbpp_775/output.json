@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert odd_position([2,1,4,3,6,7,6,3]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef odd_position(lst):\n    for index in range(1, len(lst), 2):\n        if ((lst[index] % 2) == 0):\n            return False\n    return True\n",
+    "full_code": "\n\ndef odd_position(lst):\n    for index in range(1, len(lst), 2):\n        if ((lst[index] % 2) == 0):\n            return False\n    return True\n",
+    "task_id": "Mbpp/775",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

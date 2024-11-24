@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert smallest_num([10, 20, 1, 45, 99]) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef smallest_num(numbers):\n    if (not numbers):\n        raise ValueError('List must contain at least one number.')\n    smallest = numbers[0]\n    for num in numbers:\n        if (num < smallest):\n            smallest = num\n    return smallest\n",
+    "full_code": "\n\ndef smallest_num(numbers):\n    if (not numbers):\n        raise ValueError('List must contain at least one number.')\n    smallest = numbers[0]\n    for num in numbers:\n        if (num < smallest):\n            smallest = num\n    return smallest\n",
+    "task_id": "Mbpp/62",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

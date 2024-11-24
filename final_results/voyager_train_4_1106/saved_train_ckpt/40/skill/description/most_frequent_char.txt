@@ -1,0 +1,5 @@
+
+[description for function: most_frequent_char]
+This function takes a string as input and returns the character that appears most frequently within that string. If the input string is empty, it returns None. It first counts the occurrences of each character using a dictionary to store the frequency. Then, it iterates through the string again to determine which character has the highest count. Finally, it returns the character with the maximum frequency. If there are multiple characters with the same maximum frequency, it returns the first one encountered.
+
+[end of description]

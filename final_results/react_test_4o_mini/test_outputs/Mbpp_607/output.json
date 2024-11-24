@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_literals('The quick brown fox jumps over the lazy dog.', 'fox') == ('fox', 16, 19)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef find_literals(input_string: str, pattern: str) -> tuple:\n    match = re.search(pattern, input_string)\n    if match:\n        return (match.group(), match.start(), match.end())\n    return None\n",
+    "full_code": "import re\n\ndef find_literals(input_string: str, pattern: str) -> tuple:\n    match = re.search(pattern, input_string)\n    if match:\n        return (match.group(), match.start(), match.end())\n    return None\n",
+    "task_id": "Mbpp/607",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

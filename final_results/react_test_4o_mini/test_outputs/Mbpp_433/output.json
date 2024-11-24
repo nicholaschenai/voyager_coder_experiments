@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_greater([1, 2, 3, 4, 5], 4) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_greater(arr, num):\n    for element in arr:\n        if (num <= element):\n            return False\n    return True\n",
+    "full_code": "\n\ndef check_greater(arr, num):\n    for element in arr:\n        if (num <= element):\n            return False\n    return True\n",
+    "task_id": "Mbpp/433",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

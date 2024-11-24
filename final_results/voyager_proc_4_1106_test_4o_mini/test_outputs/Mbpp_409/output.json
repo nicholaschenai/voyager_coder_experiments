@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert min_product_tuple([(2, 7), (2, 6), (1, 8), (4, 9)] )==8\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef min_product_tuple(tuples_list):\n    min_product = float('inf')\n    for (a, b) in tuples_list:\n        product = (a * b)\n        if (product < min_product):\n            min_product = product\n    return min_product\n",
+    "full_code": "\n\ndef min_product_tuple(tuples_list):\n    min_product = float('inf')\n    for (a, b) in tuples_list:\n        product = (a * b)\n        if (product < min_product):\n            min_product = product\n    return min_product\n",
+    "task_id": "Mbpp/409",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

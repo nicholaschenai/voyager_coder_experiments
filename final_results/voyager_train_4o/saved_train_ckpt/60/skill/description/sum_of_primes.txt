@@ -1,0 +1,5 @@
+
+[description for function: sum_of_primes]
+This function calculates the sum of all prime numbers in a given list of integers. It initializes a total variable to zero and iterates through each number in the input list. For each number, it checks if it is prime using a separate function. If the number is prime, it adds it to the total. Finally, it returns the accumulated total of prime numbers.
+
+[end of description]

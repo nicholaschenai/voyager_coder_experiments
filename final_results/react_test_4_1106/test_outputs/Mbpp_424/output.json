@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert extract_rear(('Mers', 'for', 'Vers') ) == ['s', 'r', 's']\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef extract_rear(strings_tuple):\n    return [string[(- 1)] for string in strings_tuple]\n",
+    "full_code": "\n\ndef extract_rear(strings_tuple):\n    return [string[(- 1)] for string in strings_tuple]\n",
+    "task_id": "Mbpp/424",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

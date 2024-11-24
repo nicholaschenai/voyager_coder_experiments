@@ -1,0 +1,5 @@
+
+[description for function: find_peak_element]
+This function identifies a peak element in a given list of integers, where a peak is defined as an element that is greater than its neighbors. It first checks for edge cases, such as an empty list or if the first or last element is a peak. If neither of these conditions is met, it iterates through the list to find an element that is greater than both its adjacent elements. If a peak is found during the iteration, its index is returned. If no peak exists, the function returns None. The function operates in linear time, making it efficient for this task.
+
+[end of description]

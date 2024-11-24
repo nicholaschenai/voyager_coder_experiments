@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert first_repeated_char(\"abcabc\") == \"a\"\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef first_repeated_char(s: str) -> str:\n    seen = set()\n    for char in s:\n        if (char in seen):\n            return char\n        seen.add(char)\n    return None\n",
+    "full_code": "\n\ndef first_repeated_char(s: str) -> str:\n    seen = set()\n    for char in s:\n        if (char in seen):\n            return char\n        seen.add(char)\n    return None\n",
+    "task_id": "Mbpp/602",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

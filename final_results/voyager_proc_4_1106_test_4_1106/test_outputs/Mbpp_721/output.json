@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert maxAverageOfPath([[1, 2, 3], [6, 5, 4], [7, 3, 9]]) == 5.2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef maxAverageOfPath(matrix):\n    N = len(matrix)\n    dp = [[(0, 0) for _ in range(N)] for _ in range(N)]\n    dp[0][0] = (matrix[0][0], 1)\n    for i in range(N):\n        for j in range(N):\n            if ((i == 0) and (j == 0)):\n                continue\n            (top_cost, top_count) = (dp[(i - 1)][j] if (i > 0) else (0, 0))\n            (left_cost, left_count) = (dp[i][(j - 1)] if (j > 0) else (0, 0))\n            top_avg = ((top_cost / top_count) if top_count else 0)\n            left_avg = ((left_cost / left_count) if left_count else 0)\n            if (top_avg > left_avg):\n                dp[i][j] = ((top_cost + matrix[i][j]), (top_count + 1))\n            else:\n                dp[i][j] = ((left_cost + matrix[i][j]), (left_count + 1))\n    (total_cost, count) = dp[(N - 1)][(N - 1)]\n    return (total_cost / count)\n",
+    "full_code": "\n\ndef maxAverageOfPath(matrix):\n    N = len(matrix)\n    dp = [[(0, 0) for _ in range(N)] for _ in range(N)]\n    dp[0][0] = (matrix[0][0], 1)\n    for i in range(N):\n        for j in range(N):\n            if ((i == 0) and (j == 0)):\n                continue\n            (top_cost, top_count) = (dp[(i - 1)][j] if (i > 0) else (0, 0))\n            (left_cost, left_count) = (dp[i][(j - 1)] if (j > 0) else (0, 0))\n            top_avg = ((top_cost / top_count) if top_count else 0)\n            left_avg = ((left_cost / left_count) if left_count else 0)\n            if (top_avg > left_avg):\n                dp[i][j] = ((top_cost + matrix[i][j]), (top_count + 1))\n            else:\n                dp[i][j] = ((left_cost + matrix[i][j]), (left_count + 1))\n    (total_cost, count) = dp[(N - 1)][(N - 1)]\n    return (total_cost / count)\n",
+    "task_id": "Mbpp/721",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

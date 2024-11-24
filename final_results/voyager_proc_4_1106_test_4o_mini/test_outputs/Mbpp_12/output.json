@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sort_matrix([[1, 2, 3], [2, 4, 5], [1, 1, 1]])==[[1, 1, 1], [1, 2, 3], [2, 4, 5]]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sort_matrix(matrix):\n    sorted_matrix = sorted(matrix, key=(lambda row: sum(row)))\n    return sorted_matrix\n",
+    "full_code": "\n\ndef sort_matrix(matrix):\n    sorted_matrix = sorted(matrix, key=(lambda row: sum(row)))\n    return sorted_matrix\n",
+    "task_id": "Mbpp/12",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

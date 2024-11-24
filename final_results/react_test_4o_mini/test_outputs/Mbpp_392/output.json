@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_max_sum(60) == 106\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_max_sum(n, memo={}):\n    if (n == 0):\n        return 0\n    if (n in memo):\n        return memo[n]\n    max_sum = (((get_max_sum((n // 2), memo) + get_max_sum((n // 3), memo)) + get_max_sum((n // 4), memo)) + get_max_sum((n // 5), memo))\n    result = max(max_sum, n)\n    memo[n] = result\n    return result\n",
+    "full_code": "\n\ndef get_max_sum(n, memo={}):\n    if (n == 0):\n        return 0\n    if (n in memo):\n        return memo[n]\n    max_sum = (((get_max_sum((n // 2), memo) + get_max_sum((n // 3), memo)) + get_max_sum((n // 4), memo)) + get_max_sum((n // 5), memo))\n    result = max(max_sum, n)\n    memo[n] = result\n    return result\n",
+    "task_id": "Mbpp/392",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

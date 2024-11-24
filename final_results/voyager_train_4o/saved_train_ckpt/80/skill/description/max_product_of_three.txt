@@ -1,0 +1,5 @@
+
+[description for function: max_product_of_three]
+This function calculates the maximum product that can be obtained by multiplying any three numbers from a given list. It first sorts the list of numbers in ascending order. Then, it computes two potential maximum products: one using the three largest numbers and another using the two smallest numbers (which could be negative) multiplied by the largest number. Finally, it returns the greater of the two computed products. This approach ensures that both positive and negative combinations are considered for maximizing the product. The function efficiently handles the input by leveraging sorting and simple arithmetic operations.
+
+[end of description]

@@ -1,0 +1,5 @@
+
+[description for function: find_primes_less_than]
+This function generates a list of all prime numbers that are less than a specified integer, n. It iterates through each number starting from 2 up to n-1 and checks if the number is prime by testing divisibility with all integers up to its square root. If a number is found to be prime, it is added to the list of primes. The function ultimately returns the complete list of prime numbers found. It efficiently determines primality by reducing the number of divisibility checks needed. The result is a collection of prime numbers that can be used for various mathematical applications.
+
+[end of description]

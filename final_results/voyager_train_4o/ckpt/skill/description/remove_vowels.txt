@@ -1,0 +1,5 @@
+
+[description for function: remove_vowels]
+This function takes a string as input and removes all vowels from it, including both uppercase and lowercase letters. It initializes an empty list to store the characters that are not vowels. As it iterates through each character in the input string, it checks if the character is not a vowel and, if so, appends it to the result list. Finally, it joins the characters in the result list into a single string and returns that string without vowels.
+
+[end of description]

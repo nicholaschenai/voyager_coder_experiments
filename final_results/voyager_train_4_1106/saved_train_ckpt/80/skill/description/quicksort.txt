@@ -1,0 +1,5 @@
+
+[description for function: quicksort]
+This function implements the quicksort algorithm to sort an array. It first checks if the array has one or no elements, in which case it returns the array as is. A pivot element is selected, and the array is partitioned into three lists: elements less than the pivot, elements equal to the pivot, and elements greater than the pivot. The function then recursively sorts the lists of elements less than and greater than the pivot. Finally, it combines the sorted lists and the pivot elements to produce the sorted array. The overall time complexity of this sorting method is average O(n log n).
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert swap_numbers(10,20)==(20,10)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef swap_numbers(num1, num2):\n    return (num2, num1)\n",
+    "full_code": "\n\ndef swap_numbers(num1, num2):\n    return (num2, num1)\n",
+    "task_id": "Mbpp/257",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_pairs_count([1,1,1,1],2) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_pairs_count(numbers, target_sum):\n    count = 0\n    num_count = {}\n    for num in numbers:\n        num_count[num] = (num_count.get(num, 0) + 1)\n    for num in numbers:\n        complement = (target_sum - num)\n        if (complement in num_count):\n            count += num_count[complement]\n            if (complement == num):\n                count -= 1\n    return (count // 2)\n",
+    "full_code": "\n\ndef get_pairs_count(numbers, target_sum):\n    count = 0\n    num_count = {}\n    for num in numbers:\n        num_count[num] = (num_count.get(num, 0) + 1)\n    for num in numbers:\n        complement = (target_sum - num)\n        if (complement in num_count):\n            count += num_count[complement]\n            if (complement == num):\n                count -= 1\n    return (count // 2)\n",
+    "task_id": "Mbpp/767",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert freq_count([10,10,10,10,20,20,20,20,40,40,50,50,30])==({10: 4, 20: 4, 40: 2, 50: 2, 30: 1})\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef freq_count(lst):\n    frequency = {}\n    for item in lst:\n        if (item in frequency):\n            frequency[item] += 1\n        else:\n            frequency[item] = 1\n    return frequency\n",
+    "full_code": "\n\ndef freq_count(lst):\n    frequency = {}\n    for item in lst:\n        if (item in frequency):\n            frequency[item] += 1\n        else:\n            frequency[item] = 1\n    return frequency\n",
+    "task_id": "Mbpp/88",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

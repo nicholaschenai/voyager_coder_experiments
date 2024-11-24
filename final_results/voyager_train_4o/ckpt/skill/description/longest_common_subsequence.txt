@@ -1,0 +1,5 @@
+
+[description for function: longest_common_subsequence]
+This function calculates the length of the longest common subsequence between two input strings. It initializes a 2D list to store the lengths of common subsequences at various points. By iterating through each character of both strings, it updates the list based on whether the characters match or not. If they match, it increments the length from the previous subsequence; if not, it takes the maximum length found so far. Finally, it returns the length of the longest common subsequence found. This approach utilizes dynamic programming to efficiently solve the problem.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_occurrences([2,3,8,4,7,9,8,2,6,5,1,6,1,2,3,2,4,6,9,1,2])==2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_occurrences(lst):\n    frequency = {}\n    for item in lst:\n        frequency[item] = (frequency.get(item, 0) + 1)\n    max_item = None\n    max_count = 0\n    for (item, count) in frequency.items():\n        if (count > max_count):\n            max_count = count\n            max_item = item\n    return max_item\n",
+    "full_code": "\n\ndef max_occurrences(lst):\n    frequency = {}\n    for item in lst:\n        frequency[item] = (frequency.get(item, 0) + 1)\n    max_item = None\n    max_count = 0\n    for (item, count) in frequency.items():\n        if (count > max_count):\n            max_count = count\n            max_item = item\n    return max_item\n",
+    "task_id": "Mbpp/130",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

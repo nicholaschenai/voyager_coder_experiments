@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tup_string(('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's'))==(\"exercises\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef tup_string(tup):\n    return ''.join(tup)\n",
+    "full_code": "\n\ndef tup_string(tup):\n    return ''.join(tup)\n",
+    "task_id": "Mbpp/132",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

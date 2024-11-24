@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_first_occurrence([2, 5, 5, 5, 6, 6, 8, 9, 9, 9], 5) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_first_occurrence(sorted_list, target):\n    (left, right) = (0, (len(sorted_list) - 1))\n    while (left <= right):\n        mid = ((left + right) // 2)\n        if (sorted_list[mid] == target):\n            if ((mid == 0) or (sorted_list[(mid - 1)] != target)):\n                return mid\n            right = (mid - 1)\n        elif (sorted_list[mid] < target):\n            left = (mid + 1)\n        else:\n            right = (mid - 1)\n    return (- 1)\n",
+    "full_code": "\n\ndef find_first_occurrence(sorted_list, target):\n    (left, right) = (0, (len(sorted_list) - 1))\n    while (left <= right):\n        mid = ((left + right) // 2)\n        if (sorted_list[mid] == target):\n            if ((mid == 0) or (sorted_list[(mid - 1)] != target)):\n                return mid\n            right = (mid - 1)\n        elif (sorted_list[mid] < target):\n            left = (mid + 1)\n        else:\n            right = (mid - 1)\n    return (- 1)\n",
+    "task_id": "Mbpp/733",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

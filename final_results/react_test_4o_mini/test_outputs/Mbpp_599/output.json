@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_average(10)==(55, 5.5)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_average(n: int) -> tuple:\n    total_sum = ((n * (n + 1)) // 2)\n    average = (total_sum / n)\n    return (total_sum, average)\n",
+    "full_code": "\n\ndef sum_average(n: int) -> tuple:\n    total_sum = ((n * (n + 1)) // 2)\n    average = (total_sum / n)\n    return (total_sum, average)\n",
+    "task_id": "Mbpp/599",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

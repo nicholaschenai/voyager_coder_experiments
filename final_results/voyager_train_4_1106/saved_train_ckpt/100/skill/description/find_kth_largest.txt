@@ -1,0 +1,5 @@
+
+[description for function: find_kth_largest]
+This function finds the k-th largest element in a list of numbers by maintaining a min-heap of size k. It iterates through each number in the input list, adding it to the heap if the heap has fewer than k elements. If the heap is full and the current number is larger than the smallest element in the heap, it replaces the smallest element with the current number. After processing all numbers, the smallest element in the heap, which represents the k-th largest element in the original list, is returned. The use of a min-heap ensures efficient retrieval of the k-th largest element. Overall, the function efficiently handles the problem with a time complexity of O(n log k).
+
+[end of description]

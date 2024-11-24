@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_second_largest([3, 5, 1, 8, 2]) == 5\nassert find_second_largest([1, 1, 1]) == None\nassert find_second_largest([10, 20, 20, 30]) == 20\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_second_largest(numbers):\n    unique_numbers = set(numbers)\n    if (len(unique_numbers) < 2):\n        return None\n    sorted_numbers = sorted(unique_numbers, reverse=True)\n    return sorted_numbers[1]\n",
+    "full_code": "\n\ndef find_second_largest(numbers):\n    unique_numbers = set(numbers)\n    if (len(unique_numbers) < 2):\n        return None\n    sorted_numbers = sorted(unique_numbers, reverse=True)\n    return sorted_numbers[1]\n",
+    "task_id": "6",
+    "reasoning": "The implementation successfully passed all the provided test cases, indicating that it meets the task requirements for finding the second largest integer in a list of integers. The function correctly handles cases with duplicates and returns None when there are fewer than two unique integers.",
+    "success": true,
+    "critique": "No changes are necessary as the implementation is correct and passes all tests."
+}

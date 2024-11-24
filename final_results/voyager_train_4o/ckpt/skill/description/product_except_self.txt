@@ -1,0 +1,5 @@
+
+[description for function: product_except_self]
+This function calculates the product of all elements in an input list except for the element at each index, without using division. It first initializes two lists to store the cumulative products from the left and right sides of each index. It then populates these lists by iterating through the input list, calculating the products accordingly. Finally, it combines the left and right products to generate the result for each index. The function returns a new list containing these products. The overall time complexity is O(n), making it efficient for large input sizes.
+
+[end of description]

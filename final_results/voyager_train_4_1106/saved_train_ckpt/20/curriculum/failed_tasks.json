@@ -1,0 +1,6 @@
+{
+    "tasks": [
+        "Write a Python function that takes a list of integers and returns the largest product that can be obtained by multiplying any two numbers from the list.",
+        "Write a Python function that takes a sorted list of integers and an integer target value, and returns a tuple of two numbers from the list that add up to the target value. If no such pair exists, return None."
+    ]
+}

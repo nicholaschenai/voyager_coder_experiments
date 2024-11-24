@@ -1,0 +1,5 @@
+
+[description for function: insertion_sort]
+This function takes a list of numbers as input and sorts it using the insertion sort algorithm. It initializes an empty list to hold the sorted elements. For each number in the original list, it finds the appropriate index in the sorted list where the number should be inserted. The number is then inserted at that index, maintaining the order of the sorted list. Finally, the function returns the newly sorted list. This approach ensures that the list is built up in a sorted manner as each element is processed.
+
+[end of description]

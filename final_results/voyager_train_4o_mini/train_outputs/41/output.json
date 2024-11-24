@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert filter_excluded_integers([1, 2, 3, 4, 5], [2, 4]) == [1, 3, 5]\nassert filter_excluded_integers([10, 20, 30, 40], [10, 30]) == [20, 40]\nassert filter_excluded_integers([1, 2, 3], [1, 2, 3]) == []\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef filter_excluded_integers(integers, excluded):\n    excluded_set = set(excluded)\n    return [num for num in integers if (num not in excluded_set)]\n",
+    "full_code": "\n\ndef filter_excluded_integers(integers, excluded):\n    excluded_set = set(excluded)\n    return [num for num in integers if (num not in excluded_set)]\n",
+    "task_id": "41",
+    "reasoning": "The implementation successfully meets the task requirements as all unit tests passed without any failures.",
+    "success": true,
+    "critique": "Great job! Your function implementation is efficient and correctly filters out the excluded integers from the input list."
+}

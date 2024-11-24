@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert knapsack(items, 5) == 7\nassert knapsack(items, 10) == 13\nassert knapsack(items, 0) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef knapsack(items, max_weight):\n    n = len(items)\n    dp = [[0 for _ in range((max_weight + 1))] for _ in range((n + 1))]\n    for i in range(1, (n + 1)):\n        (weight, value) = items[(i - 1)]\n        for w in range((max_weight + 1)):\n            if (weight <= w):\n                dp[i][w] = max(dp[(i - 1)][w], (dp[(i - 1)][(w - weight)] + value))\n            else:\n                dp[i][w] = dp[(i - 1)][w]\n    return dp[n][max_weight]\n",
+    "full_code": "\n\ndef knapsack(items, max_weight):\n    n = len(items)\n    dp = [[0 for _ in range((max_weight + 1))] for _ in range((n + 1))]\n    for i in range(1, (n + 1)):\n        (weight, value) = items[(i - 1)]\n        for w in range((max_weight + 1)):\n            if (weight <= w):\n                dp[i][w] = max(dp[(i - 1)][w], (dp[(i - 1)][(w - weight)] + value))\n            else:\n                dp[i][w] = dp[(i - 1)][w]\n    return dp[n][max_weight]\n",
+    "task_id": "89",
+    "reasoning": "The function implementation correctly follows the dynamic programming approach to solve the 0/1 Knapsack Problem. It initializes a DP table, iterates through each item and weight capacity, and updates the table based on whether including the current item yields a higher value than excluding it. The final result is correctly obtained from the bottom-right cell of the DP table, which represents the maximum value achievable with the given weight capacity. All provided test cases pass, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficiently solves the 0/1 Knapsack Problem using dynamic programming. No changes are necessary as it meets the task requirements and passes all test cases."
+}

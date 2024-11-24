@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_list([10,20,30],[15,25,35])==[25,45,65]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_list(list_a, list_b):\n    if (len(list_a) != len(list_b)):\n        raise ValueError('Both lists must be of the same length.')\n    result = []\n    for i in range(len(list_a)):\n        result.append((list_a[i] + list_b[i]))\n    return result\n",
+    "full_code": "\n\ndef sum_list(list_a, list_b):\n    if (len(list_a) != len(list_b)):\n        raise ValueError('Both lists must be of the same length.')\n    result = []\n    for i in range(len(list_a)):\n        result.append((list_a[i] + list_b[i]))\n    return result\n",
+    "task_id": "Mbpp/728",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

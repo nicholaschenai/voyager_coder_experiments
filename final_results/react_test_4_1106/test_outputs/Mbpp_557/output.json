@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert toggle_string(\"Python\")==(\"pYTHON\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef toggle_string(s):\n    toggled_str = ''\n    for char in s:\n        if char.isupper():\n            toggled_str += char.lower()\n        else:\n            toggled_str += char.upper()\n    return toggled_str\n",
+    "full_code": "\n\ndef toggle_string(s):\n    toggled_str = ''\n    for char in s:\n        if char.isupper():\n            toggled_str += char.lower()\n        else:\n            toggled_str += char.upper()\n    return toggled_str\n",
+    "task_id": "Mbpp/557",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

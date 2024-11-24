@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_num_decagonal(3) == 27\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_num_decagonal(n: int) -> int:\n    return (n * ((4 * n) - 3))\n",
+    "full_code": "\n\ndef is_num_decagonal(n: int) -> int:\n    return (n * ((4 * n) - 3))\n",
+    "task_id": "Mbpp/279",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

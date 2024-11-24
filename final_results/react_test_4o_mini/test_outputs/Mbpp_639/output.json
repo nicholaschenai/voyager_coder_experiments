@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sample_nam(['sally', 'Dylan', 'rebecca', 'Diana', 'Joanne', 'keith'])==16\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sample_nam(names):\n    filtered_names = [name for name in names if name[0].isupper()]\n    total_length = sum((len(name) for name in filtered_names))\n    return total_length\n",
+    "full_code": "\n\ndef sample_nam(names):\n    filtered_names = [name for name in names if name[0].isupper()]\n    total_length = sum((len(name) for name in filtered_names))\n    return total_length\n",
+    "task_id": "Mbpp/639",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

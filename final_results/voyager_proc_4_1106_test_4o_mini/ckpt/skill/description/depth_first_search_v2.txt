@@ -1,0 +1,5 @@
+
+[description for function: depth_first_search]
+This function performs a depth-first search (DFS) on a given graph, represented as an adjacency list. It initializes a list to keep track of the order in which nodes are visited and a set to track visited nodes. The function iterates through each node in the graph, and if a node has not been visited, it calls a helper function to explore that node and its neighbors recursively. As nodes are visited, they are added to the visited list and marked as visited. Finally, the function returns the order of visited nodes after completing the search. This approach ensures that all nodes in the graph are explored systematically.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_upper(\"person\") ==\"PERSON\"\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_upper(s: str) -> str:\n    return s.upper()\n",
+    "full_code": "\n\ndef is_upper(s: str) -> str:\n    return s.upper()\n",
+    "task_id": "Mbpp/624",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

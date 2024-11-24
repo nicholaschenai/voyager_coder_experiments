@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_Diff (12345) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_Diff(number):\n    return ((number % 11) == 0)\n",
+    "full_code": "\n\ndef is_Diff(number):\n    return ((number % 11) == 0)\n",
+    "task_id": "Mbpp/77",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

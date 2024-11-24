@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert add_pairwise((1, 5, 7, 8, 10)) == (6, 12, 15, 18)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef add_pairwise(tup):\n    result = []\n    for i in range((len(tup) - 1)):\n        pair_sum = (tup[i] + tup[(i + 1)])\n        result.append(pair_sum)\n    return tuple(result)\n",
+    "full_code": "\n\ndef add_pairwise(tup):\n    result = []\n    for i in range((len(tup) - 1)):\n        pair_sum = (tup[i] + tup[(i + 1)])\n        result.append(pair_sum)\n    return tuple(result)\n",
+    "task_id": "Mbpp/470",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

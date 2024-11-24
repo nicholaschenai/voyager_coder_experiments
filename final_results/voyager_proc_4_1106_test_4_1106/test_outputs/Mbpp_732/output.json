@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert replace_specialchar('Python language, Programming language.')==('Python:language::Programming:language:')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef replace_specialchar(input_string):\n    result = input_string.replace(' ', ':').replace(',', ':').replace('.', ':')\n    return result\n",
+    "full_code": "\n\ndef replace_specialchar(input_string):\n    result = input_string.replace(' ', ':').replace(',', ':').replace('.', ':')\n    return result\n",
+    "task_id": "Mbpp/732",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert find_solution(2, 3, 7) == (2, 1) # output: (-7, 7)",
+    "state": null,
+    "code": "\n\ndef extended_gcd(a, b):\n    if (b == 0):\n        return (a, 1, 0)\n    (gcd, x1, y1) = extended_gcd(b, (a % b))\n    x = y1\n    y = (x1 - ((a // b) * y1))\n    return (gcd, x, y)\n\n\n\n\ndef find_solution(a: int, b: int, n: int) -> (tuple[(int, int)] | None):\n    (gcd, x0, y0) = extended_gcd(a, b)\n    if ((n % gcd) != 0):\n        return None\n    x = (x0 * (n // gcd))\n    y = (y0 * (n // gcd))\n    return (x, y)\n",
+    "full_code": "\n\ndef extended_gcd(a, b):\n    if (b == 0):\n        return (a, 1, 0)\n    (gcd, x1, y1) = extended_gcd(b, (a % b))\n    x = y1\n    y = (x1 - ((a // b) * y1))\n    return (gcd, x, y)\n\n\n\n\ndef find_solution(a: int, b: int, n: int) -> (tuple[(int, int)] | None):\n    (gcd, x0, y0) = extended_gcd(a, b)\n    if ((n % gcd) != 0):\n        return None\n    x = (x0 * (n // gcd))\n    y = (y0 * (n // gcd))\n    return (x, y)\n",
+    "task_id": "Mbpp/160",
+    "reasoning": "The implementation failed the test case because the returned solution does not satisfy the equation ax + by = n. Instead of returning (2, 1) for the input (2, 3, 7), it returned (-7, 7), which does not fulfill the requirement of the equation. This indicates that the scaling of the solution derived from the Extended Euclidean Algorithm is incorrect or that the general solution is not being properly adjusted to find the specific solution required.",
+    "success": false,
+    "critique": "To fix the implementation, ensure that the scaling of x0 and y0 is done correctly. The current implementation returns a solution that does not satisfy the original equation. You may want to check the calculations for x and y after scaling, and ensure that they are derived correctly from the Extended Euclidean Algorithm results. Additionally, consider adjusting the values of x and y based on the gcd to ensure they meet the equation ax + by = n."
+}

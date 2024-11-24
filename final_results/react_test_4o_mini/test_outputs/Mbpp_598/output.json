@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert armstrong_number(153)==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef armstrong_number(num: int) -> bool:\n    str_num = str(num)\n    num_digits = len(str_num)\n    sum_of_powers = 0\n    for digit in str_num:\n        sum_of_powers += (int(digit) ** num_digits)\n    return (sum_of_powers == num)\n",
+    "full_code": "\n\ndef armstrong_number(num: int) -> bool:\n    str_num = str(num)\n    num_digits = len(str_num)\n    sum_of_powers = 0\n    for digit in str_num:\n        sum_of_powers += (int(digit) ** num_digits)\n    return (sum_of_powers == num)\n",
+    "task_id": "Mbpp/598",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

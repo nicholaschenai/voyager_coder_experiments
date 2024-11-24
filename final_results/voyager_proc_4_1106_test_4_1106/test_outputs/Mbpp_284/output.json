@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_element([\"green\", \"orange\", \"black\", \"white\"],'blue')==False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_element(lst, element):\n    for item in lst:\n        if (item != element):\n            return False\n    return True\n",
+    "full_code": "\n\ndef check_element(lst, element):\n    for item in lst:\n        if (item != element):\n            return False\n    return True\n",
+    "task_id": "Mbpp/284",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

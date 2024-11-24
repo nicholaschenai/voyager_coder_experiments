@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_monthnumber_number(6)==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_monthnumber_number(month):\n    months_with_30_days = [4, 6, 9, 11]\n    return (month in months_with_30_days)\n",
+    "full_code": "\n\ndef check_monthnumber_number(month):\n    months_with_30_days = [4, 6, 9, 11]\n    return (month in months_with_30_days)\n",
+    "task_id": "Mbpp/762",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

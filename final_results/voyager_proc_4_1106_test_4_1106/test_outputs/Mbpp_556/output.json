@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_Odd_Pair([5,4,7,2,1],5) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_Odd_Pair(arr, n):\n    odd_count = 0\n    even_count = 0\n    for num in arr:\n        if ((num % 2) == 0):\n            even_count += 1\n        else:\n            odd_count += 1\n    return (odd_count * even_count)\n",
+    "full_code": "\n\ndef find_Odd_Pair(arr, n):\n    odd_count = 0\n    even_count = 0\n    for num in arr:\n        if ((num % 2) == 0):\n            even_count += 1\n        else:\n            odd_count += 1\n    return (odd_count * even_count)\n",
+    "task_id": "Mbpp/556",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

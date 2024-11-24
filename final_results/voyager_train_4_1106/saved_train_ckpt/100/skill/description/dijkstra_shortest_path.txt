@@ -1,0 +1,5 @@
+
+[description for function: dijkstra_shortest_path]
+This function implements Dijkstra's algorithm to find the shortest path from a starting node to all other nodes in a weighted graph. It initializes distances to all nodes as infinity, except for the starting node, which is set to zero. A priority queue is used to explore the graph, processing nodes in order of their current known distance. For each node, it updates the distances to its neighbors if a shorter path is found. The function continues until all reachable nodes have been processed. Finally, it returns a dictionary of nodes with their corresponding shortest distances, excluding those that are unreachable.
+
+[end of description]

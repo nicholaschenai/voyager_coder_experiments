@@ -1,0 +1,5 @@
+
+[description for function: longest_equal_subarray]
+This function takes an array as input and determines the length of the longest contiguous subarray where all elements are equal. It initializes two variables to track the maximum length found and the current length of equal elements. As it iterates through the array, it compares each element to the previous one, incrementing the current length if they are equal. If they are not equal, it updates the maximum length if the current length is greater and resets the current length. After completing the iteration, it performs a final check to ensure the maximum length is updated if the longest equal subarray is at the end of the array. The function returns the length of the longest equal subarray found.
+
+[end of description]

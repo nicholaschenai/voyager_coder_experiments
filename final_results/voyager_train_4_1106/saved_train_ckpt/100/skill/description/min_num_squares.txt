@@ -1,0 +1,5 @@
+
+[description for function: min_num_squares]
+This function calculates the minimum number of perfect square numbers that sum up to a given integer n. It uses dynamic programming to build an array where each index represents the minimum count of squares needed for that index value. Initially, it sets the count for zero to zero and all other counts to infinity. For each integer from 1 to n, it checks all perfect squares less than or equal to that integer and updates the count based on previously computed values. Finally, it returns the minimum count for the input integer n. This approach efficiently determines the solution by leveraging previously computed results.
+
+[end of description]

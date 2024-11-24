@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert parabola_directrix(5,3,2)==-198 # output: 1",
+    "state": null,
+    "code": "\n\ndef parabola_directrix(a: int, b: int, c: int) -> int:\n    h = ((- b) / (2 * a))\n    k = (((a * (h ** 2)) + (b * h)) + c)\n    p = (1 / (4 * a))\n    directrix = (k - p)\n    return int(directrix)\n",
+    "full_code": "\n\ndef parabola_directrix(a: int, b: int, c: int) -> int:\n    h = ((- b) / (2 * a))\n    k = (((a * (h ** 2)) + (b * h)) + c)\n    p = (1 / (4 * a))\n    directrix = (k - p)\n    return int(directrix)\n",
+    "task_id": "Mbpp/430",
+    "reasoning": "The implementation failed the test case because the calculated directrix does not match the expected value of -198. The formula used to calculate the directrix seems to be incorrect, particularly in how the vertex and the distance to the focus are computed. The directrix should be calculated as k - p, but the value of k is not being computed correctly due to the order of operations and the formula used.",
+    "success": false,
+    "critique": "To fix the implementation, ensure that the vertex k is calculated correctly. The formula for k should be based on the vertex coordinates, which is k = a * h^2 + b * h + c. Additionally, ensure that the directrix is calculated as k - p, where p = 1/(4a). After correcting these calculations, the function should return the expected value."
+}

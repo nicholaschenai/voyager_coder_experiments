@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count([True,False,True]) == 2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count(bool_list):\n    count_true = 0\n    for value in bool_list:\n        if (value is True):\n            count_true += 1\n    return count_true\n",
+    "full_code": "\n\ndef count(bool_list):\n    count_true = 0\n    for value in bool_list:\n        if (value is True):\n            count_true += 1\n    return count_true\n",
+    "task_id": "Mbpp/105",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert text_match_two_three(\"ac\")==(False)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef text_match_two_three(s):\n    return bool(re.search('ab{2,3}(?![b])', s))\n",
+    "full_code": "import re\n\ndef text_match_two_three(s):\n    return bool(re.search('ab{2,3}(?![b])', s))\n",
+    "task_id": "Mbpp/285",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

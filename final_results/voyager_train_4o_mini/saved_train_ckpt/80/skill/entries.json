@@ -1,0 +1,374 @@
+{
+    "unique_integers": {
+        "code": "\n\ndef unique_integers(int_list):\n    unique_set = set(int_list)\n    return list(unique_set)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of unique integers from that list.",
+        "description": "\n[description for function: unique_integers]\nThis function takes a list of integers as input and converts it into a set to eliminate any duplicate values. It then returns a new list containing only the unique integers from the original list. The use of a set ensures that each integer appears only once in the output. The order of the integers in the resulting list may not match their original order due to the properties of sets. This function is useful for filtering out duplicates from a collection of integers. Overall, it provides a simple way to obtain a list of unique integers from a given list.\n\n[end of description]\n"
+    },
+    "count_occurrences": {
+        "code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a dictionary with the integers as keys and their counts as values.",
+        "description": "\n[description for function: count_occurrences]\nThis function takes a list of integers as input and counts the occurrences of each integer in the list. It initializes an empty dictionary to store the counts. As it iterates through the list, it updates the count for each integer, either by incrementing the existing count or initializing it to one if the integer is encountered for the first time. Finally, it returns the dictionary containing the integers and their corresponding counts. This allows users to easily see how many times each integer appears in the input list. The function effectively provides a frequency distribution of the integers.\n\n[end of description]\n"
+    },
+    "find_intersection": {
+        "code": "\n\ndef find_intersection(list1, list2):\n    set1 = set(list1)\n    intersection_set = set()\n    for item in list2:\n        if (item in set1):\n            intersection_set.add(item)\n    return list(intersection_set)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes two lists of integers and returns a list of integers that are present in both lists (the intersection).",
+        "description": "\n[description for function: find_intersection]\nThis function takes two lists as input and identifies the common elements between them. It converts the first list into a set for efficient membership testing. Then, it iterates through the second list, checking if each item is present in the set created from the first list. If an item is found in both lists, it is added to a new set that stores the intersection. Finally, the function returns the intersection as a list, ensuring that the result contains only unique elements.\n\n[end of description]\n"
+    },
+    "find_unique_integers": {
+        "code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n\n\n\n\ndef find_unique_integers(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    return unique_integers\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are unique (appear only once) in the list.",
+        "description": "\n[description for function: find_unique_integers]\nThis function takes a list of integers as input and counts the occurrences of each integer in the list. It then creates a new list containing only the integers that appear exactly once in the original list. The result is a list of unique integers, which are those that do not have any duplicates. Finally, the function returns this list of unique integers.\n\n[end of description]\n"
+    },
+    "find_duplicates": {
+        "code": "\n\ndef find_duplicates(int_list):\n    counts = {}\n    duplicates = []\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    for (num, count) in counts.items():\n        if (count > 1):\n            duplicates.append(num)\n    return duplicates\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are duplicates (appear more than once) in the list.",
+        "description": "\n[description for function: find_duplicates]\nThis function takes a list of integers as input and identifies the numbers that appear more than once. It uses a dictionary to count the occurrences of each integer in the list. After counting, it iterates through the dictionary to collect all integers that have a count greater than one. The resulting list of duplicate integers is then returned. This function effectively helps in identifying duplicates within the provided list. It ensures that only unique duplicates are included in the final output.\n\n[end of description]\n"
+    },
+    "find_second_largest": {
+        "code": "\n\ndef find_second_largest(numbers):\n    unique_numbers = set(numbers)\n    if (len(unique_numbers) < 2):\n        return None\n    sorted_numbers = sorted(unique_numbers, reverse=True)\n    return sorted_numbers[1]\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns the second largest integer in the list. If the list has fewer than two unique integers, return None.",
+        "description": "\n[description for function: find_second_largest]\nThis function takes a list of numbers as input and identifies the second largest unique number from that list. It first converts the list into a set to eliminate duplicates. If there are fewer than two unique numbers, it returns None. Otherwise, it sorts the unique numbers in descending order. Finally, it returns the second element from the sorted list, which corresponds to the second largest number.\n\n[end of description]\n"
+    },
+    "filter_even_numbers": {
+        "code": "\n\ndef filter_even_numbers(input_list):\n    even_numbers = []\n    for number in input_list:\n        if ((number % 2) == 0):\n            even_numbers.append(number)\n    return even_numbers\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the even integers from the original list.",
+        "description": "\n[description for function: filter_even_numbers]\nThis function takes a list of numbers as input and iterates through each number to check if it is even. If a number is found to be even (i.e., divisible by 2 with no remainder), it is added to a new list. After processing all the numbers, the function returns the list containing only the even numbers. The output will be an array that excludes any odd numbers from the original input. This allows users to easily filter out even values from a mixed list of integers. The function effectively provides a simple way to identify and collect even numbers.\n\n[end of description]\n"
+    },
+    "filter_greater_than": {
+        "code": "\n\ndef filter_greater_than(numbers, threshold):\n    result = []\n    for number in numbers:\n        if (number > threshold):\n            result.append(number)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are greater than a given threshold value.",
+        "description": "\n[description for function: filter_greater_than]\nThis function takes a list of numbers and a threshold value as input. It iterates through each number in the list and checks if it is greater than the specified threshold. If a number exceeds the threshold, it is added to a new list. After processing all the numbers, the function returns the list of numbers that are greater than the threshold. The output is a filtered list containing only the qualifying numbers. This allows users to easily identify values that surpass a certain limit.\n\n[end of description]\n"
+    },
+    "count_vowels": {
+        "code": "\n\ndef count_vowels(input_string):\n    vowels = 'aeiouAEIOU'\n    count = 0\n    for char in input_string:\n        if (char in vowels):\n            count += 1\n    return count\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns the number of vowels in that string.",
+        "description": "\n[description for function: count_vowels]\nThis function takes a string as input and counts the number of vowels present in it, considering both uppercase and lowercase letters. It initializes a counter to zero and iterates through each character in the input string. For each character, it checks if it is a vowel by comparing it against a predefined string of vowels. If a vowel is found, the counter is incremented by one. Finally, the function returns the total count of vowels found in the input string.\n\n[end of description]\n"
+    },
+    "unique_characters": {
+        "code": "\n\ndef unique_characters(input_string):\n    unique_chars = set()\n    for char in input_string:\n        unique_chars.add(char)\n    return unique_chars\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a set of unique characters in that string.",
+        "description": "\n[description for function: unique_characters]\nThis function takes a string as input and creates a set to store unique characters from that string. It iterates through each character in the input string, adding it to the set. Since sets automatically handle duplicates, only unique characters are retained. Finally, the function returns the set of unique characters. This allows for easy identification of all distinct characters present in the input string. The output is a collection of characters without any repetitions.\n\n[end of description]\n"
+    },
+    "is_palindrome": {
+        "code": "\n\ndef is_palindrome(s):\n    normalized_str = ''.join((char.lower() for char in s if char.isalnum()))\n    reversed_str = normalized_str[::(- 1)]\n    return (normalized_str == reversed_str)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns True if it is a palindrome (reads the same forwards and backwards), and False otherwise.",
+        "description": "\n[description for function: is_palindrome]\nThis function checks if a given string is a palindrome, meaning it reads the same forwards and backwards. It first normalizes the input by removing non-alphanumeric characters and converting all letters to lowercase. Then, it creates a reversed version of the normalized string. Finally, it compares the normalized string with its reversed counterpart and returns a boolean value indicating whether they are the same.\n\n[end of description]\n"
+    },
+    "filter_digits": {
+        "code": "\n\ndef filter_digits(input_string):\n    result = ''\n    for char in input_string:\n        if char.isdigit():\n            result += char\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string containing only the digits from the original string.",
+        "description": "\n[description for function: filter_digits]\nThis function takes an input string and iterates through each character to check if it is a digit. If a character is a digit, it appends it to a result string. After processing all characters, it returns the result string containing only the digits found in the input. The function effectively filters out non-digit characters. It ensures that the output consists solely of numeric characters. The final output is a string of concatenated digits extracted from the original input.\n\n[end of description]\n"
+    },
+    "filter_long_strings": {
+        "code": "\n\ndef filter_long_strings(strings, threshold):\n    result = []\n    for string in strings:\n        if (len(string) > threshold):\n            result.append(string)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns a new list containing only the strings that have a length greater than a specified threshold.",
+        "description": "\n[description for function: filter_long_strings]\nThis function takes a list of strings and a threshold value as input. It iterates through each string in the list and checks if its length exceeds the specified threshold. If a string's length is greater than the threshold, it is added to a result list. After processing all strings, the function returns the list of strings that are longer than the threshold. The output is a filtered list containing only the longer strings. This allows for easy identification of strings that meet the length criteria.\n\n[end of description]\n"
+    },
+    "sort_strings_by_length_desc": {
+        "code": "\n\ndef sort_strings_by_length_desc(strings):\n    return sorted(strings, key=len, reverse=True)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns a new list of those strings sorted by their length in descending order.",
+        "description": "\n[description for function: sort_strings_by_length_desc]\nThis function takes a list of strings as input and sorts them in descending order based on their lengths. It utilizes the built-in sorting capabilities of Python, specifying the length of each string as the key for comparison. The result is a new list where the longest strings appear first, followed by shorter strings. If two strings have the same length, their order relative to each other remains unchanged from the original list. The function returns the sorted list without modifying the input. Overall, it effectively organizes strings by their size, making it easy to identify the longest ones.\n\n[end of description]\n"
+    },
+    "string_lengths": {
+        "code": "\n\ndef string_lengths(strings):\n    lengths = []\n    for s in strings:\n        lengths.append(len(s))\n    return lengths\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns a new list containing the lengths of each string in the original list.",
+        "description": "\n[description for function: string_lengths]\nThis function takes a list of strings as input and calculates the length of each string. It initializes an empty list to store the lengths. As it iterates through each string in the input list, it appends the length of each string to the lengths list. Finally, it returns the list of lengths. The output is a list of integers representing the lengths of the corresponding strings in the input list. This function effectively provides a way to measure the size of each string in the provided collection.\n\n[end of description]\n"
+    },
+    "remove_vowels": {
+        "code": "\n\ndef remove_vowels(input_string):\n    vowels = 'aeiouAEIOU'\n    result = ''\n    for char in input_string:\n        if (char not in vowels):\n            result += char\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string with all the vowels removed.",
+        "description": "\n[description for function: remove_vowels]\nThis function takes a string as input and removes all vowels from it, including both uppercase and lowercase letters. It initializes an empty result string to store the characters that are not vowels. As it iterates through each character in the input string, it checks if the character is not a vowel and appends it to the result string if true. Finally, it returns the modified string that contains only the consonants and any other non-vowel characters. The function effectively filters out all vowel characters, providing a consonant-only version of the input. This can be useful for various text processing tasks where vowel removal is desired.\n\n[end of description]\n"
+    },
+    "count_distinct_characters": {
+        "code": "\n\ndef count_distinct_characters(s):\n    distinct_characters = set(s)\n    return len(distinct_characters)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns the number of distinct characters in that string.",
+        "description": "\n[description for function: count_distinct_characters]\nThis function takes a string as input and determines the number of distinct characters present in that string. It achieves this by converting the string into a set, which inherently removes any duplicate characters. The length of this set is then calculated to find the total count of unique characters. Finally, the function returns this count as an integer. This approach efficiently handles the task by leveraging the properties of sets in Python. Overall, it provides a straightforward way to assess character diversity in a given string.\n\n[end of description]\n"
+    },
+    "merge_dictionaries": {
+        "code": "\n\ndef merge_dictionaries(dict1, dict2):\n    merged_dict = {**dict1, **dict2}\n    return merged_dict\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes two dictionaries and merges them. If there are duplicate keys, the values from the second dictionary should overwrite those from the first.",
+        "description": "\n[description for function: merge_dictionaries]\nThis function takes two dictionaries as input and merges them into a single dictionary. It combines the key-value pairs from both dictionaries, with values from the second dictionary overwriting those from the first in case of key collisions. The resulting merged dictionary is then returned. This approach allows for a straightforward and efficient way to combine data from multiple sources. The function utilizes dictionary unpacking to achieve the merge. Overall, it provides a simple solution for dictionary combination in Python.\n\n[end of description]\n"
+    },
+    "repeat_characters": {
+        "code": "\n\ndef repeat_characters(input_string):\n    result = ''\n    for char in input_string:\n        result += (char * 2)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string where each character is repeated twice.",
+        "description": "\n[description for function: repeat_characters]\nThis function takes an input string and creates a new string by repeating each character in the input string twice. It initializes an empty result string and iterates through each character of the input. For each character, it appends the character repeated two times to the result string. Finally, it returns the newly formed string with all characters duplicated. The function effectively transforms the input by doubling every character without altering their order. The output will have a length that is twice that of the input string.\n\n[end of description]\n"
+    },
+    "filter_excluded_numbers": {
+        "code": "\n\ndef filter_excluded_numbers(int_list, excluded_set):\n    return [num for num in int_list if (num not in excluded_set)]\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are present in the list but not in a given set of excluded integers.",
+        "description": "\n[description for function: filter_excluded_numbers]\nThis function takes a list of integers and a set of excluded numbers as input. It filters the list to remove any integers that are present in the excluded set. The result is a new list containing only the integers that are not excluded. The function utilizes a list comprehension for efficient iteration and filtering. It returns the filtered list as the output. This allows for easy removal of unwanted numbers from the original list.\n\n[end of description]\n"
+    },
+    "filter_multiples": {
+        "code": "\n\ndef filter_multiples(int_list, multiple_of):\n    result = []\n    for number in int_list:\n        if ((number % multiple_of) == 0):\n            result.append(number)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are multiples of a given number.",
+        "description": "\n[description for function: filter_multiples]\nThis function takes a list of integers and a specified multiple as input. It iterates through the list and checks each number to see if it is divisible by the given multiple. If a number is found to be a multiple, it is added to a new result list. After checking all the numbers, the function returns the list of multiples. The output will only include those integers from the original list that meet the divisibility condition. This allows for easy filtering of numbers based on their relationship to the specified multiple.\n\n[end of description]\n"
+    },
+    "filter_even_numbers_v2": {
+        "code": "\n\ndef filter_even_numbers_v2(input_tuple):\n    even_numbers = [num for num in input_tuple if ((num % 2) == 0)]\n    return tuple(even_numbers)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a tuple of integers and returns a new tuple containing only the even integers from the original tuple.",
+        "description": "\n[description for function: filter_even_numbers]\nThis function takes a tuple of numbers as input and filters out the even numbers from it. It uses a list comprehension to iterate through each number in the tuple, checking if it is even by using the modulus operator. The even numbers are collected into a list, which is then converted back into a tuple before being returned. The output is a new tuple containing only the even numbers from the original input. If there are no even numbers, an empty tuple is returned. This function effectively allows for the extraction of even integers from a given collection.\n\n[end of description]\n"
+    },
+    "count_characters": {
+        "code": "\n\ndef count_characters(input_string):\n    char_count = {}\n    for char in input_string:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    return char_count\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a dictionary with each character as the key and the number of times it appears in the string as the value.",
+        "description": "\n[description for function: count_characters]\nThis function takes a string as input and counts the occurrences of each character within that string. It initializes an empty dictionary to store the character counts. As it iterates through each character in the input string, it updates the count for each character in the dictionary. If a character is already present in the dictionary, its count is incremented; otherwise, it is added with a count of one. Finally, the function returns the dictionary containing the character counts. This allows users to easily see how many times each character appears in the input string.\n\n[end of description]\n"
+    },
+    "count_occurrences_v2": {
+        "code": "\n\ndef count_occurrences_v2(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a dictionary where the keys are the integers from the list and the values are the number of times each integer appears in the list.",
+        "description": "\n[description for function: count_occurrences]\nThis function takes a list of integers as input and counts the occurrences of each integer in the list. It initializes an empty dictionary to store the counts. As it iterates through the list, it updates the count for each integer, either by incrementing the existing count or initializing it to one if the integer is encountered for the first time. Finally, it returns the dictionary containing the integers and their corresponding counts. This allows users to easily see how many times each integer appears in the input list. The function effectively provides a frequency distribution of the integers.\n\n[end of description]\n"
+    },
+    "strings_to_lengths_dict": {
+        "code": "\n\ndef strings_to_lengths_dict(strings):\n    lengths_dict = {}\n    for string in strings:\n        lengths_dict[string] = len(string)\n    return lengths_dict\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns a dictionary where the keys are the strings and the values are the lengths of those strings.",
+        "description": "\n[description for function: strings_to_lengths_dict]\nThis function takes a list of strings as input and creates a dictionary where each string is a key and its corresponding value is the length of that string. It initializes an empty dictionary and iterates through each string in the input list. For each string, it calculates its length and adds an entry to the dictionary. Finally, the function returns the populated dictionary containing all strings and their lengths. This allows for easy access to the length of any string in the original list. The output is a mapping of strings to their respective lengths.\n\n[end of description]\n"
+    },
+    "people_to_dict": {
+        "code": "\n\ndef people_to_dict(people_list):\n    result = {}\n    for person in people_list:\n        name = person['name']\n        age = person['age']\n        result[name] = age\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of dictionaries, each representing a person with a 'name' and 'age', and returns a dictionary where the keys are the names and the values are the ages of the people.",
+        "description": "\n[description for function: people_to_dict]\nThis function takes a list of dictionaries, where each dictionary represents a person with their name and age. It initializes an empty dictionary to store the results. As it iterates through the list, it extracts the name and age of each person. The name is used as the key, and the corresponding age is set as the value in the result dictionary. Finally, it returns the constructed dictionary containing names as keys and ages as values. This effectively transforms a list of people into a dictionary format for easier access.\n\n[end of description]\n"
+    },
+    "filter_dict_by_threshold": {
+        "code": "\n\ndef filter_dict_by_threshold(input_dict, threshold):\n    filtered_dict = {}\n    for (key, value) in input_dict.items():\n        if (value > threshold):\n            filtered_dict[key] = value\n    return filtered_dict\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a dictionary and a threshold value, and returns a new dictionary containing only the items where the value exceeds the threshold.",
+        "description": "\n[description for function: filter_dict_by_threshold]\nThis function takes a dictionary and a threshold value as inputs, iterating through the dictionary's key-value pairs. It creates a new dictionary that includes only those entries where the value exceeds the specified threshold. The resulting filtered dictionary is then returned. This allows for easy extraction of significant data points based on a defined criterion. The function effectively helps in narrowing down data for further analysis or processing. Overall, it serves as a useful tool for data filtering based on numerical thresholds.\n\n[end of description]\n"
+    },
+    "create_dict_from_tuples": {
+        "code": "\n\ndef create_dict_from_tuples(tuples_list):\n    result_dict = {}\n    for (key, value) in tuples_list:\n        result_dict[key] = value\n    return result_dict\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of tuples, where each tuple contains a key-value pair, and returns a dictionary constructed from those tuples.",
+        "description": "\n[description for function: create_dict_from_tuples]\nThis function takes a list of tuples as input, where each tuple contains a key-value pair. It initializes an empty dictionary to store the results. As it iterates through the list of tuples, it assigns each key to its corresponding value in the dictionary. After processing all tuples, it returns the constructed dictionary. The function effectively transforms a list of tuples into a dictionary format. It is useful for organizing data in a key-value structure.\n\n[end of description]\n"
+    },
+    "unique_characters_ordered": {
+        "code": "\n\ndef unique_characters_ordered(input_string):\n    seen = set()\n    unique_list = []\n    for char in input_string:\n        if (char not in seen):\n            seen.add(char)\n            unique_list.append(char)\n    return unique_list\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a list of all the unique characters in that string, preserving their order of first appearance.",
+        "description": "\n[description for function: unique_characters_ordered]\nThis function takes a string as input and returns a list of unique characters while preserving their original order. It uses a set to track characters that have already been encountered. As it iterates through the input string, it adds each new character to both the set and a list. If a character has already been seen, it is skipped. The final output is a list containing only the first occurrence of each character from the input string. This ensures that the order of characters is maintained as they appeared in the original string.\n\n[end of description]\n"
+    },
+    "are_anagrams": {
+        "code": "\n\ndef are_anagrams(str1, str2):\n    str1 = ''.join((char.lower() for char in str1 if char.isalnum()))\n    str2 = ''.join((char.lower() for char in str2 if char.isalnum()))\n    return (sorted(str1) == sorted(str2))\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes two strings and returns True if they are anagrams of each other (contain the same characters in a different order), and False otherwise.",
+        "description": "\n[description for function: are_anagrams]\nThis function checks if two input strings are anagrams of each other by first normalizing both strings to remove non-alphanumeric characters and converting them to lowercase. It then sorts the characters of each string and compares the sorted results. If the sorted character lists are identical, the function returns True, indicating that the strings are anagrams; otherwise, it returns False. The function effectively ignores case and punctuation, focusing solely on the alphanumeric content of the strings.\n\n[end of description]\n"
+    },
+    "squares_set": {
+        "code": "\n\ndef squares_set(int_list):\n    return {(x ** 2) for x in int_list}\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a set containing the squares of those integers.",
+        "description": "\n[description for function: squares_set]\nThis function takes a list of integers as input and returns a set containing the squares of each integer from the list. It utilizes a set comprehension to efficiently compute the squares, ensuring that each result is unique due to the properties of a set. The function iterates through each integer in the provided list, squares it, and adds the result to the set. As a result, any duplicate squares are automatically eliminated. The output is a collection of squared values, providing a concise representation of the squared integers. This function is useful for obtaining unique squared values from a list of integers.\n\n[end of description]\n"
+    },
+    "union_of_sets": {
+        "code": "\n\ndef union_of_sets(set1, set2):\n    result = set1.union(set2)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes two sets and returns their union (all unique elements from both sets).",
+        "description": "\n[description for function: union_of_sets]\nThis function takes two sets as input and computes their union, which includes all unique elements from both sets. It utilizes the built-in set method to combine the elements efficiently. The resulting set is then returned to the caller. This operation ensures that any duplicate elements present in either set are only included once in the final output. The function is straightforward and leverages Python's set operations for optimal performance. Overall, it provides a simple way to merge two sets into one.\n\n[end of description]\n"
+    },
+    "filter_prime_numbers": {
+        "code": "\n\ndef filter_prime_numbers(int_list):\n\n    def is_prime(n):\n        if (n < 2):\n            return False\n        for i in range(2, (int((n ** 0.5)) + 1)):\n            if ((n % i) == 0):\n                return False\n        return True\n    primes = []\n    for number in int_list:\n        if is_prime(number):\n            primes.append(number)\n    return primes\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are prime numbers.",
+        "description": "\n[description for function: filter_prime_numbers]\nThis function takes a list of integers as input and returns a new list containing only the prime numbers from the original list. It first checks each number to determine if it is prime by verifying that it is greater than 1 and not divisible by any integer up to its square root. If a number is found to be prime, it is added to a new list. Finally, the function returns the list of prime numbers. The process ensures that only valid prime numbers are included in the output. The function effectively filters out non-prime integers from the input list.\n\n[end of description]\n"
+    },
+    "find_fibonacci_numbers": {
+        "code": "\n\ndef find_fibonacci_numbers(int_list):\n    max_num = (max(int_list) if int_list else 0)\n    fib_set = set()\n    (a, b) = (0, 1)\n    while (a <= max_num):\n        fib_set.add(a)\n        (a, b) = (b, (a + b))\n    result = [num for num in int_list if (num in fib_set)]\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are the Fibonacci numbers present in the list.",
+        "description": "\n[description for function: find_fibonacci_numbers]\nThis function takes a list of integers and identifies which of those integers are Fibonacci numbers. It first determines the maximum number in the list to limit the generation of Fibonacci numbers. Then, it generates Fibonacci numbers up to that maximum and stores them in a set for efficient lookup. Finally, it creates a new list containing only the integers from the original list that are found in the set of Fibonacci numbers and returns this list.\n\n[end of description]\n"
+    },
+    "count_repeated_characters": {
+        "code": "\n\ndef count_repeated_characters(s):\n    char_count = {}\n    for char in s:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    result = {char: count for (char, count) in char_count.items() if (count > 1)}\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a dictionary with each character as the key and the number of times it appears in the string as the value, but only for characters that appear more than once.",
+        "description": "\n[description for function: count_repeated_characters]\nThis function takes a string as input and counts the occurrences of each character within it. It creates a dictionary to store the count of each character, incrementing the count for characters that appear more than once. After processing the string, it constructs a new dictionary containing only those characters that have a count greater than one. Finally, it returns this dictionary, which represents the repeated characters and their respective counts.\n\n[end of description]\n"
+    },
+    "reverse_words_in_string": {
+        "code": "\n\ndef reverse_words_in_string(input_string):\n    words = input_string.split()\n    reversed_words = [word[::(- 1)] for word in words]\n    result = ' '.join(reversed_words)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string with all the words reversed but the order of the words preserved.",
+        "description": "\n[description for function: reverse_words_in_string]\nThis function takes an input string, splits it into individual words, and then reverses each word. It uses list comprehension to create a new list containing the reversed words. After reversing, it joins the words back together into a single string with spaces in between. Finally, it returns the resulting string with all the words reversed. The function effectively transforms the input by reversing the characters of each word while maintaining their original order in the sentence.\n\n[end of description]\n"
+    },
+    "is_subset": {
+        "code": "\n\ndef is_subset(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    return (set1 <= set2)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes two lists of integers and returns True if the first list is a subset of the second list, and False otherwise.",
+        "description": "\n[description for function: is_subset]\nThis function checks if the first list is a subset of the second list by converting both lists into sets. It uses the subset comparison operator to determine if all elements of the first set are contained within the second set. The function returns a boolean value: `True` if the first list is a subset of the second, and `False` otherwise. This approach efficiently handles duplicates and ignores the order of elements. The use of sets ensures that the membership test is performed in an optimal manner. Overall, it provides a straightforward way to verify subset relationships between two lists.\n\n[end of description]\n"
+    },
+    "squares_dict": {
+        "code": "\n\ndef squares_dict(int_list):\n    result = {}\n    for num in int_list:\n        result[num] = (num ** 2)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a dictionary where the keys are the integers from the list and the values are the squares of those integers.",
+        "description": "\n[description for function: squares_dict]\nThis function takes a list of integers as input and creates a dictionary where each integer is a key and its corresponding value is the square of that integer. It initializes an empty dictionary and iterates through the provided list. For each integer, it calculates the square and adds it to the dictionary. Finally, the function returns the completed dictionary containing all the integers and their squares. The output allows for easy access to the square of any integer from the original list. This is a straightforward way to map integers to their squares.\n\n[end of description]\n"
+    },
+    "filter_excluded_integers": {
+        "code": "\n\ndef filter_excluded_integers(integers, excluded):\n    excluded_set = set(excluded)\n    return [num for num in integers if (num not in excluded_set)]\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are not present in a given list of excluded integers.",
+        "description": "\n[description for function: filter_excluded_integers]\nThis function takes a list of integers and a list of excluded integers as input. It converts the excluded integers into a set for efficient lookup. The function then iterates through the list of integers and constructs a new list containing only those integers that are not present in the excluded set. Finally, it returns this filtered list of integers. The approach ensures that the filtering process is both clear and efficient. Overall, it effectively removes specified integers from the original list.\n\n[end of description]\n"
+    },
+    "unique_sorted": {
+        "code": "\n\ndef unique_sorted(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    sorted_unique_integers = sorted(unique_integers)\n    return sorted_unique_integers\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of integers that are the unique elements in the list (appear only once) but sorted in ascending order.",
+        "description": "\n[description for function: unique_sorted]\nThis function takes a list of integers as input and identifies the unique integers that appear only once in the list. It first counts the occurrences of each integer and then filters out those that occur more than once. The remaining unique integers are then sorted in ascending order. Finally, the function returns this sorted list of unique integers.\n\n[end of description]\n"
+    },
+    "generate_combinations": {
+        "code": "from itertools import combinations\n\ndef generate_combinations(int_list):\n    all_combinations = []\n    for r in range(1, (len(int_list) + 1)):\n        all_combinations.extend([list(combo) for combo in combinations(int_list, r)])\n    return all_combinations\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of all possible combinations of those integers (the order of integers in combinations does not matter).",
+        "description": "\n[description for function: generate_combinations]\nThis function takes a list of integers as input and generates all possible combinations of the integers in the list, ranging from combinations of one element up to combinations that include all elements. It utilizes the `combinations` function from the `itertools` module to create these combinations. For each possible combination length, it collects the combinations into a list. The resulting list of combinations is then returned. Each combination is represented as a list of integers. The function effectively provides a comprehensive set of combinations for the given input list.\n\n[end of description]\n"
+    },
+    "reverse_words": {
+        "code": "\n\ndef reverse_words(input_string):\n    words = input_string.split()\n    reversed_words = [word[::(- 1)] for word in words]\n    result = ' '.join(reversed_words)\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string where each word is reversed but the order of the words is preserved.",
+        "description": "\n[description for function: reverse_words]\nThis function takes an input string, splits it into individual words, and then reverses each word. It uses list comprehension to create a new list containing the reversed words. After reversing, it joins the words back together into a single string with spaces in between. Finally, it returns the resulting string with all the words reversed. The function effectively transforms the input by reversing the characters of each word while maintaining their original order in the sentence.\n\n[end of description]\n"
+    },
+    "tuples_to_dict": {
+        "code": "\n\ndef tuples_to_dict(tuples_list):\n    result_dict = {}\n    for (name, age) in tuples_list:\n        result_dict[name] = age\n    return result_dict\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of tuples, where each tuple contains a name and an age, and returns a dictionary where the keys are the names and the values are the ages of the people.",
+        "description": "\n[description for function: tuples_to_dict]\nThis function takes a list of tuples, where each tuple contains a name and an age. It initializes an empty dictionary to store the results. As it iterates through the list, it assigns the age to the corresponding name in the dictionary. After processing all tuples, it returns the constructed dictionary. The output dictionary maps names to their respective ages. This allows for easy access to age information based on names.\n\n[end of description]\n"
+    },
+    "filter_odd_integers": {
+        "code": "\n\ndef filter_odd_integers(input_list):\n    odd_integers = []\n    for number in input_list:\n        if ((number % 2) != 0):\n            odd_integers.append(number)\n    return odd_integers\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are odd.",
+        "description": "\n[description for function: filter_odd_integers]\nThis function takes a list of integers as input and iterates through each number in the list. It checks if the number is odd by using the modulus operator. If a number is found to be odd, it is added to a new list. After processing all the numbers, the function returns the list containing only the odd integers. The output is a filtered list that excludes all even numbers. This allows users to easily obtain all odd integers from the provided input list.\n\n[end of description]\n"
+    },
+    "extract_uppercase": {
+        "code": "\n\ndef extract_uppercase(input_string):\n    uppercase_letters = ''\n    for char in input_string:\n        if char.isupper():\n            uppercase_letters += char\n    return uppercase_letters\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string containing only the uppercase letters from the original string.",
+        "description": "\n[description for function: extract_uppercase]\nThis function takes a string as input and iterates through each character to identify uppercase letters. It accumulates these uppercase characters into a new string. At the end of the iteration, it returns the string containing only the uppercase letters found in the input. If there are no uppercase letters, it returns an empty string. The function effectively filters out all non-uppercase characters from the input. Overall, it serves to extract and return all uppercase letters from a given string.\n\n[end of description]\n"
+    },
+    "find_longest_string": {
+        "code": "\n\ndef find_longest_string(strings):\n    if (not strings):\n        return None\n    longest_string = None\n    for string in strings:\n        if ((longest_string is None) or (len(string) > len(longest_string))):\n            longest_string = string\n    return longest_string\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns the longest string in the list. If there are multiple strings of the same maximum length, return the first one encountered. If the list is empty, return None.",
+        "description": "\n[description for function: find_longest_string]\nThis function takes a list of strings as input and returns the longest string from that list. If the list is empty, it returns None. It initializes a variable to keep track of the longest string found so far. As it iterates through each string in the list, it updates the longest string if the current string is longer than the previously recorded longest string. Finally, it returns the longest string after checking all the elements in the list. The function effectively handles cases where the input list may be empty.\n\n[end of description]\n"
+    },
+    "filter_less_than_threshold": {
+        "code": "\n\ndef filter_less_than_threshold(int_list, threshold):\n    return [num for num in int_list if (num < threshold)]\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are less than a specified threshold value.",
+        "description": "\n[description for function: filter_less_than_threshold]\nThis function takes a list of integers and a threshold value as input. It iterates through the list and creates a new list containing only the integers that are less than the specified threshold. The result is a filtered list that excludes any integers equal to or greater than the threshold. The function utilizes a list comprehension for concise and efficient filtering. It returns the new list of integers that meet the condition. Overall, it serves to identify and extract values below a given limit from a collection of integers.\n\n[end of description]\n"
+    },
+    "find_maximum": {
+        "code": "\n\ndef find_maximum(numbers):\n    if (not numbers):\n        return None\n    max_value = numbers[0]\n    for num in numbers:\n        if (num > max_value):\n            max_value = num\n    return max_value\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns the maximum integer in the list. If the list is empty, return None.",
+        "description": "\n[description for function: find_maximum]\nThis function takes a list of numbers as input and returns the maximum value found in that list. If the list is empty, it returns None. It initializes the maximum value with the first element of the list and iterates through each number, updating the maximum value whenever a larger number is encountered. Finally, it returns the maximum value after checking all elements. The function effectively handles both empty and non-empty lists. It ensures that the maximum value is determined in a straightforward manner.\n\n[end of description]\n"
+    },
+    "unique_sorted_characters": {
+        "code": "\n\ndef unique_sorted_characters(input_string):\n    unique_chars = set(input_string)\n    sorted_chars = sorted(unique_chars)\n    return sorted_chars\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a list of all the unique characters in that string, sorted in alphabetical order.",
+        "description": "\n[description for function: unique_sorted_characters]\nThis function takes an input string and extracts the unique characters from it by converting the string into a set. It then sorts these unique characters in ascending order. Finally, it returns the sorted list of characters. The function effectively removes any duplicates and ensures the output is organized. It is useful for obtaining a clean and ordered representation of the characters present in the input. The result is a list of characters without repetitions, sorted alphabetically.\n\n[end of description]\n"
+    },
+    "filter_multiples_v2": {
+        "code": "\n\ndef filter_multiples_v2(int_list, specified_number):\n    multiples = []\n    for integer in int_list:\n        if ((integer % specified_number) == 0):\n            multiples.append(integer)\n    return multiples\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are multiples of a specified number.",
+        "description": "\n[description for function: filter_multiples]\nThis function takes a list of integers and a specified number as input, and it filters the list to return only those integers that are multiples of the specified number. It initializes an empty list to store the multiples found during the iteration. For each integer in the input list, it checks if the integer is divisible by the specified number without a remainder. If it is, the integer is added to the list of multiples. Finally, the function returns the list of multiples. This allows users to easily identify and extract multiples from a given list.\n\n[end of description]\n"
+    },
+    "remove_vowels_v2": {
+        "code": "\n\ndef remove_vowels_v2(input_string):\n    vowels = 'aeiouAEIOU'\n    result = []\n    for char in input_string:\n        if (char not in vowels):\n            result.append(char)\n    return ''.join(result)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string with all the vowels removed, while preserving the order of the remaining characters.",
+        "description": "\n[description for function: remove_vowels]\nThis function takes a string as input and removes all vowels from it, including both uppercase and lowercase letters. It initializes an empty list to store the characters that are not vowels. As it iterates through each character in the input string, it checks if the character is not a vowel and, if so, appends it to the result list. Finally, it joins the characters in the result list into a single string and returns that string without vowels.\n\n[end of description]\n"
+    },
+    "filter_primes": {
+        "code": "\n\ndef is_prime(n):\n    if (n < 2):\n        return False\n    for i in range(2, (int((n ** 0.5)) + 1)):\n        if ((n % i) == 0):\n            return False\n    return True\n\n\n\n\ndef filter_primes(numbers):\n    primes = []\n    for number in numbers:\n        if is_prime(number):\n            primes.append(number)\n    return primes\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the prime numbers from the original list.",
+        "description": "\n[description for function: filter_primes]\nThis function takes a list of numbers as input and returns a new list containing only the prime numbers from the original list. It iterates through each number in the input list and checks if it is prime using a separate function. If a number is determined to be prime, it is added to the result list. Finally, the function returns the list of prime numbers. The output will be an empty list if no prime numbers are found. This function effectively filters out non-prime numbers from the provided list.\n\n[end of description]\n"
+    },
+    "remove_digits": {
+        "code": "\n\ndef remove_digits(input_string):\n    result = ''.join((char for char in input_string if (not char.isdigit())))\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string with all the digits removed.",
+        "description": "\n[description for function: remove_digits]\nThis function takes a string as input and removes all digit characters from it. It iterates through each character in the input string, checking if it is not a digit. If the character is not a digit, it is included in the result. The remaining characters are then joined together to form a new string. Finally, the function returns this new string, which contains only the non-digit characters from the original input.\n\n[end of description]\n"
+    },
+    "remove_every_second_character": {
+        "code": "\n\ndef remove_every_second_character(input_string):\n    return ''.join((input_string[i] for i in range(len(input_string)) if ((i % 2) == 0)))\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string where every second character is removed.",
+        "description": "\n[description for function: remove_every_second_character]\nThis function takes an input string and returns a new string that consists of every second character from the original string, starting with the first character. It iterates through the indices of the input string and selects characters at even indices. The selected characters are then joined together to form the resulting string. The function effectively filters out characters located at odd indices. The output is a string that retains only the characters from the original string that are in even positions. This can be useful for creating a simplified version of a string or for specific formatting purposes.\n\n[end of description]\n"
+    },
+    "remove_vowels_v3": {
+        "code": "\n\ndef remove_vowels_v3(input_string):\n    consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'\n    result = []\n    for char in input_string:\n        if (char.isalpha() and (char in consonants)):\n            result.append(char)\n    return ''.join(result)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string containing only the consonants from the original string, preserving their order.",
+        "description": "\n[description for function: remove_vowels]\nThis function takes an input string and removes all vowels from it, retaining only the consonants. It iterates through each character in the input string, checking if it is an alphabetic character and if it belongs to a predefined set of consonants. If both conditions are met, the character is added to a result list. Finally, the function joins the characters in the result list into a single string and returns it. The output string consists solely of consonants, with all vowels omitted. The function is case-sensitive, preserving the case of the consonants.\n\n[end of description]\n"
+    },
+    "filter_perfect_squares": {
+        "code": "\n\ndef filter_perfect_squares(int_list):\n    perfect_squares = []\n    for num in int_list:\n        if (num >= 0):\n            root = int((num ** 0.5))\n            if ((root * root) == num):\n                perfect_squares.append(num)\n    return perfect_squares\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are perfect squares.",
+        "description": "\n[description for function: filter_perfect_squares]\nThis function takes a list of integers as input and returns a new list containing only the perfect squares from the original list. It iterates through each number, checking if it is non-negative and if its square root, when squared, equals the original number. If both conditions are met, the number is added to the result list. Finally, the function returns the list of perfect squares.\n\n[end of description]\n"
+    },
+    "generate_integer_pairs": {
+        "code": "\n\ndef generate_integer_pairs(int_list):\n    pairs = []\n    for i in range(len(int_list)):\n        for j in range((i + 1), len(int_list)):\n            pairs.append((int_list[i], int_list[j]))\n    return pairs\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a list of all possible pairs of integers from that list. Each pair should be represented as a tuple, and the order of the pairs does not matter.",
+        "description": "\n[description for function: generate_integer_pairs]\nThis function takes a list of integers as input and generates all possible unique pairs of integers from that list. It iterates through the list using two nested loops, ensuring that each pair consists of different elements and that the order of the pairs does not repeat. Each pair is stored as a tuple in a new list. Finally, the function returns the list of generated pairs. The output will contain combinations of integers without any duplicates. This is useful for scenarios where you need to analyze relationships between pairs of numbers.\n\n[end of description]\n"
+    },
+    "capitalize_words": {
+        "code": "\n\ndef capitalize_words(input_string):\n    words = input_string.split()\n    capitalized_words = [word.capitalize() for word in words]\n    return ' '.join(capitalized_words)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a new string where each word is capitalized (the first letter of each word is uppercase and the rest are lowercase).",
+        "description": "\n[description for function: capitalize_words]\nThis function takes a string as input, splits it into individual words, and capitalizes the first letter of each word. It uses a list comprehension to create a new list of these capitalized words. After capitalizing, it joins the words back together into a single string with spaces in between. The resulting string, with each word capitalized, is then returned. This effectively transforms the input string into a more formal or title-like format. The function handles any number of words in the input string.\n\n[end of description]\n"
+    },
+    "char_frequency_ignore_case": {
+        "code": "\n\ndef char_frequency_ignore_case(input_string):\n    input_string = input_string.lower()\n    char_count = {}\n    for char in input_string:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    return char_count\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns a dictionary with each character as the key and the number of times it appears in the string as the value, ignoring case.",
+        "description": "\n[description for function: char_frequency_ignore_case]\nThis function takes a string as input and calculates the frequency of each character in a case-insensitive manner. It converts the entire string to lowercase to ensure that 'A' and 'a' are counted as the same character. A dictionary is used to store the count of each character as the function iterates through the string. If a character is already in the dictionary, its count is incremented; otherwise, it is added with a count of one. Finally, the function returns the dictionary containing the character frequencies. This allows for easy analysis of character distribution in the input string.\n\n[end of description]\n"
+    },
+    "is_balanced_parentheses": {
+        "code": "\n\ndef is_balanced_parentheses(parentheses_string):\n    stack = []\n    for char in parentheses_string:\n        if (char == '('):\n            stack.append(char)\n        elif (char == ')'):\n            if stack:\n                stack.pop()\n            else:\n                return False\n    return (len(stack) == 0)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string containing parentheses and returns True if the parentheses are balanced (every opening parenthesis has a corresponding closing parenthesis), and False otherwise.",
+        "description": "\n[description for function: is_balanced_parentheses]\nThis function checks if a given string of parentheses is balanced. It uses a stack to keep track of opening parentheses. For each character in the string, it pushes an opening parenthesis onto the stack and pops from the stack for each closing parenthesis. If a closing parenthesis is encountered when the stack is empty, it returns false, indicating an imbalance. At the end, it checks if the stack is empty, returning true if balanced and false otherwise. This ensures that every opening parenthesis has a corresponding closing one in the correct order.\n\n[end of description]\n"
+    },
+    "find_odd_numbers": {
+        "code": "\n\ndef find_odd_numbers(int_list):\n    odd_integers = set()\n    for number in int_list:\n        if ((number % 2) != 0):\n            odd_integers.add(number)\n    return odd_integers\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a set containing only the integers that are odd.",
+        "description": "\n[description for function: find_odd_numbers]\nThis function takes a list of integers as input and identifies all the odd numbers within that list. It uses a set to store unique odd integers, ensuring that duplicates are not included. As it iterates through each number in the list, it checks if the number is odd by evaluating the remainder when divided by 2. If a number is found to be odd, it is added to the set. Finally, the function returns the set of odd integers. The result is a collection of all unique odd numbers from the provided list.\n\n[end of description]\n"
+    },
+    "exclude_integers": {
+        "code": "\n\ndef filter_excluded_numbers(int_list, excluded_set):\n    return [num for num in int_list if (num not in excluded_set)]\n\n\n\n\ndef exclude_integers(int_list, excluded_set):\n    return filter_excluded_numbers(int_list, excluded_set)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the integers that are not present in a given set of excluded integers.",
+        "description": "\n[description for function: exclude_integers]\nThis function takes a list of integers and a set of excluded integers as input. It filters the list to remove any integers that are present in the excluded set. The result is a new list containing only the integers that are not excluded. The function effectively allows for the customization of which integers to keep based on the provided exclusion criteria. It returns the filtered list, maintaining the order of the original integers. This is useful for scenarios where specific values need to be omitted from a collection.\n\n[end of description]\n"
+    }
+}

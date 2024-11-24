@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_occurance(\"letstdlenstdporstd\") == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_occurance(input_string):\n    count = 0\n    substring = 'std'\n    index = 0\n    while (index < len(input_string)):\n        index = input_string.find(substring, index)\n        if (index == (- 1)):\n            break\n        count += 1\n        index += len(substring)\n    return count\n",
+    "full_code": "\n\ndef count_occurance(input_string):\n    count = 0\n    substring = 'std'\n    index = 0\n    while (index < len(input_string)):\n        index = input_string.find(substring, index)\n        if (index == (- 1)):\n            break\n        count += 1\n        index += len(substring)\n    return count\n",
+    "task_id": "Mbpp/172",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

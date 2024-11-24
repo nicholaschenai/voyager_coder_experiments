@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert dict_filter({'Cierra Vega': 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox': 190},170)=={'Cierra Vega': 175, 'Alden Cantrell': 180, 'Pierre Cox': 190}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef dict_filter(input_dict, n):\n    filtered_dict = {key: value for (key, value) in input_dict.items() if (value >= n)}\n    return filtered_dict\n",
+    "full_code": "\n\ndef dict_filter(input_dict, n):\n    filtered_dict = {key: value for (key, value) in input_dict.items() if (value >= n)}\n    return filtered_dict\n",
+    "task_id": "Mbpp/277",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

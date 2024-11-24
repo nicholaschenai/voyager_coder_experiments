@@ -1,0 +1,5 @@
+
+[description for function: find_kth_smallest]
+This function takes a list of numbers and an integer k as input, aiming to find the k-th smallest element in the list. It first checks if k is greater than the length of the list, returning None if true. A min-heap is created to store the numbers, allowing for efficient retrieval of the smallest elements. The function then removes the smallest elements from the heap k-1 times to reach the k-th smallest. Finally, it pops and returns the k-th smallest element from the heap. If the input list is valid, the function efficiently determines the desired element using a heap data structure.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert parabola_directrix(5,3,2)==-198 # output: 1.5",
+    "state": null,
+    "code": "\n\ndef parabola_directrix(a, b, c):\n    h = ((- b) / (2 * a))\n    k = (c - ((b ** 2) / (4 * a)))\n    p = (1 / (4 * a))\n    if (a > 0):\n        directrix = (k - p)\n    else:\n        directrix = (k + p)\n    return directrix\n",
+    "full_code": "\n\ndef parabola_directrix(a, b, c):\n    h = ((- b) / (2 * a))\n    k = (c - ((b ** 2) / (4 * a)))\n    p = (1 / (4 * a))\n    if (a > 0):\n        directrix = (k - p)\n    else:\n        directrix = (k + p)\n    return directrix\n",
+    "task_id": "Mbpp/430",
+    "reasoning": "The implementation failed the test case because it incorrectly calculates the vertex 'k'. The formula used for 'k' is incorrect; it should be k = a * h^2 + b * h + c, but the implementation uses k = c - (b^2 / (4 * a)). Additionally, the implementation does not account for the fact that the directrix is a line, and it should return the equation of the line, not just a single value.",
+    "success": false,
+    "critique": "To correct the implementation, use the proper formula for 'k': k = a * h^2 + b * h + c. Also, ensure that the function returns the equation of the directrix line. For an upward opening parabola, the directrix is y = k - p, and for a downward opening parabola, it is y = k + p. The function should return the y-value of the directrix line, not just a single point."
+}

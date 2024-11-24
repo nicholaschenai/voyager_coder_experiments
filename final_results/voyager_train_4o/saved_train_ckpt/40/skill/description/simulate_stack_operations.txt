@@ -1,0 +1,5 @@
+
+[description for function: simulate_stack_operations]
+This function simulates a series of stack operations based on a list of commands. It initializes an empty stack and processes each operation, which can be to push a value onto the stack, pop the top value off the stack, or peek at the top value without removing it. When pushing, it converts the value to an integer before adding it to the stack. If a pop or peek operation is attempted on an empty stack, it appends `None` to the results list. The function returns a list of results corresponding to the pop and peek operations. Overall, it effectively manages stack behavior and provides feedback on the operations performed.
+
+[end of description]

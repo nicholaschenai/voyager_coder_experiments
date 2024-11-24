@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_product_tuple([(2, 7), (2, 6), (1, 8), (4, 9)] )==36\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_product_tuple(tuples_list):\n    max_product = float('-inf')\n    for (a, b) in tuples_list:\n        product = abs((a * b))\n        if (product > max_product):\n            max_product = product\n    return max_product\n",
+    "full_code": "\n\ndef max_product_tuple(tuples_list):\n    max_product = float('-inf')\n    for (a, b) in tuples_list:\n        product = abs((a * b))\n        if (product > max_product):\n            max_product = product\n    return max_product\n",
+    "task_id": "Mbpp/120",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_run_uppercase('GeMKSForGERksISBESt') == 5\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_run_uppercase(s):\n    max_run = 0\n    current_run = 0\n    for char in s:\n        if char.isupper():\n            current_run += 1\n        else:\n            max_run = max(max_run, current_run)\n            current_run = 0\n    max_run = max(max_run, current_run)\n    return max_run\n",
+    "full_code": "\n\ndef max_run_uppercase(s):\n    max_run = 0\n    current_run = 0\n    for char in s:\n        if char.isupper():\n            current_run += 1\n        else:\n            max_run = max(max_run, current_run)\n            current_run = 0\n    max_run = max(max_run, current_run)\n    return max_run\n",
+    "task_id": "Mbpp/806",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

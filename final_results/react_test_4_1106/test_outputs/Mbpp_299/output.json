@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_aggregate([('Juan Whelan',90),('Sabah Colley',88),('Peter Nichols',7),('Juan Whelan',122),('Sabah Colley',84)])==('Juan Whelan', 212)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_aggregate(scores):\n    aggregate_scores = {}\n    for (name, score) in scores:\n        if (name in aggregate_scores):\n            aggregate_scores[name] += score\n        else:\n            aggregate_scores[name] = score\n    max_name = max(aggregate_scores, key=aggregate_scores.get)\n    return (max_name, aggregate_scores[max_name])\n",
+    "full_code": "\n\ndef max_aggregate(scores):\n    aggregate_scores = {}\n    for (name, score) in scores:\n        if (name in aggregate_scores):\n            aggregate_scores[name] += score\n        else:\n            aggregate_scores[name] = score\n    max_name = max(aggregate_scores, key=aggregate_scores.get)\n    return (max_name, aggregate_scores[max_name])\n",
+    "task_id": "Mbpp/299",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

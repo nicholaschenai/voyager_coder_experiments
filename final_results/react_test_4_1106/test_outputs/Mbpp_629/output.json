@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert Split([1,2,3,4,5]) == [2,4]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef Split(numbers):\n    even_numbers = [number for number in numbers if ((number % 2) == 0)]\n    return even_numbers\n",
+    "full_code": "\n\ndef Split(numbers):\n    even_numbers = [number for number in numbers if ((number % 2) == 0)]\n    return even_numbers\n",
+    "task_id": "Mbpp/629",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

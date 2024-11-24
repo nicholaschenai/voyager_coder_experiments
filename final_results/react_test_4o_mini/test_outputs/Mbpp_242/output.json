@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_charac(\"python programming\")==18\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_charac(s: str) -> int:\n    return len(s)\n",
+    "full_code": "\n\ndef count_charac(s: str) -> int:\n    return len(s)\n",
+    "task_id": "Mbpp/242",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

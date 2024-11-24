@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_sum([1, 15, 51, 45, 33, 100, 12, 18, 9]) == 194\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_sum(arr):\n    n = len(arr)\n    if (n == 0):\n        return 0\n    inc_sum = ([0] * n)\n    for i in range(n):\n        inc_sum[i] = arr[i]\n        for j in range(i):\n            if (arr[j] < arr[i]):\n                inc_sum[i] = max(inc_sum[i], (inc_sum[j] + arr[i]))\n    dec_sum = ([0] * n)\n    for i in range((n - 1), (- 1), (- 1)):\n        dec_sum[i] = arr[i]\n        for j in range((i + 1), n):\n            if (arr[j] < arr[i]):\n                dec_sum[i] = max(dec_sum[i], (dec_sum[j] + arr[i]))\n    max_bitonic_sum = 0\n    for i in range(n):\n        max_bitonic_sum = max(max_bitonic_sum, ((inc_sum[i] + dec_sum[i]) - arr[i]))\n    return max_bitonic_sum\n",
+    "full_code": "\n\ndef max_sum(arr):\n    n = len(arr)\n    if (n == 0):\n        return 0\n    inc_sum = ([0] * n)\n    for i in range(n):\n        inc_sum[i] = arr[i]\n        for j in range(i):\n            if (arr[j] < arr[i]):\n                inc_sum[i] = max(inc_sum[i], (inc_sum[j] + arr[i]))\n    dec_sum = ([0] * n)\n    for i in range((n - 1), (- 1), (- 1)):\n        dec_sum[i] = arr[i]\n        for j in range((i + 1), n):\n            if (arr[j] < arr[i]):\n                dec_sum[i] = max(dec_sum[i], (dec_sum[j] + arr[i]))\n    max_bitonic_sum = 0\n    for i in range(n):\n        max_bitonic_sum = max(max_bitonic_sum, ((inc_sum[i] + dec_sum[i]) - arr[i]))\n    return max_bitonic_sum\n",
+    "task_id": "Mbpp/245",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

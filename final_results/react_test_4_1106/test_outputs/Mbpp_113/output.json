@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_integer(\"python\")==False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_integer(s):\n    try:\n        int(s)\n        return True\n    except ValueError:\n        return False\n",
+    "full_code": "\n\ndef check_integer(s):\n    try:\n        int(s)\n        return True\n    except ValueError:\n        return False\n",
+    "task_id": "Mbpp/113",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

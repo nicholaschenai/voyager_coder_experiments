@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert (Diff([10, 15, 20, 25, 30, 35, 40], [25, 40, 35])) == [10, 20, 30, 15] # output: [10, 15, 20, 30]",
+    "state": null,
+    "code": "\n\ndef Diff(list1, list2):\n    return [item for item in list1 if (item not in list2)]\n",
+    "full_code": "\n\ndef Diff(list1, list2):\n    return [item for item in list1 if (item not in list2)]\n",
+    "task_id": "Mbpp/769",
+    "reasoning": "The implementation failed the test case because it does not account for the order of elements in the output list. The expected output is [10, 20, 30, 15], which suggests that the function should return elements from the first list that are not in the second list, but in a specific order. However, the current implementation returns [10, 15, 20, 30], which does not match the expected order.",
+    "success": false,
+    "critique": "To fix the implementation, you need to ensure that the elements are returned in the order they appear in the first list while also ensuring that the elements are unique in the output. You can achieve this by using a set to track which elements have already been added to the result list, ensuring that you only add elements that are not in the second list and have not been added before."
+}

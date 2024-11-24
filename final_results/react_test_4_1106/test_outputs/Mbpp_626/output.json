@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert triangle_area(-1) == None\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef triangle_area(radius):\n    if (radius < 0):\n        return None\n    area = (((1 / 2) * (2 * radius)) * radius)\n    return area\n",
+    "full_code": "\n\ndef triangle_area(radius):\n    if (radius < 0):\n        return None\n    area = (((1 / 2) * (2 * radius)) * radius)\n    return area\n",
+    "task_id": "Mbpp/626",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

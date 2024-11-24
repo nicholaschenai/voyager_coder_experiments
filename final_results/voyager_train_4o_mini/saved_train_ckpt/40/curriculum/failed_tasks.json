@@ -1,0 +1,6 @@
+{
+    "tasks": [
+        "Write a Python function that takes a dictionary and returns a new dictionary with the keys and values swapped. If there are duplicate values, keep only one of the keys.",
+        "Write a Python function that takes a dictionary and returns a new dictionary containing only the items where the value is greater than a specified threshold."
+    ]
+}

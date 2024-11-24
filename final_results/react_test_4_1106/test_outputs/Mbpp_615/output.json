@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert average_tuple(((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4)))==[30.5, 34.25, 27.0, 23.25]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef average_tuple(tuples_of_tuples):\n    if (not all(((len(inner) == len(tuples_of_tuples[0])) for inner in tuples_of_tuples))):\n        raise ValueError('All inner tuples must be of the same length.')\n    sums = ([0] * len(tuples_of_tuples[0]))\n    for inner_tuple in tuples_of_tuples:\n        for (i, value) in enumerate(inner_tuple):\n            sums[i] += value\n    averages = [(sum_value / len(tuples_of_tuples)) for sum_value in sums]\n    return averages\n",
+    "full_code": "\n\ndef average_tuple(tuples_of_tuples):\n    if (not all(((len(inner) == len(tuples_of_tuples[0])) for inner in tuples_of_tuples))):\n        raise ValueError('All inner tuples must be of the same length.')\n    sums = ([0] * len(tuples_of_tuples[0]))\n    for inner_tuple in tuples_of_tuples:\n        for (i, value) in enumerate(inner_tuple):\n            sums[i] += value\n    averages = [(sum_value / len(tuples_of_tuples)) for sum_value in sums]\n    return averages\n",
+    "task_id": "Mbpp/615",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

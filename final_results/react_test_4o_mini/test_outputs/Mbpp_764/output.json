@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert number_ctr('program2bedone') == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef number_ctr(s: str) -> int:\n    count = 0\n    for char in s:\n        if char.isdigit():\n            count += 1\n    return count\n",
+    "full_code": "\n\ndef number_ctr(s: str) -> int:\n    count = 0\n    for char in s:\n        if char.isdigit():\n            count += 1\n    return count\n",
+    "task_id": "Mbpp/764",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

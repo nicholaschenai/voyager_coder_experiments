@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert min_of_three(10,20,0)==0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef min_of_three(a, b, c):\n    return min(a, b, c)\n",
+    "full_code": "\n\ndef min_of_three(a, b, c):\n    return min(a, b, c)\n",
+    "task_id": "Mbpp/227",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

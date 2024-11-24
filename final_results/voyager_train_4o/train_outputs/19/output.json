@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert recursive_factorial(5) == 120\nassert recursive_factorial(0) == 1\nassert recursive_factorial(3) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef recursive_factorial(n):\n    if (n == 0):\n        return 1\n    else:\n        return (n * recursive_factorial((n - 1)))\n",
+    "full_code": "\n\ndef recursive_factorial(n):\n    if (n == 0):\n        return 1\n    else:\n        return (n * recursive_factorial((n - 1)))\n",
+    "task_id": "19",
+    "reasoning": "The function implementation correctly calculates the factorial of a non-negative integer using recursion. It includes a base case for when n is 0, returning 1, and a recursive case for when n is greater than 0, returning n multiplied by the factorial of n-1. The unit tests cover a range of cases, including the base case and other positive integers, and all tests pass, indicating the function works as intended.",
+    "success": true,
+    "critique": "The implementation is correct and meets the task requirements. No changes are necessary. Ensure to handle edge cases, such as very large integers, which may cause a stack overflow due to deep recursion."
+}

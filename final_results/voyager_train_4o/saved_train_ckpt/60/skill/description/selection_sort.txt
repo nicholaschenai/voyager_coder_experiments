@@ -1,0 +1,5 @@
+
+[description for function: selection_sort]
+This function sorts an array in ascending order using the selection sort algorithm. It iterates through the array, selecting the minimum element from the unsorted portion and swapping it with the first unsorted element. The process is repeated for each element until the entire array is sorted. The function modifies the original array in place and returns the sorted array. It has a time complexity of O(n^2), making it less efficient for large datasets. Overall, it provides a straightforward method for sorting a list of comparable elements.
+
+[end of description]

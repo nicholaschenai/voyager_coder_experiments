@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert text_match_wordz_middle(\"pythonzabc.\")==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef text_match_wordz_middle(s: str) -> bool:\n    if (len(s) < 3):\n        return False\n    middle_section = s[1:(- 1)]\n    return ('z' in middle_section)\n",
+    "full_code": "\n\ndef text_match_wordz_middle(s: str) -> bool:\n    if (len(s) < 3):\n        return False\n    middle_section = s[1:(- 1)]\n    return ('z' in middle_section)\n",
+    "task_id": "Mbpp/643",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

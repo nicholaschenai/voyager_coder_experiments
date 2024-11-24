@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_Sub_Array([1,4,3,5],[1,2]) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_Sub_Array(main_list, sub_list):\n    main_length = len(main_list)\n    sub_length = len(sub_list)\n    if (sub_length > main_length):\n        return False\n    for i in range(((main_length - sub_length) + 1)):\n        if (main_list[i:(i + sub_length)] == sub_list):\n            return True\n    return False\n",
+    "full_code": "\n\ndef is_Sub_Array(main_list, sub_list):\n    main_length = len(main_list)\n    sub_length = len(sub_list)\n    if (sub_length > main_length):\n        return False\n    for i in range(((main_length - sub_length) + 1)):\n        if (main_list[i:(i + sub_length)] == sub_list):\n            return True\n    return False\n",
+    "task_id": "Mbpp/576",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

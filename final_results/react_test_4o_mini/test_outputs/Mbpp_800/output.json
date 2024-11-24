@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_all_spaces('python  program')==('pythonprogram')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_all_spaces(input_string: str) -> str:\n    return ''.join(input_string.split())\n",
+    "full_code": "\n\ndef remove_all_spaces(input_string: str) -> str:\n    return ''.join(input_string.split())\n",
+    "task_id": "Mbpp/800",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

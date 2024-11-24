@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_distinct((1, 4, 5, 6, 1, 4)) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_distinct(tup):\n    return (len(tup) == len(set(tup)))\n",
+    "full_code": "\n\ndef check_distinct(tup):\n    return (len(tup) == len(set(tup)))\n",
+    "task_id": "Mbpp/394",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

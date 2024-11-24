@@ -1,0 +1,5 @@
+
+[description for function: find_pattern_index]
+This function searches for the first occurrence of a specified pattern within a given main string. It calculates the lengths of both the main string and the pattern, returning 0 if the pattern is empty. The function iterates through the main string, checking each substring of the same length as the pattern for a match. If a match is found, it returns the starting index of the pattern within the main string. If no match is found after checking all possible positions, it returns -1. This effectively allows for a straightforward substring search.
+
+[end of description]

@@ -1,0 +1,5 @@
+
+[description for function: first_recurring_character]
+This function takes a string as input and identifies the first character that appears more than once. It utilizes a dictionary to keep track of characters that have already been encountered. As it iterates through the string, it checks if each character has been seen before. If a character is found in the dictionary, it is immediately returned as the first recurring character. If no characters recur, the function returns None. This approach ensures that the function operates efficiently with a time complexity of O(n).
+
+[end of description]

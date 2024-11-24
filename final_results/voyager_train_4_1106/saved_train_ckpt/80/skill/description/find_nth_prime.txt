@@ -1,0 +1,5 @@
+
+[description for function: find_nth_prime]
+This function calculates the nth prime number, where n is a positive integer. It starts by checking if n is less than 1, raising an error if so. The function initializes a list of primes with the first prime number, 2, and then iteratively checks subsequent numbers to determine if they are prime. For each candidate number, it tests divisibility against the known primes up to its square root. If a number is found to be prime, it is added to the list of primes. Finally, the function returns the nth prime from the list.
+
+[end of description]

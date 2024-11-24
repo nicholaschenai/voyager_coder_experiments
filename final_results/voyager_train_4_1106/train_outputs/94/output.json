@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert is_valid_ipv6('2001:0db8:85a3:0000:0000:8a2e:0370:7334') == True\nassert is_valid_ipv6('2001:db8:85a3:0:0:8A2E:0370:7334') == True\nassert is_valid_ipv6('2001:0db8:85a3::8a2e:0370:7334') == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_valid_ipv6(ip):\n    if (ip.count(':') != 7):\n        return False\n    groups = ip.split(':')\n    for group in groups:\n        if ((not (1 <= len(group) <= 4)) or (not all(((c in '0123456789abcdefABCDEF') for c in group)))):\n            return False\n    return True\n",
+    "full_code": "\n\ndef is_valid_ipv6(ip):\n    if (ip.count(':') != 7):\n        return False\n    groups = ip.split(':')\n    for group in groups:\n        if ((not (1 <= len(group) <= 4)) or (not all(((c in '0123456789abcdefABCDEF') for c in group)))):\n            return False\n    return True\n",
+    "task_id": "94",
+    "reasoning": "The function implementation correctly checks for the number of colons and the validity of each group. It also correctly handles groups with fewer than 4 hexadecimal digits, which is allowed in IPv6 addresses.",
+    "success": true,
+    "critique": "The function implementation meets the task requirements. However, the context provided a slightly incorrect plan by stating that each group must contain exactly 4 hexadecimal digits, while in reality, groups can have fewer than 4 digits. The implementation correctly allows for groups with 1 to 4 hexadecimal digits."
+}

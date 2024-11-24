@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_pattern_index('hello world', 'world') == 6\nassert find_pattern_index('abcdef', 'def') == 3\nassert find_pattern_index('abcdef', 'xyz') == -1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_pattern_index(main_string, pattern):\n    main_length = len(main_string)\n    pattern_length = len(pattern)\n    if (pattern_length == 0):\n        return 0\n    for i in range(((main_length - pattern_length) + 1)):\n        if (main_string[i:(i + pattern_length)] == pattern):\n            return i\n    return (- 1)\n",
+    "full_code": "\n\ndef find_pattern_index(main_string, pattern):\n    main_length = len(main_string)\n    pattern_length = len(pattern)\n    if (pattern_length == 0):\n        return 0\n    for i in range(((main_length - pattern_length) + 1)):\n        if (main_string[i:(i + pattern_length)] == pattern):\n            return i\n    return (- 1)\n",
+    "task_id": "37",
+    "reasoning": "The function implementation correctly follows the task requirements by iterating through the main string and checking for the first occurrence of the pattern. It returns the starting index of the pattern if found, and -1 if not found. The function also handles the edge case where the pattern is an empty string by returning 0, which is a reasonable assumption for this task. All provided unit tests pass, indicating that the function behaves as expected for the tested cases.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. It efficiently finds the starting index of the first occurrence of the pattern in the string. No changes are necessary."
+}

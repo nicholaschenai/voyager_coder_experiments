@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert perfect_squares(1,30)==[1, 4, 9, 16, 25]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef perfect_squares(start, end):\n    squares = []\n    start_point = math.ceil(math.sqrt(start))\n    end_point = math.floor(math.sqrt(end))\n    for i in range(start_point, (end_point + 1)):\n        square = (i * i)\n        if (start <= square <= end):\n            squares.append(square)\n    return squares\n",
+    "full_code": "import math\n\ndef perfect_squares(start, end):\n    squares = []\n    start_point = math.ceil(math.sqrt(start))\n    end_point = math.floor(math.sqrt(end))\n    for i in range(start_point, (end_point + 1)):\n        square = (i * i)\n        if (start <= square <= end):\n            squares.append(square)\n    return squares\n",
+    "task_id": "Mbpp/589",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

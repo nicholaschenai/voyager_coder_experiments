@@ -1,0 +1,5 @@
+
+[description for function: find_duplicates]
+This function takes a list of integers as input and counts the occurrences of each integer using the Counter class from the collections module. It then creates a set of integers that appear more than once in the list, identifying them as duplicates. Finally, the function returns this set of duplicate integers. The use of a set ensures that each duplicate is listed only once, regardless of how many times it appears in the input list. The function efficiently handles the counting and filtering in a concise manner. Overall, it provides a straightforward way to identify duplicate values in a list of integers.
+
+[end of description]

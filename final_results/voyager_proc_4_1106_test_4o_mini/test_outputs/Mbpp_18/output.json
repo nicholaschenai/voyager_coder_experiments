@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_dirty_chars(\"probasscurve\", \"pros\") == 'bacuve'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_dirty_chars(str1: str, str2: str) -> str:\n    return ''.join((char for char in str1 if (char not in str2)))\n",
+    "full_code": "\n\ndef remove_dirty_chars(str1: str, str2: str) -> str:\n    return ''.join((char for char in str1 if (char not in str2)))\n",
+    "task_id": "Mbpp/18",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

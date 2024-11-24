@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert kth_element([12,3,5,7,19], 2) == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef kth_element(arr, k):\n    if ((k < 1) or (k > len(arr))):\n        raise IndexError('k is out of bounds')\n    return arr[(k - 1)]\n",
+    "full_code": "\n\ndef kth_element(arr, k):\n    if ((k < 1) or (k > len(arr))):\n        raise IndexError('k is out of bounds')\n    return arr[(k - 1)]\n",
+    "task_id": "Mbpp/101",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

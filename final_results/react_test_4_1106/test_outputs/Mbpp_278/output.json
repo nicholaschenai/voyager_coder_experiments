@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_first_elements((1, 5, 7, (4, 6), 10) ) == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_first_elements(input_tuple):\n    for (index, element) in enumerate(input_tuple):\n        if isinstance(element, tuple):\n            return index\n    return 0\n",
+    "full_code": "\n\ndef count_first_elements(input_tuple):\n    for (index, element) in enumerate(input_tuple):\n        if isinstance(element, tuple):\n            return index\n    return 0\n",
+    "task_id": "Mbpp/278",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

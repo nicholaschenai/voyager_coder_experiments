@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_whitespaces(' Google    Flutter ') == 'GoogleFlutter'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_whitespaces(input_string: str) -> str:\n    return ''.join((char for char in input_string if (not char.isspace())))\n",
+    "full_code": "\n\ndef remove_whitespaces(input_string: str) -> str:\n    return ''.join((char for char in input_string if (not char.isspace())))\n",
+    "task_id": "Mbpp/451",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

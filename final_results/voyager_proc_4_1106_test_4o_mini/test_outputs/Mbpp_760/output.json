@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert unique_Element([1,1,1]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef unique_Element(numbers):\n    return (len(set(numbers)) == 1)\n",
+    "full_code": "\n\ndef unique_Element(numbers):\n    return (len(set(numbers)) == 1)\n",
+    "task_id": "Mbpp/760",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sequential_search([11,23,58,31,56,77,43,12,65,19],31) == (True, 3)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sequential_search(array, element):\n    for (index, value) in enumerate(array):\n        if (value == element):\n            return (True, index)\n    return (False, (- 1))\n",
+    "full_code": "\n\ndef sequential_search(array, element):\n    for (index, value) in enumerate(array):\n        if (value == element):\n            return (True, index)\n    return (False, (- 1))\n",
+    "task_id": "Mbpp/280",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

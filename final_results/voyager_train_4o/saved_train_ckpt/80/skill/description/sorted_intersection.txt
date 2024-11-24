@@ -1,0 +1,5 @@
+
+[description for function: sorted_intersection]
+This function takes two sorted lists as input and finds their intersection, returning a sorted list of unique elements that appear in both lists. It uses two pointers to traverse each list simultaneously, adding elements to a set when they match. If an element in the first list is smaller, it advances the pointer for the first list, and if the element in the second list is smaller, it advances the pointer for the second list. The use of a set ensures that only unique elements are stored. Finally, the result is converted to a sorted list before being returned. This approach efficiently finds common elements while maintaining the order.
+
+[end of description]

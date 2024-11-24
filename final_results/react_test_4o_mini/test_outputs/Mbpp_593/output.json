@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert removezero_ip(\"216.08.094.196\")==('216.8.94.196')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef removezero_ip(ip: str) -> str:\n    octets = ip.split('.')\n    cleaned_octets = [str(int(octet)) for octet in octets]\n    return '.'.join(cleaned_octets)\n",
+    "full_code": "\n\ndef removezero_ip(ip: str) -> str:\n    octets = ip.split('.')\n    cleaned_octets = [str(int(octet)) for octet in octets]\n    return '.'.join(cleaned_octets)\n",
+    "task_id": "Mbpp/593",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

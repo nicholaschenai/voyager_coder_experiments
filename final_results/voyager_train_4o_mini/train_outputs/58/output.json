@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert count_vowel_occurrences('Hello World') == {'e': 1, 'o': 2}\nassert count_vowel_occurrences('Python') == {'o': 1}\n\nTests failed:\nassert count_vowel_occurrences('Programming') == {'o': 1, 'a': 1} # output: {'o': 1, 'a': 1, 'i': 1}",
+    "state": null,
+    "code": "\n\ndef count_vowel_occurrences(input_string):\n    vowels = 'aeiouAEIOU'\n    vowel_count = {}\n    for char in input_string:\n        if (char in vowels):\n            if (char in vowel_count):\n                vowel_count[char] += 1\n            else:\n                vowel_count[char] = 1\n    return vowel_count\n",
+    "full_code": "\n\ndef count_vowel_occurrences(input_string):\n    vowels = 'aeiouAEIOU'\n    vowel_count = {}\n    for char in input_string:\n        if (char in vowels):\n            if (char in vowel_count):\n                vowel_count[char] += 1\n            else:\n                vowel_count[char] = 1\n    return vowel_count\n",
+    "task_id": "58",
+    "reasoning": "The implementation failed the test case where the input string contains multiple vowels, as it returned an incorrect count of vowels present in the string.",
+    "success": false,
+    "critique": "The issue in the implementation is that it correctly counts the vowels, but the expected output in the failing test case does not account for all the vowels present in the string. The expected output should include all vowels that appear in the string, not just the ones that are specified in the assertion. To fix this, ensure that the expected output in the test cases accurately reflects the actual counts of all vowels present in the input string."
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_lucas(9) == 76\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_lucas(n):\n    if (n == 0):\n        return 2\n    elif (n == 1):\n        return 1\n    else:\n        (lucas_prev, lucas_curr) = (2, 1)\n        for _ in range(2, (n + 1)):\n            lucas_next = (lucas_prev + lucas_curr)\n            (lucas_prev, lucas_curr) = (lucas_curr, lucas_next)\n        return lucas_curr\n",
+    "full_code": "\n\ndef find_lucas(n):\n    if (n == 0):\n        return 2\n    elif (n == 1):\n        return 1\n    else:\n        (lucas_prev, lucas_curr) = (2, 1)\n        for _ in range(2, (n + 1)):\n            lucas_next = (lucas_prev + lucas_curr)\n            (lucas_prev, lucas_curr) = (lucas_curr, lucas_next)\n        return lucas_curr\n",
+    "task_id": "Mbpp/389",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_equal([(11, 22, 33), (44, 55, 66)]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_equal(tuples_list):\n    lengths = {len(t) for t in tuples_list}\n    return (len(lengths) == 1)\n",
+    "full_code": "\n\ndef get_equal(tuples_list):\n    lengths = {len(t) for t in tuples_list}\n    return (len(lengths) == 1)\n",
+    "task_id": "Mbpp/70",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

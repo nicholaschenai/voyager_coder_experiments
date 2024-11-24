@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_sublist([2,4,3,5,7],[3,7])==False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_sublist(main_list, sublist):\n    sublist_length = len(sublist)\n    for i in range(((len(main_list) - sublist_length) + 1)):\n        if (main_list[i:(i + sublist_length)] == sublist):\n            return True\n    return False\n",
+    "full_code": "\n\ndef is_sublist(main_list, sublist):\n    sublist_length = len(sublist)\n    for i in range(((len(main_list) - sublist_length) + 1)):\n        if (main_list[i:(i + sublist_length)] == sublist):\n            return True\n    return False\n",
+    "task_id": "Mbpp/69",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

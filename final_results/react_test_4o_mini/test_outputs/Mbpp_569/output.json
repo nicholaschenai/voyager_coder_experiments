@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sort_sublists([['green', 'orange'], ['black', 'white'], ['white', 'black', 'orange']])==[['green', 'orange'], ['black', 'white'], ['black', 'orange', 'white']]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sort_sublists(list_of_lists):\n    for sublist in list_of_lists:\n        sublist.sort()\n    return list_of_lists\n",
+    "full_code": "\n\ndef sort_sublists(list_of_lists):\n    for sublist in list_of_lists:\n        sublist.sort()\n    return list_of_lists\n",
+    "task_id": "Mbpp/569",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

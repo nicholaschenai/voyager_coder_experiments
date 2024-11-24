@@ -1,0 +1,5 @@
+
+[description for function: count_vowels]
+This function takes a string as input and converts it to lowercase to ensure uniformity. It initializes a counter to track the number of vowels found. The function then iterates through each character in the string, checking if it is a vowel (a, e, i, o, u). For every vowel encountered, the counter is incremented. Finally, the function returns the total count of vowels in the input string.
+
+[end of description]

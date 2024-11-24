@@ -1,0 +1,5 @@
+
+[description for function: first_repeated_integer]
+This function takes a list of integers as input and identifies the first integer that appears more than once. It utilizes a dictionary to keep track of the integers that have already been encountered. As it iterates through the list, it checks if the current integer is already in the dictionary; if so, it returns that integer as the first repeated one. If no integer is repeated by the end of the list, it returns None. The function efficiently detects duplicates with a time complexity of O(n). Overall, it provides a straightforward solution to finding the first repeated integer in a list.
+
+[end of description]

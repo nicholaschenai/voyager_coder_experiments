@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert convert(1) == (1.0, 0.0)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef convert(z):\n    if isinstance(z, (int, float)):\n        a = z\n        b = 0\n    else:\n        a = z.real\n        b = z.imag\n    r = math.sqrt(((a ** 2) + (b ** 2)))\n    theta = math.atan2(b, a)\n    return (r, theta)\n",
+    "full_code": "import math\n\ndef convert(z):\n    if isinstance(z, (int, float)):\n        a = z\n        b = 0\n    else:\n        a = z.real\n        b = z.imag\n    r = math.sqrt(((a ** 2) + (b ** 2)))\n    theta = math.atan2(b, a)\n    return (r, theta)\n",
+    "task_id": "Mbpp/252",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

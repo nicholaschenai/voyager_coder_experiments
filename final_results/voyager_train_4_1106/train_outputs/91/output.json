@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_most_frequent_element([1, 3, 2, 1, 4, 1]) == 1\nassert find_most_frequent_element([10, 9, 9, 10, 11]) == 9\nassert find_most_frequent_element([]) == None\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_most_frequent_element(int_list):\n    if (not int_list):\n        return None\n    frequency = {}\n    for num in int_list:\n        frequency[num] = (frequency.get(num, 0) + 1)\n    max_count = 0\n    most_frequent = None\n    for (num, count) in frequency.items():\n        if ((count > max_count) or ((count == max_count) and ((most_frequent is None) or (num < most_frequent)))):\n            max_count = count\n            most_frequent = num\n    return most_frequent\n",
+    "full_code": "\n\ndef find_most_frequent_element(int_list):\n    if (not int_list):\n        return None\n    frequency = {}\n    for num in int_list:\n        frequency[num] = (frequency.get(num, 0) + 1)\n    max_count = 0\n    most_frequent = None\n    for (num, count) in frequency.items():\n        if ((count > max_count) or ((count == max_count) and ((most_frequent is None) or (num < most_frequent)))):\n            max_count = count\n            most_frequent = num\n    return most_frequent\n",
+    "task_id": "91",
+    "reasoning": "The implementation passed all provided unit tests, which cover scenarios with a clear most frequent element, a tie between most frequent elements, and an empty list.",
+    "success": true,
+    "critique": "The function implementation meets the task requirements. However, it is worth noting that the implementation could be made more efficient by using collections.Counter, which is designed for this kind of frequency counting. Additionally, the check for 'most_frequent is None' is redundant since 'most_frequent' will never be None when 'count == max_count'."
+}

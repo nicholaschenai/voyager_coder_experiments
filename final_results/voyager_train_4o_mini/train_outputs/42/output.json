@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert unique_sorted([1, 2, 2, 3, 4, 4, 5]) == [1, 3, 5]\nassert unique_sorted([5, 5, 5, 5]) == []\nassert unique_sorted([3, 1, 2, 2, 4, 3, 5]) == [1, 4, 5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef unique_sorted(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    sorted_unique_integers = sorted(unique_integers)\n    return sorted_unique_integers\n",
+    "full_code": "\n\ndef count_occurrences(int_list):\n    counts = {}\n    for num in int_list:\n        if (num in counts):\n            counts[num] += 1\n        else:\n            counts[num] = 1\n    return counts\n\n\n\n\ndef unique_sorted(int_list):\n    counts = count_occurrences(int_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    sorted_unique_integers = sorted(unique_integers)\n    return sorted_unique_integers\n",
+    "task_id": "42",
+    "reasoning": "The implementation successfully meets the task requirements as all unit tests passed without any errors.",
+    "success": true,
+    "critique": "Great job! Your implementation correctly identifies unique elements and returns them in sorted order. Keep up the good work!"
+}

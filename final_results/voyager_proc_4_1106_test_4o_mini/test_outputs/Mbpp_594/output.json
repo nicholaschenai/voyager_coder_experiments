@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert diff_even_odd([1,3,5,7,4,1,6,8])==3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef diff_even_odd(numbers: list[int]) -> int:\n    first_even = None\n    first_odd = None\n    for num in numbers:\n        if ((first_even is None) and ((num % 2) == 0)):\n            first_even = num\n        if ((first_odd is None) and ((num % 2) != 0)):\n            first_odd = num\n        if ((first_even is not None) and (first_odd is not None)):\n            break\n    return (first_even - first_odd)\n",
+    "full_code": "\n\ndef diff_even_odd(numbers: list[int]) -> int:\n    first_even = None\n    first_odd = None\n    for num in numbers:\n        if ((first_even is None) and ((num % 2) == 0)):\n            first_even = num\n        if ((first_odd is None) and ((num % 2) != 0)):\n            first_odd = num\n        if ((first_even is not None) and (first_odd is not None)):\n            break\n    return (first_even - first_odd)\n",
+    "task_id": "Mbpp/594",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

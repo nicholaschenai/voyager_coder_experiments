@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_series(6) == 12\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_series(n):\n    total_sum = 0\n    for i in range(((n // 2) + 1)):\n        term = (n - (2 * i))\n        if (term >= 0):\n            total_sum += term\n    return total_sum\n",
+    "full_code": "\n\ndef sum_series(n):\n    total_sum = 0\n    for i in range(((n // 2) + 1)):\n        term = (n - (2 * i))\n        if (term >= 0):\n            total_sum += term\n    return total_sum\n",
+    "task_id": "Mbpp/162",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

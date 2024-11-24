@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_Max_Num([1,2,3]) == 321\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_Max_Num(digits):\n    str_digits = list(map(str, digits))\n\n    def custom_sort(x, y):\n        return ((y + x) > (x + y))\n    str_digits.sort(key=(lambda x: (x * 10)), reverse=True)\n    largest_num_str = ''.join(str_digits)\n    largest_num = int(largest_num_str)\n    return largest_num\n",
+    "full_code": "\n\ndef find_Max_Num(digits):\n    str_digits = list(map(str, digits))\n\n    def custom_sort(x, y):\n        return ((y + x) > (x + y))\n    str_digits.sort(key=(lambda x: (x * 10)), reverse=True)\n    largest_num_str = ''.join(str_digits)\n    largest_num = int(largest_num_str)\n    return largest_num\n",
+    "task_id": "Mbpp/57",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

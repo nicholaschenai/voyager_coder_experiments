@@ -1,0 +1,5 @@
+
+[description for function: find_substrings]
+This function takes an input string and a list of words, then checks each word to see if it is present in the input string. If a word is found within the input string, it is added to a result list. After checking all the words, the function returns the list of found words. The function effectively filters the word list based on their presence in the input string. It is useful for identifying specific substrings from a larger text. The output is a list containing all the words that were found.
+
+[end of description]

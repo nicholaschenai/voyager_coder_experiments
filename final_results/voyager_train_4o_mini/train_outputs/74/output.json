@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert count_consonants('Hello World') == {'h': 1, 'l': 3, 'r': 1, 'w': 1, 'd': 1}\nassert count_consonants('') == {}\n\nTests failed:\nassert count_consonants('Python Programming') == {'p': 2, 'y': 1, 't': 1, 'h': 1, 'n': 2, 'g': 2, 'r': 1, 'm': 1} # output: {'p': 2, 'y': 1, 't': 1, 'h': 1, 'n': 2, 'r': 2, 'g': 2, 'm': 2}",
+    "state": null,
+    "code": "\n\ndef count_consonants(input_string):\n    input_string = input_string.lower()\n    consonant_count = {}\n    for char in input_string:\n        if (char.isalpha() and (char not in 'aeiou')):\n            if (char in consonant_count):\n                consonant_count[char] += 1\n            else:\n                consonant_count[char] = 1\n    return consonant_count\n",
+    "full_code": "\n\ndef count_consonants(input_string):\n    input_string = input_string.lower()\n    consonant_count = {}\n    for char in input_string:\n        if (char.isalpha() and (char not in 'aeiou')):\n            if (char in consonant_count):\n                consonant_count[char] += 1\n            else:\n                consonant_count[char] = 1\n    return consonant_count\n",
+    "task_id": "74",
+    "reasoning": "The implementation failed the test case where the input string is 'Python Programming' due to incorrect counting of the consonants 'r', 'g', and 'm'. The function is counting these consonants more than they actually appear in the string, which indicates that there is an issue with how the counts are being updated in the dictionary.",
+    "success": false,
+    "critique": "The problem arises from the fact that the function is not correctly handling the case where a consonant appears multiple times in different cases. The function should ensure that it counts each consonant only once per occurrence in the string. To fix this, we should ensure that the counting logic is correctly implemented and that we are not mistakenly incrementing counts for consonants that have already been counted. This can be done by carefully checking the conditions under which we update the dictionary."
+}

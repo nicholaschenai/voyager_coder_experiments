@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set(extract_singly([(3, 4, 5), (4, 5, 7), (1, 4)])) == set([3, 4, 5, 7, 1])\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef extract_singly(list_of_tuples):\n    unique_numbers = set()\n    for tup in list_of_tuples:\n        unique_numbers.update(tup)\n    return unique_numbers\n",
+    "full_code": "\n\ndef extract_singly(list_of_tuples):\n    unique_numbers = set()\n    for tup in list_of_tuples:\n        unique_numbers.update(tup)\n    return unique_numbers\n",
+    "task_id": "Mbpp/140",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

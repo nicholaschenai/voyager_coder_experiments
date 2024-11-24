@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert sorted(find_common_elements([1, 2, 3, 4], [3, 4, 5, 6])) == [3, 4]\nassert sorted(find_common_elements([10, 20, 30], [40, 50, 60])) == []\nassert sorted(find_common_elements([], [1, 2, 3])) == []\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_common_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    common_elements_set = set1.intersection(set2)\n    common_elements_list = list(common_elements_set)\n    return common_elements_list\n",
+    "full_code": "\n\ndef find_common_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    common_elements_set = set1.intersection(set2)\n    common_elements_list = list(common_elements_set)\n    return common_elements_list\n",
+    "task_id": "21",
+    "reasoning": "The implementation passed all the provided unit tests, which cover various scenarios including overlapping elements, no common elements, and empty lists.",
+    "success": true,
+    "critique": "The function implementation correctly follows the task requirements and uses set operations to find the common elements without duplicates. No changes are necessary as the function meets the task objectives."
+}

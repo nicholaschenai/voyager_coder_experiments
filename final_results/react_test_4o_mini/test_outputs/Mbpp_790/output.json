@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert even_position([3,2,1]) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef even_position(lst):\n    for i in range(0, len(lst), 2):\n        if ((lst[i] % 2) != 0):\n            return False\n    return True\n",
+    "full_code": "\n\ndef even_position(lst):\n    for i in range(0, len(lst), 2):\n        if ((lst[i] % 2) != 0):\n            return False\n    return True\n",
+    "task_id": "Mbpp/790",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

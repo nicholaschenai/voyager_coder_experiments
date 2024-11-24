@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert last([1,2,3],1) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef last(arr, target):\n    last_position = (- 1)\n    for i in range(len(arr)):\n        if (arr[i] == target):\n            last_position = i\n        elif (arr[i] > target):\n            break\n    return last_position\n",
+    "full_code": "\n\ndef last(arr, target):\n    last_position = (- 1)\n    for i in range(len(arr)):\n        if (arr[i] == target):\n            last_position = i\n        elif (arr[i] > target):\n            break\n    return last_position\n",
+    "task_id": "Mbpp/793",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

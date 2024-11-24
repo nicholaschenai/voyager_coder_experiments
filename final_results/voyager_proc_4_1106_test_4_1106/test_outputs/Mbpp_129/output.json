@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert magic_square_test([[7, 12, 1, 14], [2, 13, 8, 11], [16, 3, 10, 5], [9, 6, 15, 4]])==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef magic_square_test(matrix):\n    n = len(matrix)\n    if any(((len(row) != n) for row in matrix)):\n        return False\n    magic_constant = sum(matrix[0])\n    for row in matrix:\n        if (sum(row) != magic_constant):\n            return False\n    for col in range(n):\n        if (sum((matrix[row][col] for row in range(n))) != magic_constant):\n            return False\n    if (sum((matrix[i][i] for i in range(n))) != magic_constant):\n        return False\n    if (sum((matrix[i][((n - 1) - i)] for i in range(n))) != magic_constant):\n        return False\n    return True\n",
+    "full_code": "\n\ndef magic_square_test(matrix):\n    n = len(matrix)\n    if any(((len(row) != n) for row in matrix)):\n        return False\n    magic_constant = sum(matrix[0])\n    for row in matrix:\n        if (sum(row) != magic_constant):\n            return False\n    for col in range(n):\n        if (sum((matrix[row][col] for row in range(n))) != magic_constant):\n            return False\n    if (sum((matrix[i][i] for i in range(n))) != magic_constant):\n        return False\n    if (sum((matrix[i][((n - 1) - i)] for i in range(n))) != magic_constant):\n        return False\n    return True\n",
+    "task_id": "Mbpp/129",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

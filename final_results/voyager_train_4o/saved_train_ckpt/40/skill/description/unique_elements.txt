@@ -1,0 +1,5 @@
+
+[description for function: unique_elements]
+This function takes a list as input and counts the occurrences of each element using the Counter class. It then creates a new list containing only the elements that appear exactly once in the input list. After filtering, the unique elements are sorted in ascending order. Finally, the function returns the sorted list of unique integers.
+
+[end of description]

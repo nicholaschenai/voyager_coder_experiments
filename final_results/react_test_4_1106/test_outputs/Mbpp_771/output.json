@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_expression(\"{()}[{}]\") == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_expression(expression):\n    matching_brackets = {')': '(', '}': '{', ']': '['}\n    stack = []\n    for char in expression:\n        if (char in matching_brackets.values()):\n            stack.append(char)\n        elif (char in matching_brackets):\n            if ((not stack) or (stack.pop() != matching_brackets[char])):\n                return False\n    return (len(stack) == 0)\n",
+    "full_code": "\n\ndef check_expression(expression):\n    matching_brackets = {')': '(', '}': '{', ']': '['}\n    stack = []\n    for char in expression:\n        if (char in matching_brackets.values()):\n            stack.append(char)\n        elif (char in matching_brackets):\n            if ((not stack) or (stack.pop() != matching_brackets[char])):\n                return False\n    return (len(stack) == 0)\n",
+    "task_id": "Mbpp/771",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

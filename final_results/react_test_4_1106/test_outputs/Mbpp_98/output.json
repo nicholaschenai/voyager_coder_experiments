@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert math.isclose(multiply_num((8, 2, 3, -1, 7)), -67.2, rel_tol=0.001)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef multiply_num(numbers):\n    product = 1\n    for num in numbers:\n        product *= num\n    length = len(numbers)\n    return (product / length)\n",
+    "full_code": "import math\n\ndef multiply_num(numbers):\n    product = 1\n    for num in numbers:\n        product *= num\n    length = len(numbers)\n    return (product / length)\n",
+    "task_id": "Mbpp/98",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

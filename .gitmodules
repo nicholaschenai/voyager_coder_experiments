@@ -1,0 +1,9 @@
+[submodule "cognitive_base"]
+    path = cognitive_base
+    url = https://github.com/nicholaschenai/cognitive_base.git
+[submodule "agent_expt_suite"]
+    path = agent_expt_suite
+    url = https://github.com/nicholaschenai/agent_expt_suite.git
+[submodule "voyager_coder"]
+    path = voyager_coder
+    url = https://github.com/nicholaschenai/voyager_coder.git

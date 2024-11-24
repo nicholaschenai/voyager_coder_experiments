@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tuple_intersection([(3, 4), (5, 6), (9, 10), (4, 5)] , [(5, 4), (3, 4), (6, 5), (9, 11)]) == {(4, 5), (3, 4), (5, 6)}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef tuple_intersection(list1, list2):\n    normalized_set1 = {tuple(sorted(t)) for t in list1}\n    normalized_set2 = {tuple(sorted(t)) for t in list2}\n    intersection = normalized_set1.intersection(normalized_set2)\n    return intersection\n",
+    "full_code": "\n\ndef tuple_intersection(list1, list2):\n    normalized_set1 = {tuple(sorted(t)) for t in list1}\n    normalized_set2 = {tuple(sorted(t)) for t in list2}\n    intersection = normalized_set1.intersection(normalized_set2)\n    return intersection\n",
+    "task_id": "Mbpp/473",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,5 @@
+
+[description for function: bubble_sort]
+This function sorts a given list of numbers in ascending order using the bubble sort algorithm. It iterates through the list multiple times, comparing adjacent elements and swapping them if they are in the wrong order. The process is repeated until the entire list is sorted. The outer loop controls the number of passes, while the inner loop performs the comparisons and swaps. The function modifies the original list in place and returns the sorted list. Overall, it efficiently organizes the elements by repeatedly "bubbling" the largest unsorted element to its correct position.
+
+[end of description]

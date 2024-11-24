@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert Find_Min([[1],[1,2],[1,2,3]]) == [1]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef Find_Min(list_of_lists):\n    min_length = float('inf')\n    min_sublist = None\n    for sublist in list_of_lists:\n        if (len(sublist) < min_length):\n            min_length = len(sublist)\n            min_sublist = sublist\n    return min_sublist\n",
+    "full_code": "\n\ndef Find_Min(list_of_lists):\n    min_length = float('inf')\n    min_sublist = None\n    for sublist in list_of_lists:\n        if (len(sublist) < min_length):\n            min_length = len(sublist)\n            min_sublist = sublist\n    return min_sublist\n",
+    "task_id": "Mbpp/457",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

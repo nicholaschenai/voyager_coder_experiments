@@ -1,0 +1,5 @@
+
+[description for function: index_tracker]
+This function takes a list of integers as input and creates a dictionary that maps each unique integer to a list of its indices in the original list. It iterates through the list while keeping track of both the index and the value of each element. If a value is encountered for the first time, it initializes an empty list for that value in the dictionary. The current index is then appended to the list corresponding to that value. Finally, the function returns the dictionary containing the integer-to-index mappings. This allows for easy retrieval of all positions of each integer in the input list.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_fibonacci_numbers([1, 2, 3, 4, 5, 6, 7, 8, 13]) == [1, 2, 3, 5, 8, 13]\nassert find_fibonacci_numbers([10, 20, 30]) == []\nassert find_fibonacci_numbers([0, 1, 1, 2, 3, 5, 8, 13, 21]) == [0, 1, 1, 2, 3, 5, 8, 13, 21]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_fibonacci_numbers(int_list):\n    max_num = (max(int_list) if int_list else 0)\n    fib_set = set()\n    (a, b) = (0, 1)\n    while (a <= max_num):\n        fib_set.add(a)\n        (a, b) = (b, (a + b))\n    result = [num for num in int_list if (num in fib_set)]\n    return result\n",
+    "full_code": "\n\ndef find_fibonacci_numbers(int_list):\n    max_num = (max(int_list) if int_list else 0)\n    fib_set = set()\n    (a, b) = (0, 1)\n    while (a <= max_num):\n        fib_set.add(a)\n        (a, b) = (b, (a + b))\n    result = [num for num in int_list if (num in fib_set)]\n    return result\n",
+    "task_id": "36",
+    "reasoning": "The implementation successfully identifies Fibonacci numbers from the input list and passes all provided test cases, indicating that it meets the task requirements.",
+    "success": true,
+    "critique": "Great job! Your implementation is efficient and correctly identifies Fibonacci numbers from the input list. Keep up the good work!"
+}

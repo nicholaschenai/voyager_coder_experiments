@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_Volume(10,8,6) == 240\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_Volume(base: float, height: float, length: float) -> float:\n    base_area = ((0.5 * base) * height)\n    volume = (base_area * length)\n    return volume\n",
+    "full_code": "\n\ndef find_Volume(base: float, height: float, length: float) -> float:\n    base_area = ((0.5 * base) * height)\n    volume = (base_area * length)\n    return volume\n",
+    "task_id": "Mbpp/14",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

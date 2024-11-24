@@ -1,0 +1,5 @@
+
+[description for function: first_duplicate]
+This function takes a list of integers as input and aims to find the first duplicate number in the list. It utilizes a set to keep track of the numbers that have already been encountered. As it iterates through the list, it checks if the current number is already in the set; if so, it returns that number as the first duplicate. If no duplicates are found by the end of the iteration, it returns -1. The function efficiently identifies duplicates with a time complexity of O(n) due to the use of a set for constant time lookups. Overall, it provides a straightforward solution to the problem of finding the first duplicate in a list.
+
+[end of description]

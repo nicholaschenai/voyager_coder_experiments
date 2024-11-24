@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert index_minimum([('Rash', 143), ('Manjeet', 200), ('Varsha', 100)]) == 'Varsha'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef index_minimum(tuples_list):\n    min_value = float('inf')\n    min_first_value = None\n    for (first, second) in tuples_list:\n        if (second < min_value):\n            min_value = second\n            min_first_value = first\n    return min_first_value\n",
+    "full_code": "\n\ndef index_minimum(tuples_list):\n    min_value = float('inf')\n    min_first_value = None\n    for (first, second) in tuples_list:\n        if (second < min_value):\n            min_value = second\n            min_first_value = first\n    return min_first_value\n",
+    "task_id": "Mbpp/94",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

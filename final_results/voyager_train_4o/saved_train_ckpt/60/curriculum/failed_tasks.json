@@ -1,0 +1,7 @@
+{
+    "tasks": [
+        "Write a Python function that implements a queue using a list. The function should support enqueue (add an item to the end of the queue), dequeue (remove an item from the front of the queue), and is_empty (check if the queue is empty) operations. The function should return a tuple of results from these operations for testing purposes.",
+        "Write a Python function that simulates a stack using a list. The function should support 'push' (add an item to the top of the stack), 'pop' (remove the item from the top of the stack), and 'peek' (return the item at the top of the stack without removing it) operations. The function should return a list of results from the 'pop' and 'peek' operations for testing purposes.",
+        "Write a Python function that takes a list of integers and returns the maximum product of any two integers in the list. This will help practice iterating through lists and understanding pairwise comparisons."
+    ]
+}

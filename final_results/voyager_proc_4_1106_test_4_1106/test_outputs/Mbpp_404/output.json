@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert minimum(1,2) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef minimum(a, b):\n    return (a if (a < b) else b)\n",
+    "full_code": "\n\ndef minimum(a, b):\n    return (a if (a < b) else b)\n",
+    "task_id": "Mbpp/404",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

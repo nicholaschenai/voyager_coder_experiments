@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert bfs_adjacency_matrix(graph1) == [0, 1, 4, 2, 3]\nassert bfs_adjacency_matrix(graph2) == [0, 1, 2, 3]\nassert bfs_adjacency_matrix(graph3) == [0]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import deque\n\ndef bfs_adjacency_matrix(adj_matrix):\n    visited = set()\n    queue = deque([0])\n    visited.add(0)\n    visited_order = []\n    while queue:\n        current_node = queue.popleft()\n        visited_order.append(current_node)\n        for (neighbor, is_connected) in enumerate(adj_matrix[current_node]):\n            if (is_connected and (neighbor not in visited)):\n                visited.add(neighbor)\n                queue.append(neighbor)\n    return visited_order\n",
+    "full_code": "from collections import deque\n\ndef bfs_adjacency_matrix(adj_matrix):\n    visited = set()\n    queue = deque([0])\n    visited.add(0)\n    visited_order = []\n    while queue:\n        current_node = queue.popleft()\n        visited_order.append(current_node)\n        for (neighbor, is_connected) in enumerate(adj_matrix[current_node]):\n            if (is_connected and (neighbor not in visited)):\n                visited.add(neighbor)\n                queue.append(neighbor)\n    return visited_order\n",
+    "task_id": "86",
+    "reasoning": "The function implementation passed all provided unit tests, which suggests that it correctly implements the BFS algorithm using an adjacency matrix.",
+    "success": true,
+    "critique": "The implementation is correct and efficient. However, it is important to ensure that the function is tested with a variety of graphs, including edge cases such as disconnected graphs and graphs with cycles, to ensure robustness."
+}

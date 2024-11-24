@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert maximum(5,10) == 10\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef maximum(a: int, b: int) -> int:\n    if (a > b):\n        return a\n    else:\n        return b\n",
+    "full_code": "\n\ndef maximum(a: int, b: int) -> int:\n    if (a > b):\n        return a\n    else:\n        return b\n",
+    "task_id": "Mbpp/309",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_occurences([(3, 1), (1, 3), (2, 5), (5, 2), (6, 3)] ) == {(1, 3): 2, (2, 5): 2, (3, 6): 1}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_occurences(tuples_list):\n    occurrences = {}\n    for tup in tuples_list:\n        sorted_tup = tuple(sorted(tup))\n        if (sorted_tup in occurrences):\n            occurrences[sorted_tup] += 1\n        else:\n            occurrences[sorted_tup] = 1\n    return occurrences\n",
+    "full_code": "\n\ndef check_occurences(tuples_list):\n    occurrences = {}\n    for tup in tuples_list:\n        sorted_tup = tuple(sorted(tup))\n        if (sorted_tup in occurrences):\n            occurrences[sorted_tup] += 1\n        else:\n            occurrences[sorted_tup] = 1\n    return occurrences\n",
+    "task_id": "Mbpp/237",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

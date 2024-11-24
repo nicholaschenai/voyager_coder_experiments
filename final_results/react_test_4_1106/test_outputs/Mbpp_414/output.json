@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert overlapping([1,2,3,4,5],[6,7,8,9]) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef overlapping(seq1, seq2):\n    intersection = (set(seq1) & set(seq2))\n    return bool(intersection)\n",
+    "full_code": "\n\ndef overlapping(seq1, seq2):\n    intersection = (set(seq1) & set(seq2))\n    return bool(intersection)\n",
+    "task_id": "Mbpp/414",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

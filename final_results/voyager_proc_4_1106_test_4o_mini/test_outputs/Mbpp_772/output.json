@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_length('The person is most value tet', 3) == 'person is most value'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_length(input_string: str, k: int) -> str:\n    words = input_string.split()\n    filtered_words = [word for word in words if (len(word) != k)]\n    result = ' '.join(filtered_words)\n    return result\n",
+    "full_code": "\n\ndef remove_length(input_string: str, k: int) -> str:\n    words = input_string.split()\n    filtered_words = [word for word in words if (len(word) != k)]\n    result = ' '.join(filtered_words)\n    return result\n",
+    "task_id": "Mbpp/772",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

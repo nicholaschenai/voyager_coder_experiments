@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert unique_product([10, 20, 30, 40, 20, 50, 60, 40]) ==  720000000\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef unique_product(numbers):\n    unique_numbers = set(numbers)\n    product = 1\n    for number in unique_numbers:\n        product *= number\n    return product\n",
+    "full_code": "\n\ndef unique_product(numbers):\n    unique_numbers = set(numbers)\n    product = 1\n    for number in unique_numbers:\n        product *= number\n    return product\n",
+    "task_id": "Mbpp/573",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_tuples([(6, 24, 12), (7, 9, 6), (12, 18, 21)], 6) == [(6, 24, 12)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_tuples(tuples_list, k):\n    result = []\n    for tup in tuples_list:\n        if all((((element % k) == 0) for element in tup)):\n            result.append(tup)\n    return result\n",
+    "full_code": "\n\ndef find_tuples(tuples_list, k):\n    result = []\n    for tup in tuples_list:\n        if all((((element % k) == 0) for element in tup)):\n            result.append(tup)\n    return result\n",
+    "task_id": "Mbpp/75",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

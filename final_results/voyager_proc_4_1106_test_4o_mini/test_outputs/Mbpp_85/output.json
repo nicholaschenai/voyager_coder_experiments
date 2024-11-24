@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert math.isclose(surfacearea_sphere(10), 1256.6370614359173, rel_tol=0.001)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef surfacearea_sphere(radius: float) -> float:\n    return ((4 * math.pi) * (radius ** 2))\n",
+    "full_code": "import math\n\ndef surfacearea_sphere(radius: float) -> float:\n    return ((4 * math.pi) * (radius ** 2))\n",
+    "task_id": "Mbpp/85",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

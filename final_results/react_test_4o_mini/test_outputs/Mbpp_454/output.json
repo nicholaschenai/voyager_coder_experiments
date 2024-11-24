@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert text_match_wordz(\"pythonz.\")==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef text_match_wordz(text: str) -> bool:\n    return ('z' in text)\n",
+    "full_code": "\n\ndef text_match_wordz(text: str) -> bool:\n    return ('z' in text)\n",
+    "task_id": "Mbpp/454",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert drop_empty({'c1': 'Red', 'c2': 'Green', 'c3':None})=={'c1': 'Red', 'c2': 'Green'}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef drop_empty(input_dict: dict) -> dict:\n    return {key: value for (key, value) in input_dict.items() if (value not in (None, '', [], {}))}\n",
+    "full_code": "\n\ndef drop_empty(input_dict: dict) -> dict:\n    return {key: value for (key, value) in input_dict.items() if (value not in (None, '', [], {}))}\n",
+    "task_id": "Mbpp/465",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

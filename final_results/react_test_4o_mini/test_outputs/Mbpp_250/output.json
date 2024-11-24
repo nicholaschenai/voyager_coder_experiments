@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_X((10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),4) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_X(tup: tuple, element) -> int:\n    count = 0\n    for item in tup:\n        if (item == element):\n            count += 1\n    return count\n",
+    "full_code": "\n\ndef count_X(tup: tuple, element) -> int:\n    count = 0\n    for item in tup:\n        if (item == element):\n            count += 1\n    return count\n",
+    "task_id": "Mbpp/250",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

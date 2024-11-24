@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert extract_quotation('Cortex \"A53\" Based \"multi\" tasking \"Processor\"') == ['A53', 'multi', 'Processor']\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef extract_quotation(input_string: str) -> list:\n    return re.findall('\"(.*?)\"', input_string)\n",
+    "full_code": "import re\n\ndef extract_quotation(input_string: str) -> list:\n    return re.findall('\"(.*?)\"', input_string)\n",
+    "task_id": "Mbpp/725",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

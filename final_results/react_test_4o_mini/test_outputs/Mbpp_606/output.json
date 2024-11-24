@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert radian_degree(90)==1.5707963267948966\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef radian_degree(degrees: float) -> float:\n    radians = (degrees * (math.pi / 180))\n    return radians\n",
+    "full_code": "import math\n\ndef radian_degree(degrees: float) -> float:\n    radians = (degrees * (math.pi / 180))\n    return radians\n",
+    "task_id": "Mbpp/606",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

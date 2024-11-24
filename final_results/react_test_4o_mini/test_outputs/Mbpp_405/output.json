@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_tuplex((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),'r')==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check_tuplex(tup: tuple, element) -> bool:\n    return (element in tup)\n",
+    "full_code": "\n\ndef check_tuplex(tup: tuple, element) -> bool:\n    return (element in tup)\n",
+    "task_id": "Mbpp/405",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

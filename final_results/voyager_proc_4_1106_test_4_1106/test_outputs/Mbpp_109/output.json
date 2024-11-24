@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert odd_Equivalent(\"011001\",6) == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef odd_Equivalent(binary_string, rotations):\n    odd_count = 0\n    for i in range(rotations):\n        binary_string = (binary_string[1:] + binary_string[0])\n        decimal_value = int(binary_string, 2)\n        if ((decimal_value % 2) != 0):\n            odd_count += 1\n    return odd_count\n",
+    "full_code": "\n\ndef odd_Equivalent(binary_string, rotations):\n    odd_count = 0\n    for i in range(rotations):\n        binary_string = (binary_string[1:] + binary_string[0])\n        decimal_value = int(binary_string, 2)\n        if ((decimal_value % 2) != 0):\n            odd_count += 1\n    return odd_count\n",
+    "task_id": "Mbpp/109",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

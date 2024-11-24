@@ -1,0 +1,5 @@
+
+[description for function: find_pairs_with_sum]
+This function takes a list of integers and a target sum as input, and it identifies all unique pairs of numbers from the list that add up to the target sum. It utilizes a counter to keep track of the occurrences of each number in the list. As it iterates through the numbers, it calculates the complement needed to reach the target sum and checks if it exists in the counter. If the number and its complement are the same, it ensures there are at least two occurrences of that number. The pairs are stored in a set to maintain uniqueness and are returned as a sorted list.
+
+[end of description]

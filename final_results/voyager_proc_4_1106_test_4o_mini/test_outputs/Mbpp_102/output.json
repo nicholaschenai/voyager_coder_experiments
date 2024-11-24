@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert snake_to_camel('python_program')=='PythonProgram'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef snake_to_camel(snake_str: str) -> str:\n    words = snake_str.split('_')\n    camel_case_str = ''.join((word.capitalize() for word in words))\n    return camel_case_str\n",
+    "full_code": "\n\ndef snake_to_camel(snake_str: str) -> str:\n    words = snake_str.split('_')\n    camel_case_str = ''.join((word.capitalize() for word in words))\n    return camel_case_str\n",
+    "task_id": "Mbpp/102",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

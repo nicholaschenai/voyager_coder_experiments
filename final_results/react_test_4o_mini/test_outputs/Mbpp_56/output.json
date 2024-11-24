@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check(70) == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef check(num: int) -> bool:\n    reversed_num = int(str(num)[::(- 1)])\n    twice_reverse = (2 * reversed_num)\n    return (num == (twice_reverse - 1))\n",
+    "full_code": "\n\ndef check(num: int) -> bool:\n    reversed_num = int(str(num)[::(- 1)])\n    twice_reverse = (2 * reversed_num)\n    return (num == (twice_reverse - 1))\n",
+    "task_id": "Mbpp/56",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

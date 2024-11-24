@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_kth([2, 3, 6, 7, 9], [1, 4, 8, 10], 5) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_kth(arr1, arr2, k):\n    (len1, len2) = (len(arr1), len(arr2))\n    if (len1 > len2):\n        (arr1, arr2, len1, len2) = (arr2, arr1, len2, len1)\n    (low, high) = (0, len1)\n    while (low <= high):\n        partition1 = ((low + high) // 2)\n        partition2 = (k - partition1)\n        maxLeft1 = (arr1[(partition1 - 1)] if (partition1 > 0) else float('-inf'))\n        minRight1 = (arr1[partition1] if (partition1 < len1) else float('inf'))\n        maxLeft2 = (arr2[(partition2 - 1)] if (partition2 > 0) else float('-inf'))\n        minRight2 = (arr2[partition2] if (partition2 < len2) else float('inf'))\n        if ((maxLeft1 <= minRight2) and (maxLeft2 <= minRight1)):\n            return max(maxLeft1, maxLeft2)\n        elif (maxLeft1 > minRight2):\n            high = (partition1 - 1)\n        else:\n            low = (partition1 + 1)\n    return None\n",
+    "full_code": "\n\ndef find_kth(arr1, arr2, k):\n    (len1, len2) = (len(arr1), len(arr2))\n    if (len1 > len2):\n        (arr1, arr2, len1, len2) = (arr2, arr1, len2, len1)\n    (low, high) = (0, len1)\n    while (low <= high):\n        partition1 = ((low + high) // 2)\n        partition2 = (k - partition1)\n        maxLeft1 = (arr1[(partition1 - 1)] if (partition1 > 0) else float('-inf'))\n        minRight1 = (arr1[partition1] if (partition1 < len1) else float('inf'))\n        maxLeft2 = (arr2[(partition2 - 1)] if (partition2 > 0) else float('-inf'))\n        minRight2 = (arr2[partition2] if (partition2 < len2) else float('inf'))\n        if ((maxLeft1 <= minRight2) and (maxLeft2 <= minRight1)):\n            return max(maxLeft1, maxLeft2)\n        elif (maxLeft1 > minRight2):\n            high = (partition1 - 1)\n        else:\n            low = (partition1 + 1)\n    return None\n",
+    "task_id": "Mbpp/597",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

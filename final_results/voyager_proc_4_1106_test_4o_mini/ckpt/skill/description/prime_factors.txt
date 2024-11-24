@@ -1,0 +1,5 @@
+
+[description for function: prime_factors]
+This function calculates the prime factors of a given integer. It starts by checking for the factor 2 and divides the number by 2 until it can no longer do so. Then, it iterates through odd numbers starting from 3 up to the square root of the number, checking for divisibility and collecting factors. If the remaining number is greater than 2 after the loop, it is also added to the list of factors. Finally, the function returns a list of all prime factors found.
+
+[end of description]

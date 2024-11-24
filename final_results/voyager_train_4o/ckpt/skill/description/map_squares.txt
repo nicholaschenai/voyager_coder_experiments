@@ -1,0 +1,5 @@
+
+[description for function: map_squares]
+This function takes a list of integers as input and creates a dictionary where each integer is a key and its corresponding value is the square of that integer. It initializes an empty dictionary to store the results. The function iterates through each integer in the input list, calculates its square, and adds it to the dictionary. Finally, it returns the dictionary containing the integers and their squares. This allows for easy access to the squared values based on the original integers. The output is a mapping of each integer to its square.
+
+[end of description]

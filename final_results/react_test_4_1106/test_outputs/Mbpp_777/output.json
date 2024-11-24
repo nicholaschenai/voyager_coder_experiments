@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert find_sum([1,2,3,1,1,4,5,6]) == 21 # output: 20",
+    "state": null,
+    "code": "from collections import Counter\n\ndef find_sum(lst):\n    count = Counter(lst)\n    return sum((key for (key, value) in count.items() if (value == 1)))\n",
+    "full_code": "from collections import Counter\n\ndef find_sum(lst):\n    count = Counter(lst)\n    return sum((key for (key, value) in count.items() if (value == 1)))\n",
+    "task_id": "Mbpp/777",
+    "reasoning": "The implementation failed the provided test case. The expected sum is 21, but the function returned 20, indicating that it did not correctly sum all non-repeated elements.",
+    "success": false,
+    "critique": "The function implementation seems correct at first glance, but the test case failure suggests that there might be an issue with the test case itself or the way the sum is calculated. Since the function uses a generator expression within the sum function, it should correctly calculate the sum of non-repeated elements. It's possible that the test case assertion is incorrect. Double-check the test case to ensure it matches the task requirements. If the test case is correct, then manually verify the sum of non-repeated elements in the list to identify the discrepancy."
+}

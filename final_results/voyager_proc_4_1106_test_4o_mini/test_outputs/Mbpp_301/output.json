@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert dict_depth({'a':1, 'b': {'c': {'d': {}}}})==4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef dict_depth(d):\n    if (not isinstance(d, dict)):\n        return 0\n    max_depth = 0\n    for value in d.values():\n        max_depth = max(max_depth, dict_depth(value))\n    return (max_depth + 1)\n",
+    "full_code": "\n\ndef dict_depth(d):\n    if (not isinstance(d, dict)):\n        return 0\n    max_depth = 0\n    for value in d.values():\n        max_depth = max(max_depth, dict_depth(value))\n    return (max_depth + 1)\n",
+    "task_id": "Mbpp/301",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

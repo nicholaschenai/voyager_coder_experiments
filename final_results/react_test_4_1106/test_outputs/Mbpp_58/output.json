@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert opposite_Signs(1,-2) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef opposite_Signs(x, y):\n    return ((x ^ y) < 0)\n",
+    "full_code": "\n\ndef opposite_Signs(x, y):\n    return ((x ^ y) < 0)\n",
+    "task_id": "Mbpp/58",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

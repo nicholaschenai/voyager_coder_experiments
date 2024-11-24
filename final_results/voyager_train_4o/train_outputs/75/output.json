@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert max_product_of_three([1, 2, 3, 4]) == 24\nassert max_product_of_three([-10, -10, 5, 2]) == 500\nassert max_product_of_three([1, 10, 2, 6, 5, 3]) == 300\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_product_of_three(nums):\n    nums.sort()\n    product1 = ((nums[(- 1)] * nums[(- 2)]) * nums[(- 3)])\n    product2 = ((nums[0] * nums[1]) * nums[(- 1)])\n    return max(product1, product2)\n",
+    "full_code": "\n\ndef max_product_of_three(nums):\n    nums.sort()\n    product1 = ((nums[(- 1)] * nums[(- 2)]) * nums[(- 3)])\n    product2 = ((nums[0] * nums[1]) * nums[(- 1)])\n    return max(product1, product2)\n",
+    "task_id": "75",
+    "reasoning": "The function implementation correctly follows the task requirements by sorting the list and calculating the two potential maximum products: one from the three largest numbers and another from the two smallest and the largest number. The unit tests provided cover both positive and negative scenarios, and all tests pass, indicating that the function handles different cases correctly.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. It efficiently calculates the maximum product of any three integers in the list by leveraging sorting and arithmetic operations. No changes are needed."
+}

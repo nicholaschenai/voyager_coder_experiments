@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert _sum([1, 2, 3]) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef _sum(array):\n    return sum(array)\n",
+    "full_code": "\n\ndef _sum(array):\n    return sum(array)\n",
+    "task_id": "Mbpp/798",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

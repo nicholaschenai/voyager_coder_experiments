@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert convert(1) == (1.0, 0.0)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import cmath\n\ndef convert(z):\n    if isinstance(z, int):\n        z = complex(z, 0)\n    return cmath.polar(z)\n",
+    "full_code": "import cmath\n\ndef convert(z):\n    if isinstance(z, int):\n        z = complex(z, 0)\n    return cmath.polar(z)\n",
+    "task_id": "Mbpp/252",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

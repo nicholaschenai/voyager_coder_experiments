@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert longest_substring_two_distinct('abcabcabc') == 2\nassert longest_substring_two_distinct('aaaa') == 4\n\nTests failed:\nassert longest_substring_two_distinct('aabacbebebe') == 7 # output: 6",
+    "state": null,
+    "code": "\n\ndef longest_substring_two_distinct(s: str) -> int:\n    start = 0\n    max_length = 0\n    char_count = {}\n    for end in range(len(s)):\n        char_count[s[end]] = (char_count.get(s[end], 0) + 1)\n        while (len(char_count) > 2):\n            char_count[s[start]] -= 1\n            if (char_count[s[start]] == 0):\n                del char_count[s[start]]\n            start += 1\n        max_length = max(max_length, ((end - start) + 1))\n    return max_length\n",
+    "full_code": "\n\ndef longest_substring_two_distinct(s: str) -> int:\n    start = 0\n    max_length = 0\n    char_count = {}\n    for end in range(len(s)):\n        char_count[s[end]] = (char_count.get(s[end], 0) + 1)\n        while (len(char_count) > 2):\n            char_count[s[start]] -= 1\n            if (char_count[s[start]] == 0):\n                del char_count[s[start]]\n            start += 1\n        max_length = max(max_length, ((end - start) + 1))\n    return max_length\n",
+    "task_id": "74",
+    "reasoning": "The implementation failed the test case with the input 'aabacbebebe'. The expected output is 7, but the function returned 6, indicating that the function does not always correctly identify the longest substring with at most two distinct characters.",
+    "success": false,
+    "critique": "The function implementation seems to be correct in its approach, but there might be an off-by-one error or an issue with how the characters are being counted or the window is being adjusted. To improve the function, carefully check the logic that updates the character counts and the conditions that determine when to shrink the window. Ensure that the window is only shrunk when necessary and that the maximum length is updated correctly after the window has been adjusted."
+}

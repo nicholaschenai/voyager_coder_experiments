@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tuple_size((\"A\", 1, \"B\", 2, \"C\", 3) ) == sys.getsizeof((\"A\", 1, \"B\", 2, \"C\", 3))\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import sys\n\ndef tuple_size(t: tuple) -> int:\n    return sys.getsizeof(t)\n",
+    "full_code": "import sys\n\ndef tuple_size(t: tuple) -> int:\n    return sys.getsizeof(t)\n",
+    "task_id": "Mbpp/596",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

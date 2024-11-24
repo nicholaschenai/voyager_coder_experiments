@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_in_range(2,5) == 8\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_in_range(l: int, r: int) -> int:\n    total_sum = 0\n    for number in range(l, (r + 1)):\n        if ((number % 2) != 0):\n            total_sum += number\n    return total_sum\n",
+    "full_code": "\n\ndef sum_in_range(l: int, r: int) -> int:\n    total_sum = 0\n    for number in range(l, (r + 1)):\n        if ((number % 2) != 0):\n            total_sum += number\n    return total_sum\n",
+    "task_id": "Mbpp/797",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

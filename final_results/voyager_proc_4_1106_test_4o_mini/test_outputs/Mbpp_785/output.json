@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tuple_str_int(\"(7, 8, 9)\") == (7, 8, 9)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef tuple_str_int(tuple_str: str) -> tuple:\n    cleaned_str = tuple_str.strip('()')\n    str_numbers = cleaned_str.split(',')\n    int_numbers = tuple((int(num.strip()) for num in str_numbers))\n    return int_numbers\n",
+    "full_code": "\n\ndef tuple_str_int(tuple_str: str) -> tuple:\n    cleaned_str = tuple_str.strip('()')\n    str_numbers = cleaned_str.split(',')\n    int_numbers = tuple((int(num.strip()) for num in str_numbers))\n    return int_numbers\n",
+    "task_id": "Mbpp/785",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

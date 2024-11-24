@@ -1,0 +1,5 @@
+
+[description for function: filter_prime_numbers]
+This function takes a list of integers as input and returns a new list containing only the prime numbers from the original list. It first checks each number to determine if it is prime by testing divisibility from 2 up to the square root of the number. If a number is found to be prime, it is included in the resulting list. The final output is a list of all prime numbers extracted from the input list. If there are no prime numbers, an empty list is returned. The function effectively filters out non-prime numbers, providing a concise collection of primes.
+
+[end of description]

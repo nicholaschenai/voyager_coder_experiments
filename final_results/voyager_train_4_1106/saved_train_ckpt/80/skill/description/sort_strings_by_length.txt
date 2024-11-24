@@ -1,0 +1,5 @@
+
+[description for function: sort_strings_by_length]
+This function takes a list of strings as input and sorts them primarily by their length in descending order. In cases where multiple strings have the same length, it sorts those strings alphabetically in ascending order. The sorting is achieved using the built-in `sorted` function with a custom key. The key is a tuple that consists of the negative length of the string and the string itself. This ensures that longer strings come first, and among strings of the same length, they are ordered lexicographically. The function returns the sorted list of strings.
+
+[end of description]

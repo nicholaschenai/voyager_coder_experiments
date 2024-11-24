@@ -1,0 +1,5 @@
+{
+    "train_iter": 81,
+    "task": "Write a Python function that takes a list of integers and returns a set containing the integers that appear more than once in the list.",
+    "task_id": "80"
+}

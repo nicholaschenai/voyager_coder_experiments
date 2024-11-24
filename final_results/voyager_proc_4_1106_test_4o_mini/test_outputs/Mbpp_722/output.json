@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert filter_data({'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)},6.0,70)=={'Cierra Vega': (6.2, 70)}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef filter_data(students: dict[(str, tuple[(float, float)])], min_height: float, min_weight: float) -> dict[(str, tuple[(float, float)])]:\n    result = {}\n    for (name, (height, weight)) in students.items():\n        if ((height >= min_height) and (weight >= min_weight)):\n            result[name] = (height, weight)\n    return result\n",
+    "full_code": "\n\ndef filter_data(students: dict[(str, tuple[(float, float)])], min_height: float, min_weight: float) -> dict[(str, tuple[(float, float)])]:\n    result = {}\n    for (name, (height, weight)) in students.items():\n        if ((height >= min_height) and (weight >= min_weight)):\n            result[name] = (height, weight)\n    return result\n",
+    "task_id": "Mbpp/722",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

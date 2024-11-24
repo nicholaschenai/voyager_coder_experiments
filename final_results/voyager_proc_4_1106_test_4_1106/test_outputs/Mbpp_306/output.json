@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_sum_increasing_subseq([1, 101, 2, 3, 100, 4, 5 ], 7, 4, 6) == 11\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_sum_increasing_subseq(nums, n, i, k):\n    dp = ([0] * n)\n    for j in range((i + 1)):\n        dp[j] = nums[j]\n        for m in range(j):\n            if (nums[m] < nums[j]):\n                dp[j] = max(dp[j], (dp[m] + nums[j]))\n    max_sum = 0\n    for j in range((i + 1)):\n        if (nums[j] < nums[k]):\n            max_sum = max(max_sum, dp[j])\n    max_sum += nums[k]\n    return max_sum\n",
+    "full_code": "\n\ndef max_sum_increasing_subseq(nums, n, i, k):\n    dp = ([0] * n)\n    for j in range((i + 1)):\n        dp[j] = nums[j]\n        for m in range(j):\n            if (nums[m] < nums[j]):\n                dp[j] = max(dp[j], (dp[m] + nums[j]))\n    max_sum = 0\n    for j in range((i + 1)):\n        if (nums[j] < nums[k]):\n            max_sum = max(max_sum, dp[j])\n    max_sum += nums[k]\n    return max_sum\n",
+    "task_id": "Mbpp/306",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert parabola_directrix(5,3,2)==-198 # output: 1.5",
+    "state": null,
+    "code": "\n\ndef parabola_directrix(a, b, c):\n    h = ((- b) / (2 * a))\n    k = (c - ((b ** 2) / (4 * a)))\n    directrix = (k - (1 / (4 * a)))\n    return directrix\n",
+    "full_code": "\n\ndef parabola_directrix(a, b, c):\n    h = ((- b) / (2 * a))\n    k = (c - ((b ** 2) / (4 * a)))\n    directrix = (k - (1 / (4 * a)))\n    return directrix\n",
+    "task_id": "Mbpp/430",
+    "reasoning": "The implementation failed the test case because it incorrectly calculates the vertex 'k' and the directrix. The formula for 'k' should be a * h^2 + b * h + c, but the implementation uses c - (b^2 / (4 * a)) which is incorrect. Additionally, the directrix calculation does not account for the orientation of the parabola (upward or downward).",
+    "success": false,
+    "critique": "To correct the implementation, use the correct formula for 'k': k = a * h^2 + b * h + c. Also, ensure that the directrix calculation accounts for the orientation of the parabola. If 'a' is positive, the parabola opens upwards and the directrix should be k - (1 / (4 * a)). If 'a' is negative, the parabola opens downwards and the directrix should be k + (1 / (4 * a))."
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_subarray_product([1, -2, -3, 0, 7, -8, -2]) == 112\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_subarray_product(arr):\n    if (not arr):\n        return 0\n    max_product = min_product = result = arr[0]\n    for num in arr[1:]:\n        if (num < 0):\n            (max_product, min_product) = (min_product, max_product)\n        max_product = max(num, (max_product * num))\n        min_product = min(num, (min_product * num))\n        result = max(result, max_product)\n    return result\n",
+    "full_code": "\n\ndef max_subarray_product(arr):\n    if (not arr):\n        return 0\n    max_product = min_product = result = arr[0]\n    for num in arr[1:]:\n        if (num < 0):\n            (max_product, min_product) = (min_product, max_product)\n        max_product = max(num, (max_product * num))\n        min_product = min(num, (min_product * num))\n        result = max(result, max_product)\n    return result\n",
+    "task_id": "Mbpp/463",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_duplicates([1, 2, 3, 4, 5, 1, 2, 6]) == [1, 2]\nassert find_duplicates([10, 20, 30, 40, 50]) == []\nassert find_duplicates([5, 5, 5, 5, 5]) == [5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_duplicates(input_list):\n    seen = set()\n    duplicates = set()\n    for number in input_list:\n        if (number in seen):\n            duplicates.add(number)\n        else:\n            seen.add(number)\n    return sorted(duplicates)\n",
+    "full_code": "\n\ndef find_duplicates(input_list):\n    seen = set()\n    duplicates = set()\n    for number in input_list:\n        if (number in seen):\n            duplicates.add(number)\n        else:\n            seen.add(number)\n    return sorted(duplicates)\n",
+    "task_id": "28",
+    "reasoning": "The function implementation correctly identifies duplicates in the input list using a set to track seen numbers and another set to store duplicates. It then returns a sorted list of these duplicates, ensuring no duplicates in the result and that the result is sorted in ascending order. The unit tests cover various scenarios, including lists with no duplicates, lists with multiple duplicates of the same number, and lists with multiple different duplicates. All tests pass, indicating the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. It uses sets to track seen numbers and duplicates, ensuring that the result is free of duplicates and sorted. The implementation is concise and follows the task requirements accurately. No changes are needed."
+}

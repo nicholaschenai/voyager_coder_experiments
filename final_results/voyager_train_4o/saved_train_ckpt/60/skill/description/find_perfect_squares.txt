@@ -1,0 +1,5 @@
+
+[description for function: find_perfect_squares]
+This function generates a list of perfect squares that are less than a given integer n. It initializes an empty list to store the squares and uses a loop to calculate the square of consecutive integers starting from 1. If the calculated square is less than n, it adds the square to the list; otherwise, it breaks the loop. The process continues until the square exceeds or equals n. Finally, it returns the list of perfect squares found.
+
+[end of description]

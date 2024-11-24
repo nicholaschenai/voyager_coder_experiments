@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert unique_elements([4, 3, 2, 7, 8, 2, 3, 1]) == [1, 4, 7, 8]\nassert unique_elements([1, 2, 2, 3, 3, 4, 5, 5]) == [1, 4]\nassert unique_elements([10, 20, 30, 40, 50]) == [10, 20, 30, 40, 50]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import Counter\n\ndef unique_elements(input_list):\n    counts = Counter(input_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    unique_integers.sort()\n    return unique_integers\n",
+    "full_code": "from collections import Counter\n\ndef unique_elements(input_list):\n    counts = Counter(input_list)\n    unique_integers = [num for (num, count) in counts.items() if (count == 1)]\n    unique_integers.sort()\n    return unique_integers\n",
+    "task_id": "25",
+    "reasoning": "The function implementation correctly follows the task requirements. It uses the Counter class to count occurrences of each integer in the input list, filters out those that appear only once, sorts them, and returns the sorted list. The unit tests confirm that the function behaves as expected, as all tests pass without any failures.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. No changes are necessary. Continue to use this approach for similar tasks, as it is efficient and clear."
+}

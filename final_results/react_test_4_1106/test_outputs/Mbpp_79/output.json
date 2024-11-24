@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert word_len(\"Hadoop\") == False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef word_len(word):\n    length = len(word)\n    return ((length % 2) != 0)\n",
+    "full_code": "\n\ndef word_len(word):\n    length = len(word)\n    return ((length % 2) != 0)\n",
+    "task_id": "Mbpp/79",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert Find_Max_Length([[1],[1,4],[5,6,7,8]]) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef Find_Max_Length(sublists):\n    max_length = 0\n    for sublist in sublists:\n        current_length = len(sublist)\n        if (current_length > max_length):\n            max_length = current_length\n    return max_length\n",
+    "full_code": "\n\ndef Find_Max_Length(sublists):\n    max_length = 0\n    for sublist in sublists:\n        current_length = len(sublist)\n        if (current_length > max_length):\n            max_length = current_length\n    return max_length\n",
+    "task_id": "Mbpp/562",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

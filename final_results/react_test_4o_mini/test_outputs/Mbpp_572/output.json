@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert two_unique_nums([1,2,3,2,3,4,5]) == [1, 4, 5]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from collections import Counter\n\ndef two_unique_nums(nums):\n    count = Counter(nums)\n    unique_nums = [num for (num, cnt) in count.items() if (cnt == 1)]\n    return unique_nums\n",
+    "full_code": "from collections import Counter\n\ndef two_unique_nums(nums):\n    count = Counter(nums)\n    unique_nums = [num for (num, cnt) in count.items() if (cnt == 1)]\n    return unique_nums\n",
+    "task_id": "Mbpp/572",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

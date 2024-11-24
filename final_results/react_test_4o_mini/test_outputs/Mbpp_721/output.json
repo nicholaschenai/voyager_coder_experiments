@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert maxAverageOfPath([[1, 2, 3], [6, 5, 4], [7, 3, 9]]) == 5.2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef maxAverageOfPath(matrix):\n    N = len(matrix)\n    dp = [[(0, 0) for _ in range(N)] for _ in range(N)]\n    dp[0][0] = (matrix[0][0], 1)\n    for i in range(N):\n        for j in range(N):\n            if ((i == 0) and (j == 0)):\n                continue\n            (max_cost, num_cells) = (0, 0)\n            if (i > 0):\n                (max_cost, num_cells) = (max(max_cost, dp[(i - 1)][j][0]), dp[(i - 1)][j][1])\n            if (j > 0):\n                if (dp[i][(j - 1)][0] > max_cost):\n                    (max_cost, num_cells) = (dp[i][(j - 1)][0], dp[i][(j - 1)][1])\n            dp[i][j] = ((max_cost + matrix[i][j]), (num_cells + 1))\n    (total_cost, num_cells) = dp[(N - 1)][(N - 1)]\n    return (total_cost / num_cells)\n",
+    "full_code": "\n\ndef maxAverageOfPath(matrix):\n    N = len(matrix)\n    dp = [[(0, 0) for _ in range(N)] for _ in range(N)]\n    dp[0][0] = (matrix[0][0], 1)\n    for i in range(N):\n        for j in range(N):\n            if ((i == 0) and (j == 0)):\n                continue\n            (max_cost, num_cells) = (0, 0)\n            if (i > 0):\n                (max_cost, num_cells) = (max(max_cost, dp[(i - 1)][j][0]), dp[(i - 1)][j][1])\n            if (j > 0):\n                if (dp[i][(j - 1)][0] > max_cost):\n                    (max_cost, num_cells) = (dp[i][(j - 1)][0], dp[i][(j - 1)][1])\n            dp[i][j] = ((max_cost + matrix[i][j]), (num_cells + 1))\n    (total_cost, num_cells) = dp[(N - 1)][(N - 1)]\n    return (total_cost / num_cells)\n",
+    "task_id": "Mbpp/721",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

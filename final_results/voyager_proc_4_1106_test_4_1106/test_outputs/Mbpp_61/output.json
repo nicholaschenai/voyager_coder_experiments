@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_Substrings('112112') == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_Substrings(s: str) -> int:\n    count = 0\n    n = len(s)\n    for start in range(n):\n        sum_digits = 0\n        for end in range(start, n):\n            sum_digits += int(s[end])\n            length = ((end - start) + 1)\n            if (sum_digits == length):\n                count += 1\n    return count\n",
+    "full_code": "\n\ndef count_Substrings(s: str) -> int:\n    count = 0\n    n = len(s)\n    for start in range(n):\n        sum_digits = 0\n        for end in range(start, n):\n            sum_digits += int(s[end])\n            length = ((end - start) + 1)\n            if (sum_digits == length):\n                count += 1\n    return count\n",
+    "task_id": "Mbpp/61",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

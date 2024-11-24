@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_min_diff((1,5,3,19,18,25),6) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_min_diff(arr, n):\n    sorted_arr = sorted(arr)\n    min_diff = float('inf')\n    for i in range((n - 1)):\n        diff = (sorted_arr[(i + 1)] - sorted_arr[i])\n        if (diff < min_diff):\n            min_diff = diff\n    return min_diff\n",
+    "full_code": "\n\ndef find_min_diff(arr, n):\n    sorted_arr = sorted(arr)\n    min_diff = float('inf')\n    for i in range((n - 1)):\n        diff = (sorted_arr[(i + 1)] - sorted_arr[i])\n        if (diff < min_diff):\n            min_diff = diff\n    return min_diff\n",
+    "task_id": "Mbpp/763",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

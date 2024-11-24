@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert count_reverse_pairs([\"julia\", \"best\", \"tseb\", \"for\", \"ailuj\"])== 2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef count_reverse_pairs(string_list):\n    seen = set()\n    count = 0\n    for string in string_list:\n        reversed_string = string[::(- 1)]\n        if (reversed_string in seen):\n            count += 1\n        else:\n            seen.add(string)\n    return count\n",
+    "full_code": "\n\ndef count_reverse_pairs(string_list):\n    seen = set()\n    count = 0\n    for string in string_list:\n        reversed_string = string[::(- 1)]\n        if (reversed_string in seen):\n            count += 1\n        else:\n            seen.add(string)\n    return count\n",
+    "task_id": "Mbpp/757",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

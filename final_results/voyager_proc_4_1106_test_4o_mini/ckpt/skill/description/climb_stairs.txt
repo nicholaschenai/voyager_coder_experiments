@@ -1,0 +1,5 @@
+
+[description for function: climb_stairs]
+This function calculates the number of distinct ways to climb a staircase with `n` steps, where each time you can either take one step or two steps. It initializes a list to store the number of ways to reach each step, starting with the base cases for 0 and 1 steps. Then, it iteratively fills in the list using the relation that the number of ways to reach step `i` is the sum of the ways to reach steps `i-1` and `i-2`. Finally, it returns the total number of ways to reach the `n`-th step. The approach efficiently uses dynamic programming to avoid redundant calculations. The function handles edge cases for 0 and 1 steps by returning 1 directly.
+
+[end of description]

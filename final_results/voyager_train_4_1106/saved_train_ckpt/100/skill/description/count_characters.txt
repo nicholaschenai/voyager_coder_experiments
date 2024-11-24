@@ -1,0 +1,5 @@
+
+[description for function: count_characters]
+This function takes a string as input and counts the occurrences of each character within that string. It initializes an empty dictionary to store the character counts. As it iterates through each character in the input string, it updates the count for each character in the dictionary. If a character is already present in the dictionary, its count is incremented; otherwise, it is added with a count of one. Finally, the function returns the dictionary containing the character counts. This allows users to easily see how many times each character appears in the input string.
+
+[end of description]

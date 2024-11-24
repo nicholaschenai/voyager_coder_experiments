@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert sum_of_squares_of_evens([1, 2, 3, 4, 5]) == 20\nassert sum_of_squares_of_evens([10, 15, 20, 25]) == 500\nassert sum_of_squares_of_evens([1, 3, 5, 7]) == 0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_of_squares_of_evens(numbers):\n    total_sum = 0\n    for number in numbers:\n        if ((number % 2) == 0):\n            total_sum += (number ** 2)\n    return total_sum\n",
+    "full_code": "\n\ndef sum_of_squares_of_evens(numbers):\n    total_sum = 0\n    for number in numbers:\n        if ((number % 2) == 0):\n            total_sum += (number ** 2)\n    return total_sum\n",
+    "task_id": "54",
+    "reasoning": "The function implementation correctly iterates through the list of integers, checks if each number is even, calculates the square of even numbers, and sums them up. The unit tests cover various scenarios, including lists with even numbers, lists with no even numbers, and mixed lists. All tests pass, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. It successfully accomplishes the task of summing the squares of even numbers in a list. No changes are necessary."
+}

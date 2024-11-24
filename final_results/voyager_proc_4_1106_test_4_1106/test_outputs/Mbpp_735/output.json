@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert toggle_middle_bits(9) == 15\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef toggle_middle_bits(n):\n    binary = bin(n)[2:]\n    toggled = ((binary[0] + ''.join((('0' if (bit == '1') else '1') for bit in binary[1:(- 1)]))) + binary[(- 1)])\n    result = int(toggled, 2)\n    return result\n",
+    "full_code": "\n\ndef toggle_middle_bits(n):\n    binary = bin(n)[2:]\n    toggled = ((binary[0] + ''.join((('0' if (bit == '1') else '1') for bit in binary[1:(- 1)]))) + binary[(- 1)])\n    result = int(toggled, 2)\n    return result\n",
+    "task_id": "Mbpp/735",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

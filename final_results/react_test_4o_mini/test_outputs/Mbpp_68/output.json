@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_Monotonic([6, 5, 4, 4]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_Monotonic(array: list[int]) -> bool:\n    if (len(array) <= 1):\n        return True\n    increasing = True\n    decreasing = True\n    for i in range((len(array) - 1)):\n        if (array[i] < array[(i + 1)]):\n            decreasing = False\n        elif (array[i] > array[(i + 1)]):\n            increasing = False\n    return (increasing or decreasing)\n",
+    "full_code": "\n\ndef is_Monotonic(array: list[int]) -> bool:\n    if (len(array) <= 1):\n        return True\n    increasing = True\n    decreasing = True\n    for i in range((len(array) - 1)):\n        if (array[i] < array[(i + 1)]):\n            decreasing = False\n        elif (array[i] > array[(i + 1)]):\n            increasing = False\n    return (increasing or decreasing)\n",
+    "task_id": "Mbpp/68",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

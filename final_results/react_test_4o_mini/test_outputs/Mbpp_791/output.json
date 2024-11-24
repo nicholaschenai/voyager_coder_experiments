@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert remove_nested((1, 5, 7, (4, 6), 10)) == (1, 5, 7, 10)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef remove_nested(input_tuple: tuple) -> tuple:\n    return tuple((item for item in input_tuple if (not isinstance(item, tuple))))\n",
+    "full_code": "\n\ndef remove_nested(input_tuple: tuple) -> tuple:\n    return tuple((item for item in input_tuple if (not isinstance(item, tuple))))\n",
+    "task_id": "Mbpp/791",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

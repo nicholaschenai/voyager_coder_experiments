@@ -1,0 +1,5 @@
+
+[description for function: find_majority_element]
+This function identifies the majority element in a list of numbers, which is defined as an element that appears more than half the time in the list. It first counts the occurrences of each number using a dictionary. After counting, it calculates the majority threshold as half the length of the list. It then checks each number's count against this threshold. If a number exceeds the threshold, it is returned as the majority element. If no majority element exists, the function returns None.
+
+[end of description]

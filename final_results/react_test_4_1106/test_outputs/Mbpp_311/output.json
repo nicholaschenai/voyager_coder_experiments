@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert set_left_most_unset_bit(10) == 14\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef set_left_most_unset_bit(n):\n    total_bits = n.bit_length()\n    for position in range((total_bits - 1), (- 1), (- 1)):\n        if ((n & (1 << position)) == 0):\n            n |= (1 << position)\n            break\n    else:\n        n |= (1 << total_bits)\n    return n\n",
+    "full_code": "\n\ndef set_left_most_unset_bit(n):\n    total_bits = n.bit_length()\n    for position in range((total_bits - 1), (- 1), (- 1)):\n        if ((n & (1 << position)) == 0):\n            n |= (1 << position)\n            break\n    else:\n        n |= (1 << total_bits)\n    return n\n",
+    "task_id": "Mbpp/311",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert test_duplicate(([1,2,3,4,5]))==False\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef test_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if (num in seen):\n            return True\n        seen.add(num)\n    return False\n",
+    "full_code": "\n\ndef test_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if (num in seen):\n            return True\n        seen.add(num)\n    return False\n",
+    "task_id": "Mbpp/19",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

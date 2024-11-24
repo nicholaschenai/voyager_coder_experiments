@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_sum_list([[1,2,3], [4,5,6], [10,11,12], [7,8,9]])==[10, 11, 12]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_sum_list(lists):\n    max_sum = float('-inf')\n    max_list = []\n    for sublist in lists:\n        current_sum = sum(sublist)\n        if (current_sum > max_sum):\n            max_sum = current_sum\n            max_list = sublist\n    return max_list\n",
+    "full_code": "\n\ndef max_sum_list(lists):\n    max_sum = float('-inf')\n    max_list = []\n    for sublist in lists:\n        current_sum = sum(sublist)\n        if (current_sum > max_sum):\n            max_sum = current_sum\n            max_list = sublist\n    return max_list\n",
+    "task_id": "Mbpp/805",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

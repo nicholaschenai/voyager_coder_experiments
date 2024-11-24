@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert square_perimeter(10)==40\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef square_perimeter(side_length):\n    return (4 * side_length)\n",
+    "full_code": "\n\ndef square_perimeter(side_length):\n    return (4 * side_length)\n",
+    "task_id": "Mbpp/17",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

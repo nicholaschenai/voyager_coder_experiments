@@ -1,0 +1,20 @@
+{
+    "tasks": [
+        "Write a Python function that takes a dictionary and returns a new dictionary with the keys and values swapped. If there are duplicate values, keep only one of the keys.",
+        "Write a Python function that takes a dictionary and returns a new dictionary containing only the items where the value is greater than a specified threshold.",
+        "Write a Python function that takes a string and returns a new string with all the consonants removed.",
+        "Write a Python function that takes a string and returns a dictionary with each character as the key and the number of times it appears in the string as the value, but only for characters that are vowels (a, e, i, o, u).",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each consonant as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a new string with all the consonants removed, preserving the order of the vowels and non-alphabetic characters.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each vowel as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a dictionary with each consonant as the key and the number of times it appears in the string as the value, while ignoring case.",
+        "Write a Python function that takes a string and returns a set of characters that appear more than once in that string."
+    ]
+}

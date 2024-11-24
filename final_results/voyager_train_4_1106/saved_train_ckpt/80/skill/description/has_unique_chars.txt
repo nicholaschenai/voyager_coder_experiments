@@ -1,0 +1,5 @@
+
+[description for function: has_unique_chars]
+This function checks if a given string contains all unique characters. It iterates through each character in the string and compares it with every subsequent character. If it finds any duplicate characters, it returns False. If no duplicates are found after checking all characters, it returns True. The function effectively determines the uniqueness of characters in the input string. It operates with a time complexity of O(n^2) due to the nested loops.
+
+[end of description]

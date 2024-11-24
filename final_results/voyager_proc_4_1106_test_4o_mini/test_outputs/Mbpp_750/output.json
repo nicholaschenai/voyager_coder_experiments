@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert add_tuple([5, 6, 7], (9, 10)) == [5, 6, 7, 9, 10]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef add_tuple(lst, tup):\n    return (lst + list(tup))\n",
+    "full_code": "\n\ndef add_tuple(lst, tup):\n    return (lst + list(tup))\n",
+    "task_id": "Mbpp/750",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

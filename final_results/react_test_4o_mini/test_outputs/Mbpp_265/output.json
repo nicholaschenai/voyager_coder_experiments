@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert list_split(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'],3)==[['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef list_split(input_list, n):\n    result = []\n    for i in range(n):\n        sublist = []\n        for j in range(i, len(input_list), n):\n            sublist.append(input_list[j])\n        result.append(sublist)\n    return result\n",
+    "full_code": "\n\ndef list_split(input_list, n):\n    result = []\n    for i in range(n):\n        sublist = []\n        for j in range(i, len(input_list), n):\n            sublist.append(input_list[j])\n        result.append(sublist)\n    return result\n",
+    "task_id": "Mbpp/265",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

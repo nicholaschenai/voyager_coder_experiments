@@ -1,0 +1,5 @@
+
+[description for function: find_common_elements]
+This function takes two lists as input and converts them into sets to eliminate duplicates. It then finds the intersection of these two sets, which contains the common elements. The resulting set of common elements is sorted in ascending order. Finally, the function returns this sorted list of common elements.
+
+[end of description]

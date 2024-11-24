@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert combinations_colors( [\"Red\",\"Green\",\"Blue\"],1)==[('Red',), ('Green',), ('Blue',)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "from itertools import combinations_with_replacement\n\ndef combinations_colors(colors, n):\n    return list(combinations_with_replacement(colors, n))\n",
+    "full_code": "from itertools import combinations_with_replacement\n\ndef combinations_colors(colors, n):\n    return list(combinations_with_replacement(colors, n))\n",
+    "task_id": "Mbpp/255",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_k_largest([3, 1, 5, 12, 2, 11], 3) == [12, 11, 5]\nassert find_k_largest([5, 12, 11, -1, 12], 2) == [12, 12]\nassert find_k_largest([1, 23, 12, 9, 30, 2, 50], 4) == [50, 30, 23, 12]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import heapq\n\ndef find_k_largest(nums, k):\n    if (k > len(nums)):\n        return sorted(nums, reverse=True)\n    min_heap = []\n    for num in nums:\n        if (len(min_heap) < k):\n            heapq.heappush(min_heap, num)\n        elif (num > min_heap[0]):\n            heapq.heappop(min_heap)\n            heapq.heappush(min_heap, num)\n    return sorted(min_heap, reverse=True)\n",
+    "full_code": "import heapq\n\ndef find_k_largest(nums, k):\n    if (k > len(nums)):\n        return sorted(nums, reverse=True)\n    min_heap = []\n    for num in nums:\n        if (len(min_heap) < k):\n            heapq.heappush(min_heap, num)\n        elif (num > min_heap[0]):\n            heapq.heappop(min_heap)\n            heapq.heappush(min_heap, num)\n    return sorted(min_heap, reverse=True)\n",
+    "task_id": "21",
+    "reasoning": "The function implementation correctly uses a min-heap to find the k largest elements in the list. It efficiently maintains a heap of size k, ensuring that only the k largest elements are kept. The function then sorts these elements in descending order before returning them. The unit tests provided cover various scenarios, including cases with duplicate elements and different values of k, and all tests pass successfully, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficiently solves the problem using a min-heap. No changes are necessary as it meets the task requirements and passes all unit tests."
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert check_str(\"annie\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef check_str(s: str) -> bool:\n    return bool(re.match('^[aeiouAEIOU]', s))\n",
+    "full_code": "import re\n\ndef check_str(s: str) -> bool:\n    return bool(re.match('^[aeiouAEIOU]', s))\n",
+    "task_id": "Mbpp/737",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

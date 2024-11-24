@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef replace_spaces(input_string):\n    result = []\n    for char in input_string:\n        if (char == ' '):\n            result.append('_')\n        elif (char == '_'):\n            result.append(' ')\n        else:\n            result.append(char)\n    return ''.join(result)\n",
+    "full_code": "\n\ndef replace_spaces(input_string):\n    result = []\n    for char in input_string:\n        if (char == ' '):\n            result.append('_')\n        elif (char == '_'):\n            result.append(' ')\n        else:\n            result.append(char)\n    return ''.join(result)\n",
+    "task_id": "Mbpp/631",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

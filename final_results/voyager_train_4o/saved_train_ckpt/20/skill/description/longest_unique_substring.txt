@@ -1,0 +1,5 @@
+
+[description for function: longest_unique_substring]
+This function takes a string as input and finds the longest substring that contains all unique characters. It uses a sliding window approach, maintaining a set of characters currently in the substring and adjusting the start index as needed to ensure uniqueness. As it iterates through the string, it updates the maximum length and the corresponding substring whenever a longer unique substring is found. The function ultimately returns the longest substring with all unique characters. It efficiently handles the input by ensuring that each character is processed only once. The result is a single substring that meets the criteria.
+
+[end of description]

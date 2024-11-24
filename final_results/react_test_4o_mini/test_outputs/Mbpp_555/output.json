@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert difference(3) == 30\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef difference(n: int) -> int:\n    sum_n = ((n * (n + 1)) // 2)\n    sum_cubes = (sum_n ** 2)\n    return (sum_cubes - sum_n)\n",
+    "full_code": "\n\ndef difference(n: int) -> int:\n    sum_n = ((n * (n + 1)) // 2)\n    sum_cubes = (sum_n ** 2)\n    return (sum_cubes - sum_n)\n",
+    "task_id": "Mbpp/555",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

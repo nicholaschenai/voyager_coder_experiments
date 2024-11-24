@@ -1,0 +1,5 @@
+
+[description for function: reverse_list]
+This function takes a list as input and returns a new list that contains the elements of the input list in reverse order. It utilizes Python's slicing feature to achieve this by specifying a step of -1. The result is a reversed version of the original list without modifying the input list itself. This approach is concise and efficient for reversing lists. The function can handle lists of any data type, including mixed types. Overall, it provides a simple way to reverse the order of elements in a list.
+
+[end of description]

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert not text_match_three(\"ac\")\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef text_match_three(s: str) -> bool:\n    return (re.fullmatch('ab{3}', s) is not None)\n",
+    "full_code": "import re\n\ndef text_match_three(s: str) -> bool:\n    return (re.fullmatch('ab{3}', s) is not None)\n",
+    "task_id": "Mbpp/787",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

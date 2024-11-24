@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert lateralsurface_cube(5)==100\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef lateralsurface_cube(side_length: int) -> int:\n    return (4 * (side_length ** 2))\n",
+    "full_code": "\n\ndef lateralsurface_cube(side_length: int) -> int:\n    return (4 * (side_length ** 2))\n",
+    "task_id": "Mbpp/266",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

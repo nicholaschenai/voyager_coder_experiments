@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_difference([(3, 5), (1, 7), (10, 3), (1, 2)]) == 7\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_difference(tuples_list):\n    max_diff = 0\n    for (a, b) in tuples_list:\n        diff = abs((a - b))\n        if (diff > max_diff):\n            max_diff = diff\n    return max_diff\n",
+    "full_code": "\n\ndef max_difference(tuples_list):\n    max_diff = 0\n    for (a, b) in tuples_list:\n        diff = abs((a - b))\n        if (diff > max_diff):\n            max_diff = diff\n    return max_diff\n",
+    "task_id": "Mbpp/63",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

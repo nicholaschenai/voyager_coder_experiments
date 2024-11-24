@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_Sum_Of_Powers_Of_Two(10) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_Sum_Of_Powers_Of_Two(n: int) -> bool:\n    if (n <= 0):\n        return False\n    while (n > 0):\n        power_of_two = 1\n        while (power_of_two <= n):\n            power_of_two <<= 1\n        power_of_two >>= 1\n        n -= power_of_two\n    return True\n",
+    "full_code": "\n\ndef is_Sum_Of_Powers_Of_Two(n: int) -> bool:\n    if (n <= 0):\n        return False\n    while (n > 0):\n        power_of_two = 1\n        while (power_of_two <= n):\n            power_of_two <<= 1\n        power_of_two >>= 1\n        n -= power_of_two\n    return True\n",
+    "task_id": "Mbpp/138",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

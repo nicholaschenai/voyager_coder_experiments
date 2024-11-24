@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert next_Perfect_Square(35) == 36\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef next_Perfect_Square(n: int) -> int:\n    root = math.isqrt(n)\n    next_root = (root + 1)\n    return (next_root ** 2)\n",
+    "full_code": "import math\n\ndef next_Perfect_Square(n: int) -> int:\n    root = math.isqrt(n)\n    next_root = (root + 1)\n    return (next_root ** 2)\n",
+    "task_id": "Mbpp/244",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

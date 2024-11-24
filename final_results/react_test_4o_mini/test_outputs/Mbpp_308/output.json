@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert large_product([1, 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],3)==[60, 54, 50]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef large_product(list1, list2, n: int) -> list:\n    products = [(a * b) for a in list1 for b in list2]\n    products.sort(reverse=True)\n    return products[:n]\n",
+    "full_code": "\n\ndef large_product(list1, list2, n: int) -> list:\n    products = [(a * b) for a in list1 for b in list2]\n    products.sort(reverse=True)\n    return products[:n]\n",
+    "task_id": "Mbpp/308",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

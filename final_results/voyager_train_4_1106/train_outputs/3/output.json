@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert calculate_factorial(5) == 120\nassert calculate_factorial(0) == 1\nassert calculate_factorial(3) == 6\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef calculate_factorial(n):\n    if (n < 0):\n        raise ValueError('Factorial is not defined for negative numbers.')\n    if (n == 0):\n        return 1\n    result = 1\n    for i in range(1, (n + 1)):\n        result *= i\n    return result\n",
+    "full_code": "\n\ndef calculate_factorial(n):\n    if (n < 0):\n        raise ValueError('Factorial is not defined for negative numbers.')\n    if (n == 0):\n        return 1\n    result = 1\n    for i in range(1, (n + 1)):\n        result *= i\n    return result\n",
+    "task_id": "3",
+    "reasoning": "The implementation passed all the provided unit tests, which cover the expected behavior for non-negative integers including the base case of 0.",
+    "success": true,
+    "critique": "The function correctly implements the factorial calculation for non-negative integers. However, it is always good practice to include more comprehensive tests, such as testing for the maximum input value that the function is expected to handle without causing overflow or performance issues."
+}

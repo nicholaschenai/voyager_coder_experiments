@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert decimal_to_binary(8) == '1000'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef decimal_to_binary(n):\n    if (n == 0):\n        return '0'\n    binary_digits = []\n    while (n > 0):\n        remainder = (n % 2)\n        binary_digits.append(str(remainder))\n        n //= 2\n    binary_digits.reverse()\n    return ''.join(binary_digits)\n",
+    "full_code": "\n\ndef decimal_to_binary(n):\n    if (n == 0):\n        return '0'\n    binary_digits = []\n    while (n > 0):\n        remainder = (n % 2)\n        binary_digits.append(str(remainder))\n        n //= 2\n    binary_digits.reverse()\n    return ''.join(binary_digits)\n",
+    "task_id": "Mbpp/99",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

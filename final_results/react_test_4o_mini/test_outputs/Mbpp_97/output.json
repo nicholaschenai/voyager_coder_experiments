@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert frequency_lists([[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]])=={1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef frequency_lists(nested_list):\n    flattened_list = [item for sublist in nested_list for item in sublist]\n    frequency_dict = {}\n    for item in flattened_list:\n        if (item in frequency_dict):\n            frequency_dict[item] += 1\n        else:\n            frequency_dict[item] = 1\n    return frequency_dict\n",
+    "full_code": "\n\ndef frequency_lists(nested_list):\n    flattened_list = [item for sublist in nested_list for item in sublist]\n    frequency_dict = {}\n    for item in flattened_list:\n        if (item in frequency_dict):\n            frequency_dict[item] += 1\n        else:\n            frequency_dict[item] = 1\n    return frequency_dict\n",
+    "task_id": "Mbpp/97",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

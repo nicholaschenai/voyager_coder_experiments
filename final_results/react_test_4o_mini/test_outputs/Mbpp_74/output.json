@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_samepatterns([\"red\",\"green\",\"green\"], [\"a\", \"b\", \"b\"])==True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_samepatterns(patterns, values):\n    if (len(patterns) != len(values)):\n        return False\n    pattern_to_value = {}\n    value_to_pattern = {}\n    for (p, v) in zip(patterns, values):\n        if (p in pattern_to_value):\n            if (pattern_to_value[p] != v):\n                return False\n        else:\n            pattern_to_value[p] = v\n        if (v in value_to_pattern):\n            if (value_to_pattern[v] != p):\n                return False\n        else:\n            value_to_pattern[v] = p\n    return True\n",
+    "full_code": "\n\ndef is_samepatterns(patterns, values):\n    if (len(patterns) != len(values)):\n        return False\n    pattern_to_value = {}\n    value_to_pattern = {}\n    for (p, v) in zip(patterns, values):\n        if (p in pattern_to_value):\n            if (pattern_to_value[p] != v):\n                return False\n        else:\n            pattern_to_value[p] = v\n        if (v in value_to_pattern):\n            if (value_to_pattern[v] != p):\n                return False\n        else:\n            value_to_pattern[v] = p\n    return True\n",
+    "task_id": "Mbpp/74",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

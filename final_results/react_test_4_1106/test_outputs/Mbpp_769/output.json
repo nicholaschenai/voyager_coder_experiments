@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert (Diff([10, 15, 20, 25, 30, 35, 40], [25, 40, 35])) == [10, 20, 30, 15] # output: [10, 15, 20, 30]",
+    "state": null,
+    "code": "\n\ndef Diff(list1, list2):\n    difference = []\n    for item in list1:\n        if (item not in list2):\n            difference.append(item)\n    return difference\n",
+    "full_code": "\n\ndef Diff(list1, list2):\n    difference = []\n    for item in list1:\n        if (item not in list2):\n            difference.append(item)\n    return difference\n",
+    "task_id": "Mbpp/769",
+    "reasoning": "The implementation failed the test case because the expected output list is not in the correct order. The function correctly identifies the elements that are unique to the first list but does not maintain the order as specified in the task.",
+    "success": false,
+    "critique": "The function implementation is correct in terms of logic for finding the difference, but the expected output in the test case is incorrect. The correct difference should be [10, 15, 20, 30] as per the function's logic. The test case expects the output [10, 20, 30, 15], which is not in the same order as the elements in the first list. The test case should be corrected to match the correct order of elements."
+}

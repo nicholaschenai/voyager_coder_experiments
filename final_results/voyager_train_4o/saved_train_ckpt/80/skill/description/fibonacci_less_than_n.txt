@@ -1,0 +1,5 @@
+
+[description for function: fibonacci_less_than_n]
+This function generates a list of Fibonacci numbers that are less than a specified integer, n. It initializes two variables to represent the first two Fibonacci numbers and iteratively calculates the next Fibonacci number by summing the previous two. As long as the current Fibonacci number is less than n, it appends that number to the list. Once a Fibonacci number reaches or exceeds n, the loop terminates. Finally, the function returns the list of Fibonacci numbers collected during the process.
+
+[end of description]

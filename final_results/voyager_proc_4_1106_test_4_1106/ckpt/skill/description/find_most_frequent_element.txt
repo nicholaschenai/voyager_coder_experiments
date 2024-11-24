@@ -1,0 +1,5 @@
+
+[description for function: find_most_frequent_element]
+This function takes a list of integers as input and returns the most frequently occurring element in that list. If the list is empty, it returns None. It counts the occurrences of each integer using a dictionary to track their frequencies. After counting, it determines which integer has the highest frequency, and in case of a tie, it selects the smallest integer. Finally, it returns the most frequent integer found.
+
+[end of description]

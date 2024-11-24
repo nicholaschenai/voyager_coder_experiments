@@ -1,0 +1,5 @@
+
+[description for function: most_frequent_integer]
+This function takes a list of integers as input and returns the most frequently occurring integer in that list. If the list is empty, it returns None. It counts the occurrences of each integer using a dictionary to track their frequencies. After counting, it determines which integer has the highest frequency, and in case of a tie, it selects the smallest integer. Finally, it returns the integer that is most frequent.
+
+[end of description]

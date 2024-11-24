@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert get_coordinates((3, 4)) == [[2, 3], [2, 4], [2, 5], [3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5]]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef get_coordinates(coord):\n    (x, y) = coord\n    adjacent_coords = []\n    for dx in [(- 1), 0, 1]:\n        for dy in [(- 1), 0, 1]:\n            adjacent_coords.append([(x + dx), (y + dy)])\n    return adjacent_coords\n",
+    "full_code": "\n\ndef get_coordinates(coord):\n    (x, y) = coord\n    adjacent_coords = []\n    for dx in [(- 1), 0, 1]:\n        for dy in [(- 1), 0, 1]:\n            adjacent_coords.append([(x + dx), (y + dy)])\n    return adjacent_coords\n",
+    "task_id": "Mbpp/630",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

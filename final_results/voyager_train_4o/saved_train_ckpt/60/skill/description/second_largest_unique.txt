@@ -1,0 +1,5 @@
+
+[description for function: second_largest_unique]
+This function takes a list of numbers as input and identifies the second largest unique number from that list. It first converts the list into a set to eliminate any duplicates. If there are fewer than two unique numbers, it returns None. The unique numbers are then sorted in descending order. Finally, the function returns the second element from this sorted list, which corresponds to the second largest unique number.
+
+[end of description]

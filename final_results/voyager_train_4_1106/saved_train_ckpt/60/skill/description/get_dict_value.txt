@@ -1,0 +1,5 @@
+
+[description for function: get_dict_value]
+This function retrieves the value associated with a specified key from a given dictionary. If the key exists in the dictionary, it returns the corresponding value. If the key is not found, it returns a message indicating that the key is not present. The function effectively handles both scenarios of key existence. It provides a straightforward way to access dictionary values while also managing potential errors. Overall, it enhances the usability of dictionary lookups in Python.
+
+[end of description]

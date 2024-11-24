@@ -1,0 +1,110 @@
+{
+    "square_list": {
+        "code": "\n\ndef square_list(input_list):\n    squared_list = []\n    for number in input_list:\n        squared_list.append((number * number))\n    return squared_list\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list with the squares of all the numbers. The function should not modify the original list.",
+        "description": "\n[description for function: square_list]\nThis function takes a list of numbers as input and creates a new list containing the squares of each number from the input list. It initializes an empty list to store the squared values. Then, it iterates through each number in the input list, calculates its square, and appends the result to the new list. Finally, the function returns the list of squared numbers. The output list will have the same length as the input list, with each element being the square of the corresponding input element. This function effectively transforms the input list by applying a mathematical operation to each of its elements.\n\n[end of description]\n"
+    },
+    "unique_elements": {
+        "code": "\n\ndef unique_elements(input_list):\n    unique_set = set(input_list)\n    unique_list = list(unique_set)\n    return unique_list\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list containing only the unique elements from the original list. The order of elements in the returned list does not matter.",
+        "description": "\n[description for function: unique_elements]\nThis function takes a list as input and converts it into a set to eliminate any duplicate elements. It then transforms the set back into a list, resulting in a collection of unique elements. The order of elements may not be preserved since sets do not maintain order. Finally, the function returns this list of unique elements. This is useful for situations where only distinct values are needed from a given list. Overall, it provides a simple way to filter out duplicates from a list.\n\n[end of description]\n"
+    },
+    "find_duplicates": {
+        "code": "from collections import Counter\n\ndef find_duplicates(int_list):\n    counts = Counter(int_list)\n    duplicates = {num for (num, count) in counts.items() if (count > 1)}\n    return duplicates\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a set containing all the elements that appear more than once in the list.",
+        "description": "\n[description for function: find_duplicates]\nThis function takes a list of integers as input and counts the occurrences of each integer using the Counter class from the collections module. It then creates a set of integers that appear more than once in the list, identifying them as duplicates. Finally, the function returns this set of duplicate integers. The use of a set ensures that each duplicate is listed only once, regardless of how many times it appears in the input list. The function efficiently handles the counting and filtering in a concise manner. Overall, it provides a straightforward way to identify duplicate values in a list of integers.\n\n[end of description]\n"
+    },
+    "calculate_factorial": {
+        "code": "\n\ndef calculate_factorial(n):\n    if (n < 0):\n        raise ValueError('Factorial is not defined for negative numbers.')\n    if (n == 0):\n        return 1\n    result = 1\n    for i in range(1, (n + 1)):\n        result *= i\n    return result\n",
+        "dependencies": [],
+        "task": "Write a Python function that calculates the factorial of a given non-negative integer. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!.",
+        "description": "\n[description for function: calculate_factorial]\nThis function computes the factorial of a non-negative integer n. It raises a ValueError if n is negative, as factorials are not defined for such values. For n equal to zero, it returns 1, since 0! is defined as 1. For positive integers, it initializes a result variable to 1 and iteratively multiplies it by each integer from 1 to n. Finally, it returns the computed factorial value. The function effectively handles edge cases and performs the calculation using a simple loop.\n\n[end of description]\n"
+    },
+    "is_palindrome": {
+        "code": "\n\ndef is_palindrome(s):\n    normalized_str = s.lower()\n    filtered_str = ''.join((char for char in normalized_str if char.isalnum()))\n    return (filtered_str == filtered_str[::(- 1)])\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns True if the string is a palindrome, and False otherwise. The function should be case-insensitive and ignore all non-alphanumeric characters.",
+        "description": "\n[description for function: is_palindrome]\nThis function checks if a given string is a palindrome, which means it reads the same forwards and backwards. It first normalizes the string by converting it to lowercase and filtering out non-alphanumeric characters. Then, it compares the filtered string to its reverse. If both are identical, it returns True, indicating that the string is a palindrome; otherwise, it returns False. The function effectively ignores case and punctuation, focusing solely on the alphanumeric content. This makes it suitable for checking phrases and sentences as well as single words.\n\n[end of description]\n"
+    },
+    "get_dict_value": {
+        "code": "\n\ndef get_dict_value(dictionary, key):\n    if (key in dictionary):\n        return dictionary[key]\n    else:\n        return 'Key not found.'\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a dictionary and a key, and returns the value associated with the key. If the key does not exist in the dictionary, the function should return 'Key not found.'",
+        "description": "\n[description for function: get_dict_value]\nThis function retrieves the value associated with a specified key from a given dictionary. If the key exists in the dictionary, it returns the corresponding value. If the key is not found, it returns a message indicating that the key is not present. The function effectively handles both scenarios of key existence. It provides a straightforward way to access dictionary values while also managing potential errors. Overall, it enhances the usability of dictionary lookups in Python.\n\n[end of description]\n"
+    },
+    "first_recurring_character": {
+        "code": "\n\ndef first_recurring_character(int_list):\n    seen = set()\n    for num in int_list:\n        if (num in seen):\n            return num\n        seen.add(num)\n    return None\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns the first recurring character. If there is no recurring character, return None.",
+        "description": "\n[description for function: first_recurring_character]\nThis function takes a list of integers as input and identifies the first recurring character within that list. It utilizes a set to keep track of the numbers that have already been encountered. As it iterates through the list, it checks if the current number has been seen before; if so, it returns that number as the first recurring character. If no recurring number is found by the end of the list, it returns None. The function effectively provides a quick way to find duplicates in a single pass through the list. Overall, it is efficient and straightforward in its approach to solving the problem.\n\n[end of description]\n"
+    },
+    "bubble_sort": {
+        "code": "\n\ndef bubble_sort(input_list):\n    n = len(input_list)\n    for i in range((n - 1)):\n        for j in range(((n - 1) - i)):\n            if (input_list[j] > input_list[(j + 1)]):\n                (input_list[j], input_list[(j + 1)]) = (input_list[(j + 1)], input_list[j])\n    return input_list\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the bubble sort algorithm.",
+        "description": "\n[description for function: bubble_sort]\nThis function implements the bubble sort algorithm to sort a given list in ascending order by repeatedly comparing adjacent elements and swapping them if they are in the wrong order, effectively \"bubbling\" larger elements to the end of the list. It iterates through the list multiple times, reducing the number of comparisons in each subsequent pass as the largest elements settle at the end. The process continues until the entire list is sorted. The function returns the sorted list after completing the sorting process. It operates with a time complexity of O(n^2) in the worst case, making it less efficient for large datasets. Overall, it provides a straightforward method for sorting a list using a simple comparison-based approach.\n\n[end of description]\n"
+    },
+    "first_non_repeating_character": {
+        "code": "\n\ndef first_non_repeating_character(s):\n    char_count = {}\n    for char in s:\n        if (char in char_count):\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    for char in s:\n        if (char_count[char] == 1):\n            return char\n    return None\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns the first non-repeating character in it. If all characters repeat or the string is empty, return None.",
+        "description": "\n[description for function: first_non_repeating_character]\nThis function takes a string as input and counts the occurrences of each character in it. It uses a dictionary to store the count of each character. After counting, it iterates through the string again to find the first character that appears only once. If such a character is found, it is returned; otherwise, the function returns None. This effectively identifies the first non-repeating character in the input string. The function handles both empty strings and strings with all repeating characters gracefully.\n\n[end of description]\n"
+    },
+    "simulate_producer_consumer": {
+        "code": "\n\ndef simulate_producer_consumer(items):\n    queue = []\n    consumed_count = 0\n    for item in items:\n        queue.append(item)\n    while queue:\n        item = queue.pop(0)\n        print(item)\n        consumed_count += 1\n    return consumed_count\n",
+        "dependencies": [],
+        "task": "Write a Python function that simulates a producer-consumer scenario using a queue. The function should take a list of integers as input, where each integer represents an item produced. The function should process (consume) each item by simply printing it and then return the number of items consumed. Use a simple list to simulate the queue behavior.",
+        "description": "\n[description for function: simulate_producer_consumer]\nThis function simulates a producer-consumer scenario by taking a list of items as input and adding them to a queue. It then processes each item in the queue by removing it from the front and printing it. The function keeps track of the number of items consumed during this process. Once all items have been processed, it returns the total count of consumed items. The function effectively demonstrates a simple queue operation where items are produced and consumed sequentially.\n\n[end of description]\n"
+    },
+    "fibonacci": {
+        "code": "\n\ndef fibonacci(n):\n    if (n == 0):\n        return 0\n    elif (n == 1):\n        return 1\n    else:\n        return (fibonacci((n - 1)) + fibonacci((n - 2)))\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes an integer n and returns the nth Fibonacci number. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The function should use recursion to calculate the result.",
+        "description": "\n[description for function: fibonacci]\nThis function calculates the nth Fibonacci number using a recursive approach. It returns 0 if the input is 0 and 1 if the input is 1. For any other positive integer, it computes the Fibonacci number by summing the two preceding Fibonacci numbers. The function continues to call itself until it reaches the base cases. This results in a straightforward but inefficient implementation due to repeated calculations. Overall, it provides a clear demonstration of recursion in generating Fibonacci numbers.\n\n[end of description]\n"
+    },
+    "length_of_longest_substring": {
+        "code": "\n\ndef length_of_longest_substring(s: str) -> int:\n    char_set = set()\n    max_length = 0\n    start = 0\n    for end in range(len(s)):\n        while (s[end] in char_set):\n            char_set.remove(s[start])\n            start += 1\n        char_set.add(s[end])\n        max_length = max(max_length, ((end - start) + 1))\n    return max_length\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns the length of the longest substring without repeating characters.",
+        "description": "\n[description for function: length_of_longest_substring]\nThis function calculates the length of the longest substring without repeating characters in a given string. It uses a sliding window approach, maintaining a set of characters currently in the substring. As it iterates through the string, it expands the end of the window and adjusts the start when a duplicate character is found. The maximum length of valid substrings is updated throughout the process. Finally, it returns the length of the longest substring identified. The function efficiently handles the input string in linear time.\n\n[end of description]\n"
+    },
+    "sort_strings_by_vowel_count": {
+        "code": "\n\ndef sort_strings_by_vowel_count(strings):\n\n    def count_vowels(s):\n        return sum((1 for char in s.lower() if (char in 'aeiou')))\n    sorted_strings = sorted(strings, key=(lambda s: ((- count_vowels(s)), s)))\n    return sorted_strings\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of strings and returns a new list with the strings sorted based on the number of vowels they contain. The sort should be in descending order, and in case of a tie, the strings should be sorted alphabetically.",
+        "description": "\n[description for function: sort_strings_by_vowel_count]\nThis function takes a list of strings and sorts them based on the number of vowels they contain, prioritizing strings with more vowels. In case of a tie in vowel counts, it sorts the strings alphabetically. The sorting is done in descending order of vowel count, meaning strings with the highest number of vowels appear first. The function converts each string to lowercase to ensure that the vowel count is case-insensitive. Finally, it returns the sorted list of strings.\n\n[end of description]\n"
+    },
+    "most_frequent_char": {
+        "code": "\n\ndef most_frequent_char(s):\n    if (not s):\n        return None\n    frequency = {}\n    for char in s:\n        if (char in frequency):\n            frequency[char] += 1\n        else:\n            frequency[char] = 1\n    max_char = None\n    max_count = 0\n    for char in s:\n        if (frequency[char] > max_count):\n            max_count = frequency[char]\n            max_char = char\n    return max_char\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string and returns the character that appears the most frequently in the string. If there is a tie, return the character that appears first in the string. If the string is empty, return None.",
+        "description": "\n[description for function: most_frequent_char]\nThis function takes a string as input and returns the character that appears most frequently within that string. If the input string is empty, it returns None. It first counts the occurrences of each character using a dictionary to store the frequency. Then, it iterates through the string again to determine which character has the highest count. Finally, it returns the character with the maximum frequency. If there are multiple characters with the same maximum frequency, it returns the first one encountered.\n\n[end of description]\n"
+    },
+    "calculate_expression": {
+        "code": "\n\ndef calculate_expression(expression):\n    numbers = expression.split('+')\n    integers = map(int, numbers)\n    return sum(integers)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers and the plus sign (+) and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.",
+        "description": "\n[description for function: calculate_expression]\nThis function takes a string representing a mathematical expression consisting of numbers separated by plus signs. It splits the string into individual number components and converts them from strings to integers. After converting, it calculates the sum of these integers. Finally, it returns the total sum as the output. The function effectively handles simple addition operations represented in string format. It assumes that the input expression is well-formed and contains only valid integers.\n\n[end of description]\n"
+    },
+    "recursive_sum": {
+        "code": "\n\ndef recursive_sum(n):\n    if (n == 0):\n        return 0\n    else:\n        return (n + recursive_sum((n - 1)))\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion.",
+        "description": "\n[description for function: recursive_sum]\nThis function calculates the sum of all integers from 1 to a given non-negative integer n using recursion. It checks if n is zero, in which case it returns 0, indicating the base case of the recursion. If n is not zero, it adds n to the result of the function called with n decremented by 1. This process continues until n reaches zero, at which point the accumulated sum is returned. The function effectively computes the sum by breaking the problem down into smaller subproblems. It demonstrates a classic example of using recursion to solve a mathematical summation problem.\n\n[end of description]\n"
+    },
+    "selection_sort": {
+        "code": "\n\ndef selection_sort(arr):\n    for i in range(len(arr)):\n        min_index = i\n        for j in range((i + 1), len(arr)):\n            if (arr[j] < arr[min_index]):\n                min_index = j\n        (arr[i], arr[min_index]) = (arr[min_index], arr[i])\n    return arr\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the selection sort algorithm.",
+        "description": "\n[description for function: selection_sort]\nThis function sorts an array in ascending order using the selection sort algorithm. It iterates through each element of the array, identifying the smallest element in the unsorted portion. Once the smallest element is found, it swaps it with the current element being considered. This process continues until the entire array is sorted. The function modifies the original array and returns the sorted version. The time complexity of this sorting method is O(n^2).\n\n[end of description]\n"
+    },
+    "is_valid_parentheses": {
+        "code": "\n\ndef is_valid_parentheses(s: str) -> bool:\n    bracket_map = {')': '(', '}': '{', ']': '['}\n    stack = []\n    for char in s:\n        if (char in bracket_map.values()):\n            stack.append(char)\n        elif (char in bracket_map):\n            if ((not stack) or (stack[(- 1)] != bracket_map[char])):\n                return False\n            stack.pop()\n    return (not stack)\n",
+        "dependencies": [],
+        "task": "Write a Python function that takes a string containing only '(', ')', '{', '}', '[' and ']', and determines if the input string is valid. A string is considered valid if brackets are closed in the correct order. For example, \"()\" and \"()[]{}\" are valid, but \"(]\" and \"([)]\" are not.",
+        "description": "\n[description for function: is_valid_parentheses]\nThis function checks if a string of parentheses is valid by using a stack to track opening brackets and ensuring that each closing bracket corresponds to the most recent unmatched opening bracket. It iterates through each character in the string, pushing opening brackets onto the stack and popping them when a matching closing bracket is found. If a closing bracket does not match the expected opening bracket or if there are unmatched opening brackets left in the stack at the end, the function returns false. If all brackets are matched correctly, it returns true. The function effectively handles different types of brackets, including parentheses, curly braces, and square brackets. Overall, it ensures that the brackets are properly nested and closed.\n\n[end of description]\n"
+    }
+}

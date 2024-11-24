@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert Find_Min_Length([[1],[1,2]]) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef Find_Min_Length(list_of_lists):\n    min_length = float('inf')\n    for sublist in list_of_lists:\n        current_length = len(sublist)\n        if (current_length < min_length):\n            min_length = current_length\n    return min_length\n",
+    "full_code": "\n\ndef Find_Min_Length(list_of_lists):\n    min_length = float('inf')\n    for sublist in list_of_lists:\n        current_length = len(sublist)\n        if (current_length < min_length):\n            min_length = current_length\n    return min_length\n",
+    "task_id": "Mbpp/95",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

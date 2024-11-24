@@ -1,0 +1,5 @@
+
+[description for function: longest_common_prefix]
+This function finds the longest common prefix among a list of strings. It starts by checking if the list is empty and returns an empty string if so. The first string in the list is initially considered as the prefix. It then iterates through the remaining strings, reducing the prefix until it matches the start of each string. If at any point the prefix becomes empty, it returns an empty string. Finally, it returns the longest common prefix found.
+
+[end of description]

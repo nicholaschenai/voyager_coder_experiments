@@ -1,0 +1,1295 @@
+INFO - DB skill doc count: 75
+
+INFO - [train iter]: 89/100 
+
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that asks questions to help me decide the next immediate task to do for Python programming.
+My ultimate goal is to solve as many diverse problems as possible and become the best programmer in the world.
+
+I will give you the following information:
+Completed tasks so far: ...
+Failed tasks that are too hard: ...
+
+You must follow the following criteria:
+1) You should ask at least 5 questions (but no more than 10 questions) to help me decide the next immediate task to do. Each question should be followed by the concept that the question is about.
+2) Your question should be specific to a concept in Python programming.
+  Bad example (the question is too general):
+    Question: What is the best way to program in Python?
+    Concept: unknown
+  Good example:
+    Question: How do you reverse a list?
+    Concept: list
+3) Your questions should be self-contained and not require any context.
+
+Respond in JSON, and follow the keys and expected format of the values strictly.
+
+
+Response format:
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"QuestionConcept": {"properties": {"question": {"description": "A question related to Python programming, to help me brainstorm the next immediate task to do", "title": "Question", "type": "string"}, "concept": {"description": "The Python programming concept associated with the question above", "title": "Concept", "type": "string"}}, "required": ["question", "concept"], "title": "QuestionConcept", "type": "object"}}, "properties": {"reasoning": {"description": "Reason out, step-by-step, why you picked these questions and concepts", "title": "Reasoning", "type": "string"}, "question_concept_list": {"description": "list of questions and their associated concepts", "items": {"$ref": "#/$defs/QuestionConcept"}, "title": "Question Concept List", "type": "array"}}, "required": ["reasoning", "question_concept_list"]}
+```
+
+
+INFO - [Task id] 89 [prompt] Completed tasks so far (do not give me these tasks again!): 
+	Write a Python function that takes a list of integers and returns a new list with the squares of all the numbers. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns a new list containing only the unique elements from the original list. The order of elements in the returned list does not matter.
+	Write a Python function that takes a list of integers and returns a set containing all the elements that appear more than once in the list.
+	Write a Python function that calculates the factorial of a given non-negative integer. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!.
+	Write a Python function that takes a string and returns True if the string is a palindrome, and False otherwise. The function should be case-insensitive and ignore all non-alphanumeric characters.
+	Write a Python function that takes a dictionary and a key, and returns the value associated with the key. If the key does not exist in the dictionary, the function should return 'Key not found.'
+	Write a Python function that takes a list of integers and returns the first recurring character. If there is no recurring character, return None.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the bubble sort algorithm.
+	Write a Python function that takes a string and returns the first non-repeating character in it. If all characters repeat or the string is empty, return None.
+	Write a Python function that simulates a producer-consumer scenario using a queue. The function should take a list of integers as input, where each integer represents an item produced. The function should process (consume) each item by simply printing it and then return the number of items consumed. Use a simple list to simulate the queue behavior.
+	Write a Python function that takes an integer n and returns the nth Fibonacci number. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The function should use recursion to calculate the result.
+	Write a Python function that takes a string and returns the length of the longest substring without repeating characters.
+	Write a Python function that takes a list of strings and returns a new list with the strings sorted based on the number of vowels they contain. The sort should be in descending order, and in case of a tie, the strings should be sorted alphabetically.
+	Write a Python function that takes a string and returns the character that appears the most frequently in the string. If there is a tie, return the character that appears first in the string. If the string is empty, return None.
+	Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers and the plus sign (+) and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.
+	Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the selection sort algorithm.
+	Write a Python function that takes a string containing only '(', ')', '{', '}', '[' and ']', and determines if the input string is valid. A string is considered valid if brackets are closed in the correct order. For example, "()" and "()[]{}" are valid, but "(]" and "([)]" are not.
+	Write a Python function that simulates a basic queue system. The function should take a list of integers representing people's ticket numbers and return the ticket number of the person who will be served last. Use the deque from the collections module to implement the queue.
+	Write a Python function that takes two lists of integers and returns a list containing the elements that are common to both lists without duplicates. The order of the elements in the returned list does not matter.
+	Write a Python function that takes a list of integers and returns the kth largest element in the list. The function should use a min-heap to efficiently find the kth largest element.
+	Write a Python function that takes a list of integers and returns the length of the longest increasing subsequence in the list. The function should not modify the original list.
+	Write a Python function that takes a string containing only '(', ')', '[', ']', '{', and '}', and determines if the input string is balanced. A string is balanced if all types of brackets are properly closed and nested. The function should return True if the string is balanced, and False otherwise.
+	Write a Python function that takes a list of integers and a target integer. The function should return the index of the target integer in the list if it exists, or -1 if the target is not present.
+	Write a Python function that takes a non-negative integer n and returns the nth number in the 'look-and-say' sequence. The 'look-and-say' sequence starts with '1' and each subsequent term is derived by describing the previous term. For example, the term after '1' is '11' (one 1), after '11' is '21' (two 1s), after '21' is '1211' (one 2, then one 1), and so on.
+	Write a Python function that takes a list of integers and returns the number of distinct pairs of elements that have a difference of 2. The function should handle negative numbers as well.
+	Write a Python function that takes a string and returns a dictionary where the keys are characters and the values are the number of times each character appears in the string.
+	Write a Python function that takes a list of strings and returns a new list with the strings sorted in descending order based on their length. If two strings have the same length, they should be sorted alphabetically in ascending order.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the merge sort algorithm. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the two largest numbers in the list. The function should handle lists with at least two integers and should not modify the original list.
+	Write a Python function that takes a list of integers and returns the first duplicate number for which the second occurrence has the minimal index. If there are no duplicates, return -1.
+	Write a Python function that takes a list of integers and returns the product of all the elements in the list except for the current index. For each index, you should find the product of all the integers except the integer at that index, without using division. The function should return a new list with the products.
+	Write a Python function that takes a list of integers and returns the most frequent integer in the list. If there is a tie, return the smallest integer among the most frequent ones. If the list is empty, return None.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the insertion sort algorithm. The function should not modify the original list.
+	Write a Python function that takes a string containing only '(', ')', '[', ']', '{', and '}', and determines if the input string has balanced parentheses, brackets, and braces. A string is balanced if all types of brackets are correctly closed and nested. The function should return True if the string is balanced, and False otherwise.
+	Write a Python function that takes a list of integers and returns a new list with each integer replaced by the greatest integer to the right of that integer in the original list. For the last element, replace it with -1. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the unique numbers in that list. For example, if the input list is [1, 2, 2, 3, 4, 4], the function should return 1 + 3 = 4.
+	Write a Python function that takes a string and returns a dictionary where the keys are characters and the values are the number of times each character appears in the string. The function should ignore case and consider only alphabetic characters.
+	Write a Python function that takes a list of integers and returns the index of the peak element. A peak element is an element that is greater than its neighbors. For the purposes of this problem, we'll consider the first and last elements to be peak elements if they are greater than their one neighbor. If there are multiple peak elements, return the index of any one of them.
+	Write a Python function that takes a list of integers and returns the smallest positive integer (greater than 0) that does not occur in the list.
+	Write a Python function that takes a list of integers and returns the smallest positive integer (greater than 0) that does not occur in the list. The function should handle lists with both positive and negative integers.
+	Write a Python function that takes a list of integers and returns a dictionary where the keys are the integers and the values are the counts of how often each integer appears in the list.
+	Write a Python function that takes a list of integers and returns the list of integers in reverse order. The function should not use the built-in reverse() method or [::-1] slicing. Instead, it should manually swap elements in the list.
+	Write a Python function that takes two lists of integers and returns a new list containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned list does not matter.
+	Write a Python function that takes a string and returns the number of vowels in that string. The function should be case-insensitive.
+	Write a Python function that takes two strings and returns True if one string is an anagram of the other, and False otherwise. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+	Write a Python function that takes a string and returns True if the string is a valid IPv4 address, and False otherwise. A valid IPv4 address consists of four octets separated by dots, where each octet is a number from 0 to 255 inclusive.
+	Write a Python function that takes an integer n and returns the nth prime number. The function should use a simple algorithm to find prime numbers, such as the Sieve of Eratosthenes or trial division.
+	Write a Python function that takes a list of integers and returns a new list with each element being the sum of itself and all previous elements in the original list. For example, given the list [1, 2, 3, 4], the function should return [1, 3, 6, 10].
+	Write a Python function that takes a list of integers and returns the number of elements that are divisible by a given divisor. The function should take two arguments: a list of integers and a non-zero divisor. The output should be an integer representing the count of divisible elements.
+	Write a Python function that takes a sorted list of integers and a target integer. The function should return the index of the first occurrence of the target in the list using a binary search algorithm. If the target is not found, return -1.
+	Write a Python function that takes a list of integers and returns a dictionary where each key is a unique integer from the list and the corresponding value is the number of times that integer appears in the list.
+	Write a Python function that takes two lists of integers and returns a new list containing the intersection of the two lists. The intersection should contain elements that are common to both lists without duplicates. The order of the elements in the returned list does not matter.
+	Write a Python function that takes an integer n and returns the nth number in the 'look-and-say' sequence. The 'look-and-say' sequence starts with '1' and each subsequent term is derived by describing the previous term. For example, the term after '1' is '11' (one 1), after '11' is '21' (two 1s), after '21' is '1211' (one 2, then one 1), and so on. The function should handle n being a positive integer greater than 0.
+	Write a Python function that takes a list of integers and returns a new list containing only the elements that are prime numbers. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the two smallest numbers in the list. The function should handle lists with at least two integers and should not modify the original list.
+	Write a Python function that takes a list of integers and returns a new list with each element incremented by 1. The function should not modify the original list.
+	Write a Python function that performs a breadth-first search (BFS) on a graph represented as an adjacency list. The function should take two arguments: the graph as a dictionary where keys are nodes and values are lists of adjacent nodes, and the starting node. The function should return a list of nodes in the order they are visited during the BFS traversal.
+	Write a Python function that takes a string and returns True if all the characters in the string are unique, and False otherwise. The function should not use any additional data structures like sets or dictionaries.
+	Write a Python function that takes a sorted list of integers and a target sum. The function should return a tuple of two integers from the list that add up to the target sum. If no such pair exists, return None. This task will utilize the two-pointer technique.
+	Write a Python function that performs a depth-first search (DFS) on a graph represented as an adjacency list. The function should take two arguments: the graph as a dictionary where keys are nodes and values are lists of adjacent nodes, and the starting node. The function should return a list of nodes in the order they are visited during the DFS traversal.
+	Write a Python function that takes a list of integers and returns the list of integers sorted in ascending order using the quicksort algorithm. The function should not modify the original list.
+	Write a Python function that takes an integer `n` and returns the minimum number of squares whose sum equals `n`. This is a classic dynamic programming problem where you need to find the least number of perfect square numbers which sum to `n`. For example, given `n = 12`, the answer should be `3` because `12 = 4 + 4 + 4`.
+	Write a Python function that takes a string and returns the length of the longest substring without repeating characters. The function should use the sliding window technique to efficiently solve the problem.
+	Write a Python function that takes an integer `n` and returns the minimum number of steps to reduce it to zero. In one step, you can either decrement `n` by 1 or, if `n` is even, divide `n` by 2. The function should use dynamic programming to efficiently solve the problem.
+	Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion. The function should handle positive integers greater than 0.
+	Write a Python function that takes a list of integers and returns the majority element if it exists. The majority element is the element that appears more than n/2 times in the list, where n is the size of the list. If no majority element exists, the function should return None.
+	Write a Python function that takes a list of integers and an integer k, and returns the kth smallest element in the list using a min-heap. If k is larger than the number of elements in the list, return None.
+	Write a Python function that takes a list of strings and returns a new list with each string reversed. The function should handle an empty list and should not modify the original list.
+	Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers, the minus sign (-), and the plus sign (+), and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.
+	Write a Python function that takes a graph represented as a dictionary where keys are node labels and values are lists of tuples representing adjacent nodes and their respective distances, along with a start node label. The function should return a dictionary with the shortest distance from the start node to each other node in the graph using Dijkstra's algorithm. If a node is unreachable from the start node, it should not be included in the returned dictionary.
+	Write a Python function that takes an integer `n` and returns the number of unique ways you can climb a staircase with `n` steps, given that you can take either 1 or 2 steps at a time. This is a variation of the Fibonacci sequence and can be solved using dynamic programming.
+	Write a Python function that takes a graph represented as an adjacency matrix and returns a list of nodes in the order they are visited using the Breadth-First Search (BFS) algorithm. The function should start the BFS from the first node (index 0).
+	Write a Python function that takes an integer `n` and returns the number of unique ways you can climb a staircase with `n` steps, given that you can take either 1 or 2 steps at a time. This is a classic dynamic programming problem that can be solved using memoization or bottom-up approach.
+	Write a Python function that takes the head node of a singly linked list and returns the middle node. If the list has an even number of nodes, return the second of the two middle nodes. The function should not use any extra space, and it should complete in a single pass through the list.
+
+Failed tasks that are too hard: 
+	Write a Python function that takes a list of integers and returns the largest product that can be obtained by multiplying any two numbers from the list.
+	Write a Python function that takes a sorted list of integers and an integer target value, and returns a tuple of two numbers from the list that add up to the target value. If no such pair exists, return None.
+	Write a Python function that takes a list of strings representing a postfix expression (each element being a number or an operator) and returns the result of the expression. The function should handle the four basic arithmetic operations: addition, subtraction, multiplication, and division.
+	Write a Python function that takes a list of integers and returns the length of the longest consecutive elements sequence. The sequence must be composed of consecutive integers, regardless of their order in the original list.
+	Write a Python function that takes a string and returns a dictionary where each key is a unique word in the string and the corresponding value is the number of times that word appears in the string. The function should ignore case and punctuation.
+	Write a Python function that takes a list of integers and returns a new list containing the difference between each adjacent pair of numbers. The output list should have one less element than the input list.
+	Write a Python function that takes a list of integers and returns the maximum product of two distinct elements in the list. The function should handle lists with at least two integers.
+	Write a Python function that takes a list of integers and returns the number of elements in the list that are greater than the sum of all previous elements in the list. For example, in the list [1, 2, 4, 1, 6], the elements 4 and 6 are greater than the sum of all previous elements (1+2 and 1+2+4+1, respectively).
+	Write a Python function that takes a list of integers and returns the longest subarray where the difference between the maximum and minimum elements in the subarray is at most 1. The function should return the length of this subarray.
+	Write a Python function that takes a string and returns the longest palindrome that can be formed by rearranging its letters. If it is not possible to form any palindrome, return an empty string.
+	Write a Python function that takes a string and returns the length of the longest substring with at most two distinct characters. For example, given the string 'aabacbebebe', the longest substring with at most two distinct characters is 'cbebebe', so the function should return 7.
+	Write a Python function that takes a list of integers and returns the length of the longest subarray where the sum of the elements is equal to zero. If no such subarray exists, return 0.
+	Write a Python function that takes an array of non-negative integers representing the amount of time it takes to complete a task and an integer k representing the number of workers. The function should assign tasks to workers such that the time to complete all tasks is minimized assuming each worker can only work on one task at a time. The function should return the minimum time required to complete all tasks.
+
+
+INFO - [Task id] 89 [generation text] 
+INFO - {
+    "reasoning": "I selected these questions based on the need to cover a variety of Python programming concepts that have not been tackled yet. The questions focus on different data structures, algorithms, and problem-solving techniques, which will help in building a well-rounded skill set. The selected questions also vary in difficulty, ensuring a mix of challenges.",
+    "question_concept_list": [
+        {
+            "question": "How do you implement a binary search algorithm in Python?",
+            "concept": "binary search"
+        },
+        {
+            "question": "What is the best way to find the longest common subsequence between two strings?",
+            "concept": "dynamic programming"
+        },
+        {
+            "question": "How can you detect a cycle in a directed graph using depth-first search?",
+            "concept": "graph theory"
+        },
+        {
+            "question": "What is the approach to solve the knapsack problem using dynamic programming?",
+            "concept": "dynamic programming"
+        },
+        {
+            "question": "How do you implement a simple hash table in Python?",
+            "concept": "hash table"
+        }
+    ]
+}
+INFO - {
+    "reasoning": "I selected these questions based on the need to cover a variety of Python programming concepts that have not been tackled yet. The questions focus on different data structures, algorithms, and problem-solving techniques, which will help in building a well-rounded skill set. The selected questions also vary in difficulty, ensuring a mix of challenges.",
+    "question_concept_list": [
+        {
+            "question": "How do you implement a binary search algorithm in Python?",
+            "concept": "binary search"
+        },
+        {
+            "question": "What is the best way to find the longest common subsequence between two strings?",
+            "concept": "dynamic programming"
+        },
+        {
+            "question": "How can you detect a cycle in a directed graph using depth-first search?",
+            "concept": "graph theory"
+        },
+        {
+            "question": "What is the approach to solve the knapsack problem using dynamic programming?",
+            "concept": "dynamic programming"
+        },
+        {
+            "question": "How do you implement a simple hash table in Python?",
+            "concept": "hash table"
+        }
+    ]
+}
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that answer my question about Python programming.
+
+I will give you the following information:
+Question: ...
+
+You will answer the question based on the context (only if available and helpful) and your own knowledge of Python programming.
+1) Start your answer with "Answer: ".
+2) Answer "Answer: Unknown" if you don't know the answer.
+
+INFO - [Task id] 89 [prompt] Question: How can you detect a cycle in a directed graph using depth-first search?
+INFO - [Task id] 89 [generation text] Answer: To detect a cycle in a directed graph using depth-first search (DFS), you can follow these steps:
+
+1. **Maintain a visited list**: Create a list to keep track of visited nodes. This will help you avoid revisiting nodes that have already been processed.
+
+2. **Maintain a recursion stack**: Create a stack (or a set) to keep track of the nodes currently in the recursion stack of the DFS. This helps in identifying back edges, which indicate cycles.
+
+3. **Perform DFS**: For each unvisited node, perform a DFS. During the DFS:
+   - Mark the node as visited.
+   - Add the node to the recursion stack.
+   - For each adjacent node:
+     - If the adjacent node is not visited, recursively perform DFS on it.
+     - If the adjacent node is already in the recursion stack, a cycle is detected.
+   - After exploring all adjacent nodes, remove the node from the recursion stack.
+
+4. **Check for cycles**: If you find any adjacent node that is already in the recursion stack during the DFS, it indicates that there is a cycle in the graph.
+
+Here is a sample implementation in Python:
+
+```python
+def has_cycle(graph):
+    visited = set()
+    rec_stack = set()
+
+    def dfs(node):
+        if node in rec_stack:
+            return True  # Cycle detected
+        if node in visited:
+            return False  # Already visited
+
+        visited.add(node)
+        rec_stack.add(node)
+
+        for neighbor in graph[node]:
+            if dfs(neighbor):
+                return True
+
+        rec_stack.remove(node)  # Remove from recursion stack
+        return False
+
+    for vertex in graph:
+        if vertex not in visited:
+            if dfs(vertex):
+                return True  # Cycle found
+
+    return False  # No cycle found
+
+# Example usage:
+graph = {
+    0: [1],
+    1: [2],
+    2: [0],  # This creates a cycle
+    3: [4],
+    4: []
+}
+
+print(has_cycle(graph))  # Output: True
+```
+
+In this example, the graph is represented as an adjacency list, and the function `has_cycle` checks for cycles using DFS.
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that answer my question about Python programming.
+
+I will give you the following information:
+Question: ...
+
+You will answer the question based on the context (only if available and helpful) and your own knowledge of Python programming.
+1) Start your answer with "Answer: ".
+2) Answer "Answer: Unknown" if you don't know the answer.
+
+INFO - [Task id] 89 [prompt] Question: What is the approach to solve the knapsack problem using dynamic programming?
+INFO - [Task id] 89 [generation text] Answer: The knapsack problem can be solved using dynamic programming by following these steps:
+
+1. **Define the Problem**: The 0/1 knapsack problem involves a set of items, each with a weight and a value, and a knapsack with a maximum weight capacity. The goal is to maximize the total value of the items in the knapsack without exceeding its weight capacity.
+
+2. **Create a DP Table**: Create a 2D array (or table) `dp` where `dp[i][w]` represents the maximum value that can be attained with the first `i` items and a maximum weight `w`.
+
+3. **Initialize the Table**: Initialize the first row and the first column of the table. `dp[0][w]` should be 0 for all `w` (0 items means 0 value), and `dp[i][0]` should also be 0 for all `i` (0 capacity means 0 value).
+
+4. **Fill the DP Table**: Iterate through each item and each weight capacity:
+   - If the weight of the current item `i` is less than or equal to the current weight `w`, you have two choices:
+     - Include the item: Add its value to the maximum value of the remaining capacity (`dp[i-1][w-weight[i]]`).
+     - Exclude the item: Take the maximum value without this item (`dp[i-1][w]`).
+     - Set `dp[i][w]` to the maximum of these two choices.
+   - If the weight of the current item is greater than `w`, you cannot include it, so set `dp[i][w]` to `dp[i-1][w]`.
+
+5. **Result**: The maximum value that can be achieved with the given items and weight capacity will be found in `dp[n][W]`, where `n` is the number of items and `W` is the maximum weight capacity of the knapsack.
+
+Here is a simple implementation in Python:
+
+```python
+def knapsack(weights, values, W):
+    n = len(values)
+    dp = [[0 for _ in range(W + 1)] for _ in range(n + 1)]
+
+    for i in range(1, n + 1):
+        for w in range(W + 1):
+            if weights[i - 1] <= w:
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weights[i - 1]] + values[i - 1])
+            else:
+                dp[i][w] = dp[i - 1][w]
+
+    return dp[n][W]
+```
+
+This approach has a time complexity of O(n * W) and a space complexity of O(n * W), where `n` is the number of items and `W` is the maximum weight capacity.
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that answer my question about Python programming.
+
+I will give you the following information:
+Question: ...
+
+You will answer the question based on the context (only if available and helpful) and your own knowledge of Python programming.
+1) Start your answer with "Answer: ".
+2) Answer "Answer: Unknown" if you don't know the answer.
+
+INFO - [Task id] 89 [prompt] Question: How do you implement a simple hash table in Python?
+INFO - [Task id] 89 [generation text] Answer: To implement a simple hash table in Python, you can use a list to store the values and a hash function to determine the index for each key. Here's a basic example of a hash table implementation:
+
+```python
+class HashTable:
+    def __init__(self, size=10):
+        self.size = size
+        self.table = [[] for _ in range(size)]  # Create a list of empty lists for chaining
+
+    def hash_function(self, key):
+        return hash(key) % self.size  # Use Python's built-in hash function
+
+    def insert(self, key, value):
+        index = self.hash_function(key)
+        # Check if the key already exists and update it
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                self.table[index][i] = (key, value)
+                return
+        # If the key does not exist, append a new key-value pair
+        self.table[index].append((key, value))
+
+    def get(self, key):
+        index = self.hash_function(key)
+        for k, v in self.table[index]:
+            if k == key:
+                return v  # Return the value if the key is found
+        return None  # Return None if the key is not found
+
+    def remove(self, key):
+        index = self.hash_function(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                del self.table[index][i]  # Remove the key-value pair
+                return True
+        return False  # Return False if the key was not found
+
+# Example usage
+hash_table = HashTable()
+hash_table.insert("name", "Alice")
+hash_table.insert("age", 30)
+print(hash_table.get("name"))  # Output: Alice
+print(hash_table.get("age"))   # Output: 30
+hash_table.remove("name")
+print(hash_table.get("name"))  # Output: None
+```
+
+In this implementation:
+- The `HashTable` class initializes a list of empty lists for chaining.
+- The `hash_function` method computes the index for a given key.
+- The `insert` method adds key-value pairs to the hash table.
+- The `get` method retrieves values based on keys.
+- The `remove` method deletes key-value pairs from the hash table.
+INFO - LM call n parse attempt 1 / 5
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that tells me the next immediate task (in the form of a function) to do for Python programming. 
+My ultimate goal is to solve as many diverse problems as possible and become the best programmer in the world.
+
+I will give you the following information:
+Question 1: ...
+Answer: ...
+Question 2: ...
+Answer: ...
+Question 3: ...
+Answer: ...
+...
+Completed tasks so far: ...
+Failed tasks that are too hard: ...
+
+You must follow the following criteria:
+1) You should act as a mentor and guide me to the next task based on my current learning progress. As a rule of thumb, guide me through beginner problems, followed by interview level problems, followed by competitive programming problems. The latter 2 levels can involve concepts from data structures and algorithms.
+2) Please be very specific about what skills I need to learn.
+3) Do not propose multiple tasks at the same time. Do not mention anything else.
+4) The next task should not be too hard since I may not have learned enough skills to complete it yet.
+5) The next task should be novel and interesting. I should look for problems which I have not solved yet. I should not be doing the same thing over and over again.
+6) The task should involve writing a main Python function that at most use basic libraries (try not to import too many or too advanced modules)
+7) Do not give tasks that require file operations (create, read, update, delete) or an internet connection.
+8) I am only allowed to write Python functions, so do not require me to write other things (e.g. objects). 
+9) Requiring me to write a function that takes in an object and uses object methods is still ok, but I cannot define the objects myself. You must provide the objects as input to my function in the assert statement.
+
+Take note of these in your response:
+1) Give an expected function name for the task.
+2) Give a tuple of 3 assert statements that tests the function's correctness in the "test_tuple" field. This must strictly contain single-line assert statements only; any setup code for the test must be filled in the "test_setup_code" field.
+3) The function name which you gave must be called in the assert statements. 
+
+Respond in JSON, and follow the keys and expected format of the values strictly.
+
+
+Response format:
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"reasoning": {"description": "Based on the information listed above, reason about what the next task should be.", "title": "Reasoning", "type": "string"}, "task": {"description": "The next task, which requires me to write a single function. Be sure to state the expected data structure for inputs and outputs.", "title": "Task", "type": "string"}, "gt_fn_name": {"description": "The expected name for the single function for the task", "title": "Gt Fn Name", "type": "string"}, "test_setup_code": {"description": "setup code, if required. This will be run just before the assert statements are executed.", "title": "Test Setup Code", "type": "string"}, "test_tuple": {"description": "Tuple of 3 SINGLE-LINE test cases that starts with 'assert' to test the function's correctness.Any extra required code should be written in the test_setup_code field.", "items": {"type": "string"}, "maxItems": 3, "minItems": 3, "prefixItems": [{"type": "string"}, {"type": "string"}, {"type": "string"}], "title": "Test Tuple", "type": "array"}}, "required": ["reasoning", "task", "gt_fn_name", "test_setup_code", "test_tuple"]}
+```
+
+
+INFO - [Task id] 89 [prompt] 
+Here's an example response:
+{
+    "reasoning": "The student has shown proficiency in basic Python syntax and list manipulation, but struggles with problems involving more complex algorithms and data structures. This task will help them practice using sets or dictionaries for efficient lookups, and understand the concept of algorithmic complexity.",
+    "task": "Write a Python function that takes a list of integers and returns the tuple of two numbers that sum up to zero. If no such pair exists, return None.",
+    "gt_fn_name": "find_zero_sum",
+    "test_setup_code": "",
+    "test_tuple": [
+        "assert find_zero_sum([1, 2, 3, -2, -1]) == (2, -2)",
+        "assert find_zero_sum([1, 2, 3, 4, 5]) == None",
+        "assert find_zero_sum([1, 4, 3, -4, -1]) == (4, -4)"
+    ]
+}
+
+INFO - [Task id] 89 [prompt] Question 1: How do you implement a binary search algorithm in Python?
+Answer: To implement a binary search algorithm in Python, you can use either an iterative or a recursive approach. Below are examples of both methods.
+
+### Iterative Approach
+
+```python
+def binary_search_iterative(arr, target):
+    left, right = 0, len(arr) - 1
+    
+    while left <= right:
+        mid = left + (right - left) // 2  # To avoid overflow
+        
+        if arr[mid] == target:
+            return mid  # Target found
+        elif arr[mid] < target:
+            left = mid + 1  # Search in the right half
+        else:
+            right = mid - 1  # Search in the left half
+            
+    return -1  # Target not found
+```
+
+### Recursive Approach
+
+```python
+def binary_search_recursive(arr, target, left, right):
+    if left > right:
+        return -1  # Target not found
+    
+    mid = left + (right - left) // 2  # To avoid overflow
+    
+    if arr[mid] == target:
+        return mid  # Target found
+    elif arr[mid] < target:
+        return binary_search_recursive(arr, target, mid + 1, right)  # Search in the right half
+    else:
+        return binary_search_recursive(arr, target, left, mid - 1)  # Search in the left half
+
+# To use the recursive function, call it like this:
+# result = binary_search_recursive(arr, target, 0, len(arr) - 1)
+```
+
+### Usage Example
+
+```python
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+target = 5
+
+# Using iterative approach
+result_iterative = binary_search_iterative(arr, target)
+print("Iterative result:", result_iterative)
+
+# Using recursive approach
+result_recursive = binary_search_recursive(arr, target, 0, len(arr) - 1)
+print("Recursive result:", result_recursive)
+```
+
+Make sure the array is sorted before performing a binary search, as the algorithm assumes a sorted input.
+
+Question 2: What is the best way to find the longest common subsequence between two strings?
+Answer: The best way to find the longest common subsequence (LCS) between two strings is to use dynamic programming. The idea is to create a 2D array (or table) where the cell at position (i, j) represents the length of the LCS of the substrings formed by the first i characters of the first string and the first j characters of the second string.
+
+Here’s a step-by-step outline of the algorithm:
+
+1. **Initialize a 2D array**: Create a 2D array `dp` of size (m+1) x (n+1), where m and n are the lengths of the two strings. Initialize all elements to 0.
+
+2. **Fill the array**: Iterate through each character of both strings. If the characters match, set `dp[i][j] = dp[i-1][j-1] + 1`. If they do not match, set `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`.
+
+3. **Backtrack to find the LCS**: After filling the table, the length of the LCS will be in `dp[m][n]`. To find the actual subsequence, backtrack from `dp[m][n]` to reconstruct the LCS.
+
+Here is a sample implementation in Python:
+
+```python
+def longest_common_subsequence(str1, str2):
+    m, n = len(str1), len(str2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+    # Fill the dp array
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if str1[i - 1] == str2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+    # Backtrack to find the LCS
+    lcs = []
+    i, j = m, n
+    while i > 0 and j > 0:
+        if str1[i - 1] == str2[j - 1]:
+            lcs.append(str1[i - 1])
+            i -= 1
+            j -= 1
+        elif dp[i - 1][j] > dp[i][j - 1]:
+            i -= 1
+        else:
+            j -= 1
+
+    return ''.join(reversed(lcs))
+
+# Example usage
+str1 = "AGGTAB"
+str2 = "GXTXAYB"
+print(longest_common_subsequence(str1, str2))  # Output: "GTAB"
+```
+
+This implementation efficiently computes the LCS and reconstructs the subsequence. The time complexity is O(m * n), and the space complexity is also O(m * n).
+
+Question 3: How can you detect a cycle in a directed graph using depth-first search?
+Answer: To detect a cycle in a directed graph using depth-first search (DFS), you can follow these steps:
+
+1. **Maintain a visited list**: Create a list to keep track of visited nodes. This will help you avoid revisiting nodes that have already been processed.
+
+2. **Maintain a recursion stack**: Create a stack (or a set) to keep track of the nodes currently in the recursion stack of the DFS. This helps in identifying back edges, which indicate cycles.
+
+3. **Perform DFS**: For each unvisited node, perform a DFS. During the DFS:
+   - Mark the node as visited.
+   - Add the node to the recursion stack.
+   - For each adjacent node:
+     - If the adjacent node is not visited, recursively perform DFS on it.
+     - If the adjacent node is already in the recursion stack, a cycle is detected.
+   - After exploring all adjacent nodes, remove the node from the recursion stack.
+
+4. **Check for cycles**: If you find any adjacent node that is already in the recursion stack during the DFS, it indicates that there is a cycle in the graph.
+
+Here is a sample implementation in Python:
+
+```python
+def has_cycle(graph):
+    visited = set()
+    rec_stack = set()
+
+    def dfs(node):
+        if node in rec_stack:
+            return True  # Cycle detected
+        if node in visited:
+            return False  # Already visited
+
+        visited.add(node)
+        rec_stack.add(node)
+
+        for neighbor in graph[node]:
+            if dfs(neighbor):
+                return True
+
+        rec_stack.remove(node)  # Remove from recursion stack
+        return False
+
+    for vertex in graph:
+        if vertex not in visited:
+            if dfs(vertex):
+                return True  # Cycle found
+
+    return False  # No cycle found
+
+# Example usage:
+graph = {
+    0: [1],
+    1: [2],
+    2: [0],  # This creates a cycle
+    3: [4],
+    4: []
+}
+
+print(has_cycle(graph))  # Output: True
+```
+
+In this example, the graph is represented as an adjacency list, and the function `has_cycle` checks for cycles using DFS.
+
+Question 4: What is the approach to solve the knapsack problem using dynamic programming?
+Answer: The knapsack problem can be solved using dynamic programming by following these steps:
+
+1. **Define the Problem**: The 0/1 knapsack problem involves a set of items, each with a weight and a value, and a knapsack with a maximum weight capacity. The goal is to maximize the total value of the items in the knapsack without exceeding its weight capacity.
+
+2. **Create a DP Table**: Create a 2D array (or table) `dp` where `dp[i][w]` represents the maximum value that can be attained with the first `i` items and a maximum weight `w`.
+
+3. **Initialize the Table**: Initialize the first row and the first column of the table. `dp[0][w]` should be 0 for all `w` (0 items means 0 value), and `dp[i][0]` should also be 0 for all `i` (0 capacity means 0 value).
+
+4. **Fill the DP Table**: Iterate through each item and each weight capacity:
+   - If the weight of the current item `i` is less than or equal to the current weight `w`, you have two choices:
+     - Include the item: Add its value to the maximum value of the remaining capacity (`dp[i-1][w-weight[i]]`).
+     - Exclude the item: Take the maximum value without this item (`dp[i-1][w]`).
+     - Set `dp[i][w]` to the maximum of these two choices.
+   - If the weight of the current item is greater than `w`, you cannot include it, so set `dp[i][w]` to `dp[i-1][w]`.
+
+5. **Result**: The maximum value that can be achieved with the given items and weight capacity will be found in `dp[n][W]`, where `n` is the number of items and `W` is the maximum weight capacity of the knapsack.
+
+Here is a simple implementation in Python:
+
+```python
+def knapsack(weights, values, W):
+    n = len(values)
+    dp = [[0 for _ in range(W + 1)] for _ in range(n + 1)]
+
+    for i in range(1, n + 1):
+        for w in range(W + 1):
+            if weights[i - 1] <= w:
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weights[i - 1]] + values[i - 1])
+            else:
+                dp[i][w] = dp[i - 1][w]
+
+    return dp[n][W]
+```
+
+This approach has a time complexity of O(n * W) and a space complexity of O(n * W), where `n` is the number of items and `W` is the maximum weight capacity.
+
+Question 5: How do you implement a simple hash table in Python?
+Answer: To implement a simple hash table in Python, you can use a list to store the values and a hash function to determine the index for each key. Here's a basic example of a hash table implementation:
+
+```python
+class HashTable:
+    def __init__(self, size=10):
+        self.size = size
+        self.table = [[] for _ in range(size)]  # Create a list of empty lists for chaining
+
+    def hash_function(self, key):
+        return hash(key) % self.size  # Use Python's built-in hash function
+
+    def insert(self, key, value):
+        index = self.hash_function(key)
+        # Check if the key already exists and update it
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                self.table[index][i] = (key, value)
+                return
+        # If the key does not exist, append a new key-value pair
+        self.table[index].append((key, value))
+
+    def get(self, key):
+        index = self.hash_function(key)
+        for k, v in self.table[index]:
+            if k == key:
+                return v  # Return the value if the key is found
+        return None  # Return None if the key is not found
+
+    def remove(self, key):
+        index = self.hash_function(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                del self.table[index][i]  # Remove the key-value pair
+                return True
+        return False  # Return False if the key was not found
+
+# Example usage
+hash_table = HashTable()
+hash_table.insert("name", "Alice")
+hash_table.insert("age", 30)
+print(hash_table.get("name"))  # Output: Alice
+print(hash_table.get("age"))   # Output: 30
+hash_table.remove("name")
+print(hash_table.get("name"))  # Output: None
+```
+
+In this implementation:
+- The `HashTable` class initializes a list of empty lists for chaining.
+- The `hash_function` method computes the index for a given key.
+- The `insert` method adds key-value pairs to the hash table.
+- The `get` method retrieves values based on keys.
+- The `remove` method deletes key-value pairs from the hash table.
+
+Completed tasks so far (do not give me these tasks again!): 
+	Write a Python function that takes a list of integers and returns a new list with the squares of all the numbers. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns a new list containing only the unique elements from the original list. The order of elements in the returned list does not matter.
+	Write a Python function that takes a list of integers and returns a set containing all the elements that appear more than once in the list.
+	Write a Python function that calculates the factorial of a given non-negative integer. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!.
+	Write a Python function that takes a string and returns True if the string is a palindrome, and False otherwise. The function should be case-insensitive and ignore all non-alphanumeric characters.
+	Write a Python function that takes a dictionary and a key, and returns the value associated with the key. If the key does not exist in the dictionary, the function should return 'Key not found.'
+	Write a Python function that takes a list of integers and returns the first recurring character. If there is no recurring character, return None.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the bubble sort algorithm.
+	Write a Python function that takes a string and returns the first non-repeating character in it. If all characters repeat or the string is empty, return None.
+	Write a Python function that simulates a producer-consumer scenario using a queue. The function should take a list of integers as input, where each integer represents an item produced. The function should process (consume) each item by simply printing it and then return the number of items consumed. Use a simple list to simulate the queue behavior.
+	Write a Python function that takes an integer n and returns the nth Fibonacci number. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The function should use recursion to calculate the result.
+	Write a Python function that takes a string and returns the length of the longest substring without repeating characters.
+	Write a Python function that takes a list of strings and returns a new list with the strings sorted based on the number of vowels they contain. The sort should be in descending order, and in case of a tie, the strings should be sorted alphabetically.
+	Write a Python function that takes a string and returns the character that appears the most frequently in the string. If there is a tie, return the character that appears first in the string. If the string is empty, return None.
+	Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers and the plus sign (+) and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.
+	Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the selection sort algorithm.
+	Write a Python function that takes a string containing only '(', ')', '{', '}', '[' and ']', and determines if the input string is valid. A string is considered valid if brackets are closed in the correct order. For example, "()" and "()[]{}" are valid, but "(]" and "([)]" are not.
+	Write a Python function that simulates a basic queue system. The function should take a list of integers representing people's ticket numbers and return the ticket number of the person who will be served last. Use the deque from the collections module to implement the queue.
+	Write a Python function that takes two lists of integers and returns a list containing the elements that are common to both lists without duplicates. The order of the elements in the returned list does not matter.
+	Write a Python function that takes a list of integers and returns the kth largest element in the list. The function should use a min-heap to efficiently find the kth largest element.
+	Write a Python function that takes a list of integers and returns the length of the longest increasing subsequence in the list. The function should not modify the original list.
+	Write a Python function that takes a string containing only '(', ')', '[', ']', '{', and '}', and determines if the input string is balanced. A string is balanced if all types of brackets are properly closed and nested. The function should return True if the string is balanced, and False otherwise.
+	Write a Python function that takes a list of integers and a target integer. The function should return the index of the target integer in the list if it exists, or -1 if the target is not present.
+	Write a Python function that takes a non-negative integer n and returns the nth number in the 'look-and-say' sequence. The 'look-and-say' sequence starts with '1' and each subsequent term is derived by describing the previous term. For example, the term after '1' is '11' (one 1), after '11' is '21' (two 1s), after '21' is '1211' (one 2, then one 1), and so on.
+	Write a Python function that takes a list of integers and returns the number of distinct pairs of elements that have a difference of 2. The function should handle negative numbers as well.
+	Write a Python function that takes a string and returns a dictionary where the keys are characters and the values are the number of times each character appears in the string.
+	Write a Python function that takes a list of strings and returns a new list with the strings sorted in descending order based on their length. If two strings have the same length, they should be sorted alphabetically in ascending order.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the merge sort algorithm. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the two largest numbers in the list. The function should handle lists with at least two integers and should not modify the original list.
+	Write a Python function that takes a list of integers and returns the first duplicate number for which the second occurrence has the minimal index. If there are no duplicates, return -1.
+	Write a Python function that takes a list of integers and returns the product of all the elements in the list except for the current index. For each index, you should find the product of all the integers except the integer at that index, without using division. The function should return a new list with the products.
+	Write a Python function that takes a list of integers and returns the most frequent integer in the list. If there is a tie, return the smallest integer among the most frequent ones. If the list is empty, return None.
+	Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the insertion sort algorithm. The function should not modify the original list.
+	Write a Python function that takes a string containing only '(', ')', '[', ']', '{', and '}', and determines if the input string has balanced parentheses, brackets, and braces. A string is balanced if all types of brackets are correctly closed and nested. The function should return True if the string is balanced, and False otherwise.
+	Write a Python function that takes a list of integers and returns a new list with each integer replaced by the greatest integer to the right of that integer in the original list. For the last element, replace it with -1. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the unique numbers in that list. For example, if the input list is [1, 2, 2, 3, 4, 4], the function should return 1 + 3 = 4.
+	Write a Python function that takes a string and returns a dictionary where the keys are characters and the values are the number of times each character appears in the string. The function should ignore case and consider only alphabetic characters.
+	Write a Python function that takes a list of integers and returns the index of the peak element. A peak element is an element that is greater than its neighbors. For the purposes of this problem, we'll consider the first and last elements to be peak elements if they are greater than their one neighbor. If there are multiple peak elements, return the index of any one of them.
+	Write a Python function that takes a list of integers and returns the smallest positive integer (greater than 0) that does not occur in the list.
+	Write a Python function that takes a list of integers and returns the smallest positive integer (greater than 0) that does not occur in the list. The function should handle lists with both positive and negative integers.
+	Write a Python function that takes a list of integers and returns a dictionary where the keys are the integers and the values are the counts of how often each integer appears in the list.
+	Write a Python function that takes a list of integers and returns the list of integers in reverse order. The function should not use the built-in reverse() method or [::-1] slicing. Instead, it should manually swap elements in the list.
+	Write a Python function that takes two lists of integers and returns a new list containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned list does not matter.
+	Write a Python function that takes a string and returns the number of vowels in that string. The function should be case-insensitive.
+	Write a Python function that takes two strings and returns True if one string is an anagram of the other, and False otherwise. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+	Write a Python function that takes a string and returns True if the string is a valid IPv4 address, and False otherwise. A valid IPv4 address consists of four octets separated by dots, where each octet is a number from 0 to 255 inclusive.
+	Write a Python function that takes an integer n and returns the nth prime number. The function should use a simple algorithm to find prime numbers, such as the Sieve of Eratosthenes or trial division.
+	Write a Python function that takes a list of integers and returns a new list with each element being the sum of itself and all previous elements in the original list. For example, given the list [1, 2, 3, 4], the function should return [1, 3, 6, 10].
+	Write a Python function that takes a list of integers and returns the number of elements that are divisible by a given divisor. The function should take two arguments: a list of integers and a non-zero divisor. The output should be an integer representing the count of divisible elements.
+	Write a Python function that takes a sorted list of integers and a target integer. The function should return the index of the first occurrence of the target in the list using a binary search algorithm. If the target is not found, return -1.
+	Write a Python function that takes a list of integers and returns a dictionary where each key is a unique integer from the list and the corresponding value is the number of times that integer appears in the list.
+	Write a Python function that takes two lists of integers and returns a new list containing the intersection of the two lists. The intersection should contain elements that are common to both lists without duplicates. The order of the elements in the returned list does not matter.
+	Write a Python function that takes an integer n and returns the nth number in the 'look-and-say' sequence. The 'look-and-say' sequence starts with '1' and each subsequent term is derived by describing the previous term. For example, the term after '1' is '11' (one 1), after '11' is '21' (two 1s), after '21' is '1211' (one 2, then one 1), and so on. The function should handle n being a positive integer greater than 0.
+	Write a Python function that takes a list of integers and returns a new list containing only the elements that are prime numbers. The function should not modify the original list.
+	Write a Python function that takes a list of integers and returns the sum of the two smallest numbers in the list. The function should handle lists with at least two integers and should not modify the original list.
+	Write a Python function that takes a list of integers and returns a new list with each element incremented by 1. The function should not modify the original list.
+	Write a Python function that performs a breadth-first search (BFS) on a graph represented as an adjacency list. The function should take two arguments: the graph as a dictionary where keys are nodes and values are lists of adjacent nodes, and the starting node. The function should return a list of nodes in the order they are visited during the BFS traversal.
+	Write a Python function that takes a string and returns True if all the characters in the string are unique, and False otherwise. The function should not use any additional data structures like sets or dictionaries.
+	Write a Python function that takes a sorted list of integers and a target sum. The function should return a tuple of two integers from the list that add up to the target sum. If no such pair exists, return None. This task will utilize the two-pointer technique.
+	Write a Python function that performs a depth-first search (DFS) on a graph represented as an adjacency list. The function should take two arguments: the graph as a dictionary where keys are nodes and values are lists of adjacent nodes, and the starting node. The function should return a list of nodes in the order they are visited during the DFS traversal.
+	Write a Python function that takes a list of integers and returns the list of integers sorted in ascending order using the quicksort algorithm. The function should not modify the original list.
+	Write a Python function that takes an integer `n` and returns the minimum number of squares whose sum equals `n`. This is a classic dynamic programming problem where you need to find the least number of perfect square numbers which sum to `n`. For example, given `n = 12`, the answer should be `3` because `12 = 4 + 4 + 4`.
+	Write a Python function that takes a string and returns the length of the longest substring without repeating characters. The function should use the sliding window technique to efficiently solve the problem.
+	Write a Python function that takes an integer `n` and returns the minimum number of steps to reduce it to zero. In one step, you can either decrement `n` by 1 or, if `n` is even, divide `n` by 2. The function should use dynamic programming to efficiently solve the problem.
+	Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion. The function should handle positive integers greater than 0.
+	Write a Python function that takes a list of integers and returns the majority element if it exists. The majority element is the element that appears more than n/2 times in the list, where n is the size of the list. If no majority element exists, the function should return None.
+	Write a Python function that takes a list of integers and an integer k, and returns the kth smallest element in the list using a min-heap. If k is larger than the number of elements in the list, return None.
+	Write a Python function that takes a list of strings and returns a new list with each string reversed. The function should handle an empty list and should not modify the original list.
+	Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers, the minus sign (-), and the plus sign (+), and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.
+	Write a Python function that takes a graph represented as a dictionary where keys are node labels and values are lists of tuples representing adjacent nodes and their respective distances, along with a start node label. The function should return a dictionary with the shortest distance from the start node to each other node in the graph using Dijkstra's algorithm. If a node is unreachable from the start node, it should not be included in the returned dictionary.
+	Write a Python function that takes an integer `n` and returns the number of unique ways you can climb a staircase with `n` steps, given that you can take either 1 or 2 steps at a time. This is a variation of the Fibonacci sequence and can be solved using dynamic programming.
+	Write a Python function that takes a graph represented as an adjacency matrix and returns a list of nodes in the order they are visited using the Breadth-First Search (BFS) algorithm. The function should start the BFS from the first node (index 0).
+	Write a Python function that takes an integer `n` and returns the number of unique ways you can climb a staircase with `n` steps, given that you can take either 1 or 2 steps at a time. This is a classic dynamic programming problem that can be solved using memoization or bottom-up approach.
+	Write a Python function that takes the head node of a singly linked list and returns the middle node. If the list has an even number of nodes, return the second of the two middle nodes. The function should not use any extra space, and it should complete in a single pass through the list.
+
+Failed tasks that are too hard: 
+	Write a Python function that takes a list of integers and returns the largest product that can be obtained by multiplying any two numbers from the list.
+	Write a Python function that takes a sorted list of integers and an integer target value, and returns a tuple of two numbers from the list that add up to the target value. If no such pair exists, return None.
+	Write a Python function that takes a list of strings representing a postfix expression (each element being a number or an operator) and returns the result of the expression. The function should handle the four basic arithmetic operations: addition, subtraction, multiplication, and division.
+	Write a Python function that takes a list of integers and returns the length of the longest consecutive elements sequence. The sequence must be composed of consecutive integers, regardless of their order in the original list.
+	Write a Python function that takes a string and returns a dictionary where each key is a unique word in the string and the corresponding value is the number of times that word appears in the string. The function should ignore case and punctuation.
+	Write a Python function that takes a list of integers and returns a new list containing the difference between each adjacent pair of numbers. The output list should have one less element than the input list.
+	Write a Python function that takes a list of integers and returns the maximum product of two distinct elements in the list. The function should handle lists with at least two integers.
+	Write a Python function that takes a list of integers and returns the number of elements in the list that are greater than the sum of all previous elements in the list. For example, in the list [1, 2, 4, 1, 6], the elements 4 and 6 are greater than the sum of all previous elements (1+2 and 1+2+4+1, respectively).
+	Write a Python function that takes a list of integers and returns the longest subarray where the difference between the maximum and minimum elements in the subarray is at most 1. The function should return the length of this subarray.
+	Write a Python function that takes a string and returns the longest palindrome that can be formed by rearranging its letters. If it is not possible to form any palindrome, return an empty string.
+	Write a Python function that takes a string and returns the length of the longest substring with at most two distinct characters. For example, given the string 'aabacbebebe', the longest substring with at most two distinct characters is 'cbebebe', so the function should return 7.
+	Write a Python function that takes a list of integers and returns the length of the longest subarray where the sum of the elements is equal to zero. If no such subarray exists, return 0.
+	Write a Python function that takes an array of non-negative integers representing the amount of time it takes to complete a task and an integer k representing the number of workers. The function should assign tasks to workers such that the time to complete all tasks is minimized assuming each worker can only work on one task at a time. The function should return the minimum time required to complete all tasks.
+
+
+INFO - [Task id] 89 [generation text] 
+INFO - {
+    "reasoning": "The student has successfully implemented basic algorithms and data structures, and has also worked with strings, lists, and dictionaries. The next task should introduce the concept of sets and their operations, which are fundamental in Python and useful for solving problems that involve uniqueness and membership checks. The task should be simple enough to not require advanced data structures or algorithms, but still novel and interesting.",
+    "task": "Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.",
+    "gt_fn_name": "symmetric_difference",
+    "test_setup_code": "",
+    "test_tuple": [
+        "assert symmetric_difference([1, 2, 3], [3, 4, 5]) == {1, 2, 4, 5}",
+        "assert symmetric_difference([1, 2, 2, 3], [2, 3, 4]) == {1, 4}",
+        "assert symmetric_difference([], [1, 2, 3]) == {1, 2, 3}"
+    ]
+}
+INFO - {
+    "reasoning": "The student has successfully implemented basic algorithms and data structures, and has also worked with strings, lists, and dictionaries. The next task should introduce the concept of sets and their operations, which are fundamental in Python and useful for solving problems that involve uniqueness and membership checks. The task should be simple enough to not require advanced data structures or algorithms, but still novel and interesting.",
+    "task": "Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.",
+    "gt_fn_name": "symmetric_difference",
+    "test_setup_code": "",
+    "test_tuple": [
+        "assert symmetric_difference([1, 2, 3], [3, 4, 5]) == {1, 2, 4, 5}",
+        "assert symmetric_difference([1, 2, 2, 3], [2, 3, 4]) == {1, 4}",
+        "assert symmetric_difference([], [1, 2, 3]) == {1, 2, 3}"
+    ]
+}
+INFO - The task prompt is Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.
+You must st...
+
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that answer my question about Python programming.
+
+I will give you the following information:
+Question: ...
+
+You will answer the question based on the context (only if available and helpful) and your own knowledge of Python programming.
+1) Start your answer with "Answer: ".
+2) Answer "Answer: Unknown" if you don't know the answer.
+
+INFO - [Task id] 89 [prompt] Question: Explain at a conceptual level, how to accomplish the below task in Python programming?
+Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.
+INFO - [Task id] 89 [generation text] Answer: To accomplish the task of finding the symmetric difference between two lists of integers in Python, you can follow these conceptual steps:
+
+1. **Understand Symmetric Difference**: The symmetric difference between two sets (or lists) includes elements that are in either of the sets but not in their intersection. In other words, it contains elements that are unique to each set.
+
+2. **Convert Lists to Sets**: Since sets in Python automatically handle duplicates and provide efficient operations for set theory, you can convert the two input lists into sets.
+
+3. **Use Set Operations**: Utilize the set operations to find the symmetric difference. In Python, you can use the `^` operator or the `symmetric_difference()` method to achieve this.
+
+4. **Return the Result**: Finally, return the result as a set, which will contain the unique elements from both lists that are not shared.
+
+Here is a conceptual outline of the function:
+
+```python
+def symmetric_difference(list1, list2):
+    # Convert lists to sets
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Calculate the symmetric difference
+    result = set1 ^ set2  # or set1.symmetric_difference(set2)
+    
+    # Return the result as a set
+    return result
+```
+
+This function takes two lists, converts them to sets, computes the symmetric difference, and returns the result. The order of elements in the returned set does not matter, as sets are unordered collections.
+INFO - Attempting task_id 89
+INFO - [35m Rollout attempt 1/4[0m
+INFO - [33m Retrieving 5 entries for db: skill 
+ [0m
+INFO - [33m symmetric_difference, find_intersection, find_common_elements, find_duplicates, count_pairs_with_difference[0m
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] You are a helpful assistant that writes python code to solve a task specified by me.
+
+Here are some useful functions written earlier which you can reuse or reference.
+
+
+[Entry]:
+
+
+    def symmetric_difference(list1, list2):
+        set1 = set(list1)
+        set2 = set(list2)
+        sym_diff_set = (set1 ^ set2)
+        return list(sym_diff_set)
+
+[/Entry]
+
+[Entry]:
+
+
+    def find_intersection(list1, list2):
+        set1 = set(list1)
+        set2 = set(list2)
+        intersection_set = set1.intersection(set2)
+        intersection_list = list(intersection_set)
+        return intersection_list
+
+[/Entry]
+
+[Entry]:
+
+
+    def find_common_elements(list1, list2):
+        set1 = set(list1)
+        set2 = set(list2)
+        common_elements_set = set1.intersection(set2)
+        common_elements_list = list(common_elements_set)
+        return common_elements_list
+
+[/Entry]
+
+[Entry]:
+    from collections import Counter
+
+    def find_duplicates(int_list):
+        counts = Counter(int_list)
+        duplicates = {num for (num, count) in counts.items() if (count > 1)}
+        return duplicates
+
+[/Entry]
+
+[Entry]:
+
+
+    def count_pairs_with_difference(nums):
+        unique_nums = set(nums)
+        count = 0
+        for num in unique_nums:
+            if ((num + 2) in unique_nums):
+                count += 1
+            if ((num - 2) in unique_nums):
+                count += 1
+        return (count // 2)
+
+[/Entry]
+
+
+
+
+
+
+At each round of conversation, I will give you
+[Environment feedback] (after executing code) ...
+[Code from the last round] ...
+[Task] ...
+[Context] ...
+[Critique] ...
+
+You should then respond to me with
+Explain (if applicable): Are there any steps missing in your plan? Why does the code not complete the task? What does the chat log and execution error imply?
+Plan: How to complete the task step by step. 
+Code:
+    1) Reuse or reference the above useful programs if necessary.
+    2) Your function will be reused for building more complex functions. Therefore, you should make it generic and reusable. 
+    3) Functions in the "Code from the last round" section will not be saved or executed. Do not reuse functions listed there.
+    4) Anything defined outside a function will be ignored, define all your variables inside your functions.
+    5) Do not write infinite loops.
+    6) If the task specifies a function name to be used, follow it strictly (be case sensitive!). Else, name your function in a meaningful way (can infer the task from the name).
+    7) Your code should only contain elements that solve the task, so DO NOT write any assert statements / tests
+    8) The context in the [Context] tag serves as a casual tip (which can be wrong) to help you on the task, but your priority is to follow instructions in the [Task] tag.
+
+You should only respond in the format as described below:
+RESPONSE FORMAT:
+
+Explain: ...
+Plan:
+1) ...
+2) ...
+3) ...
+...
+Code:
+```python
+# helper functions (only if needed, try to avoid them)
+...
+# main function after the helper functions
+def yourMainFunctionName(args):
+  # ...
+
+```
+
+
+INFO - [Task id] 89 [prompt] [Environment feedback]
+None
+
+[Code from the last round]
+No code in the first round
+
+[Task]
+Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.
+You must strictly follow the function name: symmetric_difference
+
+[Context]
+Rough plan to accomplish the task (can be wrong): 
+Answer: To accomplish the task of finding the symmetric difference between two lists of integers in Python, you can follow these conceptual steps:
+
+1. **Understand Symmetric Difference**: The symmetric difference between two sets (or lists) includes elements that are in either of the sets but not in their intersection. In other words, it contains elements that are unique to each set.
+
+2. **Convert Lists to Sets**: Since sets in Python automatically handle duplicates and provide efficient operations for set theory, you can convert the two input lists into sets.
+
+3. **Use Set Operations**: Utilize the set operations to find the symmetric difference. In Python, you can use the `^` operator or the `symmetric_difference()` method to achieve this.
+
+4. **Return the Result**: Finally, return the result as a set, which will contain the unique elements from both lists that are not shared.
+
+Here is a conceptual outline of the function:
+
+```python
+def symmetric_difference(list1, list2):
+    # Convert lists to sets
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Calculate the symmetric difference
+    result = set1 ^ set2  # or set1.symmetric_difference(set2)
+    
+    # Return the result as a set
+    return result
+```
+
+This function takes two lists, converts them to sets, computes the symmetric difference, and returns the result. The order of elements in the returned set does not matter, as sets are unordered collections.
+
+
+[Critique]
+None
+
+
+INFO - [Task id] 89 [generation text] Plan:
+1) Define the function `symmetric_difference` with two parameters, `list1` and `list2`.
+2) Convert both `list1` and `list2` to sets to remove any duplicates and to perform set operations.
+3) Calculate the symmetric difference using the `^` operator, which is the XOR operator for sets.
+4) Return the resulting set, which will contain elements that are in either of the original lists but not in both.
+
+Code:
+```python
+def symmetric_difference(list1, list2):
+    # Convert lists to sets
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Calculate the symmetric difference
+    result = set1 ^ set2
+    
+    # Return the result as a set
+    return result
+```
+INFO - program_code:
+ 
+
+def symmetric_difference(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    result = (set1 ^ set2)
+    return result
+
+
+INFO - program_name:
+ symmetric_difference
+
+INFO - dependencies:
+ []
+
+INFO - raw_msg:
+ Plan:
+1) Define the function `symmetric_difference` with two parameters, `list1` and `list2`.
+2) Convert both `list1` and `list2` to sets to remove any duplicates and to perform set operations.
+3) Calculate the symmetric difference using the `^` operator, which is the XOR operator for sets.
+4) Return the resulting set, which will contain elements that are in either of the original lists but not in both.
+
+Code:
+```python
+def symmetric_difference(list1, list2):
+    # Convert lists to sets
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Calculate the symmetric difference
+    result = set1 ^ set2
+    
+    # Return the result as a set
+    return result
+```
+
+INFO - no_parent:
+ True
+
+INFO - full code to be executed: 
+ 
+
+def symmetric_difference(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    result = (set1 ^ set2)
+    return result
+
+
+INFO - obs: Tests passed:
+assert symmetric_difference([1, 2, 3], [3, 4, 5]) == {1, 2, 4, 5}
+assert symmetric_difference([1, 2, 2, 3], [2, 3, 4]) == {1, 4}
+assert symmetric_difference([], [1, 2, 3]) == {1, 2, 3}
+
+Tests failed:
+None
+reward: True
+done: None
+info: {'individual_results': (True, True, True)}
+INFO - LM call n parse attempt 1 / 5
+
+INFO - [Task id] 89 [prompt] 
+You are a Python programming assistant that assesses my progress of Python programming and provides useful guidance.
+
+I will give you the following information:
+
+[Task]: The objective I need to accomplish.
+[Context]: The context of the task. Serves as a casual tip (which can be wrong) to help me on the task, but my priority is to follow instructions in the Task tag.
+[function impl]: My function implementation that is intended to complete the task
+[unit test results]: The results after executing my function implementation on the unit tests
+
+Your first goal is to use these info to evaluate if I have met the task requirements, and explain why. 
+It is possible that the unit test results all pass, but the code does not accomplish the task (eg by failing to accomplish the task in scenarios not covered by the unit tests)
+It is also possible that the unit tests are wrong in the first place, though the code accomplishes the task and fails the unit test.
+
+If I have not met the task requirements, write a few sentences to explain why the function implementation is wrong as indicated by the tests. 
+You will need this as guidance when you try again later.
+Only provide the few sentence description in your answer, not the implementation. 
+Suggest how the function implementation can be changed, NOT the test cases (assert statements)
+
+You should only respond in JSON format as described below:
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"description": "Represents the critique of a task attempt, including reasoning, success status, and suggestions for improvement.\n\nAttributes:\n    reasoning (str): Explanation of why the task was succeeded or failed.\n    success (bool): Indicates whether the task requirements were met.\n    critique (str): Suggestions or critique to help improve future task attempts.", "properties": {"reasoning": {"description": "reason why I have succeeded or failed at the task", "title": "Reasoning", "type": "string"}, "success": {"description": "evaluate if I have met the task requirements", "title": "Success", "type": "boolean"}, "critique": {"description": "critique to help me improve", "title": "Critique", "type": "string"}}, "required": ["reasoning", "success", "critique"]}
+```
+
+INFO - [Task id] 89 [prompt] 
+Here are some examples:
+
+Example 1:
+[function impl]:
+```python
+def longest_subarray_with_sum_limit(nums: List[int], target: int) -> List[int]:
+    n = len(nums)
+    left, right = 0, 0
+    max_length = 0
+    current_sum = 0
+    result = []
+    while right < n:
+        current_sum += nums[right]
+        while current_sum > target:
+            current_sum -= nums[left]
+            left += 1
+        if right - left + 1 >= max_length:
+            max_length = right - left + 1
+            result = nums[left:right+1]
+        right += 1
+    return result
+```
+[unit test results]:
+Tests passing:
+assert longest_subarray_with_sum_limit([1, 2, 3, 4, 5], 8) == [1, 2, 3]
+assert longest_subarray_with_sum_limit([1, 2, 3, 4, 5], 15) == [1, 2, 3, 4, 5]
+assert longest_subarray_with_sum_limit([1, -1, 2, -2, 3, -3], 2) == [1, -1, 2, -2, 3]
+assert longest_subarray_with_sum_limit([], 10) == []
+assert longest_subarray_with_sum_limit([], 0) == []
+assert longest_subarray_with_sum_limit([], -5) == []  
+Tests failing:
+assert longest_subarray_with_sum_limit([5, 6, 7, 8, 9], 4) == [] # output: [5]
+
+RESPONSE:
+{
+    "reasoning": "The implementation failed the test case where no subarray fulfills the condition",
+    "success": false,
+    "critique": "The issue in the implementation is due to the use of >= instead of > in the condition to update the result. Because of this, it returns a subarray even when the sum is greater than the target, as it still updates the result when the current subarray length is equal to the previous longest subarray length. To overcome this error, we should change the condition to only update the result when the current subarray length is strictly greater than the previous longest subarray length. This can be done by replacing >= with > in the condition."
+}
+
+
+Example 2:
+[function impl]:
+```python
+def longest_subarray_with_sum_limit(nums: List[int], target: int) -> List[int]:
+    n = len(nums)
+    left, right = 0, 0
+    max_length = 0
+    current_sum = 0
+    result = []
+    while current_sum + nums[right] <= target:
+        current_sum += nums[right]
+        right += 1
+    while right < n:
+        current_sum += nums[right]
+        while current_sum > target:
+            current_sum -= nums[left]
+            left += 1
+        if right - left + 1 > max_length:
+            max_length = right - left + 1
+            result = nums[left:right+1]
+        right += 1
+    return result
+```
+[unit test results]:
+Tests passing:
+assert longest_subarray_with_sum_limit([], 10) == []
+assert longest_subarray_with_sum_limit([], 0) == []
+assert longest_subarray_with_sum_limit([], -5) == []
+Tests failing:
+assert longest_subarray_with_sum_limit([1, 2, 3, 4, 5], 8) == [1, 2, 3] # output: list index out of range
+assert longest_subarray_with_sum_limit([1, 2, 3, 4, 5], 15) == [1, 2, 3, 4, 5] # output: list index out of range
+assert longest_subarray_with_sum_limit([5, 6, 7, 8, 9], 4) == [] # output: list index out of range
+assert longest_subarray_with_sum_limit([1, -1, 2, -2, 3, -3], 2) == [1, -1, 2, -2, 3] # output: list index out of range
+
+RESPONSE:
+{
+    "reason": "The implementation failed 4 out of the 7 test cases due to an IndexError.",
+    "success": false,
+    "critique": "The issue stems from the while loop while current_sum + nums[right] <= target:, which directly accesses nums[right] without checking if right is within the bounds of the list. This results in a runtime error when right goes beyond the list length. To overcome this error, we need to add a bounds check for the right variable in the mentioned while loop. We can modify the loop condition to while right < len(nums) and current_sum + nums[right] <= target:. This change will ensure that we only access elements within the bounds of the list, thus avoiding the IndexError."
+}
+
+
+END OF EXAMPLES
+
+INFO - [Task id] 89 [prompt] [Task]:
+Write a Python function that takes two lists of integers and returns a set containing the symmetric difference of the two lists. The symmetric difference should contain elements that are in either of the lists but not in both. The order of elements in the returned set does not matter.
+[Context]: 
+ Rough plan to accomplish the task (can be wrong): 
+Answer: To accomplish the task of finding the symmetric difference between two lists of integers in Python, you can follow these conceptual steps:
+
+1. **Understand Symmetric Difference**: The symmetric difference between two sets (or lists) includes elements that are in either of the sets but not in their intersection. In other words, it contains elements that are unique to each set.
+
+2. **Convert Lists to Sets**: Since sets in Python automatically handle duplicates and provide efficient operations for set theory, you can convert the two input lists into sets.
+
+3. **Use Set Operations**: Utilize the set operations to find the symmetric difference. In Python, you can use the `^` operator or the `symmetric_difference()` method to achieve this.
+
+4. **Return the Result**: Finally, return the result as a set, which will contain the unique elements from both lists that are not shared.
+
+Here is a conceptual outline of the function:
+
+```python
+def symmetric_difference(list1, list2):
+    # Convert lists to sets
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Calculate the symmetric difference
+    result = set1 ^ set2  # or set1.symmetric_difference(set2)
+    
+    # Return the result as a set
+    return result
+```
+
+This function takes two lists, converts them to sets, computes the symmetric difference, and returns the result. The order of elements in the returned set does not matter, as sets are unordered collections.
+
+
+[function impl]:
+
+
+def symmetric_difference(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    result = (set1 ^ set2)
+    return result
+
+[unit test results]:
+Tests passed:
+assert symmetric_difference([1, 2, 3], [3, 4, 5]) == {1, 2, 4, 5}
+assert symmetric_difference([1, 2, 2, 3], [2, 3, 4]) == {1, 4}
+assert symmetric_difference([], [1, 2, 3]) == {1, 2, 3}
+
+Tests failed:
+None
+
+INFO - [Task id] 89 [generation text] 
+INFO - {
+    "reasoning": "The implementation correctly computes the symmetric difference between two lists by converting them to sets and using the set exclusive OR operator. All provided unit tests pass, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. No changes are necessary. However, it's always good practice to include additional test cases to cover edge cases, such as when both lists are empty or contain negative and positive integers."
+}
+INFO - {
+    "reasoning": "The implementation correctly computes the symmetric difference between two lists by converting them to sets and using the set exclusive OR operator. All provided unit tests pass, indicating that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficient. No changes are necessary. However, it's always good practice to include additional test cases to cover edge cases, such as when both lists are empty or contain negative and positive integers."
+}
+INFO - [task_id]: 89 [Result]: True
+INFO - LM call n parse attempt 1 / 3
+
+INFO - [Task id] 89 [prompt] 
+You are a helpful assistant that writes a description of the given function written in the Python programming language.
+
+1) Do not mention the function name.
+2) Do not mention anything about helper functions.
+3) There might be some helper functions before the main function, but you only need to describe the main function.
+4) Try to summarize the function in no more than 6 sentences.
+5) Your response should be a single line of text.
+
+INFO - [Task id] 89 [prompt] 
+
+def symmetric_difference(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    result = (set1 ^ set2)
+    return result
+
+
+The main function is `symmetric_difference`.
+INFO - [Task id] 89 [generation text] This function takes two lists as input and converts them into sets to eliminate any duplicate values. It then calculates the symmetric difference between the two sets, which includes elements that are in either of the sets but not in both. Finally, it returns the resulting set containing these unique elements. The use of sets ensures that the operation is efficient and straightforward. The output will be a set of items that are exclusive to each input list. Overall, it provides a clear way to identify differences between two collections of items.
+INFO - incrementing ver to 2
+INFO - symmetric_difference exists in db but different code so rename to symmetric_difference_v2
+INFO - Num Completed Tasks: 76, Num Failed Tasks: 13

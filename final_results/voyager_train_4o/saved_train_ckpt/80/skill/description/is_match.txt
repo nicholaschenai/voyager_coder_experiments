@@ -1,0 +1,5 @@
+
+[description for function: is_match]
+This function determines if a given string matches a specified pattern, where the pattern may include wildcard characters: '?' which matches any single character, and '*' which matches any sequence of characters (including an empty sequence). It uses a two-pointer approach to traverse both the string and the pattern, handling matches and wildcards accordingly. When a '*' is encountered, it records its position and attempts to match subsequent characters in the string. If a mismatch occurs, it backtracks to the last '*' and tries to match the next character in the string. After processing the string, it checks if any remaining characters in the pattern are all '*', indicating a successful match. The function returns a boolean value indicating whether the string matches the pattern.
+
+[end of description]

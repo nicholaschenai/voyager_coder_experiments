@@ -1,0 +1,5 @@
+
+[description for function: recursive_sum]
+This function calculates the sum of all integers from 1 to a given non-negative integer n using recursion. It checks if n is zero, in which case it returns 0, indicating the base case of the recursion. If n is not zero, it adds n to the result of the function called with n decremented by 1. This process continues until n reaches zero, at which point the accumulated sum is returned. The function effectively computes the sum by breaking the problem down into smaller subproblems. It demonstrates a classic example of using recursion to solve a mathematical summation problem.
+
+[end of description]

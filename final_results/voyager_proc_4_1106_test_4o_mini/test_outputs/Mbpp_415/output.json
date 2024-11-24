@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert max_Product([1,2,3,4,7,0,8,4]) == (7,8)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef max_Product(arr):\n    if (len(arr) < 2):\n        raise ValueError('Array must contain at least two elements.')\n    max1 = float('-inf')\n    max2 = float('-inf')\n    for num in arr:\n        if (num > max1):\n            max2 = max1\n            max1 = num\n        elif (num > max2):\n            max2 = num\n    return (max2, max1)\n",
+    "full_code": "\n\ndef max_Product(arr):\n    if (len(arr) < 2):\n        raise ValueError('Array must contain at least two elements.')\n    max1 = float('-inf')\n    max2 = float('-inf')\n    for num in arr:\n        if (num > max1):\n            max2 = max1\n            max1 = num\n        elif (num > max2):\n            max2 = num\n    return (max2, max1)\n",
+    "task_id": "Mbpp/415",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

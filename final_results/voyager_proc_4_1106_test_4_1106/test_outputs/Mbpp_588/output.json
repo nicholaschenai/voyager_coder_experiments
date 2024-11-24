@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert big_diff([1,2,3,4]) == 3\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef big_diff(nums):\n    max_val = max(nums)\n    min_val = min(nums)\n    difference = (max_val - min_val)\n    return difference\n",
+    "full_code": "\n\ndef big_diff(nums):\n    max_val = max(nums)\n    min_val = min(nums)\n    difference = (max_val - min_val)\n    return difference\n",
+    "task_id": "Mbpp/588",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

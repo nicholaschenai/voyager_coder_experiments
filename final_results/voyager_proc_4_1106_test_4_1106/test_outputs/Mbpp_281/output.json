@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert all_unique([1,2,3]) == True\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef all_unique(lst):\n    return (len(lst) == len(set(lst)))\n",
+    "full_code": "\n\ndef all_unique(lst):\n    return (len(lst) == len(set(lst)))\n",
+    "task_id": "Mbpp/281",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

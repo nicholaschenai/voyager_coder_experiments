@@ -1,0 +1,5 @@
+
+[description for function: find_majority_element]
+This function takes a list of numbers as input and determines if there is a majority element, which is defined as an element that appears more than half the time in the list. It first calculates the frequency of each element using a dictionary. After counting the occurrences, it checks if any element's count exceeds half the length of the list. If such an element is found, it returns that element; otherwise, it returns None. The function efficiently handles the counting and checking in a single pass through the data. Overall, it provides a straightforward way to identify a majority element in a given list.
+
+[end of description]

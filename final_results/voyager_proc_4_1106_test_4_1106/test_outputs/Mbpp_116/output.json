@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert tuple_to_int((1,2,3))==123\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef tuple_to_int(tup):\n    concatenated_string = ''.join((str(i) for i in tup))\n    return int(concatenated_string)\n",
+    "full_code": "\n\ndef tuple_to_int(tup):\n    concatenated_string = ''.join((str(i) for i in tup))\n    return int(concatenated_string)\n",
+    "task_id": "Mbpp/116",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

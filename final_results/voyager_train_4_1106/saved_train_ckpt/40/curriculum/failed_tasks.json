@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        "Write a Python function that takes a list of integers and returns the largest product that can be obtained by multiplying any two numbers from the list.",
+        "Write a Python function that takes a sorted list of integers and an integer target value, and returns a tuple of two numbers from the list that add up to the target value. If no such pair exists, return None.",
+        "Write a Python function that takes a list of strings representing a postfix expression (each element being a number or an operator) and returns the result of the expression. The function should handle the four basic arithmetic operations: addition, subtraction, multiplication, and division.",
+        "Write a Python function that takes a list of integers and returns the length of the longest consecutive elements sequence. The sequence must be composed of consecutive integers, regardless of their order in the original list.",
+        "Write a Python function that takes a string and returns a dictionary where each key is a unique word in the string and the corresponding value is the number of times that word appears in the string. The function should ignore case and punctuation.",
+        "Write a Python function that takes a list of integers and returns the sum of the two smallest numbers in the list. The function should handle lists with at least two integers and should not modify the original list."
+    ]
+}

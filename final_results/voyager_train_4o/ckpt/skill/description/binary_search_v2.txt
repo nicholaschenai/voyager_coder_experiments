@@ -1,0 +1,5 @@
+
+[description for function: binary_search]
+This function performs a binary search on a sorted list to find the index of a specified target value. It initializes two pointers, left and right, to represent the current search boundaries. In a loop, it calculates the midpoint and compares the target with the value at that index. If a match is found, it returns the index; if the target is greater, it narrows the search to the right half, and if it's smaller, to the left half. The process continues until the target is found or the search space is exhausted. If the target is not present, it returns -1.
+
+[end of description]

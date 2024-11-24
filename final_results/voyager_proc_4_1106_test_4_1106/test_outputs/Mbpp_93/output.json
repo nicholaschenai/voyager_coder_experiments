@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert power(3,4) == 81\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef power(a, b):\n    return (a ** b)\n",
+    "full_code": "\n\ndef power(a, b):\n    return (a ** b)\n",
+    "task_id": "Mbpp/93",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

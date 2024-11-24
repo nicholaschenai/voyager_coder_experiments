@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert filter_digits('abc123def456') == '123456'\nassert filter_digits('no digits here!') == ''\nassert filter_digits('2023 is the year') == '2023'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef filter_digits(input_string):\n    result = ''\n    for char in input_string:\n        if char.isdigit():\n            result += char\n    return result\n",
+    "full_code": "\n\ndef filter_digits(input_string):\n    result = ''\n    for char in input_string:\n        if char.isdigit():\n            result += char\n    return result\n",
+    "task_id": "12",
+    "reasoning": "The implementation successfully extracts digits from the input string and passes all provided test cases, indicating that it meets the task requirements.",
+    "success": true,
+    "critique": "Great job! Your function is correctly implemented and passes all the tests. You can consider adding type hints to your function signature for better clarity, like this: `def filter_digits(input_string: str) -> str:`."
+}

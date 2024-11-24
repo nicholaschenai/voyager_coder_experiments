@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert subject_marks([('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)])==[('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef subject_marks(marks):\n    return sorted(marks, key=(lambda x: x[1]))\n",
+    "full_code": "\n\ndef subject_marks(marks):\n    return sorted(marks, key=(lambda x: x[1]))\n",
+    "task_id": "Mbpp/64",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

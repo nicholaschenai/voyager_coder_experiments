@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert first_Digit(123) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef first_Digit(num: int) -> int:\n    num_str = str(abs(num))\n    return int(num_str[0])\n",
+    "full_code": "\n\ndef first_Digit(num: int) -> int:\n    num_str = str(abs(num))\n    return int(num_str[0])\n",
+    "task_id": "Mbpp/479",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

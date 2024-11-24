@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert map_squares([1, 2, 3]) == {1: 1, 2: 4, 3: 9}\nassert map_squares([4, 5, 6]) == {4: 16, 5: 25, 6: 36}\nassert map_squares([7, 8, 9]) == {7: 49, 8: 64, 9: 81}\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef map_squares(int_list):\n    result = {}\n    for num in int_list:\n        result[num] = (num ** 2)\n    return result\n",
+    "full_code": "\n\ndef map_squares(int_list):\n    result = {}\n    for num in int_list:\n        result[num] = (num ** 2)\n    return result\n",
+    "task_id": "82",
+    "reasoning": "The function implementation correctly follows the task requirements by iterating over the list of integers, calculating the square of each integer, and storing the result in a dictionary with the integer as the key and its square as the value. The unit tests confirm that the function behaves as expected for the given test cases, producing the correct dictionary outputs.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. No changes are necessary. Continue to use this approach for similar tasks involving dictionary mappings."
+}

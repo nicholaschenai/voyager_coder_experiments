@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert median_numbers(25,55,65)==55.0\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef median_numbers(a: int, b: int, c: int) -> float:\n    numbers = [a, b, c]\n    numbers.sort()\n    return float(numbers[1])\n",
+    "full_code": "\n\ndef median_numbers(a: int, b: int, c: int) -> float:\n    numbers = [a, b, c]\n    numbers.sort()\n    return float(numbers[1])\n",
+    "task_id": "Mbpp/397",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

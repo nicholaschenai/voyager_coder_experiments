@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nNone\n\nTests failed:\nassert find_solution(2, 3, 7) == (2, 1) # output: (-7, 7)",
+    "state": null,
+    "code": "\n\ndef extended_gcd(a, b):\n    if (b == 0):\n        return (a, 1, 0)\n    (gcd, x1, y1) = extended_gcd(b, (a % b))\n    x = y1\n    y = (x1 - ((a // b) * y1))\n    return (gcd, x, y)\n\n\n\n\ndef find_solution(a, b, n):\n    (gcd, x0, y0) = extended_gcd(a, b)\n    if ((n % gcd) != 0):\n        return None\n    x = (x0 * (n // gcd))\n    y = (y0 * (n // gcd))\n    return (x, y)\n",
+    "full_code": "\n\ndef extended_gcd(a, b):\n    if (b == 0):\n        return (a, 1, 0)\n    (gcd, x1, y1) = extended_gcd(b, (a % b))\n    x = y1\n    y = (x1 - ((a // b) * y1))\n    return (gcd, x, y)\n\n\n\n\ndef find_solution(a, b, n):\n    (gcd, x0, y0) = extended_gcd(a, b)\n    if ((n % gcd) != 0):\n        return None\n    x = (x0 * (n // gcd))\n    y = (y0 * (n // gcd))\n    return (x, y)\n",
+    "task_id": "Mbpp/160",
+    "reasoning": "The implementation failed the provided test case. The output (-7, 7) does not satisfy the equation 2x + 3y = 7.",
+    "success": false,
+    "critique": "The Extended Euclidean Algorithm implementation seems correct, but the issue may lie in how the results of the algorithm are being scaled to find the particular solution for the given 'n'. It's possible that the algorithm is finding a valid pair (x0, y0) for the gcd of 'a' and 'b', but when scaling it to 'n', it does not provide the expected solution. To improve the implementation, consider checking if there are alternative pairs (x, y) that satisfy the equation by adding multiples of 'b/gcd' to 'x' and subtracting multiples of 'a/gcd' from 'y', within a reasonable range, to find a solution that fits the expected output."
+}

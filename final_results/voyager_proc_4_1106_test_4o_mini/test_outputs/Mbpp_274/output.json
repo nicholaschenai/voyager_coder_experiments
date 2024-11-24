@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert even_binomial_Coeff_Sum(4) == 8\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import math\n\ndef even_binomial_Coeff_Sum(n: int) -> int:\n    total_sum = 0\n    for k in range(0, (n + 1), 2):\n        total_sum += math.comb(n, k)\n    return total_sum\n",
+    "full_code": "import math\n\ndef even_binomial_Coeff_Sum(n: int) -> int:\n    total_sum = 0\n    for k in range(0, (n + 1), 2):\n        total_sum += math.comb(n, k)\n    return total_sum\n",
+    "task_id": "Mbpp/274",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

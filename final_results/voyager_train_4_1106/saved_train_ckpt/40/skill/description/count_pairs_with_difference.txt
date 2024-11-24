@@ -1,0 +1,5 @@
+
+[description for function: count_pairs_with_difference]
+This function counts the number of unique pairs in a list of numbers that have a difference of exactly 2. It first converts the list into a set to eliminate duplicates and facilitate faster lookups. Then, for each unique number, it checks if either the number plus 2 or the number minus 2 exists in the set. For each valid pair found, it increments a count. Finally, it returns half of the count to account for the fact that each pair is counted twice. The result is the total number of unique pairs with the specified difference.
+
+[end of description]

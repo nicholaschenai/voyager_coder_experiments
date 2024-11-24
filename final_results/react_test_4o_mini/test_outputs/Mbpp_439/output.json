@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert multiple_to_single([11, 33, 50])==113350\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef multiple_to_single(int_list):\n    str_list = [str(i) for i in int_list]\n    joined_string = ''.join(str_list)\n    result = int(joined_string)\n    return result\n",
+    "full_code": "\n\ndef multiple_to_single(int_list):\n    str_list = [str(i) for i in int_list]\n    joined_string = ''.join(str_list)\n    result = int(joined_string)\n    return result\n",
+    "task_id": "Mbpp/439",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

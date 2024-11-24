@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert common_elements([1, 2, 3, 4], [3, 4, 5, 6]) == [3, 4]\nassert common_elements([7, 8, 9], [10, 11, 12]) == []\nassert common_elements([1, 2, 2, 3], [2, 3, 4]) == [2, 3]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef common_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    common_set = (set1 & set2)\n    return list(common_set)\n",
+    "full_code": "\n\ndef common_elements(list1, list2):\n    set1 = set(list1)\n    set2 = set(list2)\n    common_set = (set1 & set2)\n    return list(common_set)\n",
+    "task_id": "12",
+    "reasoning": "The function implementation correctly uses set operations to find the common elements between two lists and removes duplicates. The use of set intersection ensures that only elements present in both lists are included, and converting the result back to a list meets the task requirements. The unit tests confirm that the function behaves as expected for the given scenarios.",
+    "success": true,
+    "critique": "The function implementation is correct and meets the task requirements. No changes are necessary. Ensure to test with additional edge cases if needed, but the current implementation is sound."
+}

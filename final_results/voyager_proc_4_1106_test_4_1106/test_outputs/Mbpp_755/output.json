@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert second_smallest([1, 2, -8, -2, 0, -2])==-2\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef second_smallest(numbers):\n    if (len(numbers) < 2):\n        raise ValueError('List must contain at least two unique elements.')\n    smallest = float('inf')\n    second_smallest = float('inf')\n    for number in numbers:\n        if (number < smallest):\n            (second_smallest, smallest) = (smallest, number)\n        elif (smallest < number < second_smallest):\n            second_smallest = number\n    if ((second_smallest == float('inf')) or (second_smallest == smallest)):\n        raise ValueError('List must contain at least two unique elements.')\n    return second_smallest\n",
+    "full_code": "\n\ndef second_smallest(numbers):\n    if (len(numbers) < 2):\n        raise ValueError('List must contain at least two unique elements.')\n    smallest = float('inf')\n    second_smallest = float('inf')\n    for number in numbers:\n        if (number < smallest):\n            (second_smallest, smallest) = (smallest, number)\n        elif (smallest < number < second_smallest):\n            second_smallest = number\n    if ((second_smallest == float('inf')) or (second_smallest == smallest)):\n        raise ValueError('List must contain at least two unique elements.')\n    return second_smallest\n",
+    "task_id": "Mbpp/755",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

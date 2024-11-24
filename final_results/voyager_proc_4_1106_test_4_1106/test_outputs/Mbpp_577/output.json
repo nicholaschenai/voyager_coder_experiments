@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert last_Digit_Factorial(4) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef last_Digit_Factorial(n):\n    if ((n == 0) or (n == 1)):\n        return 1\n    last_digit = 1\n    for i in range(2, (n + 1)):\n        last_digit = ((last_digit * i) % 10)\n    return last_digit\n",
+    "full_code": "\n\ndef last_Digit_Factorial(n):\n    if ((n == 0) or (n == 1)):\n        return 1\n    last_digit = 1\n    for i in range(2, (n + 1)):\n        last_digit = ((last_digit * i) % 10)\n    return last_digit\n",
+    "task_id": "Mbpp/577",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

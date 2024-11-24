@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        "Write a Python function that takes a list of integers and returns a new list with the squares of all the numbers. The function should not modify the original list.",
+        "Write a Python function that takes a list of integers and returns a new list containing only the unique elements from the original list. The order of elements in the returned list does not matter.",
+        "Write a Python function that takes a list of integers and returns a set containing all the elements that appear more than once in the list.",
+        "Write a Python function that calculates the factorial of a given non-negative integer. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!.",
+        "Write a Python function that takes a string and returns True if the string is a palindrome, and False otherwise. The function should be case-insensitive and ignore all non-alphanumeric characters.",
+        "Write a Python function that takes a dictionary and a key, and returns the value associated with the key. If the key does not exist in the dictionary, the function should return 'Key not found.'",
+        "Write a Python function that takes a list of integers and returns the first recurring character. If there is no recurring character, return None.",
+        "Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the bubble sort algorithm.",
+        "Write a Python function that takes a string and returns the first non-repeating character in it. If all characters repeat or the string is empty, return None.",
+        "Write a Python function that simulates a producer-consumer scenario using a queue. The function should take a list of integers as input, where each integer represents an item produced. The function should process (consume) each item by simply printing it and then return the number of items consumed. Use a simple list to simulate the queue behavior.",
+        "Write a Python function that takes an integer n and returns the nth Fibonacci number. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The function should use recursion to calculate the result.",
+        "Write a Python function that takes a string and returns the length of the longest substring without repeating characters.",
+        "Write a Python function that takes a list of strings and returns a new list with the strings sorted based on the number of vowels they contain. The sort should be in descending order, and in case of a tie, the strings should be sorted alphabetically.",
+        "Write a Python function that takes a string and returns the character that appears the most frequently in the string. If there is a tie, return the character that appears first in the string. If the string is empty, return None.",
+        "Write a Python function that takes a string representing a mathematical expression consisting of non-negative integers and the plus sign (+) and returns the result of the expression. The function should assume that the input is always a valid expression and that there are no spaces between numbers and operators.",
+        "Write a Python function that takes an integer n and returns the sum of all integers from 1 to n using recursion.",
+        "Write a Python function that takes a list of integers and returns a new list with the integers sorted in ascending order using the selection sort algorithm.",
+        "Write a Python function that takes a string containing only '(', ')', '{', '}', '[' and ']', and determines if the input string is valid. A string is considered valid if brackets are closed in the correct order. For example, \"()\" and \"()[]{}\" are valid, but \"(]\" and \"([)]\" are not."
+    ]
+}

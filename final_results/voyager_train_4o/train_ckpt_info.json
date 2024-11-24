@@ -1,0 +1,5 @@
+{
+    "train_iter": 95,
+    "task": "Write a Python function that takes two strings and returns the length of their longest common subsequence. The function should use dynamic programming to solve the problem efficiently.",
+    "task_id": "94"
+}

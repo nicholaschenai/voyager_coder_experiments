@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_even_pair([5, 4, 7, 2, 1]) == 4\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_even_pair(lst):\n    even_count = sum((1 for x in lst if ((x % 2) == 0)))\n    odd_count = (len(lst) - even_count)\n    even_pairs = ((even_count * (even_count - 1)) // 2)\n    odd_pairs = ((odd_count * (odd_count - 1)) // 2)\n    return (even_pairs + odd_pairs)\n",
+    "full_code": "\n\ndef find_even_pair(lst):\n    even_count = sum((1 for x in lst if ((x % 2) == 0)))\n    odd_count = (len(lst) - even_count)\n    even_pairs = ((even_count * (even_count - 1)) // 2)\n    odd_pairs = ((odd_count * (odd_count - 1)) // 2)\n    return (even_pairs + odd_pairs)\n",
+    "task_id": "Mbpp/166",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

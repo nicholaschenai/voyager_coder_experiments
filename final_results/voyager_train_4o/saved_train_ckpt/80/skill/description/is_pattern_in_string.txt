@@ -1,0 +1,5 @@
+
+[description for function: is_pattern_in_string]
+This function checks if a specified pattern exists within a given main string. It takes two arguments: the main string and the pattern to search for. The function utilizes the 'in' operator to determine if the pattern is a substring of the main string. It returns a boolean value, either True or False, based on the presence of the pattern. This allows for quick and efficient substring searching. Overall, it provides a straightforward way to verify the existence of a sequence of characters within another string.
+
+[end of description]

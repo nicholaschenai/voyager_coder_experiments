@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Tests passed:\nassert find_majority_element([3, 3, 4, 2, 4, 4, 2, 4, 4]) == 4\nassert find_majority_element([3, 3, 4, 2, 4, 4, 2, 4]) == None\nassert find_majority_element([1, 1, 1, 1, 2, 2, 2]) == 1\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_majority_element(nums):\n    n = len(nums)\n    count = {}\n    for num in nums:\n        if (num in count):\n            count[num] += 1\n        else:\n            count[num] = 1\n    majority_threshold = (n / 2)\n    for (num, cnt) in count.items():\n        if (cnt > majority_threshold):\n            return num\n    return None\n",
+    "full_code": "\n\ndef find_majority_element(nums):\n    n = len(nums)\n    count = {}\n    for num in nums:\n        if (num in count):\n            count[num] += 1\n        else:\n            count[num] = 1\n    majority_threshold = (n / 2)\n    for (num, cnt) in count.items():\n        if (cnt > majority_threshold):\n            return num\n    return None\n",
+    "task_id": "49",
+    "reasoning": "The function implementation correctly counts the occurrences of each element in the list and checks if any element's count exceeds half the length of the list. The unit tests cover scenarios where there is a majority element, no majority element, and a clear majority element, all of which pass successfully. This indicates that the function meets the task requirements.",
+    "success": true,
+    "critique": "The function implementation is correct and efficiently solves the problem as per the task requirements. No changes are necessary."
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert division_elements((10, 4, 6, 9),(5, 2, 3, 3)) == (2, 2, 2, 3)\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef division_elements(tuple1, tuple2):\n    if (len(tuple1) != len(tuple2)):\n        raise ValueError('Tuples must be of the same length')\n    result = [((a / b) if (b != 0) else float('inf')) for (a, b) in zip(tuple1, tuple2)]\n    return tuple(result)\n",
+    "full_code": "\n\ndef division_elements(tuple1, tuple2):\n    if (len(tuple1) != len(tuple2)):\n        raise ValueError('Tuples must be of the same length')\n    result = [((a / b) if (b != 0) else float('inf')) for (a, b) in zip(tuple1, tuple2)]\n    return tuple(result)\n",
+    "task_id": "Mbpp/261",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

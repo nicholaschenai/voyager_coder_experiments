@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_adverb_position(\"clearly!! we can see the sky\")==(0, 7, 'clearly')\n\nTests failed:\nNone",
+    "state": null,
+    "code": "import re\n\ndef find_adverb_position(sentence):\n    match = re.search('\\\\b(\\\\w+ly)\\\\b', sentence)\n    if match:\n        adverb = match.group(1)\n        start_index = match.start()\n        end_index = match.end()\n        return (start_index, end_index, adverb)\n    return None\n",
+    "full_code": "import re\n\ndef find_adverb_position(sentence):\n    match = re.search('\\\\b(\\\\w+ly)\\\\b', sentence)\n    if match:\n        adverb = match.group(1)\n        start_index = match.start()\n        end_index = match.end()\n        return (start_index, end_index, adverb)\n    return None\n",
+    "task_id": "Mbpp/440",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert find_combinations([(2, 4), (6, 7), (5, 1), (6, 10)]) == [(8, 11), (7, 5), (8, 14), (11, 8), (12, 17), (11, 11)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef find_combinations(tuple_list):\n    result = []\n    for i in range(len(tuple_list)):\n        for j in range(len(tuple_list)):\n            if (i != j):\n                sum_tuple = ((tuple_list[i][0] + tuple_list[j][0]), (tuple_list[i][1] + tuple_list[j][1]))\n                if (sum_tuple not in result):\n                    result.append(sum_tuple)\n    return result\n",
+    "full_code": "\n\ndef find_combinations(tuple_list):\n    result = []\n    for i in range(len(tuple_list)):\n        for j in range(len(tuple_list)):\n            if (i != j):\n                sum_tuple = ((tuple_list[i][0] + tuple_list[j][0]), (tuple_list[i][1] + tuple_list[j][1]))\n                if (sum_tuple not in result):\n                    result.append(sum_tuple)\n    return result\n",
+    "task_id": "Mbpp/780",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

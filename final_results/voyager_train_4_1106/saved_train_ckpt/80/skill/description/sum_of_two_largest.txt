@@ -1,0 +1,5 @@
+
+[description for function: sum_of_two_largest]
+This function calculates the sum of the two largest numbers in a given list. It first identifies the largest number by finding the first largest element. Then, it determines the second largest number by finding the second largest element in the list. Finally, it returns the sum of these two largest numbers. The function effectively handles the task of extracting and summing the top two values from the input list. It assumes that the list contains at least two distinct numbers.
+
+[end of description]

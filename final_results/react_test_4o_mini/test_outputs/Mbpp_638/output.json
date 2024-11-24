@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert wind_chill(120,35)==40\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef wind_chill(velocity: int, temperature: int) -> int:\n    wci = (((13.12 + (0.6215 * temperature)) - (11.37 * (velocity ** 0.16))) + ((0.3965 * temperature) * (velocity ** 0.16)))\n    return round(wci)\n",
+    "full_code": "\n\ndef wind_chill(velocity: int, temperature: int) -> int:\n    wci = (((13.12 + (0.6215 * temperature)) - (11.37 * (velocity ** 0.16))) + ((0.3965 * temperature) * (velocity ** 0.16)))\n    return round(wci)\n",
+    "task_id": "Mbpp/638",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

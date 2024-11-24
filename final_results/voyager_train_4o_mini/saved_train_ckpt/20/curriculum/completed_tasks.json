@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        "Write a Python function that takes a list of integers and returns a list of unique integers from that list.",
+        "Write a Python function that takes a list of integers and returns a dictionary with the integers as keys and their counts as values.",
+        "Write a Python function that takes two lists of integers and returns a list of integers that are present in both lists (the intersection).",
+        "Write a Python function that takes a list of integers and returns a list of integers that are unique (appear only once) in the list.",
+        "Write a Python function that takes a list of integers and returns a list of integers that are duplicates (appear more than once) in the list.",
+        "Write a Python function that takes a list of integers and returns the second largest integer in the list. If the list has fewer than two unique integers, return None.",
+        "Write a Python function that takes a list of integers and returns a new list containing only the even integers from the original list.",
+        "Write a Python function that takes a list of integers and returns a list of integers that are greater than a given threshold value.",
+        "Write a Python function that takes a string and returns the number of vowels in that string.",
+        "Write a Python function that takes a string and returns a set of unique characters in that string.",
+        "Write a Python function that takes a string and returns True if it is a palindrome (reads the same forwards and backwards), and False otherwise.",
+        "Write a Python function that takes a string and returns a new string containing only the digits from the original string.",
+        "Write a Python function that takes a list of strings and returns a new list containing only the strings that have a length greater than a specified threshold.",
+        "Write a Python function that takes a list of strings and returns a new list of those strings sorted by their length in descending order.",
+        "Write a Python function that takes a list of strings and returns a new list containing the lengths of each string in the original list.",
+        "Write a Python function that takes a string and returns a new string with all the vowels removed.",
+        "Write a Python function that takes a string and returns the number of distinct characters in that string.",
+        "Write a Python function that takes two dictionaries and merges them. If there are duplicate keys, the values from the second dictionary should overwrite those from the first."
+    ]
+}

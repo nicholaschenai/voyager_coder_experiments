@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert move_num('I1love143you55three3000thousand') == 'Iloveyouthreethousand1143553000'\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef move_num(s: str) -> str:\n    chars = []\n    nums = []\n    for char in s:\n        if char.isdigit():\n            nums.append(char)\n        else:\n            chars.append(char)\n    return (''.join(chars) + ''.join(nums))\n",
+    "full_code": "\n\ndef move_num(s: str) -> str:\n    chars = []\n    nums = []\n    for char in s:\n        if char.isdigit():\n            nums.append(char)\n        else:\n            chars.append(char)\n    return (''.join(chars) + ''.join(nums))\n",
+    "task_id": "Mbpp/619",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

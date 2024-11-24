@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert closest_num(11) == 10\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef closest_num(n: int) -> int:\n    return (n - 1)\n",
+    "full_code": "\n\ndef closest_num(n: int) -> int:\n    return (n - 1)\n",
+    "task_id": "Mbpp/89",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

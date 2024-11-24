@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert merge([['x', 'y'], ['a', 'b'], ['m', 'n']]) == [['x', 'a', 'm'], ['y', 'b', 'n']]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef merge(list_of_lists):\n    first_elements = []\n    second_elements = []\n    for sublist in list_of_lists:\n        first_elements.append(sublist[0])\n        second_elements.append(sublist[1])\n    return [first_elements, second_elements]\n",
+    "full_code": "\n\ndef merge(list_of_lists):\n    first_elements = []\n    second_elements = []\n    for sublist in list_of_lists:\n        first_elements.append(sublist[0])\n        second_elements.append(sublist[1])\n    return [first_elements, second_elements]\n",
+    "task_id": "Mbpp/612",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

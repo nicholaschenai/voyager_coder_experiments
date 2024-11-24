@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert rotate_right([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],3)==[8, 9, 10, 1, 2, 3, 4, 5, 6, 7]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef rotate_right(lst, n):\n    if (not lst):\n        return lst\n    n = (n % len(lst))\n    return (lst[(- n):] + lst[:(- n)])\n",
+    "full_code": "\n\ndef rotate_right(lst, n):\n    if (not lst):\n        return lst\n    n = (n % len(lst))\n    return (lst[(- n):] + lst[:(- n)])\n",
+    "task_id": "Mbpp/743",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

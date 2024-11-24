@@ -1,0 +1,5 @@
+
+[description for function: fibonacci]
+This function calculates the nth Fibonacci number using a recursive approach. It returns 0 if the input is 0 and 1 if the input is 1. For any other positive integer, it computes the Fibonacci number by summing the two preceding Fibonacci numbers. The function continues to call itself until it reaches the base cases. This results in a straightforward but inefficient implementation due to repeated calculations. Overall, it provides a clear demonstration of recursion in generating Fibonacci numbers.
+
+[end of description]

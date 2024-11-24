@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert average_tuple(((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4)))==[30.5, 34.25, 27.0, 23.25]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef average_tuple(tuples_of_tuples):\n    num_of_tuples = len(tuples_of_tuples)\n    tuple_length = len(tuples_of_tuples[0])\n    sums = ([0] * tuple_length)\n    for inner_tuple in tuples_of_tuples:\n        for i in range(tuple_length):\n            sums[i] += inner_tuple[i]\n    averages = [(sum_val / num_of_tuples) for sum_val in sums]\n    return averages\n",
+    "full_code": "\n\ndef average_tuple(tuples_of_tuples):\n    num_of_tuples = len(tuples_of_tuples)\n    tuple_length = len(tuples_of_tuples[0])\n    sums = ([0] * tuple_length)\n    for inner_tuple in tuples_of_tuples:\n        for i in range(tuple_length):\n            sums[i] += inner_tuple[i]\n    averages = [(sum_val / num_of_tuples) for sum_val in sums]\n    return averages\n",
+    "task_id": "Mbpp/615",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

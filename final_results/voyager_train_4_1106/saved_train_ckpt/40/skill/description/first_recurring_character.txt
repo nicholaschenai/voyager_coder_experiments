@@ -1,0 +1,5 @@
+
+[description for function: first_recurring_character]
+This function takes a list of integers as input and identifies the first recurring character within that list. It utilizes a set to keep track of the numbers that have already been encountered. As it iterates through the list, it checks if the current number has been seen before; if so, it returns that number as the first recurring character. If no recurring number is found by the end of the list, it returns None. The function effectively provides a quick way to find duplicates in a single pass through the list. Overall, it is efficient and straightforward in its approach to solving the problem.
+
+[end of description]

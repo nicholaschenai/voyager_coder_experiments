@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sum_negativenum([2, 4, -6, -9, 11, -12, 14, -5, 17])==-32\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sum_negativenum(numbers):\n    total = 0\n    for num in numbers:\n        if (num < 0):\n            total += num\n    return total\n",
+    "full_code": "\n\ndef sum_negativenum(numbers):\n    total = 0\n    for num in numbers:\n        if (num < 0):\n            total += num\n    return total\n",
+    "task_id": "Mbpp/133",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

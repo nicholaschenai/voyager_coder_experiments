@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert sort_counter({'Math':81, 'Physics':83, 'Chemistry':87})==[('Chemistry', 87), ('Physics', 83), ('Math', 81)]\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef sort_counter(counter):\n    sorted_items = sorted(counter.items(), key=(lambda item: item[1]), reverse=True)\n    return sorted_items\n",
+    "full_code": "\n\ndef sort_counter(counter):\n    sorted_items = sorted(counter.items(), key=(lambda item: item[1]), reverse=True)\n    return sorted_items\n",
+    "task_id": "Mbpp/475",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}

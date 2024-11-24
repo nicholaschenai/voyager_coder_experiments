@@ -1,0 +1,10 @@
+{
+    "env_feedback": "Note: Tests are automatically generated and can be wrong.\n\nTests passed:\nassert is_lower(\"InValid\") == \"invalid\"\n\nTests failed:\nNone",
+    "state": null,
+    "code": "\n\ndef is_lower(s: str) -> str:\n    return s.lower()\n",
+    "full_code": "\n\ndef is_lower(s: str) -> str:\n    return s.lower()\n",
+    "task_id": "Mbpp/477",
+    "success": true,
+    "critique": "",
+    "reasoning": ""
+}
